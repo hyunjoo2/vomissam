@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="./inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./inc/resource/css/jquery.fullpage.css">
+
+    <link rel="stylesheet" href="./inc/resource/css/reset.css">
+    <link rel="stylesheet" href="./inc/resource/css/font.css">
+    
+
+    <script src="/inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="./inc/resource/js/bootstrap.min.js"></script>
+    <script src="/inc/resource/js/fullpage.2.9.4.js"></script>
+
+    <!-- 
+        css BEM 방법론을 사용함 (참고 사이트 : https://jsnow.netlify.app/posts/BEM-Intro)
+        목적에 맞게 class name을 정함 
+
+        · block : 
+           - 재사용 가능하고 기능적으로 독립된 페이지 구성 요소
+           - 환경에 영향을 받지 않아야 함. 즉 여백이나 위치를 설정하면 안됨(재사용성과 확장성을 위해 : 만약 여백이나 위치와 관련된 스타일이 적용되어 있다면 해당 블럭을 다른 곳에 이식하여 사용하려 할 때, 다시 여백이나 위치를 설정해야 하는 일이 발생할 수 있다.)
+           - 스타일링(배경색 지정, 폰트색 지정 등)을 하는 용도
+           - 태그, id 선택자를 사용하면 안됨
+
+        · element : 
+            - 블록 안에서 특정 기능을 담당하는 부분
+            - block__element(블럭이름__요소이름) 형태로 사용(더블 언더바)
+            - 형태가 아닌 목적에 맞게 결정
+            - 블록의 부분으로만 사용 할 수 있고 다른 요소의 부분으로 사용 할 수 없다.
+            - 모든 블록에서 요소는 필수가 아닌 선택적으로 사용함.
+
+        · modifier(수식어) : 
+            - block이나 element의 모양, 상태를 정의
+            - block__element--modifier, block--modifier 형태로 사용(더블 하이픈)
+            - key-value : 하이픈으로 연결하여 표시 color-red, theme-ocean
+            - 수식어는 단독으로 사용할 수 없음. 기본 블록과 요소에 추가하여 사용
+
+        올바른 사용 예시
+        <form class="search-form"> // block
+            <div class="search-form__content">
+                <input class="search-form__input"/> //element
+                <button class="search-form__button">Search</button> //element
+            </div>
+        </form> 
+        
+        .search-form 이라는 block은 여기저기 마음껏 사용해도 되지만 내부의 input과 button은 검색을 위한 것이기 때문에, search-form 안에서만 존재 의미가 있는 element이다.
+
+        * 블럭과 요소의 경계가 모호할 때
+        // header block
+        <div class="header">
+            //search-form block이면서, header block의 search-form element인 경우 
+            <div class="search-form header__search-form"></div>
+        </div>
+        이런 경우, class명을 둘 다 써두어 가각의 독립적인 규칙을 지킬 수 있음.
+        블럭에는 여백이나 위치 같은 외부 환경에 영향을 주지 않아야 하지만 여기서는 요소로도 쓰이기 때문에 불가피 하게 여백이나 위치를 지정해 주어야 함
+        이때 두 class명을 예시와 같이 분리해주면 규칙을 위반하지 않게 코드를 작성할 수 있다.        
+    
+    -->
+
+</head>
+<body>
+    <header >
+        <div class="header">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href="javascript:void(0)" class="logo__link">
+                            <h1 class="blind">MDN</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"></li>
+                        <li class="nav__item"></li>
+                    </ul>
+                </div>
+                <div class="header__etc"></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <div class="logo">
+                        <a href="javascript:void(0)" class="logo__link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
