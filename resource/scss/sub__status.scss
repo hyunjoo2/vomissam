@@ -1,0 +1,15 @@
+@charset 'utf-8';
+@import 'mixin';
+
+/** 문화재현황 > 웹VR */
+.subVisual{
+    &--status{
+        background-image:url('../image/sub/img-subVisual--01.jpg');
+        background-position:center 0;
+    }
+}
+
+// responsive
+@include media-breakpoint-down(n-md){ //1024
+    
+}

@@ -1,0 +1,43 @@
+@use "../helper";
+
+
+/* button */ 
+.button{
+    &-wrap{
+        @include display-flex;
+        justify-content: flex-end;
+        //margin: -.15rem;
+        button{
+            width: 11.3rem;
+            height: 4.3rem;
+            font-size: 1.6rem;
+            color: #ffffff;
+            &+button{
+                margin-left: .3rem;
+            }
+            &.button{
+                &-border{
+                    color:#555555;
+                    background: #f9f9f9;
+                    border:1px solid #cccccc;
+                }
+                &-gray{
+                    background: #aeaeae;
+                }
+                &-deepgray{
+                    background: #6a6a6a;
+                }
+                &-green{
+                    background: #3f8501;
+                    
+                }
+            }
+            &.w{
+                &-auto{
+                    padding:0 3.38rem;
+                }
+            }
+        }
+    }
+}
+

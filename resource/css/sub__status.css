@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/** 문화재현황 > 웹VR */
+.subVisual--status {
+  background-image: url("../image/sub/img-subVisual--01.jpg");
+  background-position: center 0;
+}

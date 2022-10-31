@@ -1,0 +1,21 @@
+@charset 'utf-8';
+@import 'mixin';
+
+/** 재단소개 > 공지사항 */
+.subVisual{
+    &--info{
+        background-image:url('../image/sub/img-subVisual--06.jpg');
+        background-position:center 0;
+    }
+}
+
+
+// 
+@include media-breakpoint-down(n-sm){ //768
+    .subVisual{
+        &--info{
+            background-image:url('../image/sub/img-subVisual--06_m.png');
+            background-position:center 0;
+        }
+    }
+}

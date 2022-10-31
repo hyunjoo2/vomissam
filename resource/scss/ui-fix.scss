@@ -1,0 +1,154 @@
+@charset 'utf-8';
+@import 'mixin';
+
+// margin
+.m{
+    &r{
+        &-auto{
+            margin-right:auto;
+        }
+    }
+    &l{
+        &-auto{
+            margin-left:auto;
+        }
+        &-10{
+            margin-left:10px;
+        }
+        &-20{
+            margin-left:20px;
+        }
+        &-30{
+            margin-left:30px;
+        }
+    }
+    &t{
+        &-10{
+            margin-top:10px;
+        }
+        &-20{
+            margin-top:20px;
+        }
+        &-30{
+            margin-top:30px;
+        }
+        &-40{
+            margin-top:40px;
+        }
+        &-45{
+            margin-top:45px;
+        }
+        &-50{
+            margin-top:50px;
+        }
+        &-60{
+            margin-top:60px;
+        }
+        &-80{
+            margin-top:80px;
+        }
+    }
+    &b{
+        &-60{
+            margin-bottom:60px;
+        }
+        &-120{
+            margin-bottom:120px;
+        }
+    }
+}
+
+//font
+.txt{
+    &-depth{
+        &--01{
+            font-size:24px
+        }
+        &--02{
+            font-size:22px
+        }
+        &--03{
+            font-size:20px
+        }
+        &--04{
+            font-size:18px
+        }
+        &--05{
+            font-size:16px
+        }
+        &--06{
+            font-size:14px
+        }
+        &--07{
+            font-size:12px
+        }
+    }
+}
+.font{
+    &-weight{
+        &__r{
+            font-weight: 500;
+        }
+    }
+}
+
+//background-color
+.bg{
+    &-gray{
+        background-color:#f8f8f8;
+    }
+}
+
+// responsive
+@include media-breakpoint-down(n-ml){ //1400
+    //margin
+    .m{
+        &t{
+            &-20{
+                margin-top:2rem;
+            }
+            &-30{
+                margin-top:3rem;
+            }
+            &-40{
+                margin-top:4rem;
+            }
+            &-50{
+                margin-top:5rem;
+            }
+            &-60{
+                margin-top:6rem;
+            }
+            &-80{
+                margin-top:8rem;
+            }
+        }
+    }
+
+    //font
+    .txt{
+        &-depth{
+            &--01{
+                font-size:2.4rem
+            }
+            &--02{
+                font-size:2.2rem
+            }
+            &--03{
+                font-size:2.0rem
+            }
+            &--04{
+                font-size:1.8rem
+            }
+            &--05{
+                font-size:1.6rem
+            }
+            &--06{
+                font-size:1.4rem
+            }
+            &--07{
+                font-size:1.2rem
+            }
+        }
+    }
+}
