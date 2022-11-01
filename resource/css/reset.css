@@ -20,10 +20,10 @@ time, mark, audio, video, button, input, textarea {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 18px;
 	font-family: 'notokr', sans-serif;
 	/* font-family: 'Noto Sans CJKR', sans-serif !important; */
-	font-weight:300;
+	font-weight:400;
     font-style:normal;
     vertical-align: baseline;
 }

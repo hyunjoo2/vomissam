@@ -10,17 +10,17 @@
 */
 @media (min-width: 320px) {
   html {
-    font-size: 42.5%;
+    font-size: 20.8333333333%;
   }
 }
 @media (min-width: 576px) {
   html {
-    font-size: 47.5%;
+    font-size: 31.25%;
   }
 }
 @media (min-width: 768px) {
   html {
-    font-size: 55.5%;
+    font-size: 52.0833333333%;
   }
 }
 @media (min-width: 1024px) {

@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import 'mixin';
+@import './helper/mixin';
 
 //custom
 /* ========== reponsive =========== */
@@ -14,14 +14,14 @@
 */
 
 html{
-    @include mobileS{
-        font-size:42.5%;
+    @include mobileS{ //320px
+        font-size:calc(62.5% / 3);
     }
-    @include mobileL{
-        font-size:47.5%;
+    @include mobileL{ //576px
+        font-size:calc(62.5% / 2);
     }
-    @include tablet{
-        font-size:55.5%;
+    @include tablet{ //768px
+        font-size:calc(62.5% / 1.2);
     }
     @include labtop{
         font-size:62.5%;
