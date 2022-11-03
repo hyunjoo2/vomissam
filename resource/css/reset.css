@@ -38,9 +38,9 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-body {
+/* body {
     line-height: 1;
-}
+} */
 
 ol, ul, li {
     list-style: none;

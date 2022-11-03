@@ -15,7 +15,7 @@
 
 html{
     @include mobileS{ //320px
-        font-size:calc(62.5% / 3);
+        font-size:calc(62.5% / 4);
     }
     @include mobileL{ //576px
         font-size:calc(62.5% / 2);

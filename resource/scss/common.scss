@@ -1,4 +1,4 @@
-@import './helper/mixin','responsive';
+@import './helper/mixin';
 
 #skipNavigation {
     position: absolute;
@@ -25,6 +25,15 @@
             box-sizing: border-box;
         }
     }
+}
+
+/* 공통 */ 
+html, body, .wrap{
+    height:100%;
+}
+.wrap{
+    display: flex;
+    flex-direction: column
 }
 
 /** header */
@@ -82,5 +91,105 @@
             background: url(../image/common/icon-hamberger.png);
             background-size: 7.8rem 6.8rem;
         }
+    }
+}
+
+.container{
+    flex: 1;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+    }
+}
+
+/** quick-menu */ 
+.quick-menu{
+    position: fixed;
+    // bottom: -32.6rem;
+    bottom: 0;
+    width:100%;
+    margin-top: auto;
+    z-index: 1;
+    &.is-show{
+        bottom: 0;
+    }
+    &__inner{
+        display: flex;
+        height: 32.6rem;
+        margin-top: 13rem;
+        background: #ffffff;
+        border-radius: 6rem 6rem 0 0;
+        box-shadow: 1.2rem 1.2rem 5.4rem rgba(0,0,0,0.08);
+    }
+    &__button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex:1;
+        font : {
+            size: 4.8rem;
+            weight:500;
+        }
+        color:#76798e;
+        background: no-repeat ;
+        i{
+            display: block;
+            width: 100%;
+            height: 11.5rem;
+            background: no-repeat center;
+        }
+        &--enroll{
+            i{
+                background-image: url(../image/common/icon-quickmenu01.png);
+                background-size: 6.9rem 11.6rem;
+            }
+            
+        }
+        &--pay{
+            i{
+                background-image: url(../image/common/icon-quickmenu02__on.png);
+                background-size: 9.7rem 6.1rem;
+            }
+            
+        }
+        &--customer{
+            i{
+                background-image: url(../image/common/icon-quickmenu03.png);
+                background-size: 8.2rem 9.8rem;
+            }
+            
+        }
+        &--my{
+            i{
+                background-image: url(../image/common/icon-quickmenu04.png);
+                background-size: 8.6rem 8.9rem;
+            }
+            
+        }
+        &-text{
+            margin-top: 3rem;
+            font : {
+                size: 4.8rem;
+                weight:500;
+            }
+            line-height: 100%;
+        }
+        &.is-active{
+            .quick-menu__button-text{
+                color:#3c50a2;
+                font-weight: 600;
+            }
+            
+        }
+    }
+}
+
+
+/* footer */ 
+.footer{
+    &__inner{
+        margin-top: 45.5rem;
     }
 }

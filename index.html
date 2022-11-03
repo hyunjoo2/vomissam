@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>보미쌤</title>
-    <link type="text/css" rel="stylesheet" href="./resource/css/reset.css">
-    <link type="text/css" rel="stylesheet" href="./resource/css/common.css">
-    <link type="text/css" rel="stylesheet" href="./resource/css/ux-common.css">
-    <link type="text/css" rel="stylesheet" href="./resource/css/main.css">
 
-    <link type="text/css" rel="stylesheet" href="./resource/css/swiper.min.css">
+    <link rel="stylesheet" href="./resource/css/reset.css">
+    <link rel="stylesheet" href="./resource/css/font.css">
+    <link rel="stylesheet" href="./resource/css/common.css">
+
+    <link rel="stylesheet" href="./resource/css/lib/swiper.min.css">
+    <link rel="stylesheet" href="./resource/css/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./resource/css/ux-common.css">
+    <link rel="stylesheet" href="./resource/css/main.css">
+
+
+    
     
 
     <script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="./resource/js/main.js"></script>
-    <script type="text/javascript" src="./resource/js/common.js"></script>
-    <script type="text/javascript" src="./resource/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="./resource/js/include.js"></script>
+    <script type="text/javascript" src="./resource/js/common.js"></script>
+    <script type="text/javascript" src="./resource/js/main.js"></script>
+    
+    
+    
 </head>
 <body>
     <div class="wrap">
@@ -32,20 +43,104 @@
         <!-- [include] header -->
         <header data-include-file="./include/header.html" class="header-wrap js-include"></header>
         <!-- //[include] header -->
-
         <!-- //header -->
+
+
         <!-- container -->
         <div class="container container-main">
+
             <div class="container__inner">
+
+                <div class="container-core">
+                    <div class="container-core__inner">
+
+                        <section class="care-service">
+                            <div class="care-service__inner">
+                                <div class="care-service__now">
+                                    <div class="care-service-icon__list">
+                                        <div class="care-service-icon"></div>
+                                        <div class="care-service-icon"></div>
+                                        <div class="care-service-icon"></div>
+                                    </div>
+                                    <div class="care-service__text1">현재 이용 중인 간병서비스가 없습니다.</div>
+                                    <div class="care-service__text2">간병서비스를 신청하시려면 아래 버튼을 터치해 주세요.</div>
+                                </div>
+                                <div class="care-service__buttons">
+                                    <button class="care-service__button">
+                                        간병 신청하기
+                                    </button>
+                                </div>
+                            </div>
+                        </section>   
+
+                        <section class="video-area">
+                            <div class="video-area__inner">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            비디오1
+                                        </div>
+                                        <div class="swiper-slide">
+                                            비디오2
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section> 
+
+                        <section class="look-service">
+                            <div class="look-service__inner swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div>컨텐츠1</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div>컨텐츠2</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                       <div>컨텐츠3</div>
+                                   </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
 
                 
             </div>
+
         </div>
         <!-- //container -->
+
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <button type="button" class="quick-menu__button quick-menu__button--enroll ">
+                    <i></i>
+                    <span class="quick-menu__button-text">간병신청</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--pay is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text">결제관리</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--customer">
+                    <i></i>
+                    <span class="quick-menu__button-text">고객센터</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text">내정보관리</span>
+                </button>
+            </div>
+        </section>
+
+
+
         <!-- footer -->
-        <footer>
-            footer
-        </footer>
+        <!-- [include] footer -->
+        <footer data-include-file="./include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
         <!-- //footer -->
 
         
@@ -53,4 +148,40 @@
     </div>
 
 </body>
+<script>
+    // var lastScrollTop = 0;
+    // var delta = 5;
+    // var fixBox = document.querySelector('.quick_menu');
+    // var fixBoxHeight = fixBox.offsetHeight;
+    // var didScroll;
+    // //스크롤 이벤트 
+    // window.onscroll = function(e) {
+    //     didScroll = true;
+    // };
+
+    // //0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
+    // setInterval(function(){
+    //     if(didScroll){
+    //         hasScrolled();
+    //         didScroll = false;
+    //     }
+    // }, 250);
+
+    // function hasScrolled(){
+    //     var nowScrollTop = window.scrollY;
+    //     if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
+    //         return;
+    //     }
+    //     if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
+    //         //Scroll down
+    //         fixBox.classList.remove('is-show');
+    //     }else{
+    //         if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
+    //             //Scroll up
+    //             fixBox.classList.add('is-show');
+    //         }
+    //     }
+    //     lastScrollTop = nowScrollTop;
+    // }
+</script>
 </html>
