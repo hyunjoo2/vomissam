@@ -1,104 +1,20 @@
-
 @import './helper/mixin';
 
-.sch{
-    &-form{
-        &__btn{
-            flex:none;
-            width:50px;
-            background:#4568a9 url('../image/common/icon/icon-sch.png') no-repeat center center;
-        }
+
+.ui-button{
+   &--icon{
+    &::after{
+        display: inline-block;
+        content:""
     }
+   }
 }
-.btn{
-    &-wrap{
-        .btn{
-            width: 13.2rem;
-            height:5.4rem;
-            border-radius: 0;
-            &--width{
-                &-auto{
-                    width:auto;
-                    padding:0 2rem;
-                }
-                &-260{
-                    width:26rem !important;
-                }
-            }
-            &--height{
-                &-100{
-                    height:10rem;
-                }
-            }
-        }
-        display:flex;
-        &--center{
-            justify-content:center;
-            .btn{
-                width: 13.2rem;
-                &+.btn{
-                    margin-left: .5rem;
-                }
-            }
-        }
-        &--absolute{
-            position: absolute;
-        }
-    }
-    &--list{
-        width:132px;
-        height:54px;
-        background-color:#4568a9;
-        color:#fff;
-        font-size:18px;
-        font-weight:400;
-        &:hover{
-            background-color:#4568a9;
-            color:#fff;
-        }
-    }
-    &--download{
-        width:117px;
-        height:40px;
-        padding-left:30px;
-        color:#4568a9;
-        font-size:16px;
-        border:1px solid #4568a9;
-        background:#fff url(../image/common/icon/icon-download.png) no-repeat 20px center
-    }
-    &--border{
-        &-color{
-            &-gray{
-                width: 14.4rem;
-                height:5.4rem;
-                font: {
-                    size:1.8rem;
-                    weight:500;
-                }
-                border:1px solid #d2d5dc;
-                color:#000000;
-            }
-        }
-    }
-    &--radius{
-        width: 19rem;
-        height: 5.6rem;
-        border-radius: 2rem 0 2rem 0;
-    }
-    &--color{
-        &-aliceblue{
-            background: #8daae0;
-            color:#ffffff;
-            font-size: 1.8rem;
-        }
-    }
-    
-    &-ps{
-        font: {
-            size:1.6rem;
-            weight:100;
-        }
-    }
+
+.button-plus{
+    width: 3.4rem;
+    height: 3.4rem;
+    background: url(../image/common/icon/icon-plus.png);
+    background-size: 3.4rem;
 }
 
 @include media-breakpoint-down(n-md){ //1024

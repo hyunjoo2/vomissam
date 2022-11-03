@@ -1,43 +1,43 @@
-@use "../helper";
+@import './helper/mixin';
 
 
-/* button */ 
-.button{
-    &-wrap{
-        @include display-flex;
-        justify-content: flex-end;
-        //margin: -.15rem;
-        button{
-            width: 11.3rem;
-            height: 4.3rem;
-            font-size: 1.6rem;
-            color: #ffffff;
-            &+button{
-                margin-left: .3rem;
-            }
-            &.button{
-                &-border{
-                    color:#555555;
-                    background: #f9f9f9;
-                    border:1px solid #cccccc;
-                }
-                &-gray{
-                    background: #aeaeae;
-                }
-                &-deepgray{
-                    background: #6a6a6a;
-                }
-                &-green{
-                    background: #3f8501;
-                    
-                }
-            }
-            &.w{
-                &-auto{
-                    padding:0 3.38rem;
-                }
-            }
+.ui-button{
+   &--icon{
+    &::after{
+        display: inline-block;
+        content:""
+    }
+   }
+}
+
+.button-plus{
+    width: 3.4rem;
+    height: 3.4rem;
+    background: url(../image/common/icon/icon-plus.png);
+}
+
+@include media-breakpoint-down(n-md){ //1024
+    .btn{
+        &--download{
+            width:11.7rem;
+            height:4rem;
+            padding-left:3rem;
+            font-size:1.6rem;
+            background-size:1.8rem 1.8rem;
+            background-position:2rem center;
         }
+        &--list{
+            width:13.2rem;
+            height:5.4rem;
+            font-size:1.8rem;
+        }
+        
     }
 }
+@include media-breakpoint-down(n-sm){ //768px
+    .btn-wrap .btn{
+        font-size: 14px;
+    }
+}
+
 
