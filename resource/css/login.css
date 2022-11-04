@@ -1,0 +1,27 @@
+@keyframes wave {
+  0% {
+    opacity: 0;
+    background-position: left center;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    background-position: right center;
+    opacity: 0.4;
+  }
+}
+.container-login {
+  background: url(../image/common/bg-login.jpg);
+  background-size: cover;
+}
+
+.login-first {
+  height: 100%;
+  padding: 27.5rem 5rem 5rem;
+}
+.login-first__title {
+  font-size: 13rem;
+  text-align: center;
+  line-height: 18.6rem;
+}

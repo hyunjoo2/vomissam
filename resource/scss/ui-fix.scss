@@ -98,6 +98,9 @@
     }
 }
 
+//color
+$color-blue : #3c50a2;
+
 // responsive
 @include media-breakpoint-down(n-ml){ //1400
     //margin

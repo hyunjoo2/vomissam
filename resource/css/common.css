@@ -102,13 +102,19 @@ html, body, .wrap {
 /** quick-menu */
 .quick-menu {
   position: fixed;
-  bottom: 0;
+  bottom: -32.6rem;
   width: 100%;
   margin-top: auto;
   z-index: 1;
+  transition: all 0.1s;
 }
 .quick-menu.is-show {
   bottom: 0;
+  transition: all 0.1s;
+}
+.quick-menu.is-fix {
+  bottom: 0;
+  transition: all 0.1s;
 }
 .quick-menu__inner {
   display: flex;

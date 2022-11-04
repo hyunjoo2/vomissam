@@ -1,0 +1,13 @@
+@keyframes wave {
+    0% {
+        opacity: 0.0;
+        background-position: left center;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        background-position: right center;
+        opacity: .4;
+    }
+}

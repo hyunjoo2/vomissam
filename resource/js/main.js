@@ -1,18 +1,28 @@
 $(document).ready(function () {
-    videoArea();
-    lookServiceSwiper();
-    
+  introSlide();
+  videoArea();
+  lookServiceSwiper();
+
 
 });
-function videoArea() {
-  var mainswiper = new Swiper(".video-area__inner.swiper-container", {
-  }); 
+
+function introSlide() {
+  var introSlide = new Swiper(".intro-slide.swiper-container", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 }
+
+function videoArea() {
+  var mainswiper = new Swiper(".video-area__inner.swiper-container", {});
+}
+
 function lookServiceSwiper() {
-    var mainswiper = new Swiper(".look-service__inner.swiper-container", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      },
-    }); 
+  var mainswiper = new Swiper(".look-service__inner.swiper-container", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+  });
 }
