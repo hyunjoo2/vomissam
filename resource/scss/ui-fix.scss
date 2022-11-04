@@ -100,6 +100,9 @@
 
 //color
 $color-blue : #3c50a2;
+.color-blue{
+    color: $color-blue;
+}
 
 // responsive
 @include media-breakpoint-down(n-ml){ //1400

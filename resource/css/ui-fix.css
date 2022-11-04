@@ -74,6 +74,10 @@
   background-color: #f8f8f8;
 }
 
+.color-blue {
+  color: #3c50a2;
+}
+
 @media (max-width: 1400px) {
   .mt-20 {
     margin-top: 2rem;

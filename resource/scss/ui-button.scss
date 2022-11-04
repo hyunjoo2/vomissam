@@ -2,20 +2,10 @@
 
 
 .ui-button{
-   &--icon{
-    &::after{
-        display: inline-block;
-        content:""
-    }
-   }
+   border-radius: 2rem;
 }
 
-.button-plus{
-    width: 3.4rem;
-    height: 3.4rem;
-    background: url(../image/common/icon/icon-plus.png);
-    background-size: 3.4rem;
-}
+
 
 @include media-breakpoint-down(n-md){ //1024
     .btn{
