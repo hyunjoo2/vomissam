@@ -217,29 +217,25 @@
   margin-top: 16rem;
 }
 .login-first__bottom--bottom-text {
+  display: flex;
+  align-items: center;
   position: relative;
-  text-align: center;
   margin-bottom: 9rem;
+  font-size: 4.4rem;
+  text-align: center;
+}
+.login-first__bottom--bottom-text::before, .login-first__bottom--bottom-text::after {
+  display: inline-block;
+  flex: 1;
+  height: 1px;
+  background: #000000;
+  content: "";
 }
 .login-first__bottom--bottom-text::before {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 25%;
-  height: 1px;
-  background: #000000;
-  transform: translateY(-50%);
-  content: "";
+  margin-right: 5rem;
 }
 .login-first__bottom--bottom-text::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 25%;
-  height: 1px;
-  background: #000000;
-  transform: translateY(-50%);
-  content: "";
+  margin-left: 5rem;
 }
 .login-first__bottom--bottom .button-wrap {
   display: flex;
@@ -256,11 +252,12 @@
 }
 .login-first__bottom--bottom .button-google::before {
   display: inline-block;
-  width: 5.6rem;
-  height: 5.1rem;
+  flex: none;
+  width: 8.5rem;
+  height: 5.5rem;
   margin-right: 4rem;
   background: url(../image/common/icon-google.png);
-  background-size: 5.6rem 5.1rem;
+  background-size: 8.5rem 5.5rem;
   vertical-align: middle;
   content: "";
 }

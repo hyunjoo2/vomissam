@@ -121,16 +121,8 @@
     font-size: 1.2rem;
   }
 }
-.ui-button--icon::after {
-  display: inline-block;
-  content: "";
-}
-
-.button-plus {
-  width: 3.4rem;
-  height: 3.4rem;
-  background: url(../image/common/icon/icon-plus.png);
-  background-size: 3.4rem;
+.ui-button {
+  border-radius: 2rem;
 }
 
 @media (max-width: 1024px) {
