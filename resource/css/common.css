@@ -89,6 +89,17 @@ html, body, .wrap {
   background: url(../image/common/icon-hamberger.png);
   background-size: 7.8rem 6.8rem;
 }
+.header-title__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.page-back__inner {
+  height: 100%;
+}
 
 .container {
   flex: 1;
@@ -98,11 +109,14 @@ html, body, .wrap {
   flex-direction: column;
   height: 100%;
 }
+.container-core {
+  height: 100%;
+}
 
 /** quick-menu */
 .quick-menu {
   position: fixed;
-  bottom: -32.6rem;
+  bottom: 0;
   width: 100%;
   margin-top: auto;
   z-index: 1;

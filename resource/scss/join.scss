@@ -1,0 +1,12 @@
+@import './helper/index';
+
+
+.join{
+    &-top{
+        margin-top: 14rem;
+        margin-bottom: 13rem;
+        .img-wrap{
+            text-align: center;
+        }
+    }
+}

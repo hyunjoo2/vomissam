@@ -20,7 +20,7 @@ time, mark, audio, video, button, input, textarea {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 18px;
+    font-size: 6rem;
 	font-family: 'notokr', sans-serif;
 	/* font-family: 'Noto Sans CJKR', sans-serif !important; */
 	font-weight:400;
@@ -28,7 +28,7 @@ time, mark, audio, video, button, input, textarea {
     line-height: 100%;
     vertical-align: baseline;
 }
-select{-webkit-appearance: none;appearance: none;-moz-appearance: none;background: url('../images/common/search_select_arrow.png') no-repeat right 18px center;color: #888888;}
+select{-webkit-appearance: none;appearance: none;-moz-appearance: none;background: url('../images/common/search_select_arrow.png') no-repeat right 6rem center;color: #888888;}
 select::-ms-expand {display:none}
 input, select{height: 45px;padding: 0;margin: 0;border: 1px solid #c4c4c4;box-sizing: border-box;color: #000;font-size: 17px;vertical-align: middle;line-height: 43px;text-indent: 1.2rem; -webkit-appearance: none;-webkit-border-radius: 0;}
 legend{font-size: 0;text-indent: -100000px;left: -10000px;top: auto;height: 0;overflow: hidden;}

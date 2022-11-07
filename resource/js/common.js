@@ -26,7 +26,7 @@ $(function(){
             return;
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
-            $('.quick-menu').removeClass('is-show');
+            $('.quick-menu').removeClass('is-show').css("bottom","0rem");
 
             if(st == $(document).height() - $(window).height()){
                 $('.quick-menu').addClass('is-fix');
@@ -37,7 +37,7 @@ $(function(){
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.quick-menu').removeClass('is-fix').addClass('is-show');
+                $('.quick-menu').removeClass('is-fix').addClass('is-show').css("bottom","-32.6rem");
             }
         }
         
