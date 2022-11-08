@@ -1,11 +1,11 @@
 
 
 $(function(){
-    // Hide Header on on scroll down
+    // 
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('header').outerHeight();
+    var quickBarHeight = $('.quick-menu').outerHeight();
 
     $(window).scroll(function(event){
         didScroll = true;
@@ -16,7 +16,7 @@ $(function(){
             hasScrolled();
             didScroll = false;
         }
-    }, 250);
+    }, 100);
 
     function hasScrolled() {
         var st = $(this).scrollTop();
@@ -24,12 +24,12 @@ $(function(){
         // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
-        if (st > lastScrollTop && st > navbarHeight){
+        if (st > lastScrollTop && st > quickBarHeight){
             // Scroll Down
-            $('.quick-menu').removeClass('is-show').css("bottom","0rem");
+            $('.quick-menu').removeClass('is-fix').addClass('is-show').css("bottom","-32.6rem");
 
             if(st == $(document).height() - $(window).height()){
-                $('.quick-menu').addClass('is-fix');
+                $('.quick-menu').addClass('is-fix').css("bottom","0");
                 
             } else {
                 //아닐때 이벤트
@@ -37,7 +37,8 @@ $(function(){
         } else {
             // Scroll Up
             if(st + $(window).height() < $(document).height()) {
-                $('.quick-menu').removeClass('is-fix').addClass('is-show').css("bottom","-32.6rem");
+                $('.quick-menu').removeClass('is-show').css("bottom","0rem");
+                
             }
         }
         

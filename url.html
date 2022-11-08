@@ -1,595 +1,631 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>보미쌤</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <title>보미쌤</title>
 
- 
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- style -->
-    <style>
-      body {
-        margin: 0;
+
+
+  <!-- style -->
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .is-emphasis {
+      font-weight: 700;
+      color: #ff706e;
+    }
+
+    .index-wrap {
+      box-sizing: border-box;
+      /* min-width: 1900px; */
+      width: 100%;
+      padding: 20px;
+    }
+
+    .index-title {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 0 20px;
+    }
+
+    .index-links:before {
+      content: '';
+      display: table;
+    }
+
+    .index-links__inner {
+      margin: -10px 0 0 -10px;
+    }
+
+    .index-links__inner:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .index-links a {
+      display: block;
+      margin: 10px 0 0 10px;
+      float: left;
+      padding: 5px 15px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      background: #666;
+    }
+
+    .index-gnb {
+      margin: 20px 0;
+    }
+
+    .index-bottom {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      min-width: 1900px;
+      box-sizing: border-box;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .index-bottom a {
+      background-color: #3c50a2;
+    }
+
+    .index-section {
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .index-section+.index-section {
+      margin-top: 20px;
+    }
+
+    .index-section--clicked {
+      -webkit-animation: index-section-clicked 0.8s linear;
+      animation: index-section-clicked 0.8s linear;
+    }
+
+    @-webkit-keyframes index-section-clicked {
+      0% {
+        background-color: rgba(255, 255, 255, 1);
       }
 
-      .is-emphasis {
-        font-weight: 700;
-        color: #ff706e;
+      30% {
+        background-color: rgba(255, 202, 222, 1);
       }
 
-      .index-wrap {
-        box-sizing: border-box;
-        min-width: 1900px;
-        padding: 20px;
+      70% {
+        background-color: rgba(255, 202, 222, 1);
       }
 
-      .index-title {
-        font-size: 30px;
-        line-height: 40px;
-        margin: 0 0 20px;
+      100% {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    @keyframes index-section-clicked {
+      0% {
+        background-color: rgba(255, 255, 255, 1);
       }
 
-      .index-links:before {
-        content: '';
-        display: table;
+      30% {
+        background-color: rgba(255, 202, 222, 1);
       }
 
-      .index-links__inner {
-        margin: -10px 0 0 -10px;
+      70% {
+        background-color: rgba(255, 202, 222, 1);
       }
 
-      .index-links__inner:after {
-        content: '';
-        display: table;
-        clear: both;
+      100% {
+        background-color: rgba(255, 255, 255, 1);
       }
+    }
 
-      .index-links a {
-        display: block;
-        margin: 10px 0 0 10px;
-        float: left;
-        padding: 5px 15px;
-        font-size: 14px;
-        line-height: 20px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        background: #666;
-      }
+    .index-section__title {
+      margin: 0;
+      padding: 5px 15px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000;
+      border-radius: 5px 5px 0 0;
+      background: #ededed;
+    }
 
-      .index-gnb {
-        margin: 20px 0;
-      }
+    .index-table>table {
+      width: 100%;
+      /* table-layout: fixed; */
+      table-layout: auto;
+      margin: 0;
+      padding: 0;
+      border-spacing: 0;
+      box-sizing: border-box;
+    }
 
-      .index-bottom {
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        min-width: 1900px;
-        box-sizing: border-box;
-        padding: 10px 20px;
-        background: rgba(0, 0, 0, 0.4);
-      }
+    .index-table>table>thead>tr>th,
+    .index-table>table>tbody>tr>th,
+    .index-table>table>tbody>tr>td {
+      box-sizing: border-box;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+      padding: 5px 15px;
+      border: 0 solid #cdcdcd;
+      border-width: 0 1px 1px 0;
+      background: none;
+      word-break: keep-all;
+      word-wrap: break-word;
+    }
 
-      .index-bottom a {
-        background-color: #3c50a2;
-      }
+    .index-table>table>tbody>tr:hover>th,
+    .index-table>table>tbody>tr:hover>td {
+      background-color: #f6f6f6;
+    }
 
-      .index-section {
-        border-radius: 5px;
-        background-color: #fff;
-      }
+    .index-table>table>thead>tr>th:first-child,
+    .index-table>table>tbody>tr>th:first-child,
+    .index-table>table>tbody>tr>td:first-child {
+      border-left-width: 1px;
+    }
 
-      .index-section + .index-section {
-        margin-top: 20px;
-      }
+    .index-table>table>thead>tr>th {
+      border-top-width: 1px;
+    }
 
-      .index-section--clicked {
-        -webkit-animation: index-section-clicked 0.8s linear;
-        animation: index-section-clicked 0.8s linear;
-      }
+    .index-table>table>thead>tr>th,
+    .index-table>table>tbody>tr>th {
+      background-color: #e8e8e8;
+    }
 
-      @-webkit-keyframes index-section-clicked {
-        0% {
-          background-color: rgba(255, 255, 255, 1);
-        }
+    .index-table>table>tbody>tr:last-child>td:first-child {
+      border-radius: 0 0 0 5px;
+    }
 
-        30% {
-          background-color: rgba(255, 202, 222, 1);
-        }
+    .index-table>table>tbody>tr:last-child>td:last-child {
+      border-radius: 0 0 5px 0;
+    }
 
-        70% {
-          background-color: rgba(255, 202, 222, 1);
-        }
+    .index-status {
+      display: inline-block;
+      vertical-align: top;
+      padding: 3px 8px;
+      margin: -3px 0;
+      background: #999;
+      color: #fff;
+      border-radius: 5px;
+    }
 
-        100% {
-          background-color: rgba(255, 255, 255, 1);
-        }
-      }
+    .index-status--ing {
+      background-color: #ffb01a;
+    }
 
-      @keyframes index-section-clicked {
-        0% {
-          background-color: rgba(255, 255, 255, 1);
-        }
+    .index-status--end {
+      background-color: #4b62c3;
+    }
+    .index-status--design {
+      background-color: orange;
+    }
 
-        30% {
-          background-color: rgba(255, 202, 222, 1);
-        }
+    .index-status--moding {
+      background-color: #ff4594;
+    }
 
-        70% {
-          background-color: rgba(255, 202, 222, 1);
-        }
+    .index-status--moding {
+      background-color: #ff4594;
+    }
 
-        100% {
-          background-color: rgba(255, 255, 255, 1);
-        }
-      }
+    .index-log {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
-      .index-section__title {
-        margin: 0;
-        padding: 5px 15px;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000;
-        border-radius: 5px 5px 0 0;
-        background: #ededed;
-      }
+    .index-log__item {
+      position: relative;
+      padding-left: 80px;
+    }
 
-      .index-table > table {
-        width: 100%;
-        table-layout: fixed;
-        margin: 0;
-        padding: 0;
-        border-spacing: 0;
-        box-sizing: border-box;
-      }
+    .index-log__item__date {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
-      .index-table > table > thead > tr > th,
-      .index-table > table > tbody > tr > th,
-      .index-table > table > tbody > tr > td {
-        box-sizing: border-box;
-        font-size: 12px;
-        line-height: 18px;
-        text-align: left;
-        padding: 5px 15px;
-        border: 0 solid #cdcdcd;
-        border-width: 0 1px 1px 0;
-        background: none;
-        word-break: keep-all;
-        word-wrap: break-word;
-      }
+    .index-text {
+      margin-bottom: 20px;
+    }
 
-      .index-table > table > tbody > tr:hover > th,
-      .index-table > table > tbody > tr:hover > td {
-        background-color: #f6f6f6;
-      }
+    .index-type {
+      color: #2b5cd9;
+    }
+  </style>
+  <!-- //style -->
+</head>
 
-      .index-table > table > thead > tr > th:first-child,
-      .index-table > table > tbody > tr > th:first-child,
-      .index-table > table > tbody > tr > td:first-child {
-        border-left-width: 1px;
-      }
-
-      .index-table > table > thead > tr > th {
-        border-top-width: 1px;
-      }
-
-      .index-table > table > thead > tr > th,
-      .index-table > table > tbody > tr > th {
-        background-color: #e8e8e8;
-      }
-
-      .index-table > table > tbody > tr:last-child > td:first-child {
-        border-radius: 0 0 0 5px;
-      }
-
-      .index-table > table > tbody > tr:last-child > td:last-child {
-        border-radius: 0 0 5px 0;
-      }
-
-      .index-status {
-        display: inline-block;
-        vertical-align: top;
-        padding: 3px 8px;
-        margin: -3px 0;
-        background: #999;
-        color: #fff;
-        border-radius: 5px;
-      }
-
-      .index-status--ing {
-        background-color: #ffb01a;
-      }
-
-      .index-status--end {
-        background-color: #00a6a0;
-      }
-
-      .index-status--end2 {
-        font-size: 11px;
-        background-color: #008bce;
-      }
-
-      .index-status--moding {
-        background-color: #ff4594;
-      }
-
-      .index-log {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .index-log__item {
-        position: relative;
-        padding-left: 80px;
-      }
-
-      .index-log__item__date {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      .index-text {
-        margin-bottom: 20px;
-      }
-
-      .index-type {
-        color: #2b5cd9;
-      }
-    </style>
-    <!-- //style -->
-  </head>
-
-  <body>
-    <div class="index-wrap">
-      <h1 class="index-title"></h1>
-      <div class="index-gnb">
-        <div class="index-links">
-          <div class="index-links__inner">
-            <!-- <a href="./guide-component.html" target="_blank">컴포넌트 가이드</a> -->
-          </div>
+<body>
+  <div class="index-wrap">
+    <h1 class="index-title"></h1>
+    <div class="index-gnb">
+      <div class="index-links">
+        <div class="index-links__inner">
+          <!-- <a href="./guide-component.html" target="_blank">컴포넌트 가이드</a> -->
         </div>
       </div>
-      <div class="index-bottom">
-        <div class="index-links">
-          <div class="index-links__inner" id="nav"></div>
-        </div>
+    </div>
+    <div class="index-bottom">
+      <div class="index-links">
+        <div class="index-links__inner" id="nav"></div>
       </div>
-
-      <div class="index-datas" id="indexTable"></div>
     </div>
 
-    <div class="index-fake-botttom"></div>
+    <div class="index-datas" id="indexTable"></div>
+  </div>
 
-    <!-- script -->
-    <script type="text/javascript" src="./resource/js/jquery-1.12.4.min.js"></script>
-    <script>
-      var title = '보미쌤';
-      var tableData = [
-      
-        {
-          depth1: '공통',
-          data: [
-            {
-              num: '1.1.1',
-              depth2: '초기화면',
-              depth3: '',
-              depth4: '',
-              depth5: '',
-              depth6: '',
-              path: '/intro.html',
-              status: 'end',
-              create: '2022.11.04',
-              log: [
-				//{ date: '2022.11.12', text: '오타 수정' }
-			],
-            },
-			{
-              num: '1.2.1',
-              depth2: '회원가입/로그인',
-              depth3: '회원가입 메인 페이지',
-              depth4: '',
-              depth5: '',
-              depth6: '',
-              path: '/login.html',
-              status: 'end',
-              create: '2022.11.07',
-              log: [
-				//{ date: '2022.11.12', text: '오타 수정' }
-				],
-            },
-			{
-              num: '1.2.1',
-              depth2: '회원가입/로그인',
-              depth3: '본인 인증 (가입 여부 확인)',
-              depth4: '',
-              depth5: '',
-              depth6: '',
-              path: '/join.html',
-              status: 'end',
-              create: '2022.11.07',
-              log: [
-				//{ date: '2022.11.12', text: '오타 수정' }
-				],
-            },
-            
-          ],
-        },
-        {
-          depth1: '로그인 후 메인화면',
-          data: [
-            {
-              num: '1.1',
-              depth2: '',
-              depth3: '',
-              depth4: '',
-              depth5: '',
-              depth6: '',
-              path: './index.html',
-              status: '',
-              create: '',
-              log: [
-                //{ date: '2022.08.12', text: '',},
-                
+  <div class="index-fake-botttom"></div>
 
-                
-              ],
-            },
-           
-            
-          
+  <!-- script -->
+  <script type="text/javascript" src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script>
+    var title = '보미쌤';
+    var tableData = [
+
+      {
+        depth1: '공통',
+        data: [{
+            num: '1.1.1',
+            depth2: '초기화면',
+            depth3: '',
+            depth4: '',
+            depth5: '',
+            depth6: '',
+            path: 'intro.html',
+            status: 'end',
+            create: '2022.11.04',
+            log: [
+              //{ date: '2022.11.12', text: '오타 수정' }
+            ],
+          },
+          {
+            num: '1.2.1',
+            depth2: '회원가입/로그인',
+            depth3: '회원가입 메인 페이지',
+            depth4: '',
+            depth5: '',
+            depth6: '',
+            path: 'login.html',
+            status: 'end',
+            create: '2022.11.07',
+            log: [
+              //{ date: '2022.11.12', text: '오타 수정' }
+            ],
+          },
+          {
+            num: '1.2.1',
+            depth2: '회원가입',
+            depth3: '본인 인증 (가입 여부 확인)',
+            depth4: '',
+            depth5: '',
+            depth6: '',
+            path: 'join.html',
+            status: 'end',
+            create: '2022.11.07',
+            log: [
+              //{ date: '2022.11.12', text: '오타 수정' }
+            ],
+          },
+          {
+            num: '1.2.1',
+            depth2: '회원가입',
+            depth3: '다른 소셜 계정으로 가입한 경우',
+            depth4: '',
+            depth5: '',
+            depth6: '',
+            path: 'joinOtherSocial.html',
+            status: '',
+            create: '2022.11.08',
+            log: [
+              { date: '2022.11.08', text: '구글, 카카오의 경우 버튼 필요' }
+            ],
+          },
+
         ],
       },
-      ];
+      {
+        depth1: '로그인 후 메인화면',
+        data: [
+          {
+            num: '1.1',
+            depth2: 'Case 1. 간병 서비스 이용 전 상태인 고객',
+            depth3: '',
+            depth4: '',
+            depth5: '',
+            depth6: '',
+            path: './index.html',
+            status: '',
+            create: '',
+            log: [
+              //{ date: '2022.08.12', text: '',},
+            ],
+          },
+          {
+            num: '1.2',
+            depth2: 'Case 2. 간병 서비스 신청 중 (매칭 중)',
+            depth3: '',
+            depth4: '',
+            depth5: '',
+            depth6: '',
+            path: './indexCase2.html',
+            status: '',
+            create: '',
+            log: [
+              //{ date: '2022.08.12', text: '',},
+            ],
+          },
 
-      var html = '';
-      var navHTML = '';
-      var totalIndex = 0;
-      var dates = (function () {
-        var array = [];
 
-        function add(date) {
-          if (typeof date === 'string' && date.length && array.indexOf(date) === -1) {
-            array.push(date);
-          }
+
+        ],
+      },
+    ];
+
+    var html = '';
+    var navHTML = '';
+    var totalIndex = 0;
+    var dates = (function () {
+      var array = [];
+
+      function add(date) {
+        if (typeof date === 'string' && date.length && array.indexOf(date) === -1) {
+          array.push(date);
         }
-
-        $.each(tableData, function (i) {
-          var sectionData = tableData[i].data;
-          $.each(sectionData, function (j) {
-            add(this.create);
-            $.each(sectionData[j].log, function (l) {
-              add(this.date);
-            });
-          });
-        });
-
-        array.sort();
-
-        return array;
-      })();
-      var latestDate = dates[dates.length - 1];
-
-      $.each(tableData, function (i) {
-        var sectionIndex = i;
-        var sectionData = tableData[i].data;
-        var tableHTML = '';
-
-        $.each(sectionData, function (j) {
-          var returnVal = function (key, secondTestKey) {
-            var val = sectionData[j][key];
-            var secondTestVal = sectionData[j][secondTestKey];
-            var prevIndex = j - 1;
-            var isPrint = true;
-            if (prevIndex >= 0) {
-              if (sectionData[prevIndex][key] === val) {
-                isPrint = false;
-              }
-              if (typeof secondTestKey === 'string' && secondTestKey.length && !sectionData[j].depthOnly) {
-                if (sectionData[prevIndex][key] === val && sectionData[prevIndex][secondTestKey] === secondTestVal) {
-                  isPrint = false;
-                } else {
-                  isPrint = true;
-                }
-              }
-            }
-            return isPrint ? val.replace(/\n/g, '<br>') : '';
-          };
-          var num = returnVal('num');
-          //var type = returnVal('type', 'depth2');
-          var depth2 = returnVal('depth2');
-          var depth3 = returnVal('depth3');
-          var depth4 = returnVal('depth4');
-          var depth5 = returnVal('depth5');
-          var depth6 = returnVal('depth6');
-          var path = (function () {
-            var val = sectionData[j].path;
-            var href = '';
-            if (val.match(/^\.\//g)) {
-              href = val;
-            } else {
-              href = './' + val;
-            }
-            return val.length ? '<a href="' + href + '" target="_blank">' + val + '</a>' : '';
-          })();
-          var status = (function () {
-            var val = sectionData[j].status;
-            var text = '';
-            if (val === 'ing') {
-              text = '작업중';
-            } else if (val === 'end') {
-              text = '작업완료';
-            }
-
-            return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' : '';
-          })();
-          var create = this.create;
-          var update = '';
-          var log = (function () {
-            var val = sectionData[j].log;
-            var length = val.length;
-            var html = '<ul class="index-log">';
-            $.each(val, function (l) {
-              var date = this.date;
-              html += '<li class="index-log__item' + (date === latestDate ? ' is-emphasis' : '') + '"><div class="index-log__item__date">[' + date + ']</div>' + this.text.replace(/\n/g, '<br>') + '</li>';
-              if (length - 1 === l) {
-                update = date;
-              }
-            });
-            html += '</ul>';
-
-            return html;
-          })();
-
-          tableHTML +=
-            '<tr>' +
-            '<td>' +
-            (j + 1) +
-            '</td>' +
-            '<td>' +
-            num +
-            '</td>' +
-            //'<td class="index-type">' +
-            //type +
-            //'</td>' +
-            '<td>' +
-            depth2 +
-            '</td>' +
-            '<td>' +
-            depth3 +
-            '</td>' +
-            '<td>' +
-            depth4 +
-            '</td>' +
-            '<td>' +
-            depth5 +
-            '</td>' +
-            '<td>' +
-            depth6 +
-            '</td>' +
-            '<td>' +
-            path +
-            '</td>' +
-            '<td>' +
-            status +
-            '</td>' +
-            '<td class="' +
-            (create === latestDate ? ' is-emphasis' : '') +
-            '">' +
-            create +
-            '</td>' +
-            '<td class="' +
-            (update === latestDate ? ' is-emphasis' : '') +
-            '">' +
-            update +
-            '</td>' +
-            '<td>' +
-            log +
-            '</td>' +
-            '</tr>';
-
-          totalIndex++;
-        });
-
-        navHTML += '<a href="#section' + i + '">' + tableData[i].depth1 + '</a>';
-
-        html +=
-          '<div class="index-section" id="section' +
-          i +
-          '">' +
-          '<h2 class="index-section__title">' +
-          tableData[i].depth1 +
-          status +
-          '</h2>' +
-          '<div class="index-table">' +
-          '<table>' +
-          '<colgroup>' +
-          '<col width="50px" />' +
-          '<col width="160px" />' +
-          //'<col width="80px" />' +
-          '<col width="160px" />' +
-          '<col width="160px" />' +
-          '<col width="160px" />' +
-          '<col width="120px" />' +
-          '<col width="120px" />' +
-          '<col width="" />' +
-          '<col width="100px" />' +
-          '<col width="110px" />' +
-          '<col width="110px" />' +
-          '<col width="300px" />' +
-          '</colgroup>' +
-          '<thead>' +
-          '<tr>' +
-          '<th>No</th>' +
-          '<th>ID</th>' +
-          //'<th>type</th>' +
-          '<th>depth2</th>' +
-          '<th>depth3</th>' +
-          '<th>depth4</th>' +
-          '<th>depth5</th>' +
-          '<th>depth6</th>' +
-          '<th>path</th>' +
-          '<th>status</th>' +
-          '<th>create</th>' +
-          '<th>update</th>' +
-          '<th>log</th>' +
-          '</tr>' +
-          '</thead>' +
-          '<tbody>' +
-          tableHTML +
-          '</tbody>' +
-          '</table>' +
-          '</div>' +
-          '</div>';
-      });
-
-      $('title, .index-title').text(title);
-      $('#nav').append(navHTML);
-      $('#indexTable').append(html);
-
-      var $nav = $('.index-bottom');
-      var $doc = $(document);
-      var $win = $(window);
-
-      function paddingBottom() {
-        $('.index-fake-botttom').css('height', $nav.outerHeight());
       }
 
-      var clickedTimer = null;
-
-      $doc.on('click', '#nav a', function () {
-        var $this = $(this);
-        var href = $this.attr('href');
-        var $target = $(href);
-        var $sections = $('.index-section');
-
-        $sections.removeClass('index-section--clicked');
-
-        clearTimeout(clickedTimer);
-
-        clickedTimer = setTimeout(function () {
-          $target.addClass('index-section--clicked');
-        }, 100);
+      $.each(tableData, function (i) {
+        var sectionData = tableData[i].data;
+        $.each(sectionData, function (j) {
+          add(this.create);
+          $.each(sectionData[j].log, function (l) {
+            add(this.date);
+          });
+        });
       });
 
-      $win
-        .on('scroll', function () {
-          var scrollLeft = $win.scrollLeft();
-          $nav.css('margin-left', -scrollLeft);
-        })
-        .on('resize', function () {
-          paddingBottom();
-        })
-        .on('load', function () {
-          paddingBottom();
-        });
-    </script>
-    <!-- //script -->
-  </body>
+      array.sort();
+
+      return array;
+    })();
+    var latestDate = dates[dates.length - 1];
+
+    $.each(tableData, function (i) {
+      var sectionIndex = i;
+      var sectionData = tableData[i].data;
+      var tableHTML = '';
+
+      $.each(sectionData, function (j) {
+        var returnVal = function (key, secondTestKey) {
+          var val = sectionData[j][key];
+          var secondTestVal = sectionData[j][secondTestKey];
+          var prevIndex = j - 1;
+          var isPrint = true;
+          if (prevIndex >= 0) {
+            if (sectionData[prevIndex][key] === val) {
+              isPrint = false;
+            }
+            if (typeof secondTestKey === 'string' && secondTestKey.length && !sectionData[j].depthOnly) {
+              if (sectionData[prevIndex][key] === val && sectionData[prevIndex][secondTestKey] ===
+                secondTestVal) {
+                isPrint = false;
+              } else {
+                isPrint = true;
+              }
+            }
+          }
+          return isPrint ? val.replace(/\n/g, '<br>') : '';
+        };
+        var num = returnVal('num');
+        //var type = returnVal('type', 'depth2');
+        var depth2 = returnVal('depth2');
+        var depth3 = returnVal('depth3');
+        var depth4 = returnVal('depth4');
+        var depth5 = returnVal('depth5');
+        var depth6 = returnVal('depth6');
+        var path = (function () {
+          var val = sectionData[j].path;
+          var href = '';
+          if (val.match(/^\.\//g)) {
+            href = val;
+          } else {
+            href = './' + val;
+          }
+          return val.length ? '<a href="' + href + '" target="_blank">' + val + '</a>' : '';
+        })();
+        var status = (function () {
+          var val = sectionData[j].status;
+          var text = '';
+          if (val === 'ing') {
+            text = '작업중';
+          } else if (val === 'end') {
+            text = '작업완료';
+          } else if (val === 'design') {
+            text = '디자인필요';
+          }
+
+          return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' :
+            '';
+        })();
+        var create = this.create;
+        var update = '';
+        var log = (function () {
+          var val = sectionData[j].log;
+          var length = val.length;
+          var html = '<ul class="index-log">';
+          $.each(val, function (l) {
+            var date = this.date;
+            html += '<li class="index-log__item' + (date === latestDate ? ' is-emphasis' : '') +
+              '"><div class="index-log__item__date">[' + date + ']</div>' + this.text.replace(/\n/g,
+                '<br>') + '</li>';
+            if (length - 1 === l) {
+              update = date;
+            }
+          });
+          html += '</ul>';
+
+          return html;
+        })();
+
+        tableHTML +=
+          '<tr>' +
+          '<td>' +
+          (j + 1) +
+          '</td>' +
+          '<td>' +
+          num +
+          '</td>' +
+          //'<td class="index-type">' +
+          //type +
+          //'</td>' +
+          '<td>' +
+          depth2 +
+          '</td>' +
+          '<td>' +
+          depth3 +
+          '</td>' +
+          '<td>' +
+          depth4 +
+          '</td>' +
+          '<td>' +
+          depth5 +
+          '</td>' +
+          '<td>' +
+          depth6 +
+          '</td>' +
+          '<td>' +
+          path +
+          '</td>' +
+          '<td>' +
+          status +
+          '</td>' +
+          '<td class="' +
+          (create === latestDate ? ' is-emphasis' : '') +
+          '">' +
+          create +
+          '</td>' +
+          '<td class="' +
+          (update === latestDate ? ' is-emphasis' : '') +
+          '">' +
+          update +
+          '</td>' +
+          '<td>' +
+          log +
+          '</td>' +
+          '</tr>';
+
+        totalIndex++;
+      });
+
+      navHTML += '<a href="#section' + i + '">' + tableData[i].depth1 + '</a>';
+
+      html +=
+        '<div class="index-section" id="section' +
+        i +
+        '">' +
+        '<h2 class="index-section__title">' +
+        tableData[i].depth1 +
+        status +
+        '</h2>' +
+        '<div class="index-table">' +
+        '<table>' +
+        '<colgroup>' +
+        '<col width="50px" />' +
+        '<col width="160px" />' +
+        //'<col width="80px" />' +
+        '<col width="160px" />' +
+        '<col width="160px" />' +
+        '<col width="160px" />' +
+        '<col width="120px" />' +
+        '<col width="120px" />' +
+        '<col width="" />' +
+        '<col width="100px" />' +
+        '<col width="110px" />' +
+        '<col width="110px" />' +
+        '<col width="300px" />' +
+        '</colgroup>' +
+        '<thead>' +
+        '<tr>' +
+        '<th>No</th>' +
+        '<th>ID</th>' +
+        //'<th>type</th>' +
+        '<th>depth2</th>' +
+        '<th>depth3</th>' +
+        '<th>depth4</th>' +
+        '<th>depth5</th>' +
+        '<th>depth6</th>' +
+        '<th>path</th>' +
+        '<th>status</th>' +
+        '<th>create</th>' +
+        '<th>update</th>' +
+        '<th>log</th>' +
+        '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+        tableHTML +
+        '</tbody>' +
+        '</table>' +
+        '</div>' +
+        '</div>';
+    });
+
+    $('title, .index-title').text(title);
+    $('#nav').append(navHTML);
+    $('#indexTable').append(html);
+
+    var $nav = $('.index-bottom');
+    var $doc = $(document);
+    var $win = $(window);
+
+    function paddingBottom() {
+      $('.index-fake-botttom').css('height', $nav.outerHeight());
+    }
+
+    var clickedTimer = null;
+
+    $doc.on('click', '#nav a', function () {
+      var $this = $(this);
+      var href = $this.attr('href');
+      var $target = $(href);
+      var $sections = $('.index-section');
+
+      $sections.removeClass('index-section--clicked');
+
+      clearTimeout(clickedTimer);
+
+      clickedTimer = setTimeout(function () {
+        $target.addClass('index-section--clicked');
+      }, 100);
+    });
+
+    $win
+      .on('scroll', function () {
+        var scrollLeft = $win.scrollLeft();
+        $nav.css('margin-left', -scrollLeft);
+      })
+      .on('resize', function () {
+        paddingBottom();
+      })
+      .on('load', function () {
+        paddingBottom();
+      });
+  </script>
+  <!-- //script -->
+</body>
+
 </html>

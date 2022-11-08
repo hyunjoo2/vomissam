@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보미쌤</title>
+
+    <link rel="stylesheet" href="./resource/css/reset.css">
+    <link rel="stylesheet" href="./resource/css/font.css">
+    <link rel="stylesheet" href="./resource/css/common.css">
+
+    <link rel="stylesheet" href="./resource/css/lib/swiper.min.css">
+    <link rel="stylesheet" href="./resource/css/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./resource/css/ux-common.css">
+    <link rel="stylesheet" href="./resource/css/main.css">
+
+
+    
+    
+
+    <script type="text/javascript" src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./resource/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="./resource/js/include.js"></script>
+    <script type="text/javascript" src="./resource/js/common.js"></script>
+    <script type="text/javascript" src="./resource/js/main.js"></script>
+    
+    
+    
+</head>
+<body>
+    <div class="wrap">
+        <!-- skipNavigation -->
+        <div id="skipNavigation" title="스킵내비게이션">
+            <a href="#nav">메뉴 바로가기</a>
+            <a href="#">본문 바로가기</a>
+        </div>
+        <!-- //skipNavigation -->
+
+        <!-- header -->
+        <!-- [include] header -->
+        <header data-include-file="./include/header.html" class="header-wrap js-include"></header>
+        <!-- //[include] header -->
+        <!-- //header -->
+
+
+        <!-- container -->
+        <div class="container container-main">
+
+            <div class="container__inner">
+
+                <div class="container-core">
+                    <div class="container-core__inner">
+
+                       <section class="index-case-box index-case-box__gray">
+                            <div class="index-case__title">간병 신청 현황</div>
+                            <div class="care-enroll-progress">
+                                <div class="care-enroll-progress__inner">
+                                    <!-- DD :: 진행중 일때 클래스에 is-active 붙고, 지나갔을떄는 is-past 붙습니다. -->
+                                    <div class="progress-step progress-step__matching is-past">매칭 중</div>
+                                    <div class="progress-step progress-step__waiting  is-active">간병 <br>대기 중</div>
+                                    <div class="progress-step progress-step__doing ">간병 중</div>
+                                    <div class="progress-step progress-step__end">간병 종료</div>
+                                </div>
+                            </div>
+                            <div class="care-enroll-info">
+                                <div class="care-enroll-info__inner">
+                                    <dl>
+                                        <dt class="care-enroll-info__title">병원명</dt>
+                                        <dd>신촌 세브란스 병원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>환자명</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>간병기간</dt>
+                                        <dd>2022.09.18 12시 ~ 2022.09.19 16시</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                       </section>
+
+                        <!-- 모달 -->
+                        <div class="modal fade" id="serviceEnroll" tabindex="-1" aria-labelledby="serviceEnrollLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                <div class="modal-content modal-content__email">
+                                    <div class="modal-body modal-body__main">
+                                        
+                                        
+                                        
+                                        <div class="modal-core">
+                                            <div class="modal-title">
+                                                보미쌤 간병 신청 시 <br>
+                                                꼭 필요한 사항에 대한 안내
+                                            </div>
+                                            <div class="modal-box__gray">
+                                                <ul class="ui-list-dashed">
+                                                    <li>보미쌤의 간병에 대한 Moto 등</li>
+                                                    <li>간병 신청 시 유의 사항</li>
+                                                    <li>보미쌤의 간병에 대한 Moto 등</li>
+                                                    <li>간병 신청 시 유의 사항</li>
+                                                </ul>
+                                                <div class="mt-80">간병비 정책</div>
+                                                <div class="mt-40">간병 신청 최소 기간 : 기간제 0일, 시간제 0일 <br>
+                                                    간병 신청 접수 가능일 : 간병 시작일로부터 3일 전<br>
+                                                    간병인의 중식비 포함<br>
+                                                    1개월 이상인 경우 주휴무일 정책.</div>
+                                                <div class="mt-80">등등 간병신청인이 알아야 할 사항 들….</div>
+                                            </div>
+                                            <div class="mt-60">
+                                                <div class="ui-checkbox__list">
+                                                    <div class="ui-checkbox__inner">
+                                                        <div class="ui-checkbox-block">
+                                                            <input type="checkbox" class="ui-checkbox" id="checkbox1">
+                                                            <label for="checkbox1" class="ui-label">
+                                                              <span class="ui-checkbox-object"></span>
+                                                              <span class="ui-label__text">약관 전체동의</span>
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="modal-buttons">
+                                            <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">간병 신청하기</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //모달 -->
+
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <button type="button" class="quick-menu__button quick-menu__button--enroll ">
+                    <i></i>
+                    <span class="quick-menu__button-text">간병신청</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--pay is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text">결제관리</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--customer">
+                    <i></i>
+                    <span class="quick-menu__button-text">고객센터</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text">내정보관리</span>
+                </button>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="./include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
+
+        
+
+    </div>
+
+</body>
+<script>
+    // var lastScrollTop = 0;
+    // var delta = 5;
+    // var fixBox = document.querySelector('.quick_menu');
+    // var fixBoxHeight = fixBox.offsetHeight;
+    // var didScroll;
+    // //스크롤 이벤트 
+    // window.onscroll = function(e) {
+    //     didScroll = true;
+    // };
+
+    // //0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
+    // setInterval(function(){
+    //     if(didScroll){
+    //         hasScrolled();
+    //         didScroll = false;
+    //     }
+    // }, 250);
+
+    // function hasScrolled(){
+    //     var nowScrollTop = window.scrollY;
+    //     if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
+    //         return;
+    //     }
+    //     if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
+    //         //Scroll down
+    //         fixBox.classList.remove('is-show');
+    //     }else{
+    //         if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
+    //             //Scroll up
+    //             fixBox.classList.add('is-show');
+    //         }
+    //     }
+    //     lastScrollTop = nowScrollTop;
+    // }
+</script>
+</html>

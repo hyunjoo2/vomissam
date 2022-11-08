@@ -165,9 +165,12 @@
             color:#333333;
         }
         .ui-button--icon__right{
+            height: auto;
             margin-top: auto;
             font-size: 4.2rem;
             line-height: 100%;
+            text-align: left;
+            color:#000000;
             &::after{
                 display: inline-block;
                 width:1.8rem;
@@ -355,3 +358,118 @@
     }
 }
 
+/* case2 */ 
+.care-enroll{
+    &-progress{
+        &__inner{
+            display: flex;
+        }
+    }
+}
+.index-case{
+    &-box{
+        padding: 11rem 5rem;
+        &__gray{
+            background: #f3f5fb;
+        }
+    }
+    &__title{
+        margin-bottom: 7rem;
+        font : {
+            size: 7.5rem;
+            weight:500;
+        }
+    }
+}
+.progress-step{
+    position: relative;
+    width: 31.1rem;
+    height: 35.9rem;
+    padding:5rem;
+    flex:1;
+    background-color: #e1e4ee;
+    background-repeat: no-repeat;
+    background-position: right 5rem bottom 5rem;
+    font : {
+        size: 5.5rem;
+        weight:500;
+    }
+    line-height:7rem;
+    color:#9196a5;
+    border-radius: 2rem;
+    box-sizing: border-box;
+    &+&{
+        margin-left: 3.2rem;
+    }
+    &__matching{
+        background-image: url(../image/main/icon-matching.png);
+        background-size: 9.1rem 8.7rem;
+    }
+    &__waiting{
+        background-image: url(../image/main/icon-waiting.png);
+        background-size: 6.5rem 8.7rem;
+    }
+    &__doing{
+        background-image: url(../image/main/icon-doing.png);
+        background-size: 9.4rem 8.9rem;
+    }
+    &__end{
+        background-image: url(../image/main/icon-end.png);
+        background-size: 9.3rem 8.1rem;
+    }
+    &::before{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: -2.2rem;
+        width: 2.6rem;
+        height: 4.3rem;
+        background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%23E1E4EE' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
+        background-size: 2.6rem 4.3rem;
+        transform: translateY(-50%);
+        content:''
+    }
+    &.is-active{
+        background-color: #4b62c3;
+        color:#ffffff;
+        box-shadow: 2rem 2rem 4rem rgba(67,76,133,.35);
+        &::before{
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%234b62c3' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
+        }
+        &.progress-step{
+            &__matching{
+                background-image: url(../image/main/icon-matching__active.png);
+            }
+            &__waiting{
+                background-image: url(../image/main/icon-waiting__active.png);
+            }
+            &__doing{
+                background-image: url(../image/main/icon-doing__active.png);
+            }
+            &__end{
+                background-image: url(../image/main/icon-end__active.png);
+            }
+        }
+    }
+    &.is-past{
+        background-color: #ffffff;
+        color:#2e439b;
+        &::before{
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
+        }
+        &.progress-step{
+            &__matching{
+                background-image: url(../image/main/icon-matching__past.png);
+            }
+            &__waiting{
+                background-image: url(../image/main/icon-waiting__past.png);
+            }
+            &__doing{
+                background-image: url(../image/main/icon-doing__past.png);
+            }
+            &__end{
+                background-image: url(../image/main/icon-end__past.png);
+            }
+        }
+    }
+}

@@ -204,15 +204,6 @@
 .login-first__bottom {
   margin-top: auto;
 }
-.login-first__bottom--top .button-kakao {
-  width: 100%;
-  height: 20rem;
-  font-size: 6rem;
-  font-weight: 500;
-  background: #fae100 url(../image/common/icon-kakao.png) no-repeat left 7rem center;
-  background-size: 9.9rem 9.1rem;
-  border-radius: 2rem;
-}
 .login-first__bottom--bottom {
   margin-top: 16rem;
 }
@@ -239,27 +230,6 @@
 }
 .login-first__bottom--bottom .button-wrap {
   display: flex;
-}
-.login-first__bottom--bottom .button-naver::before {
-  display: inline-block;
-  width: 5.6rem;
-  height: 5.1rem;
-  margin-right: 4rem;
-  background: url(../image/common/icon-naver.png);
-  background-size: 5.6rem 5.1rem;
-  vertical-align: middle;
-  content: "";
-}
-.login-first__bottom--bottom .button-google::before {
-  display: inline-block;
-  flex: none;
-  width: 8.5rem;
-  height: 5.5rem;
-  margin-right: 4rem;
-  background: url(../image/common/icon-google.png);
-  background-size: 8.5rem 5.5rem;
-  vertical-align: middle;
-  content: "";
 }
 .login-first__bottom--bottom button {
   display: flex;

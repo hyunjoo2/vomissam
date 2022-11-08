@@ -68,31 +68,34 @@
 
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
-                        <section class="join-top">
+                        <section class="joinSocial-top">
                             <div class="img-wrap">
-                                <img src="./resource/image/common/img-join.png" alt="" style="width:34.7rem; height:50.5rem;">
+                                <img src="./resource/image/common/img-alert.png" alt="" style="width:31.7rem; height:31rem;">
                             </div>
-                            <div class="sub-title">
-                                본인 인증
-                            </div>
-                        </section>
-                        <section class="join-bottom">
-                            <div class="form-item">
-                                <div class="form-title">이름</div>
-                                <div class="ui-form">
-                                    <input type="text" class="ui-input" value="이일화">
-                                </div>
-                            </div>
-                            <div class="form-item">
-                                <div class="form-title">휴대전화번호(필수)</div>
-                                <div class="ui-form ui-form__button">
-                                    <input type="text" class="ui-input" value="010-1234-5678">
-                                    <button type="submit" class="ui-button ui-button__certi" data-toggle="modal" data-target="#modalCerti">인증요청</button>
-                                </div>
+                            <div class="sub-title2">
+                                <span class="joinSocial-name">이일화</span> 회원님께서는 <br>
+                                이미 보미쌤에 가입하셨습니다.
                             </div>
                         </section>
+                        <section class="joinSocial-login">
+                            <button class="button-joinSocial button-joinSocial__naver">네이버 계정으로 로그인</button>
+                            <!-- <button class="button-joinSocial button-joinSocial__google">구글 계정으로 로그인</button>
+                            <button class="button-joinSocial button-joinSocial__kakao">카카오 계정으로 로그인</button> -->
+
+                            <div class="joinSocial-text">
+                                카카오 계정으로 가입을 진행하시려면 <br>
+                                아래의 <span class="color-blue font-weight__r">‘가입하기’</span> 버튼을 클릭하세요.    
+                            </div>
+                        </section>
+
+                        
+
+
                         <section class="page-bottom">
-                            <button type="button" class="ui-button ui-button__bg-blue">다음</button>
+                            <div class="ui-buttons">
+                                <button type="button" class="ui-button ui-button__border-gray ui-button__width-small">취소</button>
+                                <button type="button" class="ui-button ui-button__bg-blue">가입하기</button>
+                            </div>
                         </section>
 
 
@@ -104,7 +107,7 @@
                                     <div class="modal-body">
                                         
                                         <!-- 본인 인증 성공일때 case -->
-                                        <div class="modal-core">
+                                        <!-- <div class="modal-core">
                                             <div class="modal-text text-center mb-90">
                                                 본인 인증이 완료되었습니다.
                                             </div>
@@ -112,11 +115,11 @@
                                                 ‘확인’ 버튼을 누르시면  <br>
                                                 회원가입 화면으로 이동합니다.
                                             </div>
-                                        </div>
-                                        <!-- //본인 인증 성공일때 case -->
+                                        </div> -->
+                                        <!-- //본인 인증 성공일때 -->
 
-                                        <!-- 본인 인증 실패일때 case -->
-                                        <div class="modal-core" style="display: none;">
+                                        <!-- 본인 인증 실패일때 -->
+                                        <div class="modal-core">
                                             <div class="modal-text text-center mb-90">
                                                 본인 인증에 실패하였습니다. <br>
                                                 이름과 전화번호를 확인하신 후 <br>
@@ -128,7 +131,7 @@
 
                                             </div>
                                         </div>
-                                        <!-- //본인 인증 실패일때 case -->
+                                        <!-- //본인 인증 실패일때 -->
 
                                         <div class="modal-buttons">
                                             <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">확인</button>
