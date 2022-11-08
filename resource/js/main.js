@@ -2,7 +2,7 @@ $(document).ready(function () {
   introSlide();
   videoArea();
   lookServiceSwiper();
-
+  carerList();
 
 });
 
@@ -25,4 +25,13 @@ function lookServiceSwiper() {
       type: "fraction",
     },
   });
+}
+
+//보미쌤 지원 현황
+function carerList() {
+  $(".carer-button__detail").click(function(){
+    $(this).hide();
+    $(this).parent(".carer-buttons").children(".carer-button__wish, .carer-button__choice").show();
+    $(this).closest(".carer-list").toggleClass("is-show");
+  })
 }

@@ -257,7 +257,7 @@
     <div class="index-gnb">
       <div class="index-links">
         <div class="index-links__inner">
-          <!-- <a href="./guide-component.html" target="_blank">컴포넌트 가이드</a> -->
+          <a href="./guide/guide.html" target="_blank">컴포넌트 가이드</a>
         </div>
       </div>
     </div>
@@ -444,7 +444,7 @@
           if (val.match(/^\.\//g)) {
             href = val;
           } else {
-            href = './' + val;
+            href = './dist/' + val;
           }
           return val.length ? '<a href="' + href + '" target="_blank">' + val + '</a>' : '';
         })();

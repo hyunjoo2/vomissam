@@ -103,6 +103,7 @@
         margin: 14rem 5rem 0 5rem;
         height: 75.5rem;
         border-radius: 3rem;
+        overflow: hidden;
     }
     .swiper{
         &-pagination-fraction{
@@ -206,7 +207,7 @@
         &--card{
             padding: 1.5rem;
             &__inner{
-                padding: 5.5rem 5rem;
+                padding: 5rem;
                 height:100%;
                 background: #ffffff;
                 border-radius: 1.5rem;
@@ -252,6 +253,7 @@
             }
             &-num{
                 margin-left: 1.4rem;
+                font-size: 3.6rem;
             }
             
         }
@@ -358,19 +360,56 @@
     }
 }
 
-/* case2 */ 
+/** case2 */ 
 .care-enroll{
     &-progress{
         &__inner{
             display: flex;
         }
     }
+    &-info{
+        margin-top: 12rem;
+        &__list{
+            display: flex;
+            &+&{
+                margin-top: 5.5rem;
+            }
+        }
+        &__title, &__text{
+            font-size: 5.4rem;
+        }
+        &__title{
+            width: 33.5rem;
+            color:#575c62;
+            flex: none;
+        }
+        &__text{
+            flex: 1;
+            text-align: right;
+        }
+    }
+    &-button{
+        margin-top: 9rem;
+    }
 }
 .index-case{
     &-box{
-        padding: 11rem 5rem;
+        padding: 13rem 5rem;
         &__gray{
             background: #f3f5fb;
+        }
+        &.look-service{
+            padding : {
+                top: 0;
+                bottom:0;
+            }
+        }
+        .look-service{
+            
+            &__inner{
+                margin: 0;
+                margin-top: 1rem;
+            }
         }
     }
     &__title{
@@ -469,6 +508,156 @@
             }
             &__end{
                 background-image: url(../image/main/icon-end__past.png);
+            }
+        }
+    }
+}
+
+/* 보미쌤 지원 현황 */ 
+.carer{
+    &-list{
+        border-radius: 3rem;
+        box-shadow: 2rem 2rem 4rem rgba(67,76,133,.28);
+        overflow: hidden;
+        &+&{
+            margin-top: 12rem;
+        }
+        &__premium{
+            position: relative;
+            &::before{
+                position: absolute;
+                top: -3rem;
+                right:5.5rem;
+                width: 16rem;
+                height: 21.9rem;
+                background: url(../image/main/badge-premium.png);
+                background-size: cover;
+                content: "";
+                z-index: 2;
+            }
+        }
+        &.is-show{
+            .carer-detail__list--more{
+                display: flex;
+            }
+        }
+    }
+    &-content{
+        display: flex;
+        padding: 8rem;
+        box-sizing: border-box;
+    }
+    &-image{
+        @include d-flex-center;
+        width: 30rem;
+        height:40.1rem;
+        border-radius: 1rem;
+        flex:none;
+        overflow: hidden;
+        img{
+            max-height: 100%;
+            height:100%;
+        }
+    }
+    &-nsy{
+        font-size: 5.4rem;
+    }
+    &-name{
+        font: {
+            size:7rem;
+            weight:600;
+        };
+    }
+    &-info{
+        margin-left: 9rem;
+    }
+    &-detail{
+        margin-top: 5.5rem;        
+        &__list{
+            display: flex;
+            // &+&{
+            //     margin-top: -.5rem;
+            // }
+            &--more{
+                display: none;
+            }
+        }
+        &__title, &__text{
+            font-size: 5.6rem;
+        }
+        &__title{
+            width: 21.6rem;
+            color:#575c62;
+            flex: none;
+            line-height: 9.4rem;
+        }
+        &__text{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            line-height: 9.4rem;
+            word-break: keep-all;
+            letter-spacing: -1px;
+            vertical-align: middle;
+            .badge{
+                display: inline-block;
+                width: auto;
+                height: auto;
+                margin-left: 3.9rem;
+                padding: .9rem 2rem;
+                font : {
+                    size: 4rem;
+                    weight:500;
+                }
+                color:#4b62c3;
+                background: #e1e4ee;
+                border-radius: 2.8rem;
+
+            }
+        }
+    }
+    &-cost{
+        margin-top: 7rem;
+        &__text{
+            font-size: 4.4rem;
+            color:#575c62;
+        }
+        &__num{
+            margin-top: 2rem;
+            font : {
+                size: 7.4rem;
+                weight:600;
+            }
+        }
+    }
+    &-buttons{
+        display: flex;
+    }
+    &-button{
+        width:100%;
+        height: 16rem;
+        background: #8999de;
+        color:#ffffff;
+        font : {
+            size: 6rem;
+            weight:500;
+        }
+        text-shadow: .5rem .5rem .3rem rgba(27,41,101,.3);
+        &__choice{
+            display: none;
+            background:  linear-gradient(0deg, #8999de 0%,  #8999de 60%,  rgba(97,122,176,.8) 100%);;
+        }
+        &__wish{
+            display: none;
+            width: 16.7rem;
+            flex: none;
+            background: #4a61c0;
+            i{
+                display: inline-block;
+                width: 7.4rem;
+                height: 7rem;
+                background: url(../image/main/icon-star.png);
+                background-size: cover;
             }
         }
     }

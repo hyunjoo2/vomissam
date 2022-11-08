@@ -11,3 +11,24 @@
         opacity: .4;
     }
 }
+
+@keyframes rotateIcon {
+    0% {
+    }
+    // 25% {
+    //     opacity: 0.2;
+    //     transform: rotateY(91deg);
+    // }
+    50% {
+        opacity: 1;
+        transform: rotateY(91deg);
+    }
+    // 75% {
+    //     opacity: 0.8;
+    //     transform: rotateY(91deg);
+    // }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}

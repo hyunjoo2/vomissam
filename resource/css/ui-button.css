@@ -34,6 +34,11 @@
 .ui-button__border-gray {
   border: 0.4rem solid #e9eaec;
 }
+.ui-button__border-blue {
+  border: 0.4rem solid #4b62c3;
+  background: #ffffff;
+  color: #3c50a2;
+}
 .ui-button__width-xs {
   width: 42rem;
   flex: none;
@@ -41,6 +46,14 @@
 .ui-button__width-s {
   width: 44rem;
   flex: none;
+}
+.ui-button__width-m {
+  width: 66rem;
+  flex: none;
+}
+.ui-button__height-s {
+  height: 12.5rem;
+  font-size: 6rem;
 }
 
 .button-joinSocial {
@@ -58,6 +71,10 @@
   background-image: url(../image/common/icon-naver__colored.png);
   background-size: 5.6rem 5.1rem;
 }
+.button-joinSocial__google {
+  background-image: url(../image/common/icon-google__colored.png);
+  background-size: 5.3rem 5.5rem;
+}
 .button-kakao {
   width: 100%;
   height: 20rem;
@@ -73,7 +90,7 @@
   width: 5.6rem;
   height: 5.1rem;
   margin-right: 4rem;
-  background: url(../image/common/icon-naver.png);
+  background: url(../image/common/icon-naver__colored.png);
   background-size: 5.6rem 5.1rem;
   vertical-align: middle;
   content: "";
@@ -81,11 +98,11 @@
 .button-google::before {
   display: inline-block;
   flex: none;
-  width: 8.5rem;
+  width: 5.3rem;
   height: 5.5rem;
   margin-right: 4rem;
-  background: url(../image/common/icon-google.png);
-  background-size: 8.5rem 5.5rem;
+  background: url(../image/common/icon-google__colored.png);
+  background-size: 5.3rem 5.5rem;
   vertical-align: middle;
   content: "";
 }

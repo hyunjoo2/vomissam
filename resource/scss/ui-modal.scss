@@ -5,14 +5,21 @@
 
 .modal {
     padding-right: 0 !important;
-    &-body{
+
+    &-header {
+        padding: 10rem 6rem 0 6rem;
+    }
+
+    &-body {
         padding: 0;
-        &__main{
-            .modal-core{
+
+        &__main {
+            .modal-core {
                 padding: 10rem 8rem;
             }
         }
     }
+
     &-dialog {
         justify-content: center;
     }
@@ -22,9 +29,10 @@
         max-height: 80%;
         width: 100%;
         padding: 0;
-        border:0;
+        border: 0;
         box-shadow: none;
         border-radius: 2rem;
+
         &__email {
             .modal {
                 &-tit {
@@ -40,13 +48,37 @@
             }
         }
     }
-    &-core{
+
+    &-core {
         padding: 12.5rem 5rem;
+        &2 {
+            padding: 12rem 6rem;
+            &:first-child{
+                margin-top: -2rem;
+            }
+            .modal-core2__title {
+                position: relative;
+                padding-bottom: 6rem;
+                margin-bottom: 7rem;
+                font : {
+                    size: 6rem;
+                    weight:600;
+                }
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: .4rem;
+                    background: #000000;
+                    content: "";
+                }
+            }
+        }
     }
 
     &-tit {
         margin-bottom: 2.5rem;
-
         font : {
             size: 2rem;
             weight: 500;
@@ -54,22 +86,28 @@
 
         text-align: center;
     }
-    &-title{
+
+    &-title {
         margin-bottom: 7.5rem;
         font : {
             size: 6.5rem;
-            weight:600;
+            weight: 500;
         }
+
         text-align: center;
         line-height: 9rem;
     }
+
     &-text {
         font-size: 6rem;
         line-height: normal;
-        &__small{
+
+        &__small {
             font: {
                 size: 5rem;
-            };
+            }
+
+            ;
             line-height: 7rem;
         }
     }
@@ -77,18 +115,21 @@
     &-backdrop {
         background: rgba(0, 0, 0, 0.56);
     }
-    &-buttons{
-        .ui-button{
+
+    &-buttons {
+        .ui-button {
             font-size: 6rem;
             border-radius: 0 0 2rem 2rem;
         }
     }
-    &-box{
-        &__gray{
+
+    &-box {
+        &__gray {
             padding: 5rem 6rem;
             background: #f3f5fb;
             border-radius: 2rem;
-            *{
+
+            * {
                 font-size: 5rem;
                 line-height: 7rem;
             }

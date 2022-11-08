@@ -45,6 +45,8 @@ $(function(){
         lastScrollTop = st;
     }
 
+    
+
     // $(window).scroll(function(){
     //     var scrT = $(window).scrollTop();
     //     //console.log(scrT); //스크롤 값 확인용
@@ -54,5 +56,11 @@ $(function(){
     //         //아닐때 이벤트
     //     }
     //   })
+
+
+    $(".quick-menu__button").click(function(){
+        $(this).addClass("is-active");
+        $(this).siblings().removeClass("is-active");
+    })
 
 })

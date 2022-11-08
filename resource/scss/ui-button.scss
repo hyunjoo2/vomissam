@@ -42,6 +42,11 @@
         &-gray{
             border: .4rem solid #e9eaec; 
         }
+        &-blue{
+            border: .4rem solid #4b62c3; 
+            background: #ffffff;
+            color:#3c50a2;
+        }
     }
     &__width{
         &-xs{
@@ -51,6 +56,16 @@
         &-s{
             width: 44rem;
             flex:none;
+        }
+        &-m{
+            width: 66rem;
+            flex:none;
+        }
+    }
+    &__height{
+        &-s{
+            height:12.5rem;
+            font-size: 6rem;
         }
     }
 }
@@ -69,6 +84,16 @@
             background-image: url(../image/common/icon-naver__colored.png) ;
             background-size: 5.6rem 5.1rem;
         }
+        &__google{
+            // border-color: #06be34;
+            background-image: url(../image/common/icon-google__colored.png);
+            background-size: 5.3rem 5.5rem;
+        }
+        // &__kakao{
+        //     border-color: #fae100;
+        //     // background-image: url(../image/common/icon-naver__colored.png) ;
+        //     // background-size: 5.6rem 5.1rem;
+        // }
         
     }
     &-kakao{
@@ -89,7 +114,7 @@
             width: 5.6rem;
             height: 5.1rem;
             margin-right: 4rem;
-            background: url(../image/common/icon-naver.png);
+            background: url(../image/common/icon-naver__colored.png);
             background-size: 5.6rem 5.1rem;
             vertical-align: middle;
             content:""
@@ -99,11 +124,11 @@
         &::before{
             display: inline-block;
             flex: none;
-            width: 8.5rem;
+            width: 5.3rem;
             height: 5.5rem;
             margin-right: 4rem;
-            background: url(../image/common/icon-google.png);
-            background-size: 8.5rem 5.5rem;
+            background: url(../image/common/icon-google__colored.png);
+            background-size: 5.3rem 5.5rem;
             vertical-align: middle;
             content:""
         }
