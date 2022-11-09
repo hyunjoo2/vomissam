@@ -1,1 +1,23 @@
 @import './helper/index';
+
+.enroll{
+    &-title{
+        margin-bottom: 7rem;
+        font : {
+            size: 6rem;
+            weight:600;
+        }
+        .ui-required{
+            color:#e90f75;
+            margin-left: 1rem;
+        }
+    }
+    &-box{
+        &:nth-child(1){
+            margin-top: 9rem;
+        }
+        &+&{
+            margin-top: 13rem;
+        }
+    }
+}

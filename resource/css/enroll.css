@@ -107,3 +107,18 @@
     transform: rotateY(0deg);
   }
 }
+.enroll-title {
+  margin-bottom: 7rem;
+  font-size: 6rem;
+  font-weight: 600;
+}
+.enroll-title .ui-required {
+  color: #e90f75;
+  margin-left: 1rem;
+}
+.enroll-box:nth-child(1) {
+  margin-top: 9rem;
+}
+.enroll-box + .enroll-box {
+  margin-top: 13rem;
+}

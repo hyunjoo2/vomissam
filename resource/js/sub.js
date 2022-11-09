@@ -1,6 +1,13 @@
 
 
 $(function(){
+
+    $(".ui-button__check").click(function(){
+        $(this).addClass("is-active");
+        $(this).siblings().removeClass("is-active");
+    })
+
+
     //sub footer
     //$(".subContent-wrap").parents().find(".wrap").children("footer").addClass("sub-footer");
 

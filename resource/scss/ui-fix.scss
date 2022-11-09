@@ -1,5 +1,14 @@
 @import './helper/mixin';
 
+// width
+.width{
+    &-80{
+        width: 8rem;
+    }
+    &-170{
+        width: 17rem;
+    }
+}
 // margin
 .m{
     &r{
@@ -144,6 +153,9 @@ $color-blue : #3c50a2;
     }
 }
 
+.flex{
+    flex: 1;
+}
 
 // responsive
 @include media-breakpoint-down(n-ml){ //1400

@@ -49,9 +49,19 @@
 .ui-form__cell {
   display: flex;
   align-items: center;
+  font-size: 5.5rem;
 }
 .ui-form__cell .ui-form {
   flex: 1;
+}
+.ui-form__flex--row {
+  display: flex;
+}
+.ui-form__flex--row + .ui-form__flex--row {
+  margin-top: 2rem;
+}
+.ui-form__flex--row .ui-form__cell + .ui-form__cell {
+  margin-left: 4rem;
 }
 .ui-form__text {
   font-size: 5.5rem;
@@ -72,6 +82,10 @@
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
+}
+.ui-input::placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
 }
 .ui-select {
   width: 100%;

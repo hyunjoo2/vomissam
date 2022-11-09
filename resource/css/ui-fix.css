@@ -1,3 +1,10 @@
+.width-80 {
+  width: 8rem;
+}
+.width-170 {
+  width: 17rem;
+}
+
 .mr-auto {
   margin-right: auto;
 }
@@ -113,6 +120,10 @@
   margin: 0 auto;
   background: url(../image/common/img-check.png);
   background-size: 22.1rem 22rem;
+}
+
+.flex {
+  flex: 1;
 }
 
 @media (max-width: 1400px) {

@@ -72,6 +72,9 @@
         }
     }
     &__font{
+        &-xs{
+            font-size: 5.5rem;
+        }
         &-s{
             font-size: 6rem;
         }
@@ -89,6 +92,44 @@
             height:.6rem;
             background: #228ff8;
             content:""
+        }
+    }
+    &__icon{
+        &::before{
+            display: inline-block;
+            margin-right: 4.5rem;
+            background-size: cover;
+            background-position: center;
+            vertical-align: middle;
+            content:"";
+        }
+        &-male{
+            &::before{
+                width: 8.4rem;
+                height: 9.5rem;
+                background-image: url(../image/sub/icon/icon-male.png);
+            }
+        }
+        &-female{
+            &::before{
+                width: 8.4rem;
+                height: 9.2rem;
+                background-image: url(../image/sub/icon/icon-female.png);
+            }
+        }
+    }
+    &__left{
+        padding: 0 4rem ;
+        text-align: left;
+    }
+    &__check{
+        
+        &.is-active{
+            color:#3c50a2;
+            border-color: #4b62c3;
+            background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+            background-size: 4.5rem 3.1rem;
+            box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
         }
     }
 }

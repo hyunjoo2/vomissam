@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /** element */
+.width-80 {
+  width: 8rem;
+}
+.width-170 {
+  width: 17rem;
+}
+
 .mr-auto {
   margin-right: auto;
 }
@@ -117,6 +124,10 @@
   background-size: 22.1rem 22rem;
 }
 
+.flex {
+  flex: 1;
+}
+
 @media (max-width: 1400px) {
   .mt-20 {
     margin-top: 2rem;
@@ -217,6 +228,9 @@
   font-size: 6rem;
   line-height: 12.6rem;
 }
+.ui-button__font-xs {
+  font-size: 5.5rem;
+}
 .ui-button__font-s {
   font-size: 6rem;
 }
@@ -234,6 +248,35 @@
   height: 0.6rem;
   background: #228ff8;
   content: "";
+}
+.ui-button__icon::before {
+  display: inline-block;
+  margin-right: 4.5rem;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  content: "";
+}
+.ui-button__icon-male::before {
+  width: 8.4rem;
+  height: 9.5rem;
+  background-image: url(../image/sub/icon/icon-male.png);
+}
+.ui-button__icon-female::before {
+  width: 8.4rem;
+  height: 9.2rem;
+  background-image: url(../image/sub/icon/icon-female.png);
+}
+.ui-button__left {
+  padding: 0 4rem;
+  text-align: left;
+}
+.ui-button__check.is-active {
+  color: #3c50a2;
+  border-color: #4b62c3;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background-size: 4.5rem 3.1rem;
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 
 .button-joinSocial {
@@ -598,9 +641,19 @@
 .ui-form__cell {
   display: flex;
   align-items: center;
+  font-size: 5.5rem;
 }
 .ui-form__cell .ui-form {
   flex: 1;
+}
+.ui-form__flex--row {
+  display: flex;
+}
+.ui-form__flex--row + .ui-form__flex--row {
+  margin-top: 2rem;
+}
+.ui-form__flex--row .ui-form__cell + .ui-form__cell {
+  margin-left: 4rem;
 }
 .ui-form__text {
   font-size: 5.5rem;
@@ -621,6 +674,10 @@
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
+}
+.ui-input::placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
 }
 .ui-select {
   width: 100%;
