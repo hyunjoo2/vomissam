@@ -9,21 +9,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- favicon -->
-  
+
   <!-- //favicon -->
-  
-    <link rel="stylesheet" href="./resource/css/reset.css">
-    <link rel="stylesheet" href="./resource/css/font.css">
-    <link rel="stylesheet" href="./resource/css/lib/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./resource/css/reset.css">
+  <link rel="stylesheet" href="./resource/css/font.css">
+  <link rel="stylesheet" href="./resource/css/lib/bootstrap.min.css">
 
 
 
-    <link rel="stylesheet" href="./resource/css/ux-common.css">
+  <link rel="stylesheet" href="./resource/css/ux-common.css">
 
-    <link rel="stylesheet" href="./resource/css/ui-modal.css"><!-- 모달 css -->
-    
+  <link rel="stylesheet" href="./resource/css/ui-modal.css"><!-- 모달 css -->
+
   <!-- style -->
-  
+
   <style>
     b {
       margin-left: 10px;
@@ -109,9 +109,9 @@
 
     <h1 class="test-title">Component</h1>
 
-    
-      
-    
+
+
+
 
     <div class="guide-section guide-section--title">
       <style>
@@ -139,39 +139,46 @@
 
     </div>
 
-    
+
 
     <div class="guide-section guide-section--button">
       <style>
-        button{margin:2rem;}
-        .login-first__bottom--bottom{
-            display: flex;
+        button {
+          margin: 2rem;
         }
+
+        .login-first__bottom--bottom {
+          display: flex;
+        }
+
         .login-first__bottom--bottom button {
-            display: flex;
-            -ms-display: flexbox;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            height: 18.5rem;
-            margin-top: 10px;
-            font-size: 5rem;
-            color: #333333;
-            border-radius: 2rem;
-            border: 0.3rem solid #e9eaec;
-            background: #ffffff;
-            }
-            .login-first__bottom--bottom button + button{margin-left: 4rem;}
+          display: flex;
+          -ms-display: flexbox;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          height: 18.5rem;
+          margin-top: 10px;
+          font-size: 5rem;
+          color: #333333;
+          border-radius: 2rem;
+          border: 0.3rem solid #e9eaec;
+          background: #ffffff;
+        }
+
+        .login-first__bottom--bottom button+button {
+          margin-left: 4rem;
+        }
       </style>
       <h2 class="test-title">button</h2>
       <div class="guide-section-sub">
         <h3 class="test-title">Default</h3>
         <button type="button" class="ui-button ui-button__bg-blue">다음</button>
         <button type="button" class="ui-button ui-button__border-gray">취소</button>
-        <button type="submit" class="ui-button ui-button__certi" >인증요청</button>
+        <button type="submit" class="ui-button ui-button__certi">인증요청</button>
       </div>
       <div class="guide-section-sub">
         <h3 class="test-title">ui-button__width-xs :: 42rem</h3>
@@ -191,14 +198,14 @@
         <button type="button" class="ui-button  ui-button__height-s ui-button__border-blue">button</button>
       </div>
 
-      
+
 
       <div class="guide-section-sub">
         <h3 class="test-title">login</h3>
         <button type="button" class="button-kakao">카카오톡으로 시작하기</button>
         <div class="login-first__bottom--bottom">
-            <button type="button" class="button-naver">네이버로 시작하기</button>
-            <button type="button" class="button-google">구글로 시작하기</button>
+          <button type="button" class="button-naver">네이버로 시작하기</button>
+          <button type="button" class="button-google">구글로 시작하기</button>
         </div>
       </div>
 
@@ -209,112 +216,173 @@
         <button class="button-joinSocial button-joinSocial__kakao">카카오 계정으로 로그인</button>
       </div>
 
-    </div>
-
-    <div class="guide-section guide-section--button">
-        <style>
-          .modal-buttons .ui-button{margin: 0;}
-        </style>
-        <h2 class="test-title">modal</h2>
-        <div class="guide-section-sub">
-          <h3 class="test-title">Default</h3>
-          <button type="submit" class="ui-button ui-button__certi" data-toggle="modal" data-target="#modalCerti">인증요청</button>
-          <!-- 모달 -->
-          <div class="modal fade" id="modalCerti" tabindex="-1" aria-labelledby="modalCertiLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-auto ">
-                <div class="modal-content modal-content__email">
-                    <div class="modal-body">
-                        
-                        <!-- 본인 인증 성공일때 case -->
-                        <div class="modal-core">
-                            <div class="modal-text text-center mb-90">
-                                본인 인증이 완료되었습니다.
-                            </div>
-                            <div class="modal-text__small text-center">
-                                ‘확인’ 버튼을 누르시면  <br>
-                                회원가입 화면으로 이동합니다.
-                            </div>
-                        </div>
-                        <!-- //본인 인증 성공일때 case -->
-
-                        <!-- 본인 인증 실패일때 case -->
-                        <div class="modal-core" style="display: none;">
-                            <div class="modal-text text-center mb-90">
-                                본인 인증에 실패하였습니다. <br>
-                                이름과 전화번호를 확인하신 후 <br>
-                                다시 시도해 주세요.
-                            </div>
-                            <div class="modal-text__small text-center">
-                                ‘확인‘ 버튼을 누르시면  <br>
-                                이전 화면으로 돌아 갑니다.
-
-                            </div>
-                        </div>
-                        <!-- //본인 인증 실패일때 case -->
-
-                        <div class="modal-buttons">
-                            <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">확인</button>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+      <div class="guide-section-sub">
+        <h3 class="test-title"> 모달 최하단 버튼 :: .modal-buttons__sticky</h3>
+        <div class="modal-buttons modal-buttons__sticky">
+          <button type="button" class="ui-button ui-button__border-blue"
+              data-dismiss="modal">취소</button>
+          <button type="button" class="ui-button ui-button__bg-blue">간병 종료</button>
         </div>
-        <!-- //모달 -->
-
-        </div>
-        <div class="guide-section-sub">
-          <h3 class="test-title">ui-button__width-s :: 44rem</h3>
-          <button type="button" class="ui-button ui-button__border-gray ui-button__width-s">취소</button>
-        </div>
-  
-        <div class="guide-section-sub">
-          <h3 class="test-title">login</h3>
-          <button type="button" class="button-kakao">카카오톡으로 시작하기</button>
-          <div class="login-first__bottom--bottom">
-              <button type="button" class="button-naver">네이버로 시작하기</button>
-              <button type="button" class="button-google">구글로 시작하기</button>
-          </div>
-        </div>
-  
-        <div class="guide-section-sub">
-          <h3 class="test-title">joinSocial</h3>
-          <button class="button-joinSocial button-joinSocial__naver">네이버 계정으로 로그인</button>
-          <button class="button-joinSocial button-joinSocial__google">구글 계정으로 로그인</button>
-          <button class="button-joinSocial button-joinSocial__kakao">카카오 계정으로 로그인</button>
-        </div>
-  
       </div>
 
-    <div class="guide-section guide-section--textarea">
+    </div>
+
+    
+
+  </div>
+
+    <!-- form -->
+    <div class="guide-section guide-section--form">
       <style>
-        .guide-section--textarea .ui-input-block+.ui-input-block {
-          margin-top: 10px;
+        .ui-form .ui-button{
+          margin-top: 0px;
         }
       </style>
-      <h2 class="test-title">Textarea</h2>
+
+      <h2 class="test-title">form</h2>
       <div class="guide-section-sub">
-        <h3 class="test-title">Default</h3>
-        <div class="ui-input-block">
-          <textarea class="ui-input" title="title" placeholder="placeholder"></textarea>
+        <h3 class="test-title">input</h3>
+        <div class="form-item">
+          <div class="form-title">이름</div>
+          <div class="ui-form">
+            <input type="text" class="ui-input" value="이일화">
+          </div>
         </div>
-        <div class="ui-input-block">
-          <textarea class="ui-input" title="title" placeholder="readonly placeholder" readonly></textarea>
-        </div>
-        <div class="ui-input-block">
-          <textarea class="ui-input" title="title" placeholder="readonly placeholder" readonly>readonly value</textarea>
-        </div>
-        <div class="ui-input-block">
-          <textarea class="ui-input" title="title" placeholder="disabled placeholder" disabled></textarea>
-        </div>
-        <div class="ui-input-block">
-          <textarea class="ui-input" title="title" placeholder="disabled placeholder" disabled>disabled value</textarea>
-        </div>
-        <div class="ui-input-block ui-input-block--disabled">
-          <textarea class="ui-input" title="title" placeholder="placeholder">입력은 되지만 스타일만 disabled</textarea>
+        <div class="form-item">
+          <div class="form-title">휴대전화번호(필수)</div>
+          <div class="ui-form ui-form__button">
+            <input type="text" class="ui-input" value="010-1234-5678">
+            <button type="submit" class="ui-button ui-button__certi ui-button__font-s" data-toggle="modal"
+              data-target="#modalCerti">인증요청</button>
+          </div>
         </div>
       </div>
+
+     
+      <div class="guide-section-sub">
+        <h2 class="test-title">select</h2>
+        <div class="ui-form">
+          <select name="" id="" class="ui-select">
+              <option value=""></option>
+          </select>
+      </div>
+      </div>
     </div>
+    <!-- form -->
+
+    <!-- modal -->
+    <div class="guide-section guide-section--modal">
+      <style>
+        .modal-buttons .ui-button {
+          margin: 0;
+        }
+      </style>
+      <h2 class="test-title">modal</h2>
+
+      <div class="guide-section-sub">
+        <h3 class="test-title">Default</h3>
+        <button type="submit" class="ui-button ui-button__certi" data-toggle="modal" data-target="#test1">인증요청</button>
+        <!-- 모달 -->
+        <div class="modal fade" id="test1" tabindex="-1" aria-labelledby="test1Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-auto ">
+            <div class="modal-content modal-content__email">
+              <div class="modal-body">
+
+                <!-- 본인 인증 성공일때 case -->
+                <div class="modal-core">
+                  <div class="modal-text text-center mb-90">
+                    본인 인증이 완료되었습니다.
+                  </div>
+                  <div class="modal-text__small text-center">
+                    ‘확인’ 버튼을 누르시면 <br>
+                    회원가입 화면으로 이동합니다.
+                  </div>
+                </div>
+                <!-- //본인 인증 성공일때 case -->
+
+                <!-- 본인 인증 실패일때 case -->
+                <div class="modal-core" style="display: none;">
+                  <div class="modal-text text-center mb-90">
+                    본인 인증에 실패하였습니다. <br>
+                    이름과 전화번호를 확인하신 후 <br>
+                    다시 시도해 주세요.
+                  </div>
+                  <div class="modal-text__small text-center">
+                    ‘확인‘ 버튼을 누르시면 <br>
+                    이전 화면으로 돌아 갑니다.
+
+                  </div>
+                </div>
+                <!-- //본인 인증 실패일때 case -->
+
+                <div class="modal-buttons">
+                  <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">확인</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- //모달 -->
+      </div>
+
+      <div class="guide-section-sub">
+        <h3 class="test-title">small :: 클래스 modal-content에 modal-content__s 추가</h3>
+        <button type="submit" class="ui-button ui-button__certi" data-toggle="modal"
+          data-target="#modal-content__s">인증요청</button>
+        <!-- 모달 -->
+        <div class="modal fade" id="modal-content__s" tabindex="-1" aria-labelledby="modalCertiLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-auto ">
+            <div class="modal-content modal-content__s modal-content__email">
+              <div class="modal-body">
+
+                <!-- 본인 인증 성공일때 case -->
+                <div class="modal-core">
+                  <div class="modal-text text-center mb-90">
+                    본인 인증이 완료되었습니다.
+                  </div>
+                  <div class="modal-text__small text-center">
+                    ‘확인’ 버튼을 누르시면 <br>
+                    회원가입 화면으로 이동합니다.
+                  </div>
+                </div>
+                <!-- //본인 인증 성공일때 case -->
+
+                <!-- 본인 인증 실패일때 case -->
+                <div class="modal-core" style="display: none;">
+                  <div class="modal-text text-center mb-90">
+                    본인 인증에 실패하였습니다. <br>
+                    이름과 전화번호를 확인하신 후 <br>
+                    다시 시도해 주세요.
+                  </div>
+                  <div class="modal-text__small text-center">
+                    ‘확인‘ 버튼을 누르시면 <br>
+                    이전 화면으로 돌아 갑니다.
+
+                  </div>
+                </div>
+                <!-- //본인 인증 실패일때 case -->
+
+                <div class="modal-buttons modal-buttons__sticky">
+                  <button type="button" class="ui-button ui-button__border-blue"
+                      data-dismiss="modal">취소</button>
+                  <button type="button" class="ui-button ui-button__bg-blue">간병 종료</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- //모달 -->
+      </div>
+
+
+
+    </div>
+    <!-- //modal -->
+
+
 
     <div class="guide-section guide-section--date">
       <style>
@@ -2957,16 +3025,13 @@
             <a href="" class="ui-basic-button ui-basic-button--small ui-basic-button--quinary">Default</a>
           </div>
           <div class="form-flex-cell form-flex-cell--button">
-            <a href=""
-              class="ui-basic-button ui-basic-button--quinary">form-flex-cell--button</a>
+            <a href="" class="ui-basic-button ui-basic-button--quinary">form-flex-cell--button</a>
           </div>
           <div class="form-flex-cell form-flex-cell--medium">
-            <a href=""
-              class="ui-basic-button ui-basic-button--quinary">form-flex-cell--medium</a>
+            <a href="" class="ui-basic-button ui-basic-button--quinary">form-flex-cell--medium</a>
           </div>
           <div class="form-flex-cell form-flex-cell--medium-large">
-            <a href=""
-              class="ui-basic-button ui-basic-button--quinary">form-flex-cell--medium-large</a>
+            <a href="" class="ui-basic-button ui-basic-button--quinary">form-flex-cell--medium-large</a>
           </div>
           <div class="form-flex-cell form-flex-cell--large">
             <a href="" class="ui-basic-button ui-basic-button--quinary">form-flex-cell--large</a>
@@ -4467,248 +4532,1013 @@
     <div class="guide-section guide-section--pin">
       <style>
         /* 실시간위치표시 마커 */
-        .marker-realtime{min-width:62px; border: 1px solid #163aab; background-color: #4666ca; box-sizing: border-box; border-radius: 3px 3px 3px 0px;overflow: hidden;}
-        .marker-realtime::after{position: absolute; bottom: -16px; right: -4px; width:calc(100% + 3px); height:64px; background: url(./dist/assets/images/common/marker-shadow.png) no-repeat; background-size: 100% 100%; content: ""; z-index: -1;}
-        .marker-realtime a{ display: block; width:100%; height:100%; text-decoration: none; }
-        .marker-realtime__header{display: flex;align-items: center;justify-content: space-between;height:20px;padding:0 5px;border-bottom:1px solid #163aab}
-        .marker-realtime__header span{font-size:11px; color:#ffffff;line-height: 100%;}
-        .marker-realtime__header span.marker-realtime__header--center{width:15px;height:15px;margin:0 2px;background-color:#fff;font-size:11px;border-radius:100%;color:#e32e35;line-height:15px;text-align:center;}
-        .marker-realtime__header--right{font-weight: 600;}
-        .marker-realtime__body{display: flex;align-items: center;justify-content: center;height:31px;padding:0 5px;font-size:12px;font-weight:600;background: #ffffff; border-radius: 0 0 3px 0px; color:#000000;}
-        .marker-realtime__normal::before{ position: absolute; left: 0; bottom:-15px; width:11px; height:16px; background: url(./dist/assets/images/icon/marker-realtime__arr.png);content:""}
-        .is-active .marker-realtime__normal .marker-realtime__body{background-color: #4666ca; color:#ffffff;}
-        .is-active *, .is-active *::before{animation: none !important;}
+        .marker-realtime {
+          min-width: 62px;
+          border: 1px solid #163aab;
+          background-color: #4666ca;
+          box-sizing: border-box;
+          border-radius: 3px 3px 3px 0px;
+          overflow: hidden;
+        }
+
+        .marker-realtime::after {
+          position: absolute;
+          bottom: -16px;
+          right: -4px;
+          width: calc(100% + 3px);
+          height: 64px;
+          background: url(./dist/assets/images/common/marker-shadow.png) no-repeat;
+          background-size: 100% 100%;
+          content: "";
+          z-index: -1;
+        }
+
+        .marker-realtime a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+        }
+
+        .marker-realtime__header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 20px;
+          padding: 0 5px;
+          border-bottom: 1px solid #163aab
+        }
+
+        .marker-realtime__header span {
+          font-size: 11px;
+          color: #ffffff;
+          line-height: 100%;
+        }
+
+        .marker-realtime__header span.marker-realtime__header--center {
+          width: 15px;
+          height: 15px;
+          margin: 0 2px;
+          background-color: #fff;
+          font-size: 11px;
+          border-radius: 100%;
+          color: #e32e35;
+          line-height: 15px;
+          text-align: center;
+        }
+
+        .marker-realtime__header--right {
+          font-weight: 600;
+        }
+
+        .marker-realtime__body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 31px;
+          padding: 0 5px;
+          font-size: 12px;
+          font-weight: 600;
+          background: #ffffff;
+          border-radius: 0 0 3px 0px;
+          color: #000000;
+        }
+
+        .marker-realtime__normal::before {
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          width: 11px;
+          height: 16px;
+          background: url(./dist/assets/images/icon/marker-realtime__arr.png);
+          content: ""
+        }
+
+        .is-active .marker-realtime__normal .marker-realtime__body {
+          background-color: #4666ca;
+          color: #ffffff;
+        }
+
+        .is-active *,
+        .is-active *::before {
+          animation: none !important;
+        }
 
 
-        .marker-realtime__red{background-color: #e32e35; border-color: #ac0000;}
-        .marker-realtime__red .marker-realtime__header{border-color: #ac0000;}
-        .marker-realtime__red::before{ position: absolute; left: 0; bottom:-15px; width:11px; height:16px; background: url(./dist/assets/images/icon/marker-realtime_red__arr.png);content:""}
-        .is-active .marker-realtime__red  .marker-realtime__body{background-color: #e32e35; color:#ffffff;}
-        .marker-home{ display: none; position: relative; width:30px; height:36px; background: url(./dist/assets/images/icon/marker-home.png);}
-        .is-active .marker-home{display: block;}
-        .line-dashed{ display: none; position: absolute; height:5px; background: url(./dist/assets/images/icon/line-double.svg); background-size: cover;}
-        .line-dashed.is-active{display: block;}
-        .is-active .line-dashed{display: block;}
+        .marker-realtime__red {
+          background-color: #e32e35;
+          border-color: #ac0000;
+        }
+
+        .marker-realtime__red .marker-realtime__header {
+          border-color: #ac0000;
+        }
+
+        .marker-realtime__red::before {
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          width: 11px;
+          height: 16px;
+          background: url(./dist/assets/images/icon/marker-realtime_red__arr.png);
+          content: ""
+        }
+
+        .is-active .marker-realtime__red .marker-realtime__body {
+          background-color: #e32e35;
+          color: #ffffff;
+        }
+
+        .marker-home {
+          display: none;
+          position: relative;
+          width: 30px;
+          height: 36px;
+          background: url(./dist/assets/images/icon/marker-home.png);
+        }
+
+        .is-active .marker-home {
+          display: block;
+        }
+
+        .line-dashed {
+          display: none;
+          position: absolute;
+          height: 5px;
+          background: url(./dist/assets/images/icon/line-double.svg);
+          background-size: cover;
+        }
+
+        .line-dashed.is-active {
+          display: block;
+        }
+
+        .is-active .line-dashed {
+          display: block;
+        }
+
         /* .line-dashed.is-active.final::before{position:absolute;top:-2px;right:-1px;width:6px;height:7px;background: url(./dist/assets/images/icon/line-double__arrow.svg) no-repeat center;content:"";} */
-        .line-dashed.is-active.final{   
+        .line-dashed.is-active.final {
           position: absolute;
           height: 11px;
           background: url(./dist/assets/images/icon/line-double__arrow.svg);
           background-size: cover;
           background-position: right center;
-          }
-          
+        }
 
 
-       
+
+
 
         /* 고축척일때 */
-        .high-scale .marker-realtime{min-width:unset; width:21px;height:21px;border-radius: 100%;}
-        .high-scale .marker-realtime::after, .high-scale .marker-realtime::before{display: none;}
-        .high-scale .marker-realtime__header, .high-scale .marker-realtime__body, .high-scale .marker-realtime__bottom{display: none;}
+        .high-scale .marker-realtime {
+          min-width: unset;
+          width: 21px;
+          height: 21px;
+          border-radius: 100%;
+        }
+
+        .high-scale .marker-realtime::after,
+        .high-scale .marker-realtime::before {
+          display: none;
+        }
+
+        .high-scale .marker-realtime__header,
+        .high-scale .marker-realtime__body,
+        .high-scale .marker-realtime__bottom {
+          display: none;
+        }
+
         /* .high-scale .marker-realtime__link::after{display:inline-block;width:100%;font-size:12px;font-weight: 600;text-align:center;color:#ffffff;line-height: 21px;content:"P"} */
-        .is-active .marker-home .marker-realtime__link::after{display: none;}
+        .is-active .marker-home .marker-realtime__link::after {
+          display: none;
+        }
 
         /* 최고축척일때 */
-        .max-scale .marker-realtime{min-width:unset; width:12px;height:12px;border-radius: 100%;}
-        .max-scale .marker-realtime::after, .max-scale .marker-realtime::before{display: none;}
-        .max-scale .marker-realtime__header, .max-scale .marker-realtime__body, .max-scale .marker-realtime__bottom{display: none;}
-        .max-scale .marker-realtime__link::after{display:inline-block;width:100%;font-size:12px;font-weight: 600;text-align:center;color:#ffffff;line-height: 21px;content:""}
-        .is-active .marker-home .marker-realtime__link::after{display: none;}
+        .max-scale .marker-realtime {
+          min-width: unset;
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+        }
+
+        .max-scale .marker-realtime::after,
+        .max-scale .marker-realtime::before {
+          display: none;
+        }
+
+        .max-scale .marker-realtime__header,
+        .max-scale .marker-realtime__body,
+        .max-scale .marker-realtime__bottom {
+          display: none;
+        }
+
+        .max-scale .marker-realtime__link::after {
+          display: inline-block;
+          width: 100%;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          color: #ffffff;
+          line-height: 21px;
+          content: ""
+        }
+
+        .is-active .marker-home .marker-realtime__link::after {
+          display: none;
+        }
 
         /* 보석조건부 */
-        .marker-realtime__line{
+        .marker-realtime__line {
           background-image: url(./assets/images/etc/bg-line.png);
         }
-        .is-active .marker-realtime__line .marker-realtime__body{
+
+        .is-active .marker-realtime__line .marker-realtime__body {
           background-image: url(./dist/assets/images/etc/bg-line.png);
           background-position: left 2.5px top;
         }
-        .is-twinkle .marker-realtime__normal{animation-duration: .6s;animation-name: twinkle__normal; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__normal.marker-realtime__line{animation-name: twinkle__normal--line;}
-        .is-twinkle .marker-realtime__normal .marker-realtime__header{animation-duration: .6s;animation-name: twinkle__normal-border; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__normal::before{animation-duration: .6s;animation-name: twinkle__normal-arr; animation-iteration-count: infinite; animation-direction: alternate;}
 
-        .is-twinkle .marker-realtime__sapGreen{animation-duration: .6s;animation-name: twinkle__sapGreen; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__sapGreen.marker-realtime__line{animation-name: twinkle__normal--line;}
-        .is-twinkle .marker-realtime__sapGreen .marker-realtime__header{animation-duration: .6s;animation-name: twinkle__sapGreen-border; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__sapGreen::before{animation-duration: .6s;animation-name: twinkle__sapGreen-arr; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__hexagon--sapGreen{animation-duration: .6s;animation-name: twinkle__sapGreen-hexa; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--sapGreen{animation-duration: .6s;animation-name: twinkle__sapGreen-hexaMin; animation-iteration-count: infinite; animation-direction: alternate;}
+        .is-twinkle .marker-realtime__normal {
+          animation-duration: .6s;
+          animation-name: twinkle__normal;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        .is-twinkle .marker-realtime__gray{animation-duration: .6s;animation-name: twinkle__gray; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__gray .marker-realtime__header{animation-duration: .6s;animation-name: twinkle__gray-border; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__gray::before{animation-duration: .6s;animation-name: twinkle__gray-arr; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__hexagon--gray{animation-duration: .6s;animation-name: twinkle__gray-hexa; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--gray{animation-duration: .6s;animation-name: twinkle__gray-hexaMin; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--gray.marker-realtime__line{animation-duration: .6s;animation-name: twinkle__gray-hexa-line; animation-iteration-count: infinite; animation-direction: alternate;}
+        .is-twinkle .marker-realtime__normal.marker-realtime__line {
+          animation-name: twinkle__normal--line;
+        }
 
-        .is-twinkle .marker-realtime__orange{animation-duration: .6s;animation-name: twinkle__orange; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__orange.marker-realtime__line{animation-name: twinkle__orange--line;}
-        .is-twinkle .marker-realtime__orange .marker-realtime__header{animation-duration: .6s;animation-name: twinkle__orange-border; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__orange::before{animation-duration: .6s;animation-name: twinkle__orange-arr; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__hexagon--orange{animation-duration: .6s;animation-name: twinkle__orange-hexa; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--orange{animation-duration: .6s;animation-name: twinkle__orange-hexaMin; animation-iteration-count: infinite; animation-direction: alternate;}
-        @keyframes twinkle__normal { from {background-color: #538234;border-color: #376419;} to {background: #afd199;border-color: #7dab5f;} }
-        @keyframes twinkle__normal--line { from {background-color: #538234;border-color: #376419;} to {background: #afd199 url(./dist/assets/images/etc/bg-line.png);;border-color: #7dab5f;} }
-        @keyframes twinkle__normal-border { from {border-color: #376419;} to {border-color: #7dab5f; } }
-        @keyframes twinkle__normal-arr { from {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr.png);} to {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr-twk.png); } }
+        .is-twinkle .marker-realtime__normal .marker-realtime__header {
+          animation-duration: .6s;
+          animation-name: twinkle__normal-border;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        @keyframes twinkle__sapGreen { from {background-color: #538234;border-color: #376419;} to {background: #afd199 ;border-color: #7dab5f;} }
-        @keyframes twinkle__sapGreen-border { from {border-color: #376419;} to {border-color: #7dab5f; } }
-        @keyframes twinkle__sapGreen-arr { from {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr.png);} to {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr-twk.png); } }
-        @keyframes twinkle__sapGreen-hexa { from {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexa.png);} to {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexa-twk.png); } }
-        @keyframes twinkle__sapGreen-hexaMin { from {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexaMin.png);} to {background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexaMin-twk.png); } }
+        .is-twinkle .marker-realtime__normal::before {
+          animation-duration: .6s;
+          animation-name: twinkle__normal-arr;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        @keyframes twinkle__gray { from {background-color: #9e9e9e;border-color: #7d7d7d;} to {background: #d3d3d3 url(./dist/assets/images/etc/bg-line.png);border-color: #a1a1a1;} }
-        @keyframes twinkle__gray-border { from {border-color: #7d7d7d;} to {border-color: #a1a1a1; } }
-        @keyframes twinkle__gray-arr { from {background: url(./dist/assets/images/icon/marker-realtime_gray__arr.png);} to {background: url(./dist/assets/images/icon/marker-realtime_gray__arr-twk.png); } }
-        @keyframes twinkle__gray-hexa { from {background: url(./dist/assets/images/icon/marker-realtime_gray__hexa.png);} to {background: url(./dist/assets/images/icon/marker-realtime_gray__hexa-twk.png); } }
-        @keyframes twinkle__gray-hexaMin { from {background: url(./dist/assets/images/icon/marker-realtime_gray__hexaMin.png);} to {background: url(./dist/assets/images/icon/marker-realtime_gray__hexaMin-twk.png); } }
-        @keyframes twinkle__gray-hexa-line { from {background: url(./dist/assets/images/icon/marker-realtime_gray__hexa-line.png);} to {background: url(./dist/assets/images/icon/marker-realtime_gray__hexa-line-twk.png); } }
+        .is-twinkle .marker-realtime__sapGreen {
+          animation-duration: .6s;
+          animation-name: twinkle__sapGreen;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        @keyframes twinkle__orange { from {background-color: #ff9934;border-color: #e07306;} to {background: #ffcc98;border-color: #e1a467;} }
-        @keyframes twinkle__orange--line { from {background-color: #ff9934;border-color: #e07306;} to {background: #ffcc98 url(./dist/assets/images/etc/bg-line.png);border-color: #e1a467;} }
-        @keyframes twinkle__orange-border { from {border-color: #ffcc98;} to {border-color: #e1a467; } }
-        @keyframes twinkle__orange-arr { from {background: url(./dist/assets/images/icon/marker-realtime_orange__arr.png);} to {background: url(./dist/assets/images/icon/marker-realtime_orange__arr-twk.png); } }
-        @keyframes twinkle__orange-hexa { from {background: url(./dist/assets/images/icon/marker-realtime_orange__hexa.png);} to {background: url(./dist/assets/images/icon/marker-realtime_orange__hexa-twk.png); } }
-        @keyframes twinkle__orange-hexaMin { from {background: url(./dist/assets/images/icon/marker-realtime_orange__hexaMin.png);} to {background: url(./dist/assets/images/icon/marker-realtime_orange__hexaMin-twk.png); } }
+        .is-twinkle .marker-realtime__sapGreen.marker-realtime__line {
+          animation-name: twinkle__normal--line;
+        }
 
-        .is-twinkle .marker-realtime__red{animation-duration: .6s;animation-name: twinkle__red; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__red.marker-realtime__line{animation-name: twinkle__red--line;}
-        .is-twinkle .marker-realtime__red .marker-realtime__header{animation-duration: .6s;animation-name: twinkle__red-border; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__red::before{animation-duration: .6s;animation-name: twinkle__red-arr; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime__hexagon--red{animation-duration: .6s;animation-name: twinkle__red-hexa; animation-iteration-count: infinite; animation-direction: alternate;}
-        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--red{animation-duration: .6s;animation-name: twinkle__red-hexaMin; animation-iteration-count: infinite; animation-direction: alternate;}
-        @keyframes twinkle__red { from {background-color: #e32e35; border-color: #ac0000;} to {background: #fcadb1; border-color: #fe7f80; } }
-        @keyframes twinkle__red--line { from {background-color: #e32e35; border-color: #ac0000;} to {background: #fcadb1 url(./images/etc/bg-line.png); border-color: #fe7f80; } }
-        @keyframes twinkle__red-border { from {border-color: #ac0000;} to {border-color: #fe7f80;} }
-        @keyframes twinkle__red-arr { from {background: url(./dist/assets/images/icon/marker-realtime_red__arr.png);} to {background: url(./dist/assets/images/icon/marker-realtime_red__arr-twk.png); } }
-        @keyframes twinkle__red-hexa { from {background: url(./dist/assets/images/icon/marker-realtime_red__hexa.png);} to {background: url(./dist/assets/images/icon/marker-realtime_red__hexa-twk.png); } }
-        @keyframes twinkle__red-hexaMin { from {background: url(./dist/assets/images/icon/marker-realtime_red__hexaMin.png);} to {background: url(./dist/assets/images/icon/marker-realtime_red__hexaMin-twk.png); } }
-        .marker-realtime__temp{height:70px;}
+        .is-twinkle .marker-realtime__sapGreen .marker-realtime__header {
+          animation-duration: .6s;
+          animation-name: twinkle__sapGreen-border;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        .marker-realtime.marker-realtime__hexagon{width:25px;height:23px;border:none;border-radius:8px;line-height:25px;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--sapGreen.marker-realtime__line{background:url('./dist/assets/images/icon/marker-realtime_sapGreen__hexa-line.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--orange.marker-realtime__line{background:url('./dist/assets/images/icon/marker-realtime_orange__hexa-line.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--red.marker-realtime__line{background:url('./dist/assets/images/icon/marker-realtime_red__hexa-line.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--gray.marker-realtime__line{background:url('./dist/assets/images/icon/marker-realtime_gray__hexa-line.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--sapGreen{background:url('./dist/assets/images/icon/marker-realtime_sapGreen__hexa.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--orange{background:url('./dist/assets/images/icon/marker-realtime_orange__hexa.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--red{background:url('./dist/assets/images/icon/marker-realtime_red__hexa.png') no-repeat 0 0;}
-        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--gray{background:url('./dist/assets/images/icon/marker-realtime_gray__hexa.png') no-repeat 0 0;}
-        .max-scale .marker-realtime.marker-realtime__hexagonMin{width:11px;height:11px;border-radius:8px;border:none;}
-        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--sapGreen{background:url('./dist/assets/images/icon/marker-realtime_sapGreen__hexaMin.png') no-repeat 0 0;}
-        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--orange{background:url('./dist/assets/images/icon/marker-realtime_orange__hexaMin.png') no-repeat 0 0;}
-        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--red{background:url('./dist/assets/images/icon/marker-realtime_red__hexaMin.png') no-repeat 0 0;}
-        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--gray{background:url('./dist/assets/images/icon/marker-realtime_gray__hexaMin.png') no-repeat 0 0;}
+        .is-twinkle .marker-realtime__sapGreen::before {
+          animation-duration: .6s;
+          animation-name: twinkle__sapGreen-arr;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        .marker-realtime__wrap>div.marker-realtime--hexaPin:not(.marker-home, .line-dashed)::before{width:15px;height:14px;bottom:-22px;border-radius:0;}
-        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--sapGreen:not(.marker-home, .line-dashed)::before{background:url('./dist/assets/images/icon/marker-realtime-hexaPin--sapGreen.png') no-repeat 0 0;}
-        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--orange:not(.marker-home, .line-dashed)::before{background:url('./dist/assets/images/icon/marker-realtime-hexaPin--orange.png') no-repeat 0 0;}
-        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--gray:not(.marker-home, .line-dashed)::before{background:url('./dist/assets/images/icon/marker-realtime-hexaPin--gray.png') no-repeat 0 0;}
-        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--red:not(.marker-home, .line-dashed)::before{background:url('./dist/assets/images/icon/marker-realtime-hexaPin--red.png') no-repeat 0 0;}
+        .is-twinkle .marker-realtime__hexagon--sapGreen {
+          animation-duration: .6s;
+          animation-name: twinkle__sapGreen-hexa;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
 
-        .marker-realtime__line{
+        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--sapGreen {
+          animation-duration: .6s;
+          animation-name: twinkle__sapGreen-hexaMin;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__gray {
+          animation-duration: .6s;
+          animation-name: twinkle__gray;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__gray .marker-realtime__header {
+          animation-duration: .6s;
+          animation-name: twinkle__gray-border;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__gray::before {
+          animation-duration: .6s;
+          animation-name: twinkle__gray-arr;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__hexagon--gray {
+          animation-duration: .6s;
+          animation-name: twinkle__gray-hexa;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--gray {
+          animation-duration: .6s;
+          animation-name: twinkle__gray-hexaMin;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--gray.marker-realtime__line {
+          animation-duration: .6s;
+          animation-name: twinkle__gray-hexa-line;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__orange {
+          animation-duration: .6s;
+          animation-name: twinkle__orange;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__orange.marker-realtime__line {
+          animation-name: twinkle__orange--line;
+        }
+
+        .is-twinkle .marker-realtime__orange .marker-realtime__header {
+          animation-duration: .6s;
+          animation-name: twinkle__orange-border;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__orange::before {
+          animation-duration: .6s;
+          animation-name: twinkle__orange-arr;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__hexagon--orange {
+          animation-duration: .6s;
+          animation-name: twinkle__orange-hexa;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--orange {
+          animation-duration: .6s;
+          animation-name: twinkle__orange-hexaMin;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes twinkle__normal {
+          from {
+            background-color: #538234;
+            border-color: #376419;
+          }
+
+          to {
+            background: #afd199;
+            border-color: #7dab5f;
+          }
+        }
+
+        @keyframes twinkle__normal--line {
+          from {
+            background-color: #538234;
+            border-color: #376419;
+          }
+
+          to {
+            background: #afd199 url(./dist/assets/images/etc/bg-line.png);
+            ;
+            border-color: #7dab5f;
+          }
+        }
+
+        @keyframes twinkle__normal-border {
+          from {
+            border-color: #376419;
+          }
+
+          to {
+            border-color: #7dab5f;
+          }
+        }
+
+        @keyframes twinkle__normal-arr {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr-twk.png);
+          }
+        }
+
+        @keyframes twinkle__sapGreen {
+          from {
+            background-color: #538234;
+            border-color: #376419;
+          }
+
+          to {
+            background: #afd199;
+            border-color: #7dab5f;
+          }
+        }
+
+        @keyframes twinkle__sapGreen-border {
+          from {
+            border-color: #376419;
+          }
+
+          to {
+            border-color: #7dab5f;
+          }
+        }
+
+        @keyframes twinkle__sapGreen-arr {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__arr-twk.png);
+          }
+        }
+
+        @keyframes twinkle__sapGreen-hexa {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexa.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexa-twk.png);
+          }
+        }
+
+        @keyframes twinkle__sapGreen-hexaMin {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexaMin.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_sapGreen__hexaMin-twk.png);
+          }
+        }
+
+        @keyframes twinkle__gray {
+          from {
+            background-color: #9e9e9e;
+            border-color: #7d7d7d;
+          }
+
+          to {
+            background: #d3d3d3 url(./dist/assets/images/etc/bg-line.png);
+            border-color: #a1a1a1;
+          }
+        }
+
+        @keyframes twinkle__gray-border {
+          from {
+            border-color: #7d7d7d;
+          }
+
+          to {
+            border-color: #a1a1a1;
+          }
+        }
+
+        @keyframes twinkle__gray-arr {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__arr.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__arr-twk.png);
+          }
+        }
+
+        @keyframes twinkle__gray-hexa {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__hexa.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__hexa-twk.png);
+          }
+        }
+
+        @keyframes twinkle__gray-hexaMin {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__hexaMin.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__hexaMin-twk.png);
+          }
+        }
+
+        @keyframes twinkle__gray-hexa-line {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__hexa-line.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_gray__hexa-line-twk.png);
+          }
+        }
+
+        @keyframes twinkle__orange {
+          from {
+            background-color: #ff9934;
+            border-color: #e07306;
+          }
+
+          to {
+            background: #ffcc98;
+            border-color: #e1a467;
+          }
+        }
+
+        @keyframes twinkle__orange--line {
+          from {
+            background-color: #ff9934;
+            border-color: #e07306;
+          }
+
+          to {
+            background: #ffcc98 url(./dist/assets/images/etc/bg-line.png);
+            border-color: #e1a467;
+          }
+        }
+
+        @keyframes twinkle__orange-border {
+          from {
+            border-color: #ffcc98;
+          }
+
+          to {
+            border-color: #e1a467;
+          }
+        }
+
+        @keyframes twinkle__orange-arr {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_orange__arr.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_orange__arr-twk.png);
+          }
+        }
+
+        @keyframes twinkle__orange-hexa {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_orange__hexa.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_orange__hexa-twk.png);
+          }
+        }
+
+        @keyframes twinkle__orange-hexaMin {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_orange__hexaMin.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_orange__hexaMin-twk.png);
+          }
+        }
+
+        .is-twinkle .marker-realtime__red {
+          animation-duration: .6s;
+          animation-name: twinkle__red;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__red.marker-realtime__line {
+          animation-name: twinkle__red--line;
+        }
+
+        .is-twinkle .marker-realtime__red .marker-realtime__header {
+          animation-duration: .6s;
+          animation-name: twinkle__red-border;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__red::before {
+          animation-duration: .6s;
+          animation-name: twinkle__red-arr;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime__hexagon--red {
+          animation-duration: .6s;
+          animation-name: twinkle__red-hexa;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        .is-twinkle .marker-realtime.marker-realtime__hexagonMin.marker-realtime__hexagonMin--red {
+          animation-duration: .6s;
+          animation-name: twinkle__red-hexaMin;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes twinkle__red {
+          from {
+            background-color: #e32e35;
+            border-color: #ac0000;
+          }
+
+          to {
+            background: #fcadb1;
+            border-color: #fe7f80;
+          }
+        }
+
+        @keyframes twinkle__red--line {
+          from {
+            background-color: #e32e35;
+            border-color: #ac0000;
+          }
+
+          to {
+            background: #fcadb1 url(./images/etc/bg-line.png);
+            border-color: #fe7f80;
+          }
+        }
+
+        @keyframes twinkle__red-border {
+          from {
+            border-color: #ac0000;
+          }
+
+          to {
+            border-color: #fe7f80;
+          }
+        }
+
+        @keyframes twinkle__red-arr {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_red__arr.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_red__arr-twk.png);
+          }
+        }
+
+        @keyframes twinkle__red-hexa {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_red__hexa.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_red__hexa-twk.png);
+          }
+        }
+
+        @keyframes twinkle__red-hexaMin {
+          from {
+            background: url(./dist/assets/images/icon/marker-realtime_red__hexaMin.png);
+          }
+
+          to {
+            background: url(./dist/assets/images/icon/marker-realtime_red__hexaMin-twk.png);
+          }
+        }
+
+        .marker-realtime__temp {
+          height: 70px;
+        }
+
+        .marker-realtime.marker-realtime__hexagon {
+          width: 25px;
+          height: 23px;
+          border: none;
+          border-radius: 8px;
+          line-height: 25px;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--sapGreen.marker-realtime__line {
+          background: url('./dist/assets/images/icon/marker-realtime_sapGreen__hexa-line.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--orange.marker-realtime__line {
+          background: url('./dist/assets/images/icon/marker-realtime_orange__hexa-line.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--red.marker-realtime__line {
+          background: url('./dist/assets/images/icon/marker-realtime_red__hexa-line.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--gray.marker-realtime__line {
+          background: url('./dist/assets/images/icon/marker-realtime_gray__hexa-line.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--sapGreen {
+          background: url('./dist/assets/images/icon/marker-realtime_sapGreen__hexa.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--orange {
+          background: url('./dist/assets/images/icon/marker-realtime_orange__hexa.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--red {
+          background: url('./dist/assets/images/icon/marker-realtime_red__hexa.png') no-repeat 0 0;
+        }
+
+        .marker-realtime.marker-realtime__hexagon.marker-realtime__hexagon--gray {
+          background: url('./dist/assets/images/icon/marker-realtime_gray__hexa.png') no-repeat 0 0;
+        }
+
+        .max-scale .marker-realtime.marker-realtime__hexagonMin {
+          width: 11px;
+          height: 11px;
+          border-radius: 8px;
+          border: none;
+        }
+
+        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--sapGreen {
+          background: url('./dist/assets/images/icon/marker-realtime_sapGreen__hexaMin.png') no-repeat 0 0;
+        }
+
+        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--orange {
+          background: url('./dist/assets/images/icon/marker-realtime_orange__hexaMin.png') no-repeat 0 0;
+        }
+
+        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--red {
+          background: url('./dist/assets/images/icon/marker-realtime_red__hexaMin.png') no-repeat 0 0;
+        }
+
+        .max-scale .marker-realtime__hexagonMin.marker-realtime__hexagonMin--gray {
+          background: url('./dist/assets/images/icon/marker-realtime_gray__hexaMin.png') no-repeat 0 0;
+        }
+
+        .marker-realtime__wrap>div.marker-realtime--hexaPin:not(.marker-home, .line-dashed)::before {
+          width: 15px;
+          height: 14px;
+          bottom: -22px;
+          border-radius: 0;
+        }
+
+        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--sapGreen:not(.marker-home, .line-dashed)::before {
+          background: url('./dist/assets/images/icon/marker-realtime-hexaPin--sapGreen.png') no-repeat 0 0;
+        }
+
+        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--orange:not(.marker-home, .line-dashed)::before {
+          background: url('./dist/assets/images/icon/marker-realtime-hexaPin--orange.png') no-repeat 0 0;
+        }
+
+        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--gray:not(.marker-home, .line-dashed)::before {
+          background: url('./dist/assets/images/icon/marker-realtime-hexaPin--gray.png') no-repeat 0 0;
+        }
+
+        .marker-realtime__wrap>div.marker-realtime--hexaPin.pin-color--red:not(.marker-home, .line-dashed)::before {
+          background: url('./dist/assets/images/icon/marker-realtime-hexaPin--red.png') no-repeat 0 0;
+        }
+
+        .marker-realtime__line {
           background-image: url(./dist/assets/images/etc/bg-line.png);
         }
-        .is-active .marker-realtime__line .marker-realtime__body{
+
+        .is-active .marker-realtime__line .marker-realtime__body {
           background-image: url(./dist/assets/images/etc/bg-line.png);
           background-position: left 2.5px top;
         }
+
         /* 대상자 관련지역 */
         /* .ralative-area{display: none;} */
-        .is-active .ralative-area, .ralative-area.is-active{display: block;}
-        .ralative-area__link{display:flex;position:relative;flex-direction:column;text-decoration: none;}
-        .ralative-area__hover-text{display:none;position:absolute;left:50%; bottom:-11px;width:max-content; padding:5px 6px;font-size:12px;font-weight: 600;border:1px solid #000000;background:#ffffff;line-height: 100%;}
-        .ralative-area__link:hover .ralative-area__hover-text{display: block;}
-        .ralative-area__link::before{display: none;}
-        .ralative-area__hover-text.is-active{display: block;}
+        .is-active .ralative-area,
+        .ralative-area.is-active {
+          display: block;
+        }
 
-        .ralative-area__temp{height: 100px;}
+        .ralative-area__link {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          text-decoration: none;
+        }
 
-        .marker-home{ display: block; position: relative; width:30px; height:36px; background: url(./dist/assets/images/icon/marker-home.png);}
-        .marker-home__temp{height:30px;}
+        .ralative-area__hover-text {
+          display: none;
+          position: absolute;
+          left: 50%;
+          bottom: -11px;
+          width: max-content;
+          padding: 5px 6px;
+          font-size: 12px;
+          font-weight: 600;
+          border: 1px solid #000000;
+          background: #ffffff;
+          line-height: 100%;
+        }
 
-        .marker-home-red{
-              width:49px !important;
-              height:56px !important;
-              background: url(./dist/assets/images/icon/marker-home-red.png) !important;
-          }
+        .ralative-area__link:hover .ralative-area__hover-text {
+          display: block;
+        }
 
-            .marker-home-blue{
-                width:25px !important;
-                height:30px !important;
-                background: url(./dist/assets/images/icon/flag-is-active.png) !important;
-          }
-        
-          .marker-realtime__pink{
-            background-color: #ea74bd !important;
-            border:1px solid #e5008c !important;
-          }
-          .marker-realtime__sapGreen{background-color:#538234;border:1px solid #376419;}
-          .marker-realtime__header__pink{
-            border-bottom:1px solid #e5008c !important;
-          }
-          .marker-realtime__pink .marker-realtime__header{
-            border-color: #e5008c;
-          }
+        .ralative-area__link::before {
+          display: none;
+        }
 
-          .high-scale .marker-realtime__link-after::after{
-            display:none !important;
-          }
+        .ralative-area__hover-text.is-active {
+          display: block;
+        }
 
-          .marker-realtime .flag-time{
-            position: absolute;
-              left: 50%;
-              bottom: -24px;
-              width: auto;
-              padding: 3px;
-              font-size: 11px;
-              font-weight: 500;
-              line-height: 100%;
-              transform: translateX(-50%);
-              box-sizing: border-box;
-          }
-          .high-scale .marker-realtime__pink .marker-realtime__link::after{display: none;}
+        .ralative-area__temp {
+          height: 100px;
+        }
 
-          .flag{z-index: 1; width:29px;}
-          .icon-flag{display: block;min-width:29px;height:27px;padding: 0 2.5px !important; background:#ffffff;/* background: url(./dist/assets/images/icon/flag.png) no-repeat; */text-decoration: none;border-radius: 20px;border:3px solid #4666ca;box-sizing: border-box;}
-          .icon-flag span{display: block;position:relative;width:100%;text-align: center; line-height: 22px;font-weight:600; text-indent: -2.5px; font-size:12px;}
-          .icon-flag::before{position:absolute; left: 50%; bottom:-6px; width: 17px; height:100%; background: url(./dist/assets/images/icon/flag-is-active.png) no-repeat;  content:""; transform: translateX(-50%); background-position: bottom;z-index: -1;}
-          .icon-flag.is-active{background-color: #4666ca;/* background: url(./dist/assets/images/icon/flag-is-active.png) no-repeat; */}
-          .icon-flag.is-active span:not(.flag-time){color:#ffffff !important;}
+        .marker-home {
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 36px;
+          background: url(./dist/assets/images/icon/marker-home.png);
+        }
 
-          /* SC_04_04 */
-          .icon-flag .flag-time{
-            position: absolute;
-            left: 50%;
-            bottom: -24px;
-            width:auto;
-            padding:3px;
-            font-size:11px;
-            font-weight: 500;
-            line-height: 100%;
-            transform: translateX(-50%);
-            box-sizing: border-box;
-          }
+        .marker-home__temp {
+          height: 30px;
+        }
+
+        .marker-home-red {
+          width: 49px !important;
+          height: 56px !important;
+          background: url(./dist/assets/images/icon/marker-home-red.png) !important;
+        }
+
+        .marker-home-blue {
+          width: 25px !important;
+          height: 30px !important;
+          background: url(./dist/assets/images/icon/flag-is-active.png) !important;
+        }
+
+        .marker-realtime__pink {
+          background-color: #ea74bd !important;
+          border: 1px solid #e5008c !important;
+        }
+
+        .marker-realtime__sapGreen {
+          background-color: #538234;
+          border: 1px solid #376419;
+        }
+
+        .marker-realtime__header__pink {
+          border-bottom: 1px solid #e5008c !important;
+        }
+
+        .marker-realtime__pink .marker-realtime__header {
+          border-color: #e5008c;
+        }
+
+        .high-scale .marker-realtime__link-after::after {
+          display: none !important;
+        }
+
+        .marker-realtime .flag-time {
+          position: absolute;
+          left: 50%;
+          bottom: -24px;
+          width: auto;
+          padding: 3px;
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 100%;
+          transform: translateX(-50%);
+          box-sizing: border-box;
+        }
+
+        .high-scale .marker-realtime__pink .marker-realtime__link::after {
+          display: none;
+        }
+
+        .flag {
+          z-index: 1;
+          width: 29px;
+        }
+
+        .icon-flag {
+          display: block;
+          min-width: 29px;
+          height: 27px;
+          padding: 0 2.5px !important;
+          background: #ffffff;
+          /* background: url(./dist/assets/images/icon/flag.png) no-repeat; */
+          text-decoration: none;
+          border-radius: 20px;
+          border: 3px solid #4666ca;
+          box-sizing: border-box;
+        }
+
+        .icon-flag span {
+          display: block;
+          position: relative;
+          width: 100%;
+          text-align: center;
+          line-height: 22px;
+          font-weight: 600;
+          text-indent: -2.5px;
+          font-size: 12px;
+        }
+
+        .icon-flag::before {
+          position: absolute;
+          left: 50%;
+          bottom: -6px;
+          width: 17px;
+          height: 100%;
+          background: url(./dist/assets/images/icon/flag-is-active.png) no-repeat;
+          content: "";
+          transform: translateX(-50%);
+          background-position: bottom;
+          z-index: -1;
+        }
+
+        .icon-flag.is-active {
+          background-color: #4666ca;
+          /* background: url(./dist/assets/images/icon/flag-is-active.png) no-repeat; */
+        }
+
+        .icon-flag.is-active span:not(.flag-time) {
+          color: #ffffff !important;
+        }
+
+        /* SC_04_04 */
+        .icon-flag .flag-time {
+          position: absolute;
+          left: 50%;
+          bottom: -24px;
+          width: auto;
+          padding: 3px;
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 100%;
+          transform: translateX(-50%);
+          box-sizing: border-box;
+        }
 
 
-          .line-dashed{ display: none; position: absolute; height:5px; background: url(./dist/assets/images/icon/line-double.svg); background-size: cover;}
-          .line-dashed.is-active{display: block;}
-          .is-active .line-dashed{display: block;}
-          .line-dashed.is-active.final{   
-            position: absolute;
-            height: 11px;
-            background: url(./dist/assets/images/icon/line-double__arrow.svg);
-            background-size: cover;
-            background-position: right center;
-            }
+        .line-dashed {
+          display: none;
+          position: absolute;
+          height: 5px;
+          background: url(./dist/assets/images/icon/line-double.svg);
+          background-size: cover;
+        }
 
-          
-            .marker-cctv-point {width:25px;}
-            .high-scale .marker-realtime__link .marker-realtime__bottom{display:inline-block;width:100%;font-size:12px;font-weight: 600;text-align:center;color:#ffffff;line-height: 21px;}
+        .line-dashed.is-active {
+          display: block;
+        }
 
+        .is-active .line-dashed {
+          display: block;
+        }
+
+        .line-dashed.is-active.final {
+          position: absolute;
+          height: 11px;
+          background: url(./dist/assets/images/icon/line-double__arrow.svg);
+          background-size: cover;
+          background-position: right center;
+        }
+
+
+        .marker-cctv-point {
+          width: 25px;
+        }
+
+        .high-scale .marker-realtime__link .marker-realtime__bottom {
+          display: inline-block;
+          width: 100%;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          color: #ffffff;
+          line-height: 21px;
+        }
       </style>
 
       <h2 class="test-title">Pin</h2>
@@ -4726,162 +5556,165 @@
             <a href="#none" class="icon-flag icon-flag1"><span>2</span><span class="flag-time">01:10</span></a>
           </div>
 
-          <div class="marker-home  marker-home-red ralative-area__link ralative-area ralative-area__negative is-active" style="position:absolute; z-index:15; left:91px; top:-7px">
+          <div class="marker-home  marker-home-red ralative-area__link ralative-area ralative-area__negative is-active"
+            style="position:absolute; z-index:15; left:91px; top:-7px">
             <a href="#none" class="marker-realtime__link is-active"><span></span></a>
             <div class="ralative-area__hover-text ralative-area__hover-text">도로명) 강원도 홍천군 화촌면 서상로</br>
-                                                    지번) 성산리 416-1
+              지번) 성산리 416-1
             </div>
           </div>
-          
+
 
           <div class="marker-cctv-point is-active" style="position:absolute; z-index:15; left:251px; top:95px;">
-            <a href="#none" class="marker-cctv-point__link" >
-                <img src="./dist/assets/images/icon/icon-marker--cctv.png" alt="">
+            <a href="#none" class="marker-cctv-point__link">
+              <img src="./dist/assets/images/icon/icon-marker--cctv.png" alt="">
             </a>
           </div>
 
         </div>
 
         <div class="marker-home__temp" style="position:relative; height:100px;">
-          <div class="line-dashed is-active" style="left: 0px;top: 70px;width:110px;transform: rotate(314deg);z-index:-1;"></div>
-          <div class="line-dashed is-active final" style="left:85px;top: 70px;width: 85px;transform: rotate(314deg);z-index:-1;"></div>
+          <div class="line-dashed is-active"
+            style="left: 0px;top: 70px;width:110px;transform: rotate(314deg);z-index:-1;"></div>
+          <div class="line-dashed is-active final"
+            style="left:85px;top: 70px;width: 85px;transform: rotate(314deg);z-index:-1;"></div>
           <div class="demon-icon" style="left:183px; top: 60px; "></div>
         </div>
-        
+
 
       </div>
-      
+
       <div class="guide-section-sub">
         <h3 class="test-title">기본</h3>
 
         <div class="marker-realtime__temp">
 
-            <!-- 기본 핀 -->
-            <div class="marker-realtime__wrap">
-              <!-- 클릭시 class에 is-active 추가해주세요 -->
-              <div style="position: absolute; z-index: 15;">
-                  <div class="marker-realtime marker-realtime__sapGreen">
-                      <a href="#none" class="marker-realtime__link">
-                          <div class="marker-realtime__header">
-                              <span class="marker-realtime__header--left">집중Ⅲ</span>
-                              <span class="marker-realtime__header--right">H</span>
-                          </div>
-                          <div class="marker-realtime__body">
-                              신창원
-                          </div>
-                          <div class="marker-realtime__bottom">
-                          </div>
-                      </a>
-
+          <!-- 기본 핀 -->
+          <div class="marker-realtime__wrap">
+            <!-- 클릭시 class에 is-active 추가해주세요 -->
+            <div style="position: absolute; z-index: 15;">
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
                   </div>
+                  <div class="marker-realtime__body">
+                    신창원
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
+
               </div>
-
-
             </div>
-            <!-- 기본  -->
-            <div class="marker-realtime__wrap is-twinkle">
-              <!-- 클릭시 class에 is-active 추가해주세요 -->
-              <div style="position: absolute; z-index: 15; left: 150px;">
-                  <div class="marker-realtime marker-realtime__sapGreen">
-                      <a href="#none" class="marker-realtime__link">
-                          <div class="marker-realtime__header">
-                              <span class="marker-realtime__header--left">집중Ⅲ</span>
-                              <span class="marker-realtime__header--right">H</span>
-                          </div>
-                          <div class="marker-realtime__body">
-                              신창원
-                          </div>
-                          <div class="marker-realtime__bottom">
-                          </div>
-                      </a>
 
+
+          </div>
+          <!-- 기본  -->
+          <div class="marker-realtime__wrap is-twinkle">
+            <!-- 클릭시 class에 is-active 추가해주세요 -->
+            <div style="position: absolute; z-index: 15; left: 150px;">
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
                   </div>
+                  <div class="marker-realtime__body">
+                    신창원
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
+
               </div>
+            </div>
 
 
           </div>
 
           <div class="marker-realtime__wrap high-scale">
             <div style="position: absolute; z-index: 15; left: 250px">
-                <div class="marker-realtime marker-realtime__sapGreen">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                                    P
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
           <div class="marker-realtime__wrap high-scale is-twinkle">
-                    <!-- 클릭시 class에 is-active 추가해주세요 -->
-                    <div style="position: absolute; z-index: 15; left: 280px; " class="pin-color--sapGreen">
-                        <div class="marker-realtime marker-realtime__sapGreen">
-                            <a href="#none" class="marker-realtime__link">
-                                <div class="marker-realtime__header">
-                                    <span class="marker-realtime__header--left">집중Ⅲ</span>
-                                    <span class="marker-realtime__header--right">H</span>
-                                </div>
-                                <div class="marker-realtime__body">
-                                    신창원
-                                </div>
-                                <div class="marker-realtime__bottom">
-                                    P
-                                </div>
-                            </a>
+            <!-- 클릭시 class에 is-active 추가해주세요 -->
+            <div style="position: absolute; z-index: 15; left: 280px; " class="pin-color--sapGreen">
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    신창원
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                        </div>
-                    </div>
+              </div>
+            </div>
 
 
-                </div>
+          </div>
 
 
           <div class="marker-realtime__wrap max-scale">
             <div style="position: absolute; z-index: 15; left: 320px">
-                <div class="marker-realtime marker-realtime__sapGreen">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                          P
-                      </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
           <div class="marker-realtime__wrap max-scale is-twinkle">
             <div style="position: absolute; z-index: 15; left: 340px">
-                <div class="marker-realtime marker-realtime__sapGreen">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                          P
-                      </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
@@ -4889,44 +5722,44 @@
           <div class="marker-realtime__wrap">
             <!-- 클릭시 class에 is-active 추가해주세요 -->
             <div style="position: absolute; z-index: 15; left: 380px;" class="marker-realtime--hexaPin">
-                <div class="marker-realtime marker-realtime__sapGreen">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--center">고</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            신창원
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                    </a>
-        
-                </div>
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--center">고</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    신창원
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
+
+              </div>
             </div>
-        
+
           </div>
 
           <!-- 기본 점멸(배터리 잔량 40% 미만 대상자)일때  -->
           <div class="marker-realtime__wrap is-twinkle">
             <!-- 클릭시 class에 is-active 추가, 점멸일때 is-twinkle 추가  -->
             <div style="position: absolute; z-index: 15; left: 480px;" class="marker-realtime--hexaPin">
-                <div class="marker-realtime marker-realtime__sapGreen">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--center">고</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            신창원
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--center">고</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    신창원
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
           <!-- 기본 점멸(배터리 잔량 40% 미만 대상자)일때  -->
@@ -4935,27 +5768,27 @@
           <div class="marker-realtime__wrap high-scale">
             <!-- 클릭시 class에 is-active 추가해주세요 -->
             <div style="position: absolute; z-index: 15; left: 590px">
-                <div class="marker-realtime marker-realtime__hexagon marker-realtime__hexagon--sapGreen">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            신창원
-                        </div>
-                        <div class="marker-realtime__bottom">
-                            P
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__hexagon marker-realtime__hexagon--sapGreen">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    신창원
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
-        </div>
-        <!-- //고위험 육각별 ::고축척일때 그린 -->
+          </div>
+          <!-- //고위험 육각별 ::고축척일때 그린 -->
 
 
-          
+
 
         </div>
 
@@ -4968,79 +5801,79 @@
           <div class="marker-realtime__wrap">
             <!-- 클릭시 class에 is-active 추가해주세요 -->
             <div style="position: absolute; z-index: 15;">
-                <div class="marker-realtime marker-realtime__red">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                    </a>
-                </div>
+              <div class="marker-realtime marker-realtime__red">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-        
+
 
           <div class="marker-realtime__wrap is-twinkle">
             <!-- 클릭시 class에 is-active 추가해주세요 -->
             <div style="position: absolute; left: 150px; z-index: 15;">
-                <div class="marker-realtime marker-realtime__red ">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__red ">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
           <div class="marker-realtime__wrap high-scale">
             <div style="position: absolute; z-index: 15; left: 250px">
-                <div class="marker-realtime marker-realtime__red">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                          P
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__red">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
           <div class="marker-realtime__wrap max-scale">
             <div style="position: absolute; z-index: 15; left: 300px">
-                <div class="marker-realtime marker-realtime__red">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__red">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
@@ -5054,60 +5887,60 @@
         <div class="marker-realtime__temp">
           <div class="marker-realtime__wrap">
             <div style="position: absolute; z-index: 15;">
-                <div class="marker-realtime marker-realtime__pink">
-                    
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">안전</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                        <div class="flag-time">01:20</div>
-                      
-                  </div>
+              <div class="marker-realtime marker-realtime__pink">
+
+                <div class="marker-realtime__header">
+                  <span class="marker-realtime__header--left">안전</span>
+                </div>
+                <div class="marker-realtime__body">
+                  박홍길동
+                </div>
+                <div class="marker-realtime__bottom">
+                </div>
+                <div class="flag-time">01:20</div>
+
               </div>
+            </div>
           </div>
-        
+
 
 
           <div class="marker-realtime__wrap high-scale">
             <div style="position: absolute; z-index: 15; left: 150px">
-                <div class="marker-realtime marker-realtime__pink">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                          P
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__pink">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                    P
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
           <div class="marker-realtime__wrap max-scale">
             <div style="position: absolute; z-index: 15; left: 200px">
-                <div class="marker-realtime marker-realtime__pink">
-                    <a href="#none" class="marker-realtime__link">
-                        <div class="marker-realtime__header">
-                            <span class="marker-realtime__header--left">집중Ⅲ</span>
-                            <span class="marker-realtime__header--right">H</span>
-                        </div>
-                        <div class="marker-realtime__body">
-                            박홍길동
-                        </div>
-                        <div class="marker-realtime__bottom">
-                        </div>
-                    </a>
+              <div class="marker-realtime marker-realtime__pink">
+                <a href="#none" class="marker-realtime__link">
+                  <div class="marker-realtime__header">
+                    <span class="marker-realtime__header--left">집중Ⅲ</span>
+                    <span class="marker-realtime__header--right">H</span>
+                  </div>
+                  <div class="marker-realtime__body">
+                    박홍길동
+                  </div>
+                  <div class="marker-realtime__bottom">
+                  </div>
+                </a>
 
-                </div>
+              </div>
             </div>
           </div>
 
@@ -5122,12 +5955,13 @@
         <div class="ralative-area__temp">
           <div class="ralative-area ralative-area__positive">
             <div class="ralative-area__inner">
-                <a class="ralative-area__link" href="#none" style="position: absolute;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94">
-                        <path fill-rule="evenodd" opacity=".659" fill="#D0D8AF" d="M47 0c25.957 0 47 21.043 47 47S72.957 94 47 94 0 72.957 0 47 21.043 0 47 0Z"></path>
-                    </svg>
-                    <div class="ralative-area__hover-text">[긍정] 엄마집</div>
-                </a>
+              <a class="ralative-area__link" href="#none" style="position: absolute;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94">
+                  <path fill-rule="evenodd" opacity=".659" fill="#D0D8AF"
+                    d="M47 0c25.957 0 47 21.043 47 47S72.957 94 47 94 0 72.957 0 47 21.043 0 47 0Z"></path>
+                </svg>
+                <div class="ralative-area__hover-text">[긍정] 엄마집</div>
+              </a>
             </div>
 
           </div>
@@ -5136,12 +5970,14 @@
         <div class="ralative-area__temp">
           <div class="ralative-area ralative-area__negative">
             <div class="ralative-area__inner">
-                <a class="ralative-area__link" href="#none"  style="position: absolute;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
-                      <path fill-rule="evenodd" opacity=".659" fill="#FF787D" d="M30 0c16.568 0 30 13.431 30 30 0 16.568-13.432 30-30 30C13.431 60 0 46.568 0 30 0 13.431 13.431 0 30 0Z"></path>
-                    </svg>
-                    <div class="ralative-area__hover-text">[긍정] 엄마집</div>
-                </a>
+              <a class="ralative-area__link" href="#none" style="position: absolute;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                  <path fill-rule="evenodd" opacity=".659" fill="#FF787D"
+                    d="M30 0c16.568 0 30 13.431 30 30 0 16.568-13.432 30-30 30C13.431 60 0 46.568 0 30 0 13.431 13.431 0 30 0Z">
+                  </path>
+                </svg>
+                <div class="ralative-area__hover-text">[긍정] 엄마집</div>
+              </a>
             </div>
           </div>
         </div>
@@ -5150,33 +5986,33 @@
         <div class="ralative-area__temp" style=" position:relative; height: 200px;">
           <div class="POI-area">
             <svg height="150" width="200" style="position:absolute;">
-                <polygon points="100,10 200,110 170,150 123,204" style="fill:rgba(204,184,174,.55);"></polygon>
+              <polygon points="100,10 200,110 170,150 123,204" style="fill:rgba(204,184,174,.55);"></polygon>
             </svg>
             <a class="POI-area__link" href="#none" style="position: absolute; top: 150px;left: 170px;">
-                <div class="POI-area__text">목화 어린이집</div>
+              <div class="POI-area__text">목화 어린이집</div>
             </a>
           </div>
         </div>
 
 
 
-        
-
-      </div>
-
-      </div>
-
-      
-
-
 
 
       </div>
-      
-      
+
     </div>
 
-   
+
+
+
+
+
+  </div>
+
+
+  </div>
+
+
 
 </body>
 
