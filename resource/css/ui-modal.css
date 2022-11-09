@@ -24,7 +24,6 @@
   border: 0;
   box-shadow: none;
   border-radius: 2rem;
-  overflow: hidden;
   /* 모달 사이즈 */
 }
 .modal-content__email .modal-tit {
@@ -106,6 +105,10 @@
   font-size: 5rem;
   line-height: 7rem;
 }
+.modal-text__small--title {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+}
 .modal-backdrop {
   background: transparent;
 }
@@ -118,7 +121,7 @@
   display: flex;
 }
 .modal-buttons__sticky .ui-button {
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 0;
   border-bottom: 0;
   border-left: 0;
@@ -126,6 +129,8 @@
 }
 .modal-buttons__sticky .ui-button + .ui-button {
   margin-left: 0;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 2rem;
 }
 .modal-box__gray {
   padding: 5rem 6rem;
