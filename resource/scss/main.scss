@@ -662,3 +662,29 @@
         }
     }
 }
+
+/* 간병 기간 변경하기 팝업 */ 
+.care{
+    &-date{
+        &__list{
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            &+&{
+                margin-top: 8rem;
+            }
+        }
+        &__title, &__text{
+            font-size: 5.4rem;
+        }
+        &__title{
+            width: 40rem;
+            color:#575c62;
+            flex:none;
+        }
+        &__button{
+            margin-left: auto;
+            flex:none;
+        }
+    }
+}

@@ -600,3 +600,25 @@
   background: url(../image/main/icon-star.png);
   background-size: cover;
 }
+
+/* 간병 기간 변경하기 팝업 */
+.care-date__list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.care-date__list + .care-date__list {
+  margin-top: 8rem;
+}
+.care-date__title, .care-date__text {
+  font-size: 5.4rem;
+}
+.care-date__title {
+  width: 40rem;
+  color: #575c62;
+  flex: none;
+}
+.care-date__button {
+  margin-left: auto;
+  flex: none;
+}

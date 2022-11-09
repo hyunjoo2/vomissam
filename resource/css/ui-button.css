@@ -13,19 +13,19 @@
   display: flex;
 }
 .ui-button__page--back {
-  width: 14rem;
+  width: 10rem;
   height: 100%;
-  margin-right: 5rem;
   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='54'%3E%3Cpath fill-rule='evenodd' d='M30.254 7.058 9.817 27.495l19.128 19.128a3.749 3.749 0 0 1 0 5.303 3.749 3.749 0 0 1-5.303 0L2.074 30.359c-.018-.019-.03-.04-.048-.059-.018-.018-.04-.029-.058-.047a3.6 3.6 0 0 1 0-5.092L25.162 1.967a3.6 3.6 0 0 1 5.092 5.091Z'/%3E%3C/svg%3E");
   background-size: 3.2rem 5.3rem;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
 }
 .ui-button__certi {
   width: 42rem;
   margin-left: 2rem;
   background: #666666;
   color: #ffffff;
+  flex: none;
 }
 .ui-button__bg-blue {
   background: #4b62c3;
@@ -54,6 +54,13 @@
 .ui-button__height-s {
   height: 12.5rem;
   font-size: 6rem;
+}
+.ui-button__font-s {
+  font-size: 6rem;
+}
+.ui-button-modify {
+  font-size: 5.4rem;
+  color: #03b1f0;
 }
 
 .button-joinSocial {

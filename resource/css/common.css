@@ -315,6 +315,12 @@ html, body, .wrap {
   background-size: 8.6rem 8.9rem;
 }
 
+.line-gray {
+  width: 100%;
+  height: 3rem;
+  background: #f2f3f7;
+}
+
 /* footer */
 .footer__inner {
   margin-top: 45.5rem;
