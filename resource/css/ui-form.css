@@ -46,6 +46,17 @@
 .ui-form__button {
   display: flex;
 }
+.ui-form__cell {
+  display: flex;
+  align-items: center;
+}
+.ui-form__cell .ui-form {
+  flex: 1;
+}
+.ui-form__text {
+  font-size: 5.5rem;
+  margin-right: 6.5rem;
+}
 .ui-input {
   padding-left: 3.6rem;
   height: 20rem;
@@ -61,6 +72,15 @@
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
+}
+.ui-select {
+  width: 100%;
+  height: 20rem;
+  border: 0.3rem solid #d8dce2;
+  box-sizing: border-box;
+  background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
+  background-size: 3.9rem 2.6rem;
+  border-radius: 1.5rem;
 }
 .ui-textarea {
   height: 15rem;

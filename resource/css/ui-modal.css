@@ -1,5 +1,8 @@
+@charset "UTF-8";
 .modal {
+  background: rgba(0, 0, 0, 0.5);
   padding-right: 0 !important;
+  /* case3 간병시작하기 모달 */
 }
 .modal-header {
   padding: 10rem 6rem 0 6rem;
@@ -14,7 +17,7 @@
   justify-content: center;
 }
 .modal-content {
-  max-width: 80%;
+  max-width: calc(100% - 10rem);
   max-height: 80%;
   width: 100%;
   padding: 0;
@@ -22,6 +25,7 @@
   box-shadow: none;
   border-radius: 2rem;
   overflow: hidden;
+  /* 모달 사이즈 */
 }
 .modal-content__email .modal-tit {
   margin-bottom: 3rem;
@@ -31,6 +35,18 @@
   display: block;
   margin-bottom: 2rem;
   text-align: center;
+}
+.modal-content__modifyDateCalendar .modal-header {
+  margin-top: 10rem;
+  margin-bottom: 9rem;
+  padding: 0 8rem;
+}
+.modal-content-chooseCarer .modal-core {
+  padding-top: 12rem;
+  padding-bottom: 13rem;
+}
+.modal-content__s {
+  width: calc(100% - 32rem);
 }
 .modal-core {
   padding: 12.5rem 5rem;
@@ -57,6 +73,10 @@
   background: #000000;
   content: "";
 }
+.modal-core3 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
 .modal-tit {
   margin-bottom: 2.5rem;
   font-size: 2rem;
@@ -70,16 +90,24 @@
   text-align: center;
   line-height: 9rem;
 }
+.modal-title2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+.modal-title__font-l {
+  font-size: 7.5rem;
+}
 .modal-text {
   font-size: 6rem;
   line-height: normal;
+  word-break: keep-all;
 }
 .modal-text__small {
   font-size: 5rem;
   line-height: 7rem;
 }
 .modal-backdrop {
-  background: rgba(0, 0, 0, 0.56);
+  background: transparent;
 }
 .modal-buttons .ui-button {
   font-size: 6rem;
@@ -107,4 +135,12 @@
 .modal-box__gray * {
   font-size: 5rem;
   line-height: 7rem;
+}
+.modal-user {
+  margin-bottom: 9rem;
+  font-size: 5rem;
+}
+.modal-user__name {
+  font-size: 6.5rem;
+  font-weight: 500;
 }
