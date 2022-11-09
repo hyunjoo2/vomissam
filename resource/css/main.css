@@ -426,7 +426,7 @@
   background-image: url(../image/main/icon-end.png);
   background-size: 9.3rem 8.1rem;
 }
-.progress-step::before {
+.progress-step:not(.progress-step__end)::before {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -438,13 +438,25 @@
   transform: translateY(-50%);
   content: "";
 }
+.progress-step:not(.progress-step__end).is-active::before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%234b62c3' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
+}
+.progress-step:not(.progress-step__end).is-active.progress-step__matching {
+  background-image: url(../image/main/icon-matching__active.png);
+}
+.progress-step:not(.progress-step__end).is-active.progress-step__waiting {
+  background-image: url(../image/main/icon-waiting__active.png);
+}
+.progress-step:not(.progress-step__end).is-active.progress-step__doing {
+  background-image: url(../image/main/icon-doing__active.png);
+}
+.progress-step:not(.progress-step__end).is-active.progress-step__end {
+  background-image: url(../image/main/icon-end__active.png);
+}
 .progress-step.is-active {
   background-color: #4b62c3;
   color: #ffffff;
   box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.35);
-}
-.progress-step.is-active::before {
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%234b62c3' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
 }
 .progress-step.is-active.progress-step__matching {
   background-image: url(../image/main/icon-matching__active.png);
@@ -458,23 +470,23 @@
 .progress-step.is-active.progress-step__end {
   background-image: url(../image/main/icon-end__active.png);
 }
-.progress-step.is-past {
+.progress-step:not(.progress-step__end).is-past {
   background-color: #ffffff;
   color: #2e439b;
 }
-.progress-step.is-past::before {
+.progress-step:not(.progress-step__end).is-past::before {
   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
 }
-.progress-step.is-past.progress-step__matching {
+.progress-step:not(.progress-step__end).is-past.progress-step__matching {
   background-image: url(../image/main/icon-matching__past.png);
 }
-.progress-step.is-past.progress-step__waiting {
+.progress-step:not(.progress-step__end).is-past.progress-step__waiting {
   background-image: url(../image/main/icon-waiting__past.png);
 }
-.progress-step.is-past.progress-step__doing {
+.progress-step:not(.progress-step__end).is-past.progress-step__doing {
   background-image: url(../image/main/icon-doing__past.png);
 }
-.progress-step.is-past.progress-step__end {
+.progress-step:not(.progress-step__end).is-past.progress-step__end {
   background-image: url(../image/main/icon-end__past.png);
 }
 
