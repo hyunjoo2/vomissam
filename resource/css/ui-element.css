@@ -73,3 +73,14 @@
   background-size: 10.3rem 9.8rem;
   cursor: pointer;
 }
+
+.text-ex {
+  margin-top: 4rem;
+  font-size: 5.5rem;
+  color: #9196a5;
+}
+
+.ui-required {
+  color: #DD5458;
+  margin-left: 1rem;
+}

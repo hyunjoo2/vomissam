@@ -4,6 +4,13 @@
 .width-170 {
   width: 17rem;
 }
+.width-370 {
+  width: 37rem;
+}
+
+.height-265 {
+  height: 26.5rem;
+}
 
 .mr-auto {
   margin-right: auto;

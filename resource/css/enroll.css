@@ -117,6 +117,13 @@
   font-size: 5.5rem;
   font-weight: 500;
 }
+.enroll-title__sub .ui-required {
+  font-size: 5.5rem;
+}
+.enroll-title__des {
+  font-size: 6rem;
+  margin-left: 1rem;
+}
 .enroll-title .ui-required {
   color: #DD5458;
   margin-left: 1rem;
@@ -126,6 +133,9 @@
 }
 .enroll-box + .enroll-box {
   margin-top: 13rem;
+}
+.enroll-box__sub + .enroll-box__sub {
+  margin-top: 8rem;
 }
 
 .hospital-list__inner {
@@ -168,8 +178,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 25.6rem;
-  padding: 5rem 0;
+  min-height: 25.6rem;
+  padding: 2rem 0;
   border: 0.3rem dashed #d8dce2;
   border-radius: 1rem;
   font-size: 5.5rem;
@@ -178,7 +188,21 @@
   line-height: 10rem;
 }
 .care-period__text.is-inputed {
+  flex-direction: column;
   color: #3c50a2;
   border: 0.3rem solid #4b62c3;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.care-period__text--inner {
+  padding: 2.5rem 0;
+}
+.care-period__dl {
+  display: flex;
+}
+.care-period__dl + .care-period__dl {
+  margin-top: 4.5rem;
+}
+.care-period__dt {
+  width: 26.5rem;
+  flex: none;
 }

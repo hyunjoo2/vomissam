@@ -7,6 +7,10 @@ $(function(){
         $(this).siblings().removeClass("is-active");
     });
 
+    $(".ui-button__check--multi").click(function(){
+        $(this).toggleClass("is-active");
+    });
+
     $(".ui-button__click").click(function(){
         $(this).addClass("is-active");
         $(this).siblings().removeClass("is-active");

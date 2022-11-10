@@ -64,6 +64,9 @@
   width: auto;
   padding: 0 4.8rem;
 }
+.ui-button__width-280 {
+  width: 28rem;
+}
 .ui-button__height-s {
   height: 12.5rem;
   font-size: 6rem;
@@ -154,6 +157,14 @@
   text-align: left;
 }
 .ui-button__check.is-active {
+  font-weight: 500;
+  color: #3c50a2;
+  border-color: #4b62c3;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background-size: 4.5rem 3.1rem;
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.ui-button__check--multi.is-active {
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
