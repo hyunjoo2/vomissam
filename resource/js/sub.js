@@ -5,6 +5,11 @@ $(function(){
     $(".ui-button__check").click(function(){
         $(this).addClass("is-active");
         $(this).siblings().removeClass("is-active");
+    });
+
+    $(".ui-button__click").click(function(){
+        $(this).addClass("is-active");
+        $(this).siblings().removeClass("is-active");
     })
 
 

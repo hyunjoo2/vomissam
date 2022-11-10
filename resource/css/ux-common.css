@@ -223,10 +223,19 @@
   width: 66rem;
   flex: none;
 }
+.ui-button__width-auto {
+  width: auto;
+  padding: 0 4.8rem;
+}
 .ui-button__height-s {
   height: 12.5rem;
   font-size: 6rem;
   line-height: 12.6rem;
+}
+.ui-button__height-m {
+  height: 15rem;
+  font-size: 6rem;
+  line-height: 15.1rem;
 }
 .ui-button__font-xs {
   font-size: 5.5rem;
@@ -267,15 +276,52 @@
   height: 9.2rem;
   background-image: url(../image/sub/icon/icon-female.png);
 }
+.ui-button__icon-calendar::before {
+  width: 6.6rem;
+  height: 6.5rem;
+  margin-top: -1rem;
+  background-image: url(../image/sub/icon/icon-calendar.png);
+}
+.ui-button__icon-clock::before {
+  width: 6.5rem;
+  height: 6.5rem;
+  margin-top: -1rem;
+  background-image: url(../image/sub/icon/icon-clock.png);
+}
+.ui-button__icon-hospital::before {
+  width: 7.9rem;
+  height: 7.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/sub/icon/icon-hospital.png);
+}
+.ui-button__icon-home::before {
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/sub/icon/icon-home.png);
+}
+.ui-button__icon-right::before {
+  width: 2.9rem;
+  height: 5.3rem;
+  margin: 0;
+  background-image: url(../image/sub/icon/icon-right.png);
+}
 .ui-button__left {
   padding: 0 4rem;
   text-align: left;
 }
 .ui-button__check.is-active {
+  font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
   background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
   background-size: 4.5rem 3.1rem;
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.ui-button__click.is-active {
+  font-weight: 500;
+  color: #3c50a2;
+  border-color: #4b62c3;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /** element */
+.width-80 {
+  width: 8rem;
+}
+.width-170 {
+  width: 17rem;
+}
+
 .mr-auto {
   margin-right: auto;
 }
@@ -36,8 +43,26 @@
 .mt-60 {
   margin-top: 6rem;
 }
+.mt-70 {
+  margin-top: 7rem;
+}
+.mt-75 {
+  margin-top: 7.5rem;
+}
 .mt-80 {
   margin-top: 8rem;
+}
+.mt-90 {
+  margin-top: 9rem;
+}
+.mt-115 {
+  margin-top: 11.5rem;
+}
+.mt-140 {
+  margin-top: 14rem;
+}
+.mt-150 {
+  margin-top: 15rem;
 }
 .mb-60 {
   margin-bottom: 6rem;
@@ -81,6 +106,26 @@
 
 .color-blue {
   color: #3c50a2;
+}
+
+/* img */
+.img-alert {
+  width: 16.8rem;
+  height: 16.8rem;
+  margin: 0 auto;
+  background: url(../image/common/img-alert--border.png);
+  background-size: 16.8rem;
+}
+.img-check {
+  width: 22.1rem;
+  height: 22rem;
+  margin: 0 auto;
+  background: url(../image/common/img-check.png);
+  background-size: 22.1rem 22rem;
+}
+
+.flex {
+  flex: 1;
 }
 
 @media (max-width: 1400px) {
@@ -131,6 +176,7 @@
   font-size: 7rem;
   color: #000000;
   border-radius: 2rem;
+  line-height: 20.1rem;
 }
 .ui-button + .ui-button {
   margin-left: 2rem;
@@ -139,19 +185,19 @@
   display: flex;
 }
 .ui-button__page--back {
-  width: 14rem;
+  width: 12.9rem;
   height: 100%;
-  margin-right: 5rem;
-  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='54'%3E%3Cpath fill-rule='evenodd' d='M30.254 7.058 9.817 27.495l19.128 19.128a3.749 3.749 0 0 1 0 5.303 3.749 3.749 0 0 1-5.303 0L2.074 30.359c-.018-.019-.03-.04-.048-.059-.018-.018-.04-.029-.058-.047a3.6 3.6 0 0 1 0-5.092L25.162 1.967a3.6 3.6 0 0 1 5.092 5.091Z'/%3E%3C/svg%3E");
-  background-size: 3.2rem 5.3rem;
+  background-image: url("../image/common/icon/icon_arrowBack.png");
+  background-size: 5.9rem 4rem;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
 }
 .ui-button__certi {
   width: 42rem;
   margin-left: 2rem;
   background: #666666;
   color: #ffffff;
+  flex: none;
 }
 .ui-button__bg-blue {
   background: #4b62c3;
@@ -180,6 +226,57 @@
 .ui-button__height-s {
   height: 12.5rem;
   font-size: 6rem;
+  line-height: 12.6rem;
+}
+.ui-button__font-xs {
+  font-size: 5.5rem;
+}
+.ui-button__font-s {
+  font-size: 6rem;
+}
+.ui-button-modify {
+  position: relative;
+  font-size: 5.4rem;
+  color: #228ff8;
+}
+.ui-button-modify::before {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.6rem;
+  background: #228ff8;
+  content: "";
+}
+.ui-button__icon::before {
+  display: inline-block;
+  margin-right: 4.5rem;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  content: "";
+}
+.ui-button__icon-male::before {
+  width: 8.4rem;
+  height: 9.5rem;
+  background-image: url(../image/sub/icon/icon-male.png);
+}
+.ui-button__icon-female::before {
+  width: 8.4rem;
+  height: 9.2rem;
+  background-image: url(../image/sub/icon/icon-female.png);
+}
+.ui-button__left {
+  padding: 0 4rem;
+  text-align: left;
+}
+.ui-button__check.is-active {
+  color: #3c50a2;
+  border-color: #4b62c3;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background-size: 4.5rem 3.1rem;
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 
 .button-joinSocial {
@@ -535,11 +632,32 @@
   box-sizing: border-box;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   font-size: 6rem;
 }
 .ui-form__button {
   display: flex;
+}
+.ui-form__cell {
+  display: flex;
+  align-items: center;
+  font-size: 5.5rem;
+}
+.ui-form__cell .ui-form {
+  flex: 1;
+}
+.ui-form__flex--row {
+  display: flex;
+}
+.ui-form__flex--row + .ui-form__flex--row {
+  margin-top: 2rem;
+}
+.ui-form__flex--row .ui-form__cell + .ui-form__cell {
+  margin-left: 4rem;
+}
+.ui-form__text {
+  font-size: 5.5rem;
+  margin-right: 6.5rem;
 }
 .ui-input {
   padding-left: 3.6rem;
@@ -556,6 +674,19 @@
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
+}
+.ui-input::placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
+}
+.ui-select {
+  width: 100%;
+  height: 20rem;
+  border: 0.3rem solid #d8dce2;
+  box-sizing: border-box;
+  background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
+  background-size: 3.9rem 2.6rem;
+  border-radius: 1.5rem;
 }
 .ui-textarea {
   height: 15rem;
@@ -792,8 +923,50 @@
   content: "-";
 }
 
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20rem;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 2rem;
+  background: #f3f5fb;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating input:checked ~ label {
+  background: url(../image/common/icon/icon-straRating__on.png);
+  background-size: 10.3rem 9.8rem;
+}
+.star-rating label {
+  width: 10.3rem;
+  height: 9.8rem;
+  margin: 0 4rem;
+  background: url(../image/common/icon/icon-straRating.png);
+  background-size: 10.3rem 9.8rem;
+  cursor: pointer;
+}
+
+/* explanation */
+article {
+  background-color: #ffe;
+  box-shadow: 0 0 1em 1px rgba(0, 0, 0, 0.25);
+  color: #006;
+  font-family: cursive;
+  font-style: italic;
+  margin: 4em;
+  max-width: 30em;
+  padding: 2em;
+}
+
 .modal {
+  background: rgba(0, 0, 0, 0.5);
   padding-right: 0 !important;
+  /* case3 간병시작하기 모달 */
 }
 .modal-header {
   padding: 10rem 6rem 0 6rem;
@@ -808,13 +981,14 @@
   justify-content: center;
 }
 .modal-content {
-  max-width: 80%;
+  max-width: calc(100% - 10rem);
   max-height: 80%;
   width: 100%;
   padding: 0;
   border: 0;
   box-shadow: none;
   border-radius: 2rem;
+  /* 모달 사이즈 */
 }
 .modal-content__email .modal-tit {
   margin-bottom: 3rem;
@@ -824,6 +998,18 @@
   display: block;
   margin-bottom: 2rem;
   text-align: center;
+}
+.modal-content__modifyDateCalendar .modal-header {
+  margin-top: 10rem;
+  margin-bottom: 9rem;
+  padding: 0 8rem;
+}
+.modal-content-chooseCarer .modal-core {
+  padding-top: 12rem;
+  padding-bottom: 13rem;
+}
+.modal-content__s {
+  width: calc(100% - 32rem);
 }
 .modal-core {
   padding: 12.5rem 5rem;
@@ -850,6 +1036,10 @@
   background: #000000;
   content: "";
 }
+.modal-core3 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
 .modal-tit {
   margin-bottom: 2.5rem;
   font-size: 2rem;
@@ -859,24 +1049,52 @@
 .modal-title {
   margin-bottom: 7.5rem;
   font-size: 6.5rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   line-height: 9rem;
+}
+.modal-title2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+.modal-title__font-l {
+  font-size: 7.5rem;
 }
 .modal-text {
   font-size: 6rem;
   line-height: normal;
+  word-break: keep-all;
 }
 .modal-text__small {
   font-size: 5rem;
   line-height: 7rem;
 }
+.modal-text__small--title {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+}
 .modal-backdrop {
-  background: rgba(0, 0, 0, 0.56);
+  background: transparent;
 }
 .modal-buttons .ui-button {
   font-size: 6rem;
+  font-weight: 500;
   border-radius: 0 0 2rem 2rem;
+}
+.modal-buttons__sticky {
+  display: flex;
+}
+.modal-buttons__sticky .ui-button {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.modal-buttons__sticky .ui-button + .ui-button {
+  margin-left: 0;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 2rem;
 }
 .modal-box__gray {
   padding: 5rem 6rem;
@@ -886,6 +1104,14 @@
 .modal-box__gray * {
   font-size: 5rem;
   line-height: 7rem;
+}
+.modal-user {
+  margin-bottom: 9rem;
+  font-size: 5rem;
+}
+.modal-user__name {
+  font-size: 6.5rem;
+  font-weight: 500;
 }
 
 /* ========== reponsive =========== */
