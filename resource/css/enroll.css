@@ -112,6 +112,11 @@
   font-size: 6rem;
   font-weight: 600;
 }
+.enroll-title__sub {
+  margin-bottom: 5rem;
+  font-size: 5.5rem;
+  font-weight: 500;
+}
 .enroll-title .ui-required {
   color: #DD5458;
   margin-left: 1rem;
@@ -121,4 +126,59 @@
 }
 .enroll-box + .enroll-box {
   margin-top: 13rem;
+}
+
+.hospital-list__inner {
+  padding: 7rem 5rem;
+  background: #f6f8fb;
+  border: 0.2rem solid #e9eaec;
+}
+.hospital-list__item {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 8.5rem;
+  font-size: 5.6rem;
+}
+.hospital-list__item + .hospital-list__item {
+  margin-top: 7rem;
+}
+.hospital-list__item .ui-button__badge {
+  flex: none;
+  margin-top: 0.7rem;
+}
+.hospital-list__item.is-active {
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat left center;
+  background-size: 4.5rem 3.1rem;
+}
+.hospital-list__item.is-active .hospital-list__text {
+  color: #3c50a2;
+  font-weight: 500;
+}
+.hospital-list__text {
+  flex: 1;
+  line-height: normal;
+}
+
+.care-period__text {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25.6rem;
+  padding: 5rem 0;
+  border: 0.3rem dashed #d8dce2;
+  border-radius: 1rem;
+  font-size: 5.5rem;
+  color: #9196a5;
+  text-align: center;
+  line-height: 10rem;
+}
+.care-period__text.is-inputed {
+  color: #3c50a2;
+  border: 0.3rem solid #4b62c3;
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }

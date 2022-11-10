@@ -97,6 +97,9 @@
 .font-weight__r {
   font-weight: 500;
 }
+.font-weight__m {
+  font-weight: 600;
+}
 
 .bg-gray {
   background-color: #f8f8f8;

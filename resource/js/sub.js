@@ -10,7 +10,12 @@ $(function(){
     $(".ui-button__click").click(function(){
         $(this).addClass("is-active");
         $(this).siblings().removeClass("is-active");
-    })
+    });
+
+    $(".hospital-list__item").click(function(){
+        $(this).addClass("is-active");
+        $(this).siblings().removeClass("is-active");
+    });
 
 
     //sub footer

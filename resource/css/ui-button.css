@@ -13,6 +13,14 @@
 .ui-buttons {
   display: flex;
 }
+.ui-buttons__thirds {
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+.ui-buttons__thirds .ui-button {
+  max-width: calc(33.3333333333% - 2rem);
+  margin: 1rem;
+}
 .ui-button__page--back {
   width: 12.9rem;
   height: 100%;
@@ -72,6 +80,9 @@
 .ui-button__font-s {
   font-size: 6rem;
 }
+.ui-button__color-gray {
+  color: #777777;
+}
 .ui-button-modify {
   position: relative;
   font-size: 5.4rem;
@@ -129,6 +140,9 @@
   margin-top: -1rem;
   background-image: url(../image/sub/icon/icon-home.png);
 }
+.ui-button__icon-right {
+  line-height: 100%;
+}
 .ui-button__icon-right::before {
   width: 2.9rem;
   height: 5.3rem;
@@ -152,6 +166,15 @@
   color: #3c50a2;
   border-color: #4b62c3;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.ui-button__badge {
+  padding: 1.7rem 2.8rem;
+  font-size: 4rem;
+  font-weight: 500;
+  background: #4b62c3;
+  color: #ffffff;
+  border-radius: 3.5rem;
+  line-height: 100%;
 }
 
 .button-joinSocial {

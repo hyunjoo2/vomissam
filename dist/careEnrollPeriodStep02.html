@@ -77,53 +77,76 @@
 
 
         <!-- container -->
-        <div class="container container__sub container__sub--enroll">
+        <div class="container container__sub container__sub--enroll container__sub--pb-0">
             <div class="container__inner">
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
-                        <div class="enroll-box">
-                            <div class="enroll-box__inner">
-                                <div class="enroll-title">환자 이름<span class="ui-required">(필수)</span></div>
-                                <div class="ui-form">
-                                    <input type="text" class="ui-input" placeholder="환자 이름을 알려 주세요">
+                        <section class="sub-content">
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">환자 이름<span class="ui-required">(필수)</span></div>
+                                    <div class="ui-form">
+                                        <input type="text" class="ui-input" placeholder="환자 이름을 알려 주세요">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="enroll-box">
-                            <div class="enroll-box__inner">
-                                <div class="enroll-title">환자 성별<span class="ui-required">(필수)</span></div>
-                                <div class="ui-buttons">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-male ui-button__font-xs ui-button__check">남성</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-female ui-button__font-xs ui-button__check">여성</button>
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">환자 성별<span class="ui-required">(필수)</span></div>
+                                    <div class="ui-buttons">
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-male ui-button__font-xs ui-button__check">남성</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-female ui-button__font-xs ui-button__check">여성</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="enroll-box">
-                            <div class="enroll-box__inner">
-                                <div class="enroll-title">환자연령 및 신체 정보<span class="ui-required">(필수)</span></div>
-                                <div class="ui-form ui-form__flex--row">
-                                    <div class="ui-form__cell width-170">나이</div>
-                                    <div class="ui-form__cell flex">
-                                        <input type="text" class="ui-input ">
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">환자연령 및 신체 정보<span class="ui-required">(필수)</span></div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <div class="ui-form__cell width-170">나이</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input ">
+                                        </div>
+                                        <div class="ui-form__cell width-80">세</div>
                                     </div>
-                                    <div class="ui-form__cell width-80">세</div>
-                                </div>
-                                <div class="ui-form ui-form__flex--row">
-                                    <div class="ui-form__cell width-170">신장</div>
-                                    <div class="ui-form__cell flex">
-                                        <input type="text" class="ui-input ">
+                                    <div class="ui-form ui-form__flex--row">
+                                        <div class="ui-form__cell width-170">신장</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input ">
+                                        </div>
+                                        <div class="ui-form__cell width-80">cm</div>
                                     </div>
-                                    <div class="ui-form__cell width-80">cm</div>
-                                </div>
-                                <div class="ui-form ui-form__flex--row">
-                                    <div class="ui-form__cell width-170">몸무게</div>
-                                    <div class="ui-form__cell flex">
-                                        <input type="text" class="ui-input ">
+                                    <div class="ui-form ui-form__flex--row">
+                                        <div class="ui-form__cell width-170">몸무게</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input ">
+                                        </div>
+                                        <div class="ui-form__cell width-80">kg</div>
                                     </div>
-                                    <div class="ui-form__cell width-80">kg</div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">간병 기간</span></div>
+                                    <div class="care-period">
+                                        <div class="care-period__inner">
+                                            <div type="button" class="care-period__text">간병 기간을 입력하시려면 클릭하세요
+                                            </div>
+
+                                            <div type="button" class="care-period__text is-inputed mt-50">2022/10/05/ 12:00 ~ 2022/10/14일 12:00 <br>( 총 10일 0시간 )
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="page-bottom">
+                            <div class="page-bottom__inner ui-buttons">
+                                <button type="button" class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
+
+                                <button type="button" class="ui-button ui-button__border-blue font-weight__m" onclick="location.href='./careEnrollPeriodStep02.html'">다음</button>
+                            </div>
+                        </section>
                     </div>
                 </div><!-- //container-core -->
             </div>

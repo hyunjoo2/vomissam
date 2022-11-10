@@ -13,7 +13,17 @@
     }
     &s{
         display: flex;
-        
+        &__thirds{
+            flex-wrap: wrap;
+            margin: -1rem;
+            .ui-button{
+                max-width: calc(100% / 3 - 2rem);
+                margin: 1rem;
+                // &+&{
+                //     margin: 1rem;
+                // }
+            }
+        }
     }
     &__page {
         &--back {
@@ -26,7 +36,6 @@
             background-position: left center;
         }
     }
-
     &__certi {
         width: 42rem;
         margin-left: 2rem;
@@ -86,6 +95,11 @@
         }
         &-s{
             font-size: 6rem;
+        }
+    }
+    &__color{
+        &-gray{
+            color:#777777;
         }
     }
     &-modify{
@@ -159,6 +173,7 @@
             }
         }
         &-right{
+            line-height: 100%;
             &::before{
                 width: 2.9rem;
                 height: 5.3rem;
@@ -189,6 +204,18 @@
             box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
         }
     }
+    &__badge{
+        padding: 1.7rem 2.8rem;
+        font : {
+            size: 4rem;
+            weight:500;
+        }
+        background: #4b62c3;
+        color:#ffffff;
+        border-radius: 3.5rem;
+        line-height: 100%;
+    }
+    
 }
 .button{
     &-joinSocial{

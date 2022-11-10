@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <!-- //공통 css -->
 
-    <!-- 개별 페이지 css -->
+    <!-- 각 페이지 css -->
     <link rel="stylesheet" href="../resource/css/enroll.css">
-    <!-- //개별 페이지 css -->
+    <!-- //각 페이지 css -->
 
 
     
@@ -84,55 +84,76 @@
                         <section class="sub-content">
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
-                                    <div class="enroll-title">간병 형태</div>
+                                    <div class="enroll-title">질환 정보</div>
+                                    <div class="enroll-title__sub">진료과 (선택)</div>
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button"
+                                          class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">소화기내과</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">심혈관내과</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">호흡기내과</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">내분비내과</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">신장내과</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">혈액종양내과</button>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">환자 성별<span class="ui-required">(필수)</span></div>
                                     <div class="ui-buttons">
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-calendar ui-button__font-xs ui-button__check">기간제</button>
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-clock ui-button__font-xs ui-button__check">시간제</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-male ui-button__font-xs ui-button__check">남성</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-female ui-button__font-xs ui-button__check">여성</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
-                                    <div class="enroll-title">간병 장소</div>
-                                    <div class="ui-buttons">
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-hospital ui-button__font-xs ui-button__check">병원</button>
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-home ui-button__font-xs ui-button__check">자택</button>
+                                    <div class="enroll-title">환자연령 및 신체 정보<span class="ui-required">(필수)</span></div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <div class="ui-form__cell width-170">나이</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input ">
+                                        </div>
+                                        <div class="ui-form__cell width-80">세</div>
+                                    </div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <div class="ui-form__cell width-170">신장</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input ">
+                                        </div>
+                                        <div class="ui-form__cell width-80">cm</div>
+                                    </div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <div class="ui-form__cell width-170">몸무게</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input ">
+                                        </div>
+                                        <div class="ui-form__cell width-80">kg</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
-                                    <div class="enroll-title">병원 선택</div>
-                                    <div class="ui-buttons">
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__border-gray ui-button__font-xs ui-button__click">서울특별시</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__border-gray ui-button__font-xs ui-button__click">경기도</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__border-gray ui-button__font-xs ui-button__click">인천광역시</button>
-                                        <button type="button" class="ui-button ui-button__width-auto ui-button__height-m ui-button__border-gray ui-button__icon ui-button__icon-right ui-button__font-xs"></button>
-                                    </div>
-    
-                                    <div class="hospital-list mt-60">
-                                        <div class="hospital-list__inner">
-                                            <ul class="hospital-list__list">
-                                                <li class="hospital-list__item"><span class="hospital-list__text">신촌세브란스병원(서울 마포구)</span> <button type="button" class="ui-button__badge">위치보기</button></li>
-                                                <li class="hospital-list__item"><span class="hospital-list__text">삼성서울병원(서울 강남구)</span><button type="button" class="ui-button__badge">위치보기</button></li>
-                                                <li class="hospital-list__item"><span class="hospital-list__text">서울성모병원(서울 서초구)</span><button type="button" class="ui-button__badge">위치보기</button></li>
-                                            </ul>
+                                    <div class="enroll-title">간병 기간</span></div>
+                                    <div class="care-period">
+                                        <div class="care-period__inner">
+                                            <div type="button" class="care-period__text">간병 기간을 입력하시려면 클릭하세요
+                                            </div>
+
+                                            <div type="button" class="care-period__text is-inputed mt-50">2022/10/05/ 12:00 ~ 2022/10/14일 12:00 <br>( 총 10일 0시간 )
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        
-
-
                         <section class="page-bottom">
                             <div class="page-bottom__inner ui-buttons">
                                 <button type="button" class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
+
                                 <button type="button" class="ui-button ui-button__border-blue font-weight__m" onclick="location.href='./careEnrollPeriodStep02.html'">다음</button>
                             </div>
                         </section>
-
-
                     </div>
                 </div><!-- //container-core -->
             </div>

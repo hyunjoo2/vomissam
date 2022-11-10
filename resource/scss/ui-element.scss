@@ -6,6 +6,13 @@
 .container{
     &__sub{
         padding: 0 5rem 10rem 5rem;
+        &--p{
+            &b{
+                &-0{
+                    padding-bottom: 0;
+                }
+            }
+        }
     }
     &-core{
         &__flex{
@@ -33,6 +40,9 @@
 
 .page-bottom{
     margin-top: auto;
+    &__inner{
+        margin-top: 25rem;
+    }
 }
 
 /* list */ 
@@ -88,16 +98,4 @@
     }
   }
   
-  /* explanation */
-  
-  article {
-    background-color:#ffe;
-    box-shadow:0 0 1em 1px rgba(0,0,0,.25);
-    color:#006;
-    font-family:cursive;
-    font-style:italic;
-    margin:4em;
-    max-width:30em;
-    padding:2em;
-  }
-
+ 
