@@ -6,8 +6,14 @@
 .width-170 {
   width: 17rem;
 }
+.width-195 {
+  width: 19.5rem;
+}
 .width-370 {
   width: 37rem;
+}
+.width-585 {
+  width: 58.5rem;
 }
 
 .height-265 {
@@ -16,6 +22,9 @@
 
 .mr-auto {
   margin-right: auto;
+}
+.mr-120 {
+  margin-right: 12rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -50,6 +59,9 @@
 .mt-60 {
   margin-top: 6rem;
 }
+.mt-65 {
+  margin-top: 6.5rem;
+}
 .mt-70 {
   margin-top: 7rem;
 }
@@ -62,8 +74,14 @@
 .mt-90 {
   margin-top: 9rem;
 }
+.mt-95 {
+  margin-top: 9.5rem;
+}
 .mt-115 {
   margin-top: 11.5rem;
+}
+.mt-130 {
+  margin-top: 13rem;
 }
 .mt-140 {
   margin-top: 14rem;
@@ -729,7 +747,6 @@
 }
 
 .ui-form input, .ui-form textarea {
-  width: 100%;
   border: 1px solid #d8dce2;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -757,11 +774,21 @@
 .ui-form__flex--row .ui-form__cell + .ui-form__cell {
   margin-left: 4rem;
 }
+.ui-form__flex--row .ui-form__cell--s {
+  font-size: 4.8rem;
+}
+.ui-form__flex--row .ui-form__cell--s + .ui-form__cell--s {
+  margin-left: 2rem;
+}
+.ui-form__flex--right {
+  justify-content: flex-end;
+}
 .ui-form__text {
   font-size: 5.5rem;
   margin-right: 6.5rem;
 }
 .ui-input {
+  width: 100%;
   padding-left: 5.5rem;
   height: 20rem;
   font-size: 5.5rem;
@@ -775,6 +802,9 @@
 }
 .ui-input__width-400 {
   width: 40rem;
+}
+.ui-input__width-585 {
+  width: 58.5rem;
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
@@ -795,6 +825,7 @@
   border-radius: 1.5rem;
 }
 .ui-textarea {
+  width: 100%;
   height: 15rem;
   padding: 1.5rem 2rem;
   font-size: 1.6rem;
@@ -843,18 +874,28 @@
 .ui-radio-input:checked + .ui-label .ui-radio-object, .ui-checkbox-input:checked + .ui-label .ui-radio-object {
   border: 5px solid #4568a9;
 }
-.ui-radio__item {
-  position: relative;
-  padding: 5px;
-  z-index: 0;
-  font-size: 0;
-  line-height: 0;
+.ui-radio-block {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
 }
-.ui-radio-object {
-  border-radius: 100%;
+.ui-radio-block .ui-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  border: 0;
 }
-.ui-radio:checked + .ui-label .ui-radio-object {
-  border-color: #5ca093;
+.ui-radio-block .ui-radio-object {
+  display: inline-block;
+}
+.ui-radio-block .ui-label {
+  margin: 0;
+}
+.ui-radio:checked + .ui-radio-object, .ui-radio:checked + .ui-label .ui-radio-object {
+  border-color: #4b62c3;
+  background-color: #4b62c3;
+  background-image: url("../image/common/icon/icon-check.png");
+  background-size: 4.5rem 3.1rem;
 }
 .ui-checkbox-block {
   display: inline-flex;
@@ -998,11 +1039,6 @@
 .container__sub {
   padding: 0 5rem 10rem 5rem;
 }
-.container__sub .line-gray {
-  width: calc(100% + 10rem);
-  margin-left: -5rem;
-  margin-right: -5rem;
-}
 .container__sub--pb-0 {
   padding-bottom: 0;
 }
@@ -1023,6 +1059,10 @@
   line-height: 10.2rem;
   text-align: center;
 }
+.sub-title3 {
+  margin-bottom: 9rem;
+  font-size: 5.5rem;
+}
 .sub-title__underline {
   position: relative;
   padding-bottom: 6rem;
@@ -1038,6 +1078,10 @@
   height: 0.4rem;
   background: #000000;
   content: "";
+}
+.sub-text {
+  font-size: 6rem;
+  line-height: 10rem;
 }
 
 .page-bottom {
@@ -1101,6 +1145,45 @@
 .ui-required {
   color: #DD5458;
   margin-left: 1rem;
+}
+
+.des-text__inner {
+  padding: 5rem 6rem;
+  font-size: 4.8rem;
+  line-height: 8rem;
+  color: #9196a5;
+  background: #f3f5fb;
+  border-radius: 2rem;
+}
+
+.line-gray__large {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
+
+.care-date__list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.care-date__list + .care-date__list {
+  margin-top: 8rem;
+}
+.care-date__title, .care-date__text {
+  font-size: 5.4rem;
+}
+.care-date__title {
+  width: 40rem;
+  color: #575c62;
+  flex: none;
+}
+.care-date__title--width-418 {
+  width: 41.8rem;
+}
+.care-date__button {
+  margin-left: auto;
+  flex: none;
 }
 
 .modal {
@@ -1176,9 +1259,19 @@
   background: #000000;
   content: "";
 }
+.modal-core2 .modal-core2__title-s {
+  margin-bottom: 8rem;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 7rem;
+}
 .modal-core3 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+.modal-core__py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .modal-tit {
   margin-bottom: 2.5rem;

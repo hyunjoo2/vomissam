@@ -1,11 +1,6 @@
 .container__sub {
   padding: 0 5rem 10rem 5rem;
 }
-.container__sub .line-gray {
-  width: calc(100% + 10rem);
-  margin-left: -5rem;
-  margin-right: -5rem;
-}
 .container__sub--pb-0 {
   padding-bottom: 0;
 }
@@ -26,6 +21,10 @@
   line-height: 10.2rem;
   text-align: center;
 }
+.sub-title3 {
+  margin-bottom: 9rem;
+  font-size: 5.5rem;
+}
 .sub-title__underline {
   position: relative;
   padding-bottom: 6rem;
@@ -41,6 +40,10 @@
   height: 0.4rem;
   background: #000000;
   content: "";
+}
+.sub-text {
+  font-size: 6rem;
+  line-height: 10rem;
 }
 
 .page-bottom {
@@ -104,4 +107,43 @@
 .ui-required {
   color: #DD5458;
   margin-left: 1rem;
+}
+
+.des-text__inner {
+  padding: 5rem 6rem;
+  font-size: 4.8rem;
+  line-height: 8rem;
+  color: #9196a5;
+  background: #f3f5fb;
+  border-radius: 2rem;
+}
+
+.line-gray__large {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
+
+.care-date__list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.care-date__list + .care-date__list {
+  margin-top: 8rem;
+}
+.care-date__title, .care-date__text {
+  font-size: 5.4rem;
+}
+.care-date__title {
+  width: 40rem;
+  color: #575c62;
+  flex: none;
+}
+.care-date__title--width-418 {
+  width: 41.8rem;
+}
+.care-date__button {
+  margin-left: auto;
+  flex: none;
 }

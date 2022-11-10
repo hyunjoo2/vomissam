@@ -72,9 +72,19 @@
   background: #000000;
   content: "";
 }
+.modal-core2 .modal-core2__title-s {
+  margin-bottom: 8rem;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 7rem;
+}
 .modal-core3 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+.modal-core__py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .modal-tit {
   margin-bottom: 2.5rem;

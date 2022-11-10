@@ -8,8 +8,14 @@
     &-170{
         width: 17rem;
     }
+    &-195{
+        width: 19.5rem;
+    }
     &-370{
         width: 37rem;
+    }
+    &-585{
+        width: 58.5rem;
     }
 }
 .height{
@@ -22,6 +28,9 @@
     &r{
         &-auto{
             margin-right:auto;
+        }
+        &-120{
+            margin-right: 12rem;
         }
     }
     &l{
@@ -60,6 +69,9 @@
         &-60{
             margin-top:6rem;
         }
+        &-65{
+            margin-top:6.5rem;
+        }
         &-70{
             margin-top:7rem;
         }
@@ -72,8 +84,14 @@
         &-90{
             margin-top:9rem;
         }
+        &-95{
+            margin-top:9.5rem;
+        }
         &-115{
             margin-top:11.5rem;
+        }
+        &-130{
+            margin-top:13rem;
         }
         &-140{
             margin-top:14rem;

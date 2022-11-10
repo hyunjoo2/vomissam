@@ -40,7 +40,6 @@
 .ui{
     &-form{
         input,textarea{
-            width:100%;
             border:1px solid #d8dce2;
             box-sizing: border-box;
             -webkit-appearance: none;
@@ -70,14 +69,25 @@
                         margin-left: 4rem;
                     }
                 }
+                .ui-form__cell--s{
+                    font-size: 4.8rem;
+                    &+.ui-form__cell--s{
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            &--right{
+                justify-content: flex-end;
             }
         }
         &__text{
             font-size: 5.5rem;
             margin-right: 6.5rem;
         }
+        
     }
     &-input{
+        width:100%;
         padding-left: 5.5rem;
         height:20rem;    
         font-size: 5.5rem;
@@ -91,6 +101,9 @@
             }
             &-400{
                 width:40rem;
+            }
+            &-585{
+                width: 58.5rem;
             }
         }
         &__bg{
@@ -116,6 +129,7 @@
         
     }
     &-textarea{
+        width:100%;
         height:15rem;
         padding: 1.5rem 2rem;
         font-size: 1.6rem;
@@ -173,31 +187,32 @@
         }
     }
     &-radio{
-        &__item{
-            position: relative;
-            padding:5px;
-            z-index: 0;
-            font-size: 0;
-            line-height: 0;
+        &-block{
+            display: inline-flex;
+            align-items: center;
+            padding: .5rem;
+            .ui{
+                &-radio{
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                    border: 0;
+                    &-object{
+                        display: inline-block;
+                    }
+                }
+                
+                &-label{
+                    margin: 0;
+                }
+            }
         }
-        &-object{
-            border-radius: 100%;
-            // &::before {
-            //     content: '';
-            //     display: block;
-            //     position: absolute;
-            //     top: 50%;
-            //     left: 50%;
-            //     margin: -5.5px 0 0 -5px;
-            //     width: 10px;
-            //     height: 10px;
-            //     border-radius: 100%;
-            //     background: #5ca093;
-            //     opacity: 0;
-            // }
-        }
-        &:checked+.ui-label .ui-radio-object {
-            border-color: #5ca093;
+        &:checked+.ui-radio-object,
+        &:checked+.ui-label .ui-radio-object{
+            border-color: #4b62c3;
+            background-color: #4b62c3;
+            background-image: url('../image/common/icon/icon-check.png');
+            background-size: 4.5rem 3.1rem;
         }
     }
     &-checkbox{

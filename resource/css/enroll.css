@@ -222,8 +222,8 @@
   font-weight: 500;
   line-height: 7rem;
 }
-.care-enroll-info {
-  margin-top: 10rem;
+.care-enroll-info__margin-l {
+  margin: 10rem 0;
 }
 .care-enroll-info__list {
   display: flex;
@@ -243,8 +243,30 @@
 .care-enroll-info__title--des {
   font-size: 4.4rem;
 }
+.care-enroll-info__title--width-505 {
+  width: 50.5rem;
+}
 .care-enroll-info__text {
   flex: 1;
   text-align: right;
   font-weight: 500;
+}
+
+.total-cost__list {
+  display: flex;
+  align-items: center;
+}
+.total-cost__title {
+  font-size: 5.5rem;
+}
+.total-cost__text {
+  flex: 1;
+  text-align: right;
+  font-size: 7.8rem;
+  font-weight: 600;
+}
+.total-cost__box--inner {
+  margin-top: 8rem;
+  padding-top: 8rem;
+  border-top: 0.3rem solid #dfe0e2;
 }

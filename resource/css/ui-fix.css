@@ -4,8 +4,14 @@
 .width-170 {
   width: 17rem;
 }
+.width-195 {
+  width: 19.5rem;
+}
 .width-370 {
   width: 37rem;
+}
+.width-585 {
+  width: 58.5rem;
 }
 
 .height-265 {
@@ -14,6 +20,9 @@
 
 .mr-auto {
   margin-right: auto;
+}
+.mr-120 {
+  margin-right: 12rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -48,6 +57,9 @@
 .mt-60 {
   margin-top: 6rem;
 }
+.mt-65 {
+  margin-top: 6.5rem;
+}
 .mt-70 {
   margin-top: 7rem;
 }
@@ -60,8 +72,14 @@
 .mt-90 {
   margin-top: 9rem;
 }
+.mt-95 {
+  margin-top: 9.5rem;
+}
 .mt-115 {
   margin-top: 11.5rem;
+}
+.mt-130 {
+  margin-top: 13rem;
 }
 .mt-140 {
   margin-top: 14rem;

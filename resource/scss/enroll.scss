@@ -137,7 +137,12 @@
     }
     &-enroll{
         &-info{
-            margin-top: 10rem;
+            //margin: 10rem 0;
+            &__margin{
+                &-l{
+                    margin: 10rem 0;
+                }
+            }
             &__list{
                 display: flex;
                 align-items: center;
@@ -155,6 +160,11 @@
                 &--des{
                     font-size: 4.4rem;
                 }
+                &--width{
+                    &-505{
+                        width: 50.5rem;
+                    }
+                }
             }
             &__text{
                 flex: 1;
@@ -164,3 +174,32 @@
         }
     }
 }
+
+.total{
+    &-cost{
+        &__list{
+            display: flex;
+            align-items: center;
+        }
+        &__title{
+            font-size: 5.5rem;
+        }
+        &__text{
+            flex:1;
+            text-align: right;
+            font: {
+                size: 7.8rem;
+                weight:600;
+            };
+        }
+        &__box{
+            &--inner{
+                margin-top: 8rem;
+                padding-top: 8rem;
+                border-top:.3rem solid #dfe0e2;
+            }
+        }
+    }
+}
+
+

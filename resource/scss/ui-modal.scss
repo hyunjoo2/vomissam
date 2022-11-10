@@ -96,6 +96,14 @@
                     background: #000000;
                     content: "";
                 }
+                &-s{
+                    margin-bottom: 8rem;
+                    font : {
+                        size: 5rem;
+                        weight:300;
+                    }
+                    line-height: 7rem;
+                }
             }
             // &+&{
             //     border-top:3rem solid;
@@ -104,6 +112,14 @@
         &3{
             padding-left: 8rem;
             padding-right: 8rem;
+        }
+        &__p{
+            &y{
+                &-0{
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
         }
     }
 
