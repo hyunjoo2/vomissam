@@ -206,3 +206,45 @@
   width: 26.5rem;
   flex: none;
 }
+.care-cost__box {
+  padding: 13rem 0;
+}
+.care-cost__box.top-image .img-wrap {
+  margin-top: -4.2rem;
+  margin-bottom: 8rem;
+}
+.care-cost__text {
+  font-size: 5rem;
+  line-height: 7rem;
+}
+.care-cost__name {
+  font-size: 6.5rem;
+  font-weight: 500;
+  line-height: 7rem;
+}
+.care-enroll-info {
+  margin-top: 10rem;
+}
+.care-enroll-info__list {
+  display: flex;
+  align-items: center;
+}
+.care-enroll-info__list + .care-enroll-info__list {
+  margin-top: 5.5rem;
+}
+.care-enroll-info__title, .care-enroll-info__text {
+  font-size: 5.5rem;
+}
+.care-enroll-info__title {
+  color: #575c62;
+  flex: none;
+  line-height: 7rem;
+}
+.care-enroll-info__title--des {
+  font-size: 4.4rem;
+}
+.care-enroll-info__text {
+  flex: 1;
+  text-align: right;
+  font-weight: 500;
+}

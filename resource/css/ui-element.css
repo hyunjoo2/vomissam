@@ -1,6 +1,11 @@
 .container__sub {
   padding: 0 5rem 10rem 5rem;
 }
+.container__sub .line-gray {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
 .container__sub--pb-0 {
   padding-bottom: 0;
 }
@@ -20,6 +25,22 @@
   font-size: 6.6rem;
   line-height: 10.2rem;
   text-align: center;
+}
+.sub-title__underline {
+  position: relative;
+  padding-bottom: 6rem;
+  margin-bottom: 7rem;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+.sub-title__underline::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.4rem;
+  background: #000000;
+  content: "";
 }
 
 .page-bottom {

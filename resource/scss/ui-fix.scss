@@ -122,6 +122,20 @@
     }
 }
 .font{
+    &-size{
+        &__xs{
+            font-size: 5rem;
+        }
+        &__s{
+            font-size: 5.5rem;
+        }
+        &__m{
+            font-size: 6rem;
+        }
+        &__l{
+            font-size: 6.5rem;
+        }
+    }
     &-weight{
         &__r{
             font-weight: 500;

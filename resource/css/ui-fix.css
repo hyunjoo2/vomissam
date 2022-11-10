@@ -101,6 +101,18 @@
   font-size: 12px;
 }
 
+.font-size__xs {
+  font-size: 5rem;
+}
+.font-size__s {
+  font-size: 5.5rem;
+}
+.font-size__m {
+  font-size: 6rem;
+}
+.font-size__l {
+  font-size: 6.5rem;
+}
 .font-weight__r {
   font-weight: 500;
 }
