@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .modal {
   background: rgba(0, 0, 0, 0.5);
+  padding: 10rem 0;
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
 }

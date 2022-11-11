@@ -107,69 +107,79 @@
     transform: rotateY(0deg);
   }
 }
-.enroll-title {
-  margin-bottom: 7rem;
-  font-size: 6rem;
-  font-weight: 600;
+.card-list-box {
+  padding: 6.8rem 5rem;
+  background: #ffffff;
+  box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
+  border-radius: 3rem;
 }
-.enroll-title__sub {
-  margin-bottom: 5rem;
-  font-size: 5.5rem;
-  font-weight: 500;
-}
-.enroll-title__sub .ui-required {
-  font-size: 5.5rem;
-}
-.enroll-title__des {
-  font-size: 6rem;
-  margin-left: 1rem;
-}
-.enroll-title .ui-required {
-  color: #DD5458;
-  margin-left: 1rem;
-}
-.enroll-box:nth-child(1) {
-  margin-top: 9rem;
-}
-.enroll-box + .enroll-box {
-  margin-top: 13rem;
-}
-.enroll-box__sub + .enroll-box__sub {
-  margin-top: 8rem;
-}
-
-.hospital-list__inner {
-  padding: 7rem 5rem;
-  background: #f6f8fb;
-  border: 0.2rem solid #e9eaec;
-}
-.hospital-list__item {
+.card-list__item {
   display: flex;
-  align-items: flex-start;
-  padding-left: 8.5rem;
-  font-size: 5.6rem;
+  align-items: center;
 }
-.hospital-list__item + .hospital-list__item {
-  margin-top: 7rem;
+.card-list__item + .card-list__item {
+  margin-top: 5rem;
 }
-.hospital-list__item .ui-button__badge {
-  flex: none;
-  margin-top: 0.7rem;
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.2rem;
+  height: 18.2rem;
+  margin-right: 3.2rem;
+  background: #eff0f5;
+  border-radius: 100%;
 }
-.hospital-list__item.is-active {
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat left center;
-  background-size: 4.5rem 3.1rem;
+.card-img img {
+  display: block;
+  max-width: 9.1rem;
+  max-height: 100%;
+  margin: 0 auto;
 }
-.hospital-list__item.is-active .hospital-list__text {
-  color: #3c50a2;
+.card-name {
+  font-size: 5.4rem;
   font-weight: 500;
 }
-.hospital-list__text {
-  flex: 1;
-  line-height: normal;
+.card-num {
+  margin-top: 3.5rem;
+  font-size: 4.8rem;
+  color: #9196a5;
 }
 
-.care-period__text {
+.payment-process__inner {
+  padding: 5rem 4rem 7rem 4rem;
+}
+.payment-process__list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.payment-process__list::after {
+  display: inline-block;
+  position: absolute;
+  top: 8.5rem;
+  left: 0rem;
+  width: calc(100% - 10rem);
+  height: 1rem;
+  background: url(../image/sub/line-dashed.png) no-repeat center;
+  background-size: cover;
+  content: "";
+  z-index: -1;
+}
+.payment-process__list--step02::after {
+  left: 3rem;
+  width: calc(100% - 12rem);
+  background-image: url(../image/sub/line-dashed__half.png);
+}
+.payment-process__text {
+  margin-top: 4rem;
+  font-size: 5rem;
+  text-align: center;
+  color: #9196a5;
+  line-height: 6rem;
+  letter-spacing: -1px;
+}
+.payment-process__step .payment-process__img {
   display: flex;
   -ms-display: flexbox;
   display: -moz-box;
@@ -177,85 +187,74 @@
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+}
+.payment-process__step .payment-process__img::before {
+  width: 5rem;
+  height: 5rem;
+  background-color: #c3c8d5;
+  background-size: 5rem;
+  border-radius: 100%;
+  content: "";
+}
+.payment-process__step.is-active .payment-process__img {
+  background-size: 18rem;
+  background-position: center;
+}
+.payment-process__step.is-active .payment-process__img::before {
+  display: none;
+}
+.payment-process__step.is-active .payment-process__text {
+  color: #000000;
+  font-weight: 500;
+}
+.payment-process__step.is-past .payment-process__img {
+  background-position: center;
+  background: url(../image/sub/payment-process__past.png) no-repeat center;
+  background-size: 15.4rem;
+}
+.payment-process__step.is-past .payment-process__img::before {
+  display: none;
+}
+.payment-process__step.is-past .payment-process__text {
+  color: #000000;
+  font-weight: 500;
+}
+.payment-process__step__inner {
+  width: 18rem;
+}
+.payment-process__step01 .payment-process__img {
+  background-image: url(../image/sub/payment-process__icon01.png);
+}
+.payment-process__step02.is-active .payment-process__img {
+  background-image: url(../image/sub/payment-process__icon02.png);
+}
+.payment-process__step03.is-active .payment-process__img {
+  background-image: url(../image/sub/payment-process__icon03.png);
+}
+
+.sub-item__box--receipt {
+  position: relative;
+  padding: 10rem 8rem;
+  box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
+}
+.sub-item__box--receipt::before {
+  position: absolute;
+  left: 0;
+  bottom: -1.3rem;
   width: 100%;
-  min-height: 25.6rem;
-  padding: 2rem 0;
-  border: 0.3rem dashed #d8dce2;
-  border-radius: 1rem;
-  font-size: 5.5rem;
-  color: #9196a5;
-  text-align: center;
-  line-height: 10rem;
+  height: 4.4rem;
+  background: url(../image/sub/bg-receipt__bottom.png) no-repeat bottom;
+  background-size: 134rem 4.4rem;
+  content: "";
 }
-.care-period__text.is-inputed {
-  flex-direction: column;
-  color: #3c50a2;
-  border: 0.3rem solid #4b62c3;
-  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+.sub-item__box--receipt .sub-dl + .sub-dl {
+  margin-top: 10rem;
 }
-.care-period__text--inner {
-  padding: 2.5rem 0;
-}
-.care-period__dl {
-  display: flex;
-}
-.care-period__dl + .care-period__dl {
-  margin-top: 4.5rem;
-}
-.care-period__dt {
-  width: 26.5rem;
-  flex: none;
-}
-.care-cost__box {
-  padding: 13rem 0;
-}
-.care-cost__box.top-image .img-wrap {
-  margin-top: -4.2rem;
-  margin-bottom: 8rem;
-}
-.care-cost__text {
-  font-size: 5rem;
-  line-height: 7rem;
-}
-.care-cost__name {
-  font-size: 6.5rem;
-  font-weight: 500;
-  line-height: 7rem;
-}
-.care-enroll-info__margin-l {
-  margin: 10rem 0;
-}
-.care-enroll-info__list {
-  display: flex;
-  align-items: center;
-}
-.care-enroll-info__list + .care-enroll-info__list {
-  margin-top: 5.5rem;
-}
-.care-enroll-info__title, .care-enroll-info__text {
-  font-size: 5.5rem;
-}
-.care-enroll-info__title {
-  color: #575c62;
-  flex: none;
-  line-height: 7rem;
-}
-.care-enroll-info__title--des {
-  font-size: 4.4rem;
-}
-.care-enroll-info__title--width-505 {
-  width: 50.5rem;
-}
-.care-enroll-info__text {
-  flex: 1;
-  text-align: right;
-  font-weight: 500;
-}
-.careEnrollEnd-top .img-wrap {
-  margin-top: 6.6rem;
-  margin-bottom: 10rem;
-}
-.careEnrollEnd-top .img-wrap img {
-  display: block;
-  margin: 0 auto;
+.sub-item__box--receipt .sub-list__dl + .sub-list__dl {
+  margin-top: 10rem;
+  padding-top: 10rem;
+  border-top: 1px dashed #dfe0e2;
 }

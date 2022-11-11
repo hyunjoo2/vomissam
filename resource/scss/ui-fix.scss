@@ -8,8 +8,14 @@
     &-170{
         width: 17rem;
     }
+    &-190{
+        width: 19rem;
+    }
     &-195{
         width: 19.5rem;
+    }
+    &-290{
+        width: 29rem;
     }
     &-370{
         width: 37rem;
@@ -41,7 +47,7 @@
             margin-left:1rem;
         }
         &-20{
-            margin-left:2rem;
+            margin-left:2rem !important;
         }
         &-30{
             margin-left:3rem;
@@ -67,7 +73,7 @@
             margin-top:5rem;
         }
         &-60{
-            margin-top:6rem;
+            margin-top:6rem !important;
         }
         &-65{
             margin-top:6.5rem;
@@ -89,6 +95,9 @@
         }
         &-115{
             margin-top:11.5rem;
+        }
+        &-120{
+            margin-top:12rem;
         }
         &-130{
             margin-top:13rem;
@@ -141,6 +150,9 @@
 }
 .font{
     &-size{
+        &__xxs{
+            font-size: 4.6rem;
+        }
         &__xs{
             font-size: 5rem;
         }

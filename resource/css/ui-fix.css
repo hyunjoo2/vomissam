@@ -4,8 +4,14 @@
 .width-170 {
   width: 17rem;
 }
+.width-190 {
+  width: 19rem;
+}
 .width-195 {
   width: 19.5rem;
+}
+.width-290 {
+  width: 29rem;
 }
 .width-370 {
   width: 37rem;
@@ -31,7 +37,7 @@
   margin-left: 1rem;
 }
 .ml-20 {
-  margin-left: 2rem;
+  margin-left: 2rem !important;
 }
 .ml-30 {
   margin-left: 3rem;
@@ -55,7 +61,7 @@
   margin-top: 5rem;
 }
 .mt-60 {
-  margin-top: 6rem;
+  margin-top: 6rem !important;
 }
 .mt-65 {
   margin-top: 6.5rem;
@@ -77,6 +83,9 @@
 }
 .mt-115 {
   margin-top: 11.5rem;
+}
+.mt-120 {
+  margin-top: 12rem;
 }
 .mt-130 {
   margin-top: 13rem;
@@ -119,6 +128,9 @@
   font-size: 12px;
 }
 
+.font-size__xxs {
+  font-size: 4.6rem;
+}
 .font-size__xs {
   font-size: 5rem;
 }

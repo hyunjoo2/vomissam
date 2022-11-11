@@ -6,8 +6,14 @@
 .width-170 {
   width: 17rem;
 }
+.width-190 {
+  width: 19rem;
+}
 .width-195 {
   width: 19.5rem;
+}
+.width-290 {
+  width: 29rem;
 }
 .width-370 {
   width: 37rem;
@@ -33,7 +39,7 @@
   margin-left: 1rem;
 }
 .ml-20 {
-  margin-left: 2rem;
+  margin-left: 2rem !important;
 }
 .ml-30 {
   margin-left: 3rem;
@@ -57,7 +63,7 @@
   margin-top: 5rem;
 }
 .mt-60 {
-  margin-top: 6rem;
+  margin-top: 6rem !important;
 }
 .mt-65 {
   margin-top: 6.5rem;
@@ -79,6 +85,9 @@
 }
 .mt-115 {
   margin-top: 11.5rem;
+}
+.mt-120 {
+  margin-top: 12rem;
 }
 .mt-130 {
   margin-top: 13rem;
@@ -121,6 +130,9 @@
   font-size: 12px;
 }
 
+.font-size__xxs {
+  font-size: 4.6rem;
+}
 .font-size__xs {
   font-size: 5rem;
 }
@@ -214,6 +226,7 @@
   width: 100%;
   height: 20rem;
   font-size: 7rem;
+  font-weight: 500;
   color: #000000;
   border-radius: 2rem;
   line-height: 20.1rem;
@@ -288,6 +301,13 @@
   font-size: 6rem;
   line-height: 15.1rem;
 }
+.ui-button__height-135 {
+  height: 13.5rem;
+  line-height: 13.6rem;
+}
+.ui-button__font-xxs {
+  font-size: 4.6rem;
+}
 .ui-button__font-xs {
   font-size: 5.5rem;
 }
@@ -296,6 +316,9 @@
 }
 .ui-button__color-gray {
   color: #777777;
+}
+.ui-button__radius-s {
+  border-radius: 1rem;
 }
 .ui-button-modify {
   position: relative;
@@ -362,6 +385,18 @@
   height: 5.3rem;
   margin: 0;
   background-image: url(../image/sub/icon/icon-right.png);
+}
+.ui-button__icon-payAll::before {
+  width: 7.2rem;
+  height: 7.3rem;
+  margin-right: 5.5rem;
+  background-image: url(../image/sub/icon/icon-pay__all.png);
+}
+.ui-button__icon-paySep::before {
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-right: 5.5rem;
+  background-image: url(../image/sub/icon/icon-pay__sep.png);
 }
 .ui-button__left {
   padding: 0 4rem;
@@ -448,6 +483,37 @@
   background-size: 5.3rem 5.5rem;
   vertical-align: middle;
   content: "";
+}
+.button-plus-card {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15rem;
+  font-size: 4.8rem;
+  color: #9196a5;
+  background: #eff0f5;
+  border-radius: 1rem;
+  line-height: 15.1rem;
+}
+.button-plus-card i {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2rem;
+  background: url(../image/common/icon/icon-plus__blue.png) no-repeat center;
+  background-size: cover;
+}
+.button-more {
+  padding: 3rem 4rem;
+  font-size: 5rem;
+  color: #9196a5;
+  background: #eff0f5;
+  border-radius: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -803,8 +869,14 @@
 .ui-input__width-400 {
   width: 40rem;
 }
+.ui-input__width-430 {
+  width: 43rem;
+}
 .ui-input__width-585 {
   width: 58.5rem;
+}
+.ui-input__height-s {
+  height: 13.5rem;
 }
 .ui-input__bg-gray {
   background: #f8f8f8;
@@ -1048,7 +1120,11 @@
   height: 100%;
 }
 
-/* sub-title */
+.sub {
+  /* sub-title */
+  /* sub-item */
+  /* sub-list */
+}
 .sub-title {
   font-size: 8rem;
   font-weight: 500;
@@ -1083,12 +1159,77 @@
   font-size: 6rem;
   line-height: 10rem;
 }
+.sub-item {
+  padding: 0 5rem;
+}
+.sub-item + .sub-item {
+  margin-top: 13rem;
+}
+.sub-item__title {
+  margin-bottom: 6rem;
+  font-size: 6rem;
+  font-weight: 600;
+}
+.sub-item__title--des {
+  margin-left: 1rem;
+  font-size: 6rem;
+}
+.sub-item__gray {
+  padding: 10rem 5rem;
+  background: #f6f8fb;
+}
+.sub-item__box--gray {
+  padding: 8rem;
+  background: #f3f5fb;
+}
+.sub-item__box--border {
+  padding: 8rem;
+  border: 1px solid #d8dce2;
+  border-radius: 3rem;
+}
+.sub-item__box--flex {
+  display: flex;
+  align-items: center;
+}
+.sub-dl {
+  display: flex;
+}
+.sub-dl + .sub-dl {
+  margin-top: 4rem;
+}
+.sub-dl__center {
+  align-items: center;
+}
+.sub-dt, .sub-dd {
+  font-size: 5.6rem;
+  letter-spacing: -1px;
+}
+.sub-dt *:not(button):not(.des-text2), .sub-dd *:not(button):not(.des-text2) {
+  font-size: 5.6rem;
+  letter-spacing: -1px;
+}
+.sub-dt {
+  flex: none;
+  color: #575c62;
+}
+.sub-dt__width {
+  flex: none;
+}
+.sub-dd {
+  flex: 1;
+}
+.sub-dd__right {
+  text-align: right;
+}
 
 .page-bottom {
   margin-top: auto;
 }
 .page-bottom__inner {
   margin-top: 25rem;
+}
+.page-bottom__padding {
+  padding: 0 5rem 10rem 5rem;
 }
 
 /* list */
@@ -1155,6 +1296,10 @@
   background: #f3f5fb;
   border-radius: 2rem;
 }
+.des-text2 {
+  font-size: 4.4rem;
+  color: #575c62;
+}
 
 .line-gray__large {
   width: calc(100% + 10rem);
@@ -1186,8 +1331,28 @@
   flex: none;
 }
 
+.total-cost__list {
+  display: flex;
+  align-items: center;
+}
+.total-cost__title {
+  font-size: 5.5rem;
+}
+.total-cost__text {
+  flex: 1;
+  text-align: right;
+  font-size: 7.8rem;
+  font-weight: 600;
+}
+.total-cost__box--inner {
+  margin-top: 8rem;
+  padding-top: 8rem;
+  border-top: 0.3rem solid #dfe0e2;
+}
+
 .modal {
   background: rgba(0, 0, 0, 0.5);
+  padding: 10rem 0;
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
 }
