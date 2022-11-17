@@ -129,6 +129,9 @@
   margin-bottom: 12rem;
 }
 
+.pd-5 {
+  padding: 5rem;
+}
 .pr-auto {
   padding-right: auto;
 }
@@ -290,6 +293,9 @@
 
 .border-top--gray {
   border-top: 1px solid #dfe0e2;
+}
+.border-radius--3 {
+  border-radius: 3rem;
 }
 
 @media (max-width: 1400px) {
@@ -1409,6 +1415,9 @@
   margin-bottom: 9rem;
   font-size: 5.5rem;
 }
+.sub-title4 {
+  font-size: 4.6rem;
+}
 .sub-title__underline {
   position: relative;
   padding-bottom: 6rem;
@@ -1674,6 +1683,10 @@
   margin-top: 8rem;
   padding-top: 8rem;
   border-top: 0.3rem solid #dfe0e2;
+}
+
+.date-box {
+  padding: 5rem;
 }
 
 .modal {

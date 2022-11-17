@@ -127,6 +127,9 @@
   margin-bottom: 12rem;
 }
 
+.pd-5 {
+  padding: 5rem;
+}
 .pr-auto {
   padding-right: auto;
 }
@@ -288,6 +291,9 @@
 
 .border-top--gray {
   border-top: 1px solid #dfe0e2;
+}
+.border-radius--3 {
+  border-radius: 3rem;
 }
 
 @media (max-width: 1400px) {

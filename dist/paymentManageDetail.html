@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보미쌤</title>
+
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/font.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+
+    <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <!-- //공통 css -->
+
+    <!-- 각 페이지 css -->
+    <link rel="stylesheet" href="../resource/css/payment.css">
+    <!-- //각 페이지 css -->
+
+
+
+
+
+    <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="../resource/js/include.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- skipNavigation -->
+        <div id="skipNavigation" title="스킵내비게이션">
+            <a href="#nav">메뉴 바로가기</a>
+            <a href="#">본문 바로가기</a>
+        </div>
+        <!-- //skipNavigation -->
+
+        <!-- header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        결제 내역
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- //header -->
+
+
+        <!-- container -->
+        <div class="container">
+
+            <div class="container__inner">
+
+                <div class="container-core">
+                    <div class="container-core__inner container-core__flex">
+
+                        <section class="sub-items">
+                            
+                            <div class="sub-item">
+                                <div class="sub-item__box sub-item__box--gray date-box border-radius--3">
+                                    <span class="sub-title4 font-weight-bold">기간</span>
+                                </div>
+                                <div class="sub-title3 d-flex mt-40 font-size__s">
+                                    적립금을기부하시겠습니까? 
+                                    <div class="ui-checkbox__list ml-40">
+                                        <div class="ui-checkbox__inner">
+                                            <div class="ui-checkbox-block">
+                                                <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
+                                                <label for="checkbox1" class="ui-label">
+                                                  <span class="ui-checkbox-object"></span>
+                                                  <span class="ui-label__text">동의 함</span>
+                                                </label>
+                                              </div>
+                                        </div>
+                                      </div>
+
+                                </div>
+                                <p class="sub-item__title sub-item__title--subs">
+                                    구매조건 확인 및 결제 대행 서비스 약관 동의
+                                    <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                </p>
+                                <p class="text-ex text-ex--small border-top--gray pt-40">
+                                    위 주문 내용을 확인하였으며, 회원 본인은 개인정보이용 및 제공,<br/>결제에 동의합니다. 
+                                </p>
+                            </div>
+
+                        </section>
+
+
+                        <section class="page-bottom page-bottom__padding">
+                            <div class="page-bottom__inner">
+                                <div class="ui-buttons">
+                                    <button type="button" class="ui-button ui-button__border-gray">이전</button>
+                                    <button type="button" class="ui-button ui-button__border-blue">결제하기</button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 기부 안내 모달 -->
+                        <div class="modal fade" id="detailDonateGuide" tabindex="-1" style="z-index: 1050;" aria-labelledby="detailDonateGuideLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-auto ">
+                            <div class="modal-content modal-content__detailDonateGuide">
+                                <div class="modal-header">
+                                    <div class="modal-title modal-title__font-l text-left mb-0">기부 안내</div>
+                                </div>
+                                <div class="modal-body">
+                                    기부 안내
+                                </div>
+
+                            </div>
+                        </div>
+                        </div>
+                        <!-- //기부 안내 모달 -->
+                        
+                        <!-- 구매조건 확인 및 결제 대행 서비스 약관 동의 모달 -->
+                        <div class="modal fade" id="serviceAdmitView" tabindex="-1" style="z-index: 1050;" aria-labelledby="serviceAdmitViewLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-auto ">
+                            <div class="modal-content modal-content__serviceAdmitView">
+                                <div class="modal-header">
+                                    <div class="modal-title modal-title__font-l text-left mb-0">구매조건 확인 및 결제 대행 서비스 약관 동의</div>
+                                </div>
+                                <div class="modal-body">
+                                    구매조건 확인 및 결제 대행 서비스 약관 동의
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- //구매조건 확인 및 결제 대행 서비스 약관 동의 모달 -->
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- //container -->
+
+
+
+
+
+
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>

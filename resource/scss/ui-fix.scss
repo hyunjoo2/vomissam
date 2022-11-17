@@ -141,6 +141,11 @@
 }
 // padding
 .p{
+    &d{
+        &-5{
+            padding:5rem;
+        }
+    }
     &r{
         &-auto{
             padding-right:auto;
@@ -329,6 +334,11 @@ $color-blue : #3c50a2;
     &-top{
         &--gray{
             border-top:1px solid #dfe0e2;
+        }
+    }
+    &-radius{
+        &--3{
+            border-radius:3rem;
         }
     }
 }

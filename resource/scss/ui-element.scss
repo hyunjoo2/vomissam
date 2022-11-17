@@ -43,6 +43,9 @@
             margin-bottom: 9rem;
             font-size: 5.5rem;
         }
+        &4{
+            font-size: 4.6rem;
+        }
         &__underline{
             position: relative;
             padding-bottom: 6rem;
@@ -321,5 +324,12 @@
                 border-top:.3rem solid #dfe0e2;
             }
         }
+    }
+}
+
+// date 박스
+.date{
+    &-box{
+        padding:5rem;
     }
 }
