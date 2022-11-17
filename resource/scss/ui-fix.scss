@@ -1,5 +1,20 @@
 @import './helper/mixin';
 
+//display
+.d-flex{
+    display:flex;
+}
+.align{
+    &-center{
+        align-items:center;
+    }
+}
+.justify{
+    &-center{
+        justify-content: center;
+    }
+}
+
 // width
 .width{
     &-80{
@@ -51,6 +66,9 @@
         }
         &-30{
             margin-left:3rem;
+        }
+        &-40{
+            margin-left:4rem;
         }
     }
     &t{
@@ -118,6 +136,101 @@
         }
         &-120{
             margin-bottom:12rem;
+        }
+    }
+}
+// padding
+.p{
+    &r{
+        &-auto{
+            padding-right:auto;
+        }
+        &-120{
+            padding-right: 12rem;
+        }
+    }
+    &l{
+        &-auto{
+            padding-left:auto;
+        }
+        &-10{
+            padding-left:1rem;
+        }
+        &-20{
+            padding-left:2rem !important;
+        }
+        &-30{
+            padding-left:3rem;
+        }
+        &-40{
+            padding-left:4rem;
+        }
+    }
+    &t{
+        &-10{
+            padding-top:1rem;
+        }
+        &-20{
+            padding-top:2rem;
+        }
+        &-30{
+            padding-top:3rem;
+        }
+        &-40{
+            padding-top:4rem;
+        }
+        &-45{
+            padding-top:4.5ren;
+        }
+        &-50{
+            padding-top:5rem;
+        }
+        &-60{
+            padding-top:6rem !important;
+        }
+        &-65{
+            padding-top:6.5rem;
+        }
+        &-70{
+            padding-top:7rem;
+        }
+        &-75{
+            padding-top:7.5rem;
+        }
+        &-80{
+            padding-top:8rem;
+        }
+        &-90{
+            padding-top:9rem;
+        }
+        &-95{
+            padding-top:9.5rem;
+        }
+        &-115{
+            padding-top:11.5rem;
+        }
+        &-120{
+            padding-top:12rem;
+        }
+        &-130{
+            padding-top:13rem;
+        }
+        &-140{
+            padding-top:14rem;
+        }
+        &-150{
+            padding-top:15rem;
+        }
+    }
+    &b{
+        &-60{
+            padding-bottom:6rem;
+        }
+        &-90{
+            padding-bottom:9rem;
+        }
+        &-120{
+            padding-bottom:12rem;
         }
     }
 }
@@ -210,6 +323,14 @@ $color-blue : #3c50a2;
 
 .flex{
     flex: 1;
+}
+
+.border{
+    &-top{
+        &--gray{
+            border-top:1px solid #dfe0e2;
+        }
+    }
 }
 
 // responsive

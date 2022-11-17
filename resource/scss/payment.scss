@@ -7,6 +7,9 @@
             background: #ffffff;
             box-shadow: 2rem 2rem 8rem rgba(0,0,0,0.08);
             border-radius: 3rem;
+            &--payment{
+                box-shadow:none;
+            }
         }
         &__item{
             display: flex;
@@ -60,8 +63,8 @@
                 display: inline-block;
                 position: absolute;
                 top: 8.5rem;
-                left: 0rem;
-                width: calc(100% - 10rem);
+                left: 2rem;
+                width: calc(100% - 12rem);
                 height: 1rem;
                 background: url(../image/sub/line-dashed.png) no-repeat center;
                 background-size: cover;
@@ -73,6 +76,13 @@
                     left: 3rem;
                     width: calc(100% - 12rem);
                     background-image: url(../image/sub/line-dashed__half.png);
+                }
+            }
+            &--step03{
+                &::after{
+                    left: 3rem;
+                    width: calc(100% - 12rem);
+                    background-image: url(../image/sub/line-dashed__blue.png);
                 }
             }
         }

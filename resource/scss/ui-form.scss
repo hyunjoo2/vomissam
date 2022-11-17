@@ -369,7 +369,14 @@
     }
 }
 
+.placeholder{
+    &-black{
+        &::placeholder{
+            color:#000;
+        }
+    }
+}
+
 @include media-breakpoint-down(n-md){ //1024
     
 }
-
