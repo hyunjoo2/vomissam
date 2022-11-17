@@ -1,5 +1,23 @@
 @charset "UTF-8";
 /** element */
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .width-80 {
   width: 8rem;
 }
@@ -43,6 +61,9 @@
 }
 .ml-30 {
   margin-left: 3rem;
+}
+.ml-40 {
+  margin-left: 4rem;
 }
 .mt-10 {
   margin-top: 1rem;
@@ -106,6 +127,91 @@
 }
 .mb-120 {
   margin-bottom: 12rem;
+}
+
+.pr-auto {
+  padding-right: auto;
+}
+.pr-120 {
+  padding-right: 12rem;
+}
+.pl-auto {
+  padding-left: auto;
+}
+.pl-10 {
+  padding-left: 1rem;
+}
+.pl-20 {
+  padding-left: 2rem !important;
+}
+.pl-30 {
+  padding-left: 3rem;
+}
+.pl-40 {
+  padding-left: 4rem;
+}
+.pt-10 {
+  padding-top: 1rem;
+}
+.pt-20 {
+  padding-top: 2rem;
+}
+.pt-30 {
+  padding-top: 3rem;
+}
+.pt-40 {
+  padding-top: 4rem;
+}
+.pt-45 {
+  padding-top: 4.5ren;
+}
+.pt-50 {
+  padding-top: 5rem;
+}
+.pt-60 {
+  padding-top: 6rem !important;
+}
+.pt-65 {
+  padding-top: 6.5rem;
+}
+.pt-70 {
+  padding-top: 7rem;
+}
+.pt-75 {
+  padding-top: 7.5rem;
+}
+.pt-80 {
+  padding-top: 8rem;
+}
+.pt-90 {
+  padding-top: 9rem;
+}
+.pt-95 {
+  padding-top: 9.5rem;
+}
+.pt-115 {
+  padding-top: 11.5rem;
+}
+.pt-120 {
+  padding-top: 12rem;
+}
+.pt-130 {
+  padding-top: 13rem;
+}
+.pt-140 {
+  padding-top: 14rem;
+}
+.pt-150 {
+  padding-top: 15rem;
+}
+.pb-60 {
+  padding-bottom: 6rem;
+}
+.pb-90 {
+  padding-bottom: 9rem;
+}
+.pb-120 {
+  padding-bottom: 12rem;
 }
 
 .txt-depth--01 {
@@ -182,6 +288,10 @@
           flex: 1;
 }
 
+.border-top--gray {
+  border-top: 1px solid #dfe0e2;
+}
+
 @media (max-width: 1400px) {
   .mt-20 {
     margin-top: 2rem;
@@ -232,6 +342,10 @@
   color: #000000;
   border-radius: 2rem;
   line-height: 20.1rem;
+}
+.ui-button:disabled {
+  background-color: #f2f2f2 !important;
+  color: #b2b2b2 !important;
 }
 .ui-button + .ui-button {
   margin-left: 2rem;
@@ -439,6 +553,10 @@
   border-color: #4b62c3;
   -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
           box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.ui-button__clickFull.is-active {
+  color: #fff;
+  background-color: #3c50a2;
 }
 .ui-button__badge {
   padding: 1.7rem 2.8rem;
@@ -1235,6 +1353,26 @@
   margin-top: 10rem;
 }
 
+.placeholder-black::-webkit-input-placeholder {
+  color: #000;
+}
+
+.placeholder-black::-moz-placeholder {
+  color: #000;
+}
+
+.placeholder-black:-ms-input-placeholder {
+  color: #000;
+}
+
+.placeholder-black::-ms-input-placeholder {
+  color: #000;
+}
+
+.placeholder-black::placeholder {
+  color: #000;
+}
+
 .container__sub {
   padding: 0 5rem 10rem 5rem;
 }
@@ -1306,6 +1444,16 @@
   margin-left: 1rem;
   font-size: 6rem;
 }
+.sub-item__title--subs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 5.4rem;
+  font-weight: 600;
+}
 .sub-item__gray {
   padding: 10rem 5rem;
   background: #f6f8fb;
@@ -1326,6 +1474,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.sub-item__btn--view {
+  font-size: 4.8rem;
+  color: #9196a5;
 }
 .sub-dl {
   display: -webkit-box;
@@ -1436,6 +1588,10 @@
   margin-top: 4rem;
   font-size: 5.5rem;
   color: #9196a5;
+}
+.text-ex--small {
+  font-size: 4.8rem;
+  line-height: 1.5;
 }
 
 .ui-required {
