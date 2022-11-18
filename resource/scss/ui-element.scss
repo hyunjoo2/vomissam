@@ -8,6 +8,9 @@
         padding: 0 5rem 10rem 5rem;
         
         &--p{
+            &-0{
+                padding:0;
+            }
             &b{
                 &-0{
                     padding-bottom: 0;
@@ -261,6 +264,12 @@
 
 //line-gray
 .line-gray{
+    &__small{
+        width:calc(100% + 10rem);
+        margin-left: -5rem;
+        margin-right: -5rem;
+        height:1rem;
+    }
     &__large{
         width:calc(100% + 10rem);
         margin-left: -5rem;
