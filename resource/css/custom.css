@@ -154,6 +154,7 @@
   height: 34.5rem;
   margin-left: -5rem;
 }
+
 .visual-link {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -188,18 +189,19 @@
   height: 11rem;
 }
 
-.notice-box {
+.notice-box, .terms-box {
   padding: 8rem 7rem;
 }
-.notice-box a {
+.notice-box a, .terms-box a {
   display: grid;
-  grid-template-columns: 27rem calc(100% - 27rem);
+  grid-template-columns: 19rem calc(100% - 19rem);
   grid-auto-flow: dense;
 }
-.notice-box__cate {
+.notice-box__cate, .terms-box__cate {
   grid-row: 1/span 2;
+  margin-right: 5rem;
 }
-.notice-box__cate em {
+.notice-box__cate em, .terms-box__cate em {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,17 +215,63 @@
   height: 14rem;
   color: #fff;
   font-size: 4.4rem;
-  font-weight: 500;
+  font-weight: 300;
   border-radius: 1rem;
+  line-height: 1.1;
 }
-.notice-box--alarm .notice-box__cate em {
+.notice-box--alarm .notice-box__cate em, .terms-box--alarm .notice-box__cate em {
   background-color: #4b62c3;
 }
-.notice-box__tit {
+.notice-box--guide .notice-box__cate em, .terms-box--guide .notice-box__cate em {
+  background-color: #6d70d0;
+}
+.notice-box--community .notice-box__cate em, .terms-box--community .notice-box__cate em {
+  background-color: #d16db8;
+}
+.notice-box__tit, .terms-box__tit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-row: 1/2;
   grid-column: 2/3;
+  font-size: 5.2rem;
+  font-weight: 500;
 }
-.notice-box__date {
+.notice-box__date, .terms-box__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-row: 2/3;
   grid-column: 2/3;
+  font-size: 4rem;
+  color: #555555;
+}
+
+.terms-box__tit {
+  font-size: 6rem;
+}
+.terms-box__txt {
+  margin-top: 3.5rem;
+  font-size: 4rem;
+  color: #b4b4b4;
+}
+.terms-box .terms-box__cate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.terms-box .terms-box__cate img {
+  height: 9.1rem;
 }
