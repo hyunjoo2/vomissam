@@ -196,6 +196,47 @@
                 }
             }
         }
+    }       
+}
+.sub{
+    &-item{
+        &--totalPayment{
+            .sub-item{
+                + .sub-item{
+                    margin-top:7rem;
+                }
+                &:first-child{
+                    margin-bottom:13rem;
+                }
+                &__box{
+                    &--border{
+                        border:none;
+                    }
+                }
+            }
+        }
     }
-        
+}
+.sub-item__box--totalPay{
+    color:#fff;
+    border-radius:3rem;
+    background-image:url('../image/sub/img-totalPay.png');
+    background-position:102% 130%;
+    background-repeat:no-repeat;
+    background-size:42rem 32rem;
+    .totalPay{
+        &__txt{
+            font-size:6rem;
+            span{
+                display:block;
+                margin-top:5rem;
+                font-size:8rem;
+                font-weight:500;
+                em{
+                    font-size:8rem;
+                    font-weight:500;
+                }
+            }
+        }
+    }
 }

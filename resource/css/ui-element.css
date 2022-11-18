@@ -86,6 +86,13 @@
   padding: 10rem 5rem;
   background: #f6f8fb;
 }
+.sub-item__blue {
+  padding: 12rem 8rem;
+  background-color: #4b62c3;
+}
+.sub-item__box {
+  position: relative;
+}
 .sub-item__box--gray {
   padding: 8rem;
   background: #f3f5fb;
@@ -306,4 +313,8 @@
 
 .date-box {
   padding: 5rem;
+}
+
+.js-datepicker-range .ui-button {
+  font-size: 4.6rem;
 }

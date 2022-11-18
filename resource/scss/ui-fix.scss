@@ -328,6 +328,12 @@ $color-blue : #3c50a2;
 
 .flex{
     flex: 1;
+    &-2{
+        flex:1 1 20%;
+    }
+    &-4{
+        flex:1 1 40%;
+    }
 }
 
 .border{

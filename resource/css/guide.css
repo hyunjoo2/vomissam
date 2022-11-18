@@ -1,5 +1,365 @@
 @charset "UTF-8";
 /** element */
+/* date time picker */
+/*
+.bootstrap-datetimepicker-widget .glyphicon-chevron-left:before {
+  content: '<';
+}
+.bootstrap-datetimepicker-widget .glyphicon-chevron-right:before {
+  content: '>';
+}
+*/
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-up,
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-down,
+.bootstrap-datetimepicker-widget table td .glyphicon-screenshot,
+.bootstrap-datetimepicker-widget table td .glyphicon-time,
+.bootstrap-datetimepicker-widget table td .glyphicon-trash,
+.bootstrap-datetimepicker-widget table td .glyphicon-remove,
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-up:empty,
+.bootstrap-datetimepicker-widget table td .glyphicon-chevron-down:empty,
+.bootstrap-datetimepicker-widget table td .glyphicon-screenshot:empty,
+.bootstrap-datetimepicker-widget table td .glyphicon-time:empty,
+.bootstrap-datetimepicker-widget table td .glyphicon-trash:empty,
+.bootstrap-datetimepicker-widget table td .glyphicon-remove:empty {
+  display: block;
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-chevron-up:before {
+  content: "▲";
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-chevron-down:before {
+  content: "▼";
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-screenshot:before {
+  content: "⌖";
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-time:before {
+  content: "🕒";
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-calendar:before {
+  content: "▦";
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-trash:before {
+  content: "🗑";
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-remove:before {
+  content: "╳";
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 225px;
+  margin: 6px 0;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #b8c0cb;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu:before,
+.bootstrap-datetimepicker-widget.dropdown-menu:after {
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.bottom::after,
+.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.bottom::before {
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget .datepicker {
+  position: relative;
+  z-index: 0;
+}
+
+.bootstrap-datetimepicker-widget table {
+  table-layout: fixed;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bootstrap-datetimepicker-widget table th,
+.bootstrap-datetimepicker-widget table td {
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: auto;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th.picker-switch:hover {
+  border-radius: 4px;
+  background-color: #f5f6f8;
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-chevron-left,
+.bootstrap-datetimepicker-widget .glyphicon-chevron-right {
+  display: block;
+  width: 2.4rem;
+  height: 2.7rem;
+  border-radius: 4px;
+  background: no-repeat 50% 50%;
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-chevron-right {
+  margin-left: auto;
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-chevron-left {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24'%3E%3Cg data-name='ic_prev_n' style='opacity:.9'%3E%3Cpath data-name='패스 3499' d='m1832 103 5 5 5-5' transform='rotate(90 968.25 -856.75)' style='fill:none;stroke:%23232931;stroke-width:1.5px'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.bootstrap-datetimepicker-widget .glyphicon-chevron-right {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24'%3E%3Cg data-name='ic_next_n' style='opacity:.9'%3E%3Cpath data-name='패스 3499' d='m1832 103 5 5 5-5' transform='rotate(-90 874.75 974.25)' style='fill:none;stroke:%23232931;stroke-width:1.5px'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.bootstrap-datetimepicker-widget th.prev.disabled .glyphicon-chevron-left {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24'%3E%3Cg data-name='ic_prev_n' style='opacity:.9'%3E%3Cpath data-name='패스 3499' d='m1832 103 5 5 5-5' transform='rotate(90 968.25 -856.75)' style='fill:none;stroke:%23232931;stroke-width:1.5px'/%3E%3C/g%3E%3C/svg%3E%0A");
+  opacity: 0.3;
+}
+
+.bootstrap-datetimepicker-widget th.next.disabled .glyphicon-chevron-right {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24'%3E%3Cg data-name='ic_next_n' style='opacity:.9'%3E%3Cpath data-name='패스 3499' d='m1832 103 5 5 5-5' transform='rotate(-90 874.75 974.25)' style='fill:none;stroke:%23232931;stroke-width:1.5px'/%3E%3C/g%3E%3C/svg%3E%0A");
+  opacity: 0.3;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th.prev:hover,
+.bootstrap-datetimepicker-widget table thead tr:first-child th.next:hover {
+  background: none;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th.prev:hover .glyphicon-chevron-left,
+.bootstrap-datetimepicker-widget table thead tr:first-child th.next:hover .glyphicon-chevron-right {
+  border-radius: 4px;
+  background-color: #f5f6f8;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th.prev.disabled:hover .glyphicon-chevron-left,
+.bootstrap-datetimepicker-widget table thead tr:first-child th.next.disabled:hover .glyphicon-chevron-right {
+  background-color: transparent;
+}
+
+.bootstrap-datetimepicker-widget table thead th.dow,
+.bootstrap-datetimepicker-widget table tbody td[colspan="7"] {
+  padding-top: 12px;
+}
+
+.bootstrap-datetimepicker-widget table thead th.dow {
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+  width: auto;
+  height: auto;
+  padding: 5px 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+}
+
+.bootstrap-datetimepicker-widget table td.day.weekend:first-child {
+  color: #30b59c;
+}
+
+.bootstrap-datetimepicker-widget table td.day.weekend:last-child {
+  color: inherit;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover,
+.bootstrap-datetimepicker-widget table td.hour:hover,
+.bootstrap-datetimepicker-widget table td.minute:hover,
+.bootstrap-datetimepicker-widget table td.second:hover {
+  background: none;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover:before,
+.bootstrap-datetimepicker-widget table td.hour:hover:before,
+.bootstrap-datetimepicker-widget table td.minute:hover:before,
+.bootstrap-datetimepicker-widget table td.second:hover:before,
+.bootstrap-datetimepicker-widget table td.day.today:before,
+.bootstrap-datetimepicker-widget table td.active:before {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  margin: -2px 2px 0;
+  z-index: -1;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #f5f6f8;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover,
+.bootstrap-datetimepicker-widget table td.active.day.weekend:first-child,
+.bootstrap-datetimepicker-widget table td.active.day.weekend:first-child:hover,
+.bootstrap-datetimepicker-widget table td.active.day.weekend:last-child,
+.bootstrap-datetimepicker-widget table td.active.day.weekend:last-child:hover {
+  color: #fff;
+  text-shadow: none;
+  background: none;
+}
+
+.bootstrap-datetimepicker-widget table td.active:before,
+.bootstrap-datetimepicker-widget table td.active:hover:before {
+  background-color: #30b59c;
+}
+
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  opacity: 0.6;
+}
+
+.bootstrap-datetimepicker-widget table td.disabled,
+.bootstrap-datetimepicker-widget table td.disabled:hover {
+  opacity: 0.2;
+}
+
+.bootstrap-datetimepicker-widget table td.disabled:before,
+.bootstrap-datetimepicker-widget table td.disabled:hover:before {
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget table td.day.today:before {
+  border: 1px solid #30b59c;
+  bottom: auto;
+  right: auto;
+  background-color: transparent;
+}
+
+.bootstrap-datetimepicker-widget table td.day.today:hover:before {
+  background-color: #f5f6f8;
+}
+
+.bootstrap-datetimepicker-widget table td.day.today.active:before {
+  background-color: #30b59c;
+}
+
+.bootstrap-datetimepicker-widget table tbody td[colspan="7"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bootstrap-datetimepicker-widget table td span.month,
+.bootstrap-datetimepicker-widget table td span.year,
+.bootstrap-datetimepicker-widget table td span.decade {
+  display: block;
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 0;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 13px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bootstrap-datetimepicker-widget table td span.month:hover,
+.bootstrap-datetimepicker-widget table td span.year:hover,
+.bootstrap-datetimepicker-widget table td span.decade:hover {
+  background: none;
+}
+
+.bootstrap-datetimepicker-widget table td span.month:hover:before,
+.bootstrap-datetimepicker-widget table td span.month.active:before,
+.bootstrap-datetimepicker-widget table td span.year:hover:before,
+.bootstrap-datetimepicker-widget table td span.year.active:before,
+.bootstrap-datetimepicker-widget table td span.decade:hover:before,
+.bootstrap-datetimepicker-widget table td span.decade.active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: -9px 5px 0;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #f5f6f8;
+}
+
+.bootstrap-datetimepicker-widget table td span.month.active,
+.bootstrap-datetimepicker-widget table td span.year.active,
+.bootstrap-datetimepicker-widget table td span.decade.active {
+  text-shadow: none;
+  background: none;
+}
+
+.bootstrap-datetimepicker-widget table td span.month.active:before,
+.bootstrap-datetimepicker-widget table td span.month.active:hover:before,
+.bootstrap-datetimepicker-widget table td span.year.active:before,
+.bootstrap-datetimepicker-widget table td span.year.active:hover:before,
+.bootstrap-datetimepicker-widget table td span.decade.active:before,
+.bootstrap-datetimepicker-widget table td span.decade.active:hover:before {
+  background-color: #30b59c;
+}
+
+.bootstrap-datetimepicker-widget table td span.month.disabled,
+.bootstrap-datetimepicker-widget table td span.month.disabled:hover,
+.bootstrap-datetimepicker-widget table td span.year.disabled,
+.bootstrap-datetimepicker-widget table td span.year.disabled:hover,
+.bootstrap-datetimepicker-widget table td span.decade.disabled,
+.bootstrap-datetimepicker-widget table td span.decade.disabled:hover {
+  opacity: 0.2;
+}
+
+.bootstrap-datetimepicker-widget table td span.month.disabled:before,
+.bootstrap-datetimepicker-widget table td span.month.disabled:hover:before,
+.bootstrap-datetimepicker-widget table td span.year.disabled:before,
+.bootstrap-datetimepicker-widget table td span.year.disabled:hover:before,
+.bootstrap-datetimepicker-widget table td span.decade.disabled:before,
+.bootstrap-datetimepicker-widget table td span.decade.disabled:hover:before {
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget .datepicker-decades .decade {
+  font-size: 12px;
+  line-height: 16px !important;
+  height: 62px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bootstrap-datetimepicker-widget table td span.decade {
+  width: 33.333333%;
+}
+
+.bootstrap-datetimepicker-widget table td span.decade:hover:before,
+.bootstrap-datetimepicker-widget table td span.decade.active:before {
+  margin: -10px 0 0 -4px;
+  width: 52px;
+  height: 52px;
+}
+
+.bootstrap-datetimepicker-widget table td span:empty {
+  display: none;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +489,9 @@
   margin-bottom: 12rem;
 }
 
+.pd-5 {
+  padding: 5rem;
+}
 .pr-auto {
   padding-right: auto;
 }
@@ -290,6 +653,9 @@
 
 .border-top--gray {
   border-top: 1px solid #dfe0e2;
+}
+.border-radius--3 {
+  border-radius: 3rem;
 }
 
 @media (max-width: 1400px) {
@@ -704,7 +1070,7 @@
 .board-table__list thead .addfile {
   width: 8.6%;
 }
-.board-table__list thead .date {
+.board-table__list thead .date, .board-table__list thead .js-datepicker-range__min {
   width: 12.9%;
 }
 .board-table__list thead .name {
@@ -895,7 +1261,7 @@
   .board-table__list thead .category {
     width: 12%;
   }
-  .board-table__list thead .date {
+  .board-table__list thead .date, .board-table__list thead .js-datepicker-range__min {
     width: 16%;
   }
   .board-table__list tbody td {
@@ -932,6 +1298,100 @@
     width: 30%;
   }
 }
+.icon, .js-datepicker-range__min {
+  display: block;
+  width: 1.5rem;
+  height: 1.3rem;
+  background-repeat: no-repeat;
+}
+.icon.arrow-fill, .arrow-fill.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8,  %3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23ff0077' d='m4.5-.001 4.5 6H0l4.5-6Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-fill__bottom, .arrow-fill__bottom.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m5.997 8.005-6-7.994h11.999L5.997 8.005Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-fill__right, .arrow-fill__right.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='15'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M10 7.498 0-.001v14.999l10-7.5Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-fill__white, .arrow-fill__white.js-datepicker-range__min {
+  width: 2.1rem;
+  width: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.arrow-fill__gray, .arrow-fill__gray.js-datepicker-range__min {
+  width: 2.1rem;
+  width: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.arrow-fill__dgray, .arrow-fill__dgray.js-datepicker-range__min {
+  width: 1.5rem;
+  width: 1.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.arrow-round, .arrow-round.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-back, .arrow-back.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-top, .arrow-top.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-left, .arrow-left.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='14.5' height='21.5'%3E%3Cpath fill-rule='evenodd' stroke='rgb(0, 0, 0)' fill='rgb(255, 255, 255)' d='M13.509 1.361 1.777 10.396l11.586 9.233-.305.876-11.995-9.559-.261.201-.311-.866.354-.273.097-.278.129.104L13.198.495l.311.866Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-first, .arrow-first.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-last, .arrow-last.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.icon.arrow-prev, .arrow-prev.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: cover;
+}
+.icon.arrow-next, .arrow-next.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.icon.arrow-right, .arrow-right.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-more, .arrow-more.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.close, .close.js-datepicker-range__min {
+  width: 13px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13'%3E%3Cpath fill-rule='evenodd' fill='%23000' d='m12.864 12.156-.707.707L6.5 7.206.843 12.863l-.707-.707 5.657-5.657L.136.841.843.134 6.5 5.792 12.157.134l.707.707-5.657 5.658 5.657 5.657Z'/%3E%3C/svg%3E");
+}
+.icon.close_big, .close_big.js-datepicker-range__min {
+  background-image: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='27'%3E%3Cpath fill-rule='evenodd' fill='%23000' d='m25.531 25.047-.983.983L13 14.482 1.451 26.03l-.982-.983 11.548-11.548L.469 1.951l.982-.983L13 12.516 24.548.968l.983.983-11.548 11.548 11.548 11.548Z'/%3E%3C/svg%3E");
+}
+.icon.date, .js-datepicker-range__min {
+  width: 7rem;
+  height: 7rem;
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_12_53)'%3E%3Cpath d='M12.7855 12H1.21446C0.545157 12 0 11.4863 0 10.8557V2.01907C0 1.38715 0.545157 0.874756 1.21446 0.874756H12.7855C13.4548 0.874756 14 1.38842 14 2.01907V10.8557C14 11.4863 13.4548 12 12.7855 12ZM1.21446 1.63763C0.991807 1.63763 0.809639 1.80928 0.809639 2.01907V10.8557C0.809639 11.0655 0.991807 11.2371 1.21446 11.2371H12.7855C13.0082 11.2371 13.1904 11.0655 13.1904 10.8557V2.01907C13.1904 1.80928 13.0082 1.63763 12.7855 1.63763H1.21446Z' fill='%23424242'/%3E%3Cpath d='M13.4602 4.30769H0.555942C0.331942 4.30769 0.151123 4.13731 0.151123 3.92625C0.151123 3.71519 0.331942 3.54482 0.555942 3.54482H13.4602C13.6842 3.54482 13.865 3.71519 13.865 3.92625C13.865 4.13731 13.6842 4.30769 13.4602 4.30769Z' fill='%23424242'/%3E%3Cpath d='M3.89573 2.51113C3.67173 2.51113 3.49091 2.34075 3.49091 2.12969V0.381437C3.49091 0.170375 3.67173 0 3.89573 0C4.11972 0 4.30054 0.170375 4.30054 0.381437V2.12969C4.30054 2.34075 4.11972 2.51113 3.89573 2.51113Z' fill='%23424242'/%3E%3Cpath d='M6.99936 2.51113C6.77536 2.51113 6.59454 2.34075 6.59454 2.12969V0.381437C6.59454 0.170375 6.77536 0 6.99936 0C7.22336 0 7.40418 0.170375 7.40418 0.381437V2.12969C7.40418 2.34075 7.22336 2.51113 6.99936 2.51113Z' fill='%23424242'/%3E%3Cpath d='M10.1029 2.51113C9.87894 2.51113 9.69812 2.34075 9.69812 2.12969V0.381437C9.69812 0.170375 9.87894 0 10.1029 0C10.3269 0 10.5078 0.170375 10.5078 0.381437V2.12969C10.5078 2.34075 10.3269 2.51113 10.1029 2.51113Z' fill='%23424242'/%3E%3Cpath d='M3.18458 5.57915H2.16309V6.45391H3.18458V5.57915Z' fill='%23424242'/%3E%3Cpath d='M5.38142 5.57915H4.35992V6.45391H5.38142V5.57915Z' fill='%23424242'/%3E%3Cpath d='M7.5782 5.57915H6.5567V6.45391H7.5782V5.57915Z' fill='%23424242'/%3E%3Cpath d='M9.77503 5.57915H8.75354V6.45391H9.77503V5.57915Z' fill='%23424242'/%3E%3Cpath d='M11.9719 5.57915H10.9504V6.45391H11.9719V5.57915Z' fill='%23424242'/%3E%3Cpath d='M3.18458 7.39098H2.16309V8.26574H3.18458V7.39098Z' fill='%23424242'/%3E%3Cpath d='M5.38142 7.39098H4.35992V8.26574H5.38142V7.39098Z' fill='%23424242'/%3E%3Cpath d='M7.5782 7.39098H6.5567V8.26574H7.5782V7.39098Z' fill='%23424242'/%3E%3Cpath d='M9.77503 7.39098H8.75354V8.26574H9.77503V7.39098Z' fill='%23424242'/%3E%3Cpath d='M11.9719 7.39098H10.9504V8.26574H11.9719V7.39098Z' fill='%23424242'/%3E%3Cpath d='M3.18458 9.20279H2.16309V10.0776H3.18458V9.20279Z' fill='%23424242'/%3E%3Cpath d='M5.38142 9.20279H4.35992V10.0776H5.38142V9.20279Z' fill='%23424242'/%3E%3Cpath d='M7.5782 9.20279H6.5567V10.0776H7.5782V9.20279Z' fill='%23424242'/%3E%3Cpath d='M9.77503 9.20279H8.75354V10.0776H9.77503V9.20279Z' fill='%23424242'/%3E%3Cpath d='M11.9719 9.20279H10.9504V10.0776H11.9719V9.20279Z' fill='%23424242'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_12_53'%3E%3Crect width='14' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: 7rem 7rem;
+}
+
+.sitemap-close {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+
 .sch-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1409,6 +1869,9 @@
   margin-bottom: 9rem;
   font-size: 5.5rem;
 }
+.sub-title4 {
+  font-size: 4.6rem;
+}
 .sub-title__underline {
   position: relative;
   padding-bottom: 6rem;
@@ -1457,6 +1920,9 @@
 .sub-item__gray {
   padding: 10rem 5rem;
   background: #f6f8fb;
+}
+.sub-item__box {
+  position: relative;
 }
 .sub-item__box--gray {
   padding: 8rem;
@@ -1674,6 +2140,10 @@
   margin-top: 8rem;
   padding-top: 8rem;
   border-top: 0.3rem solid #dfe0e2;
+}
+
+.date-box {
+  padding: 5rem;
 }
 
 .modal {

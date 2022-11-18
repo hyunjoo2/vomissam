@@ -1,4 +1,5 @@
 @import './helper/mixin';
+@import './helper/svg';
 
 .sch{
     &-wrap{
@@ -122,6 +123,18 @@
         &::placeholder{
             font-size: 5.5rem;
             color:#9196a5;
+        }
+        &.js{
+            &-datepicker{
+                &-range{
+                    &__min, &__max{
+                        font-size:4.8rem;
+                        &::placeholder{
+                            font-size:4.8rem;
+                        }
+                    }
+                }
+            }
         }
     }
     &-select{
@@ -373,6 +386,21 @@
     &-black{
         &::placeholder{
             color:#000;
+        }
+    }
+}
+
+.js{
+    &-datepicker{
+        &-range{
+            &__min, &__max{
+                @extend .icon, .date;
+                background-position:90% center;
+                font-size:4.8rem;
+                &::placeholder{
+                    font-size:4.8rem;
+                }
+            }
         }
     }
 }
