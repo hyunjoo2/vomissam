@@ -162,6 +162,7 @@
           box-sizing: border-box;
   -webkit-appearance: none;
   border-radius: 1.5rem;
+  line-height: 1.5;
   font-size: 5.5rem;
 }
 .ui-form__button {
@@ -296,10 +297,13 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  padding: 4.5rem;
 }
 .ui-textarea__height-265 {
-  padding: 5.5rem;
   height: 26.5rem;
+}
+.ui-textarea__height-650 {
+  height: 65rem;
 }
 .ui-textarea::-webkit-input-placeholder {
   color: #9196a5;

@@ -87,7 +87,12 @@ $(function(){
     $(depSeleted).on('click', function(){
         //console.log("a");
         $(this).next().slideToggle();
-    })
+    });
+
+    //acordion
+    $('.acordion-notice__btn').on('click', function(){
+        $(this).toggleClass('is-click').next().slideToggle();
+    });
     
     uiJSCommon();
 
