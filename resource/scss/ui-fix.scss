@@ -13,6 +13,9 @@
     &-center{
         justify-content: center;
     }
+    &-between{
+        justify-content: space-between;
+    }
 }
 
 // width
@@ -111,6 +114,9 @@
         &-95{
             margin-top:9.5rem;
         }
+        &-110{
+            margin-top:11rem;
+        }
         &-115{
             margin-top:11.5rem;
         }
@@ -137,6 +143,9 @@
         }
         &-190{
             margin-top:19rem !important;
+        }
+        &-200{
+            margin-top:20rem;
         }
     }
     &b{
