@@ -106,18 +106,6 @@
   display: flex;
   height: 50px;
 }
-.sch-form__select {
-  min-width: 130px;
-  height: 100%;
-  margin-right: 3px;
-  font-size: 16px;
-  font-weight: 400;
-  border: 1px solid #d2d5dc;
-  background-color: #fff;
-  background-image: url("../image/common/icon/icon-clampDown.png");
-  background-repeat: no-repeat;
-  background-position: 90% center;
-}
 .sch-form__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,33 +488,6 @@
 }
 .attach-file__name {
   line-height: normal;
-}
-.attach-file__item {
-  display: -webkit-box;
-  display: flex;
-  -ms-display: flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.2rem 0 0.2rem 2.5rem;
-  font-size: 1.6rem;
-  background: url(../image/common/icon/icon-file__list.png) no-repeat left center;
-  background-size: 1.5rem 1.8rem;
-}
-.attach-file__item + .attach-file__item {
-  margin-top: 1rem;
-}
-.attach-file__item .delete-file {
-  width: 2rem;
-  height: 2rem;
-  margin-left: 1rem;
-  background: url(../image/common/icon/icon-delete__file.png) no-repeat center;
-  background-size: cover;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
 }
 
 .form-title {

@@ -65,29 +65,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.board-table__list .td-title .icon-secret {
-  display: inline-block;
-  width: 1.3rem;
-  height: 2rem;
-  margin-left: 1rem;
-  vertical-align: top;
-  background: url(../image/common/icon/icon-secret.png) no-repeat center;
-  background-size: 1.3rem 2rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-}
 .board-table__list .td-titlelink {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.board-table__list .td-filelink {
-  display: inline-block;
-  width: 2.3rem;
-  height: 2.3rem;
-  background: url(../image/common/icon/icon-download__table.png) no-repeat center;
-  background-size: cover;
 }
 .board-table__list .td-process .badge-process {
   display: -webkit-box;
@@ -123,11 +104,6 @@
 }
 .board-table__list--press thead .press {
   width: 8.6%;
-}
-.board-table__list--press .td-titlelink {
-  padding-left: 3rem;
-  background: url(../image/common/icon/icon-pressLink.png) no-repeat left center;
-  background-size: 1.7rem;
 }
 .board-table__list--qna thead .num, .board-table__list--qna thead .process, .board-table__list--qna thead .author {
   width: 8.572%;

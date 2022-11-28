@@ -377,6 +377,11 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
 .width-80 {
   width: 8rem;
@@ -464,6 +469,9 @@
 .mt-95 {
   margin-top: 9.5rem;
 }
+.mt-110 {
+  margin-top: 11rem;
+}
 .mt-115 {
   margin-top: 11.5rem;
 }
@@ -478,6 +486,21 @@
 }
 .mt-150 {
   margin-top: 15rem;
+}
+.mt-160 {
+  margin-top: 16rem;
+}
+.mt-170 {
+  margin-top: 17rem;
+}
+.mt-180 {
+  margin-top: 18rem;
+}
+.mt-190 {
+  margin-top: 19rem !important;
+}
+.mt-200 {
+  margin-top: 20rem;
 }
 .mb-60 {
   margin-bottom: 6rem;
@@ -739,6 +762,10 @@
 .ui-buttons__thirds .ui-button {
   max-width: calc(33.3333333333% - 2rem);
   margin: 1rem;
+}
+.ui-buttons--faq .ui-button.is-active {
+  background-color: #4b62c3;
+  color: #fff;
 }
 .ui-button__page--back {
   width: 12.9rem;
@@ -1135,13 +1162,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.board-table__list .td-filelink {
-  display: inline-block;
-  width: 2.3rem;
-  height: 2.3rem;
-  background: url(../image/common/icon/icon-download__table.png) no-repeat center;
-  background-size: cover;
-}
 .board-table__list .td-process .badge-process {
   display: -webkit-box;
   display: flex;
@@ -1416,18 +1436,6 @@
   display: flex;
   height: 50px;
 }
-.sch-form__select {
-  min-width: 130px;
-  height: 100%;
-  margin-right: 3px;
-  font-size: 16px;
-  font-weight: 400;
-  border: 1px solid #d2d5dc;
-  background-color: #fff;
-  background-image: url("../image/common/icon/icon-clampDown.png");
-  background-repeat: no-repeat;
-  background-position: 90% center;
-}
 .sch-form__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1472,6 +1480,7 @@
           box-sizing: border-box;
   -webkit-appearance: none;
   border-radius: 1.5rem;
+  line-height: 1.5;
   font-size: 5.5rem;
 }
 .ui-form__button {
@@ -1544,6 +1553,9 @@
 .ui-input__height-s {
   height: 13.5rem;
 }
+.ui-input__height-l {
+  height: 15rem;
+}
 .ui-input__bg-gray {
   background: #f8f8f8;
 }
@@ -1606,10 +1618,13 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  padding: 4.5rem;
 }
 .ui-textarea__height-265 {
-  padding: 5.5rem;
   height: 26.5rem;
+}
+.ui-textarea__height-650 {
+  height: 65rem;
 }
 .ui-textarea::-webkit-input-placeholder {
   color: #9196a5;
@@ -1821,16 +1836,6 @@
 .attach-file__item + .attach-file__item {
   margin-top: 1rem;
 }
-.attach-file__item .delete-file {
-  width: 2rem;
-  height: 2rem;
-  margin-left: 1rem;
-  background: url(../image/common/icon/icon-delete__file.png) no-repeat center;
-  background-size: cover;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-}
 
 .form-title {
   margin-bottom: 5rem;
@@ -1925,7 +1930,7 @@
 }
 .sub-title__underline {
   position: relative;
-  padding-bottom: 6rem;
+  padding-bottom: 3.6rem;
   margin-bottom: 7rem;
   font-size: 6.4rem;
   font-weight: 600;
@@ -2120,6 +2125,11 @@
   margin-left: 1rem;
 }
 
+.ui-txt--blue {
+  color: #4b62c3;
+  margin-left: 1rem;
+}
+
 .des-text__inner {
   padding: 5rem 6rem;
   font-size: 4.8rem;
@@ -2215,6 +2225,69 @@
 
 .js-datepicker-range .ui-button {
   font-size: 4.6rem;
+}
+
+.acordion-notice__btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 8.5rem 6rem;
+  padding-right: 16rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: #222;
+  background: url("../image/sub/icon/icon-down.png") no-repeat 95% center;
+  background-size: 5.3rem 2.9rem;
+  border-bottom: 1px solid #e9eaec;
+  line-height: 1.2;
+  text-align: left;
+}
+.acordion-notice__btn.is-click {
+  background: url("../image/sub/icon/icon-up--blue.png") no-repeat 95% center;
+  background-size: 5.3rem 2.9rem;
+}
+.acordion-notice__view {
+  position: relative;
+  display: none;
+  padding: 7.5rem 6rem;
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.5;
+  background-color: #f6f8fb;
+}
+.acordion-notice--faq .acordion-notice__btn {
+  padding-left: 14rem;
+}
+.acordion-notice--faq .acordion-notice__btn::before {
+  position: absolute;
+  top: 8rem;
+  left: 6rem;
+  margin-right: 4.5rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: #4b62c3;
+  content: "Q";
+}
+.acordion-notice--faq .acordion-notice__btn.is-click + .acordion-notice__view::before {
+  top: 6.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.acordion-notice--faq .acordion-notice__view {
+  padding-left: 14rem;
+}
+.acordion-notice--faq .acordion-notice__view::before {
+  position: absolute;
+  top: 0;
+  left: 6rem;
+  margin-right: 4.5rem;
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: #f46b76;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  content: "A";
 }
 
 .modal {

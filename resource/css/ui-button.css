@@ -173,6 +173,17 @@
   margin-top: -1rem;
   background-image: url(../image/sub/icon/icon-home.png);
 }
+.ui-button__icon-left {
+  line-height: 100%;
+}
+.ui-button__icon-left::before {
+  width: 2.9rem;
+  height: 5.3rem;
+  margin: 0;
+  background-image: url(../image/sub/icon/icon-right.png);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .ui-button__icon-right {
   line-height: 100%;
 }
