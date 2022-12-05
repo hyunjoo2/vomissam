@@ -304,15 +304,15 @@
             background-size: 5.6rem 5.1rem;
         }
         &__google{
-            // border-color: #06be34;
+            border-color: #dc4e41;
             background-image: url(../image/common/icon-google__colored.png);
             background-size: 5.3rem 5.5rem;
         }
-        // &__kakao{
-        //     border-color: #fae100;
-        //     // background-image: url(../image/common/icon-naver__colored.png) ;
-        //     // background-size: 5.6rem 5.1rem;
-        // }
+        &__kakao{
+            border-color: #fae100;
+            background-image: url(../image/common/icon-kakao.png) ;
+            background-size: 8.5rem 7.7rem;
+        }
         
     }
     &-kakao{

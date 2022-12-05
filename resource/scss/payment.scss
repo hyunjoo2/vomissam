@@ -178,8 +178,12 @@
         bottom: -1.3rem;
         width: 100%;
         height: 4.4rem;
-        background: url(../image/sub/bg-receipt__bottom.png) no-repeat bottom;
-        background-size: 134rem 4.4rem;
+        background : {
+            image : url(../image/sub/bg-receipt__bottom.png);
+            position: left bottom;
+            repeat-x : repeat;
+            size : 134rem 4.4rem;
+        } 
         content:""
     }
     .sub{

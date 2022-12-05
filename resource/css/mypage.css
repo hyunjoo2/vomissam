@@ -54,8 +54,7 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -64,8 +63,7 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -92,20 +90,6 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
-@-webkit-keyframes wave {
-  0% {
-    opacity: 0;
-    background-position: left center;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    background-position: right center;
-    opacity: 0.4;
-  }
-}
-
 @keyframes wave {
   0% {
     opacity: 0;
@@ -119,44 +103,26 @@
     opacity: 0.4;
   }
 }
-@-webkit-keyframes rotateIcon {
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
 @keyframes rotateIcon {
   50% {
     opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
+    transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
 .gradation-bg {
   padding: 10rem 5rem;
 }
 .gradation-bg--white_gray {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(242, 243, 247)), to(rgb(255, 255, 255)));
   background: linear-gradient(0deg, rgb(242, 243, 247) 0%, rgb(255, 255, 255) 100%);
 }
 
 .myInfo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: #4b62c3;
   border-radius: 5rem;
 }
@@ -169,16 +135,11 @@
 .myInfo-box__img img {
   width: 100%;
   border-radius: 100%;
-  -webkit-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.21);
-          box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.21);
+  box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.21);
 }
 .myInfo-box__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   padding: 6rem 7rem;
   border-bottom: 1px solid #5165c2;
@@ -219,12 +180,8 @@
 }
 
 .mypage-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10rem 7rem;
   background: url("../image/sub/icon/icon-right.png") no-repeat 95% center;
   background-size: 2.9rem 5.3rem;
@@ -252,36 +209,24 @@
 .card-list-box {
   padding: 10rem 5rem 6.8rem;
   background: #ffffff;
-  -webkit-box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
-          box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
+  box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
   border-radius: 3rem;
 }
 .card-list-box--payment {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .card-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 3rem;
 }
 .card-list__item + .card-list__item {
   margin-top: 5rem;
 }
 .card-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 18.2rem;
   height: 18.2rem;
   margin-right: 3.2rem;
@@ -306,27 +251,20 @@
 .card-admit {
   padding: 10rem 7rem 6.8rem;
   background: #ffffff;
-  -webkit-box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
-          box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
+  box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
   border-radius: 3rem;
 }
 .card-admit .ui-form {
   margin-bottom: 13rem;
 }
 .card-admit .ui-form.expireDate input:first-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(25% - 4rem);
-          flex: 0 1 calc(25% - 4rem);
+  flex: 0 1 calc(25% - 4rem);
 }
 .card-admit .ui-form.expireDate input:nth-child(3) {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(25% - 4rem);
-          flex: 0 1 calc(25% - 4rem);
+  flex: 0 1 calc(25% - 4rem);
 }
 .card-admit .ui-form.expireDate input:last-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(50% - 4rem);
-          flex: 0 1 calc(50% - 4rem);
+  flex: 0 1 calc(50% - 4rem);
 }
 .card-admit .ui-form.birthDate, .card-admit .ui-form.cardPw {
   width: 100%;
@@ -335,20 +273,12 @@
   width: 100%;
 }
 .card-admit .ui-form.birthDate input, .card-admit .ui-form.cardPw input {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(50% - 4rem);
-          flex: 0 1 calc(50% - 4rem);
+  flex: 0 1 calc(50% - 4rem);
 }
 .card-admit .ui-form span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 6rem;
   height: 100%;
   color: #9196a5;
@@ -365,26 +295,12 @@
 .card-admit .ui-input:focus {
   border-bottom: 0.4rem solid #000;
 }
-.card-admit .ui-input:focus::-webkit-input-placeholder {
-  color: #fff;
-}
-.card-admit .ui-input:focus::-moz-placeholder {
-  color: #fff;
-}
-.card-admit .ui-input:focus:-ms-input-placeholder {
-  color: #fff;
-}
-.card-admit .ui-input:focus::-ms-input-placeholder {
-  color: #fff;
-}
 .card-admit .ui-input:focus::placeholder {
   color: #fff;
 }
 
 .expireTit span {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(50% - 4rem);
-          flex: 0 1 calc(50% - 4rem);
+  flex: 0 1 calc(50% - 4rem);
   font-size: 5.4rem;
   font-weight: 600;
 }

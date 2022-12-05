@@ -54,8 +54,7 @@
 }
 .icon.arrow-last, .arrow-last.js-datepicker-range__min, .arrow-last.js-datepicker-range__max {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-prev, .arrow-prev.js-datepicker-range__min, .arrow-prev.js-datepicker-range__max {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -64,8 +63,7 @@
 .icon.arrow-next, .arrow-next.js-datepicker-range__min, .arrow-next.js-datepicker-range__max {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-right, .arrow-right.js-datepicker-range__min, .arrow-right.js-datepicker-range__max {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -93,22 +91,14 @@
 }
 
 .sch-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 .sch-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 50px;
 }
 .sch-form__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 40rem;
   font-size: 0;
@@ -118,26 +108,6 @@
   height: 100%;
   border: 1px solid #d2d5dc;
 }
-.sch-form__input::-webkit-input-placeholder {
-  font-size: 16px;
-  color: #000;
-  font-weight: 400;
-}
-.sch-form__input::-moz-placeholder {
-  font-size: 16px;
-  color: #000;
-  font-weight: 400;
-}
-.sch-form__input:-ms-input-placeholder {
-  font-size: 16px;
-  color: #000;
-  font-weight: 400;
-}
-.sch-form__input::-ms-input-placeholder {
-  font-size: 16px;
-  color: #000;
-  font-weight: 400;
-}
 .sch-form__input::placeholder {
   font-size: 16px;
   color: #000;
@@ -146,35 +116,25 @@
 
 .ui-form input, .ui-form textarea {
   border: 1px solid #d8dce2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
+  -webkit-border-radius: 0;
   border-radius: 1.5rem;
   line-height: 1.5;
   font-size: 5.5rem;
 }
 .ui-form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .ui-form__cell {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 5.5rem;
 }
 .ui-form__cell .ui-form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .ui-form__flex--row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .ui-form__flex--row + .ui-form__flex--row {
@@ -190,9 +150,7 @@
   margin-left: 2rem;
 }
 .ui-form__flex--right {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 .ui-form__text {
   font-size: 5.5rem;
@@ -229,39 +187,11 @@
 .ui-input__bg-gray {
   background: #f8f8f8;
 }
-.ui-input::-webkit-input-placeholder {
-  font-size: 5.5rem;
-  color: #9196a5;
-}
-.ui-input::-moz-placeholder {
-  font-size: 5.5rem;
-  color: #9196a5;
-}
-.ui-input:-ms-input-placeholder {
-  font-size: 5.5rem;
-  color: #9196a5;
-}
-.ui-input::-ms-input-placeholder {
-  font-size: 5.5rem;
-  color: #9196a5;
-}
 .ui-input::placeholder {
   font-size: 5.5rem;
   color: #9196a5;
 }
 .ui-input.js-datepicker-range__min, .ui-input.js-datepicker-range__max {
-  font-size: 4.8rem;
-}
-.ui-input.js-datepicker-range__min::-webkit-input-placeholder, .ui-input.js-datepicker-range__max::-webkit-input-placeholder {
-  font-size: 4.8rem;
-}
-.ui-input.js-datepicker-range__min::-moz-placeholder, .ui-input.js-datepicker-range__max::-moz-placeholder {
-  font-size: 4.8rem;
-}
-.ui-input.js-datepicker-range__min:-ms-input-placeholder, .ui-input.js-datepicker-range__max:-ms-input-placeholder {
-  font-size: 4.8rem;
-}
-.ui-input.js-datepicker-range__min::-ms-input-placeholder, .ui-input.js-datepicker-range__max::-ms-input-placeholder {
   font-size: 4.8rem;
 }
 .ui-input.js-datepicker-range__min::placeholder, .ui-input.js-datepicker-range__max::placeholder {
@@ -273,8 +203,7 @@
   padding-left: 5.5rem;
   font-size: 5.5rem;
   border: 0.3rem solid #d8dce2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
   background-size: 3.9rem 2.6rem;
   border-radius: 1.5rem;
@@ -285,9 +214,7 @@
   padding: 1.5rem 2rem;
   font-size: 1.6rem;
   resize: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   padding: 4.5rem;
 }
 .ui-textarea__height-265 {
@@ -295,18 +222,6 @@
 }
 .ui-textarea__height-650 {
   height: 65rem;
-}
-.ui-textarea::-webkit-input-placeholder {
-  color: #9196a5;
-}
-.ui-textarea::-moz-placeholder {
-  color: #9196a5;
-}
-.ui-textarea:-ms-input-placeholder {
-  color: #9196a5;
-}
-.ui-textarea::-ms-input-placeholder {
-  color: #9196a5;
 }
 .ui-textarea::placeholder {
   color: #9196a5;
@@ -324,8 +239,7 @@
   height: 6.9rem;
   /* margin-top: -1px; */
   border: 1px solid #ced4db;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 0.5rem;
   background: no-repeat 50% 50% #fff;
   -webkit-box-flex: 0;
@@ -348,12 +262,8 @@
   border: 5px solid #4568a9;
 }
 .ui-radio-block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0.5rem;
 }
 .ui-radio-block .ui-radio {
@@ -375,12 +285,8 @@
   background-size: 4.5rem 3.1rem;
 }
 .ui-checkbox-block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0.5rem;
 }
 .ui-checkbox-block .ui-checkbox {
@@ -402,14 +308,12 @@
   background-size: 4.5rem 3.1rem;
 }
 .ui-label {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 1.6rem;
   line-height: normal;
   cursor: pointer;
@@ -452,8 +356,7 @@
   vertical-align: top;
   width: 13.5rem;
   height: 5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #4568a9;
   font-size: 1.6rem;
   color: #ffffff;
@@ -472,14 +375,12 @@
 }
 
 .attach-file__top {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .attach-file__bottom {
   margin-top: 1.5rem;
@@ -499,40 +400,12 @@
   margin-top: 10rem;
 }
 
-.placeholder-black::-webkit-input-placeholder {
-  color: #000;
-}
-
-.placeholder-black::-moz-placeholder {
-  color: #000;
-}
-
-.placeholder-black:-ms-input-placeholder {
-  color: #000;
-}
-
-.placeholder-black::-ms-input-placeholder {
-  color: #000;
-}
-
 .placeholder-black::placeholder {
   color: #000;
 }
 
 .js-datepicker-range__min, .js-datepicker-range__max {
   background-position: 90% center;
-  font-size: 4.8rem;
-}
-.js-datepicker-range__min::-webkit-input-placeholder, .js-datepicker-range__max::-webkit-input-placeholder {
-  font-size: 4.8rem;
-}
-.js-datepicker-range__min::-moz-placeholder, .js-datepicker-range__max::-moz-placeholder {
-  font-size: 4.8rem;
-}
-.js-datepicker-range__min:-ms-input-placeholder, .js-datepicker-range__max:-ms-input-placeholder {
-  font-size: 4.8rem;
-}
-.js-datepicker-range__min::-ms-input-placeholder, .js-datepicker-range__max::-ms-input-placeholder {
   font-size: 4.8rem;
 }
 .js-datepicker-range__min::placeholder, .js-datepicker-range__max::placeholder {

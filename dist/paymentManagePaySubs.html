@@ -107,24 +107,31 @@
                                 <div class="sub-item">
                                     <p class="sub-item__title">결제수단선택</p>
                                     <div class="ui-buttons ui-buttons__thirds">
-                                        <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__clickFull is-active">신용카드</button>
-                                        <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__clickFull" disabled>실시간 계좌 이체</button>
-                                        <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__clickFull" disabled>무통장 입금</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__clickFull is-active">신용카드</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__clickFull"
+                                            disabled>실시간 계좌 이체</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__clickFull"
+                                            disabled>무통장 입금</button>
                                     </div>
                                     <div class="card-list-box card-list-box--payment mt-40 sub-item__box--border">
                                         <p class="sub-title2 mt-50 font-weight-bold">
-                                            구독형 결제를 위해서<br/>신용카드 정보 등록이 반드시 필요합니다.
+                                            구독형 결제를 위해서<br />신용카드 정보 등록이 반드시 필요합니다.
                                         </p>
 
                                         <div class="plus-card mt-120">
-                                            <button type="button" class="button-plus-card"><i></i>신용카드 등록하기</button>
+                                            <!-- 2022.12.05 : mod : 링크 추가 -->
+                                            <button type="button" class="button-plus-card" onclick="location.href='myPageCardAdmit.html'"><i></i>신용카드 등록하기</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sub-item">
+                                <!-- <div class="sub-item">
                                     <p class="sub-item__title sub-item__title--subs">
                                         적립금 기부하기
-                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#detailDonateGuide">기부 안내</button>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal"
+                                            data-target="#detailDonateGuide">기부 안내</button>
                                     </p>
                                     <div class="sub-item__box sub-item__box--gray">
                                         <div class="sub-list__dl">
@@ -133,7 +140,9 @@
                                                 <dd class="sub-dd sub-dd__right">
                                                     <div class="ui-form ui-form__flex--row ui-form__flex--right">
                                                         <div class="ui-form__cell ui-form__cell--s ml-0">
-                                                            <input type="text" class="ui-input ui-input__width-430 ui-input__height-s placeholder-black" placeholder="14,500">
+                                                            <input type="text"
+                                                                class="ui-input ui-input__width-430 ui-input__height-s placeholder-black"
+                                                                placeholder="14,500">
                                                         </div>
                                                         <div class="ui-form__cell ml-20">
                                                             원
@@ -144,28 +153,36 @@
                                         </div>
                                     </div>
                                     <div class="sub-title3 d-flex mt-40 font-size__s">
-                                        적립금을기부하시겠습니까? 
+                                        적립금을기부하시겠습니까?
                                         <div class="ui-checkbox__list ml-40">
                                             <div class="ui-checkbox__inner">
                                                 <div class="ui-checkbox-block">
-                                                    <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
+                                                    <input type="checkbox" class="ui-checkbox" id="checkbox1"
+                                                        checked="">
                                                     <label for="checkbox1" class="ui-label">
-                                                    <span class="ui-checkbox-object"></span>
-                                                    <span class="ui-label__text">동의 함</span>
+                                                        <span class="ui-checkbox-object"></span>
+                                                        <span class="ui-label__text">동의 함</span>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
+                                </div> -->
+
+                                <div class="sub-item">
                                     <p class="sub-item__title sub-item__title--subs">
                                         구매조건 확인 및 결제 대행 서비스 약관 동의
-                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal"
+                                            data-target="#serviceAdmitView">보기</button>
                                     </p>
                                     <p class="text-ex text-ex--small border-top--gray pt-40">
-                                        위 주문 내용을 확인하였으며, 회원 본인은 개인정보이용 및 제공,<br/>결제에 동의합니다. 
+                                        위 주문 내용을 확인하였으며, 회원 본인은 개인정보이용 및 제공,<br />결제에 동의합니다.
                                     </p>
+
                                 </div>
+
+
 
                             </section>
                         </section>
@@ -181,35 +198,36 @@
                         </section>
 
                         <!-- 기부 안내 모달 -->
-                        <div class="modal fade" id="detailDonateGuide" tabindex="-1" style="z-index: 1050;" aria-labelledby="detailDonateGuideLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-auto ">
-                            <div class="modal-content modal-content__detailDonateGuide">
-                                <div class="modal-header">
-                                    <div class="modal-title modal-title__font-l text-left mb-0">기부 안내</div>
-                                </div>
-                                <div class="modal-body">
-                                    기부 안내
-                                </div>
+                        <div class="modal fade" id="detailDonateGuide" tabindex="-1" style="z-index: 1050;"
+                            aria-labelledby="detailDonateGuideLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                <div class="modal-content modal-content__detailDonateGuide">
+                                    <div class="modal-header">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">기부 안내</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        기부 안내
+                                    </div>
 
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <!-- //기부 안내 모달 -->
-                        
+
                         <!-- 구매조건 확인 및 결제 대행 서비스 약관 동의 모달 -->
-                        <div class="modal fade" id="serviceAdmitView" tabindex="-1" style="z-index: 1050;" aria-labelledby="serviceAdmitViewLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-auto ">
-                            <div class="modal-content modal-content__serviceAdmitView">
-                                <div class="modal-header">
-                                    <div class="modal-title modal-title__font-l text-left mb-0">구매조건 확인 및 결제 대행 서비스 약관 동의</div>
-                                </div>
-                                <div class="modal-body">
-                                    구매조건 확인 및 결제 대행 서비스 약관 동의
+                        <div class="modal fade" id="serviceAdmitView" tabindex="-1" style="z-index: 1050;"
+                            aria-labelledby="serviceAdmitViewLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                <div class="modal-content modal-content__serviceAdmitView">
+                                    <div class="modal-header">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">구매조건 확인 및 결제 대행 서비스
+                                            약관 동의</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        구매조건 확인 및 결제 대행 서비스 약관 동의
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <!-- //구매조건 확인 및 결제 대행 서비스 약관 동의 모달 -->
 

@@ -16,13 +16,10 @@
   margin-left: 2rem;
 }
 .ui-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .ui-buttons__thirds {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: -1rem;
 }
 .ui-buttons__thirds .ui-button {
@@ -46,9 +43,7 @@
   margin-left: 2rem;
   background: #666666;
   color: #ffffff;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__bg-blue {
   background: #4b62c3;
@@ -64,21 +59,15 @@
 }
 .ui-button__width-xs {
   width: 42rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__width-s {
   width: 44rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__width-m {
   width: 66rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__width-auto {
   width: auto;
@@ -181,8 +170,7 @@
   height: 5.3rem;
   margin: 0;
   background-image: url(../image/sub/icon/icon-right.png);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .ui-button__icon-right {
   line-height: 100%;
@@ -215,8 +203,7 @@
   border-color: #4b62c3;
   background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
   background-size: 4.5rem 3.1rem;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__check--multi.is-active {
   font-weight: 500;
@@ -224,15 +211,13 @@
   border-color: #4b62c3;
   background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
   background-size: 4.5rem 3.1rem;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__click.is-active {
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__clickFull.is-active {
   color: #fff;
@@ -264,8 +249,14 @@
   background-size: 5.6rem 5.1rem;
 }
 .button-joinSocial__google {
+  border-color: #dc4e41;
   background-image: url(../image/common/icon-google__colored.png);
   background-size: 5.3rem 5.5rem;
+}
+.button-joinSocial__kakao {
+  border-color: #fae100;
+  background-image: url(../image/common/icon-kakao.png);
+  background-size: 8.5rem 7.7rem;
 }
 .button-kakao {
   width: 100%;
@@ -289,9 +280,7 @@
 }
 .button-google::before {
   display: inline-block;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 5.3rem;
   height: 5.5rem;
   margin-right: 4rem;
@@ -301,17 +290,13 @@
   content: "";
 }
 .button-plus-card {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 15rem;
   font-size: 4.8rem;

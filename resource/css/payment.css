@@ -54,8 +54,7 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -64,8 +63,7 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -92,20 +90,6 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
-@-webkit-keyframes wave {
-  0% {
-    opacity: 0;
-    background-position: left center;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    background-position: right center;
-    opacity: 0.4;
-  }
-}
-
 @keyframes wave {
   0% {
     opacity: 0;
@@ -119,63 +103,37 @@
     opacity: 0.4;
   }
 }
-@-webkit-keyframes rotateIcon {
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
 @keyframes rotateIcon {
   50% {
     opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
+    transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
 .card-list-box {
   padding: 10rem 5rem 6.8rem;
   background: #ffffff;
-  -webkit-box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
-          box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
+  box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
   border-radius: 3rem;
 }
 .card-list-box--payment {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .card-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 3rem;
 }
 .card-list__item + .card-list__item {
   margin-top: 5rem;
 }
 .card-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 18.2rem;
   height: 18.2rem;
   margin-right: 3.2rem;
@@ -202,12 +160,8 @@
   padding: 5rem 4rem 7rem 4rem;
 }
 .payment-process__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
 }
 .payment-process__list::after {
@@ -241,17 +195,13 @@
   letter-spacing: -1px;
 }
 .payment-process__step .payment-process__img {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 18rem;
   height: 18rem;
@@ -303,8 +253,7 @@
 .sub-item__box--receipt {
   position: relative;
   padding: 10rem 8rem;
-  -webkit-box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
-          box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
 }
 .sub-item__box--receipt::before {
   position: absolute;
@@ -312,7 +261,9 @@
   bottom: -1.3rem;
   width: 100%;
   height: 4.4rem;
-  background: url(../image/sub/bg-receipt__bottom.png) no-repeat bottom;
+  background-image: url(../image/sub/bg-receipt__bottom.png);
+  background-position: left bottom;
+  background-repeat-x: repeat;
   background-size: 134rem 4.4rem;
   content: "";
 }
