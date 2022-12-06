@@ -969,8 +969,14 @@
   background-size: 5.6rem 5.1rem;
 }
 .button-joinSocial__google {
+  border-color: #dc4e41;
   background-image: url(../image/common/icon-google__colored.png);
   background-size: 5.3rem 5.5rem;
+}
+.button-joinSocial__kakao {
+  border-color: #fae100;
+  background-image: url(../image/common/icon-kakao.png);
+  background-size: 8.5rem 7.7rem;
 }
 .button-kakao {
   width: 100%;
@@ -2008,6 +2014,7 @@
   font-weight: 500;
   color: #222;
   line-height: 1.5;
+  border-bottom: 1px solid #e9eaec;
   background-color: #f6f8fb;
 }
 .acordion-notice--faq .acordion-notice__btn {

@@ -99,8 +99,8 @@
 .look-service__vip__inner {
   height: 100%;
   padding: 8rem 9rem;
-  background: #e3e8fe url(../image/main/bg-vip.png) no-repeat right 4.7rem bottom;
-  background-size: 56.8rem 67.3rem;
+  background: #e3e8fe url(../image/main/bg-vip.png) no-repeat right bottom;
+  background-size: 60.9rem 69.5rem;
 }
 .look-service__vip-link {
   display: inline-flex;
@@ -378,6 +378,14 @@
   font-size: 7.5rem;
   font-weight: 600;
 }
+.index-case__title--flex {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 7rem;
+}
+.index-case__title--flex .index-case__title {
+  margin-bottom: 0;
+}
 .index-case-item {
   padding: 8rem 9rem;
   border-radius: 3rem;
@@ -490,6 +498,21 @@
   background-image: url(../image/main/icon-end__past.png);
 }
 
+.care-startDate {
+  margin-left: auto;
+  font-size: 5.6rem;
+}
+.care-Dday {
+  display: inline-block;
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: #3c50a2;
+}
+
+.section-button {
+  padding: 8rem 5rem 7rem;
+}
+
 /* 보미쌤 지원 현황 */
 .carer-list {
   border-radius: 3rem;
@@ -501,6 +524,7 @@
 }
 .carer-list__premium {
   position: relative;
+  border: 0.2rem solid #4b62c3;
 }
 .carer-list__premium::before {
   position: absolute;
@@ -606,7 +630,7 @@
 .carer-button {
   width: 100%;
   height: 16rem;
-  background: #8999de;
+  background: #8999de linear-gradient(180deg, rgb(92, 107, 173), transparent, transparent, transparent);
   color: #ffffff;
   font-size: 6rem;
   font-weight: 500;
@@ -657,7 +681,7 @@
   margin-bottom: 5rem;
 }
 .no-carer__title {
-  font-size: 6.5;
+  font-size: 6.5rem;
   font-weight: 500;
   line-height: 9rem;
   text-align: center;

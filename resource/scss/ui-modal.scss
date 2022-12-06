@@ -61,6 +61,23 @@
                 padding-bottom: 13rem;
             }
         }
+        &__matchingCancel{
+            .modal-header{
+                padding-left:8rem;
+                padding-right:8rem;
+            }
+            .bg-darkgray{
+                padding:6rem;
+                border-radius: 2rem;
+            }
+            .ui-list-dashed{
+                li{
+                    &+li{
+                        margin-top: 7rem;
+                    }
+                }
+            }
+        }
         // &-startCare{
         //     .modal-core{
         //         padding-top: 11rem;

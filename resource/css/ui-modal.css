@@ -45,6 +45,17 @@
   padding-top: 12rem;
   padding-bottom: 13rem;
 }
+.modal-content__matchingCancel .modal-header {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.modal-content__matchingCancel .bg-darkgray {
+  padding: 6rem;
+  border-radius: 2rem;
+}
+.modal-content__matchingCancel .ui-list-dashed li + li {
+  margin-top: 7rem;
+}
 .modal-content__s {
   width: calc(100% - 32rem);
 }

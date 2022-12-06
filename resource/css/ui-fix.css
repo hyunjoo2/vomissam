@@ -277,6 +277,9 @@
 .bg-gray {
   background-color: #f8f8f8;
 }
+.bg-darkgray {
+  background-color: #f3f5fb;
+}
 
 .color-blue {
   color: #3c50a2;

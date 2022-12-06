@@ -129,8 +129,8 @@
         &__inner{
             height: 100%;
             padding: 8rem 9rem;
-            background: #e3e8fe url(../image/main/bg-vip.png) no-repeat right 4.7rem bottom;
-            background-size: 56.8rem 67.3rem;
+            background: #e3e8fe url(../image/main/bg-vip.png) no-repeat right bottom;
+            background-size: 60.9rem 69.5rem;
         }
         &-link{
             display: inline-flex;
@@ -425,6 +425,14 @@
             size: 7.5rem;
             weight:600;
         }
+        &--flex{
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 7rem;
+            .index-case__title{
+                margin-bottom: 0;
+            }
+        }
     }
     &-item{
         padding:8rem 9rem;
@@ -555,6 +563,22 @@
         }
     }
 }
+.care{
+    &-startDate{
+        margin-left: auto;
+        font-size: 5.6rem;
+    }
+    &-Dday{
+        display: inline-block;
+        font-size: 5.6rem;
+        font-weight: 600;
+        color:#3c50a2;
+    }
+}
+.section-button{
+    padding: 8rem 5rem 7rem;
+}
+
 
 /* 보미쌤 지원 현황 */ 
 .carer{
@@ -567,6 +591,7 @@
         }
         &__premium{
             position: relative;
+            border:.2rem solid #4b62c3;
             &::before{
                 position: absolute;
                 top: -3rem;
@@ -679,7 +704,7 @@
     &-button{
         width:100%;
         height: 16rem;
-        background: #8999de;
+        background: #8999de linear-gradient(180deg, rgba(92,107,173), transparent, transparent, transparent);
         color:#ffffff;
         font : {
             size: 6rem;
@@ -740,7 +765,7 @@
     }
     &__title{
         font : {
-            size: 6.5;
+            size: 6.5rem;
             weight:500;
         }
         line-height: 9rem;

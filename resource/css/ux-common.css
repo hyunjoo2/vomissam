@@ -639,6 +639,9 @@
 .bg-gray {
   background-color: #f8f8f8;
 }
+.bg-darkgray {
+  background-color: #f3f5fb;
+}
 
 .color-blue {
   color: #3c50a2;
@@ -725,7 +728,7 @@
   font-size: 7rem;
   font-weight: 500;
   color: #000000;
-  border-radius: 2rem;
+  border-radius: 1rem;
   line-height: 20.1rem;
 }
 .ui-button:disabled {
@@ -805,6 +808,11 @@
   height: 15rem;
   font-size: 6rem;
   line-height: 15.1rem;
+}
+.ui-button__height-l {
+  height: 16rem;
+  line-height: 16.1rem;
+  font-size: 6rem;
 }
 .ui-button__height-135 {
   height: 13.5rem;
@@ -2049,6 +2057,12 @@
   content: "A";
 }
 
+.normal-text {
+  word-break: keep-all;
+  line-height: 7rem;
+  letter-spacing: -1.5px;
+}
+
 .modal {
   background: rgba(0, 0, 0, 0.5);
   padding: 10rem 0;
@@ -2094,6 +2108,17 @@
 .modal-content-chooseCarer .modal-core {
   padding-top: 12rem;
   padding-bottom: 13rem;
+}
+.modal-content__matchingCancel .modal-header {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.modal-content__matchingCancel .bg-darkgray {
+  padding: 6rem;
+  border-radius: 2rem;
+}
+.modal-content__matchingCancel .ui-list-dashed li + li {
+  margin-top: 7rem;
 }
 .modal-content__s {
   width: calc(100% - 32rem);

@@ -353,3 +353,9 @@
   transition: all 0.4s ease-in-out;
   content: "A";
 }
+
+.normal-text {
+  word-break: keep-all;
+  line-height: 7rem;
+  letter-spacing: -1.5px;
+}

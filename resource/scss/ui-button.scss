@@ -9,7 +9,7 @@
         weight:500;
     };
     color:#000000;
-    border-radius: 2rem;
+    border-radius: 1rem;
     line-height: 20.1rem;
     &:disabled{
         background-color:#f2f2f2 !important;
@@ -105,6 +105,11 @@
             height:15rem;
             font-size: 6rem;
             line-height: 15.1rem;
+        }
+        &-l{
+            height: 16rem;
+            line-height: 16.1rem;
+            font-size: 6rem;
         }
         &-135{
             height:13.5rem;
