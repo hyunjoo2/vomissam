@@ -31,6 +31,15 @@
                 // }
             }
         }
+        &__column{
+            flex-direction: column;
+            .ui-button{
+                &+.ui-button{
+                    margin-top: 2rem;
+                    margin-left: 0rem;
+                }
+            }
+        }
         &--faq{
             .ui-button{
                 &.is-active{
@@ -62,6 +71,10 @@
         &-blue{
             background: #4b62c3;
             color:#ffffff;
+        }
+        &-gray{
+            background: #e9ebf1;
+            color:#8a90a0;
         }
     }
     &__border{

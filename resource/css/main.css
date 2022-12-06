@@ -704,3 +704,12 @@
 }
 
 /** case3  */
+.carer-item__buttons {
+  padding: 0 8rem 8rem;
+}
+.carer-item__buttons .ui-button {
+  display: inline-block;
+  width: 100%;
+  font-size: 4.8rem;
+  text-align: center;
+}

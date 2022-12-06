@@ -58,7 +58,11 @@
 
                         <section class="index-case-box index-case-box__gray">
                             <div class="index-case-box__inner">
-                                <div class="index-case__title">간병 신청 현황</div>
+                                <!-- 2022.12.06 : mod : 간병 시작일 추가 -->
+                                <div class="index-case__title--flex">
+                                    <div class="index-case__title">간병 신청 현황</div>
+                                    <div class="care-startDate">간병시작 <span class="care-Dday">D-3</span>일</div>
+                                </div>
                                 <div class="care-enroll-progress">
                                     <div class="care-enroll-progress__inner">
                                         <!-- DD :: 진행중 일때 클래스에 is-active 붙고, 지나갔을떄는 is-past 붙습니다. -->
@@ -84,60 +88,168 @@
                                         </dl>
                                     </div>
                                 </div>
-                                <div class="care-enroll-button text-right ui-buttons">
+                                <!-- <div class="care-enroll-button text-right ui-buttons">
                                     <button type="button"
                                         class="ui-button ui-button__height-s ui-button__border-blue font-weight__r"
                                         data-toggle="modal" data-target="#vomiInfo">보미쌤 정보보기</button>
                                     <button type="button"
                                         class="ui-button ui-button__height-s ui-button__border-blue font-weight__r">보미노트
                                         보기</button>
-                                </div>
+                                </div> -->
                             </div>
                         </section>
 
-                       
+                        <section class="section-button">
+                            <div class="ui-buttons">
+                                <button type="button" class="ui-button ui-button__height-l ui-button__border-blue font-weight__r" data-toggle="modal" data-target="#matchingCancel">보미노트 보기</button>
+                                <button type="button" class="ui-button ui-button__height-l ui-button__border-blue font-weight__r" data-toggle="modal" data-target="#modifyDate">기간 연장/중단 신청</button>
+                            </div>
+                        </section>
 
-                        <section class="index-case-box my-question">
-                            <div class="my-question__inner">
-                                <a href="javascript:void(0)" class="my-question__link">
+                        <section class="index-case-box">
 
-                                    <div class="slide-title__wrap">
-                                        <span class="slide-title">나의 문의</span>
-                                        <button type="button" class="button-plus"></button>
-                                    </div>
 
-                                    <div class="my-question__review">
-                                        <div class="my-question__review--card">
-                                            <div class="my-question__review--card__inner">
-                                                <div class="my-question__q">
-                                                    <div class="my-question__q--img"></div>
-                                                    <div class="my-question__q--text">
-                                                        <div class="my-question__q--text__inner">
-                                                            간병서비스가 종료되는데 어떻게 하나요? 간병서비스가
-                                                            종료 되는데 어떻게 하나요?
-                                                        </div>
-                                                    </div>
+                            <!-- 2022.12.06 : mod : 레이아웃 수정 -->
+                            <div class="index-case-box__inner">
+                                <div class="index-case__title">담당 보미쌤</div>
+                            </div>
+
+                            <div class="carer-list-wrap">
+                                <ul class="carer-list__list">
+
+                                    <!-- 프리미엄 등급일때 리스트 :: 클래스 .carer-list__premium 추가됩니다. -->
+                                    <li class="carer-list carer-list__premium">
+                                        <div class="carer-item ">
+                                            <div class="carer-content">
+                                                <div class="carer-image">
+                                                    <img src="../resource/image/main/img-carer.jpg" alt="">
                                                 </div>
-                                                <div class="my-question__a">
-                                                    <div class="my-question__a--img"></div>
-                                                    <div class="my-question__a--text">
-                                                        <div class="my-question__q--text__inner">
-                                                            간병 종료 버튼을 누르시고 안내대로 진행하세요. 간병 종료
-                                                            버튼을 누르시고 안내대로 진행하세요. 간병 종료 버튼을
-                                                            누르시고 안내대로 진행하세요. 간병 종료 버튼을 누르시고
-                                                            안내대로 진행하세요. 간병 종료 버튼을 누르시고 안내대로
-                                                        </div>
+                                                <div class="carer-info">
+                                                    <p class="carer-nsy"><em class="carer-name">김보미</em> 보미쌤 (여, 56세)
+                                                    </p>
+                                                    <div class="carer-detail">
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">경력</dt>
+                                                            <dd class="carer-detail__text">8년 5개월</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">시작일</dt>
+                                                            <dd class="carer-detail__text">2022.10.13<span
+                                                                    class="badge">조정가능</span></dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">자격증</dt>
+                                                            <dd class="carer-detail__text">간호조무사, 요양보호사,
+                                                                간병사, 사회복지사</dd>
+                                                        </dl>
                                                     </div>
                                                 </div>
                                             </div>
 
+                                            <div class="ui-buttons ui-buttons__column carer-item__buttons">
+                                                <button type="button" class="ui-button ui-button__height-s ui-button__bg-gray">보미쌤에게 연락하기</button>
+                                                <button type="button" class="ui-button ui-button__height-s ui-button__bg-gray">고객센터 문의하기</button>
+                                            </div>
                                         </div>
+                                    </li>
 
+                                    <li class="carer-list carer-list__premium">
+                                        <div class="carer-item ">
+                                            <div class="carer-content">
+                                                <div class="carer-image">
+                                                    <img src="../resource/image/main/img-carer.jpg" alt="">
+                                                </div>
+                                                <div class="carer-info">
+                                                    <p class="carer-nsy"><em class="carer-name">김보미</em> 보미쌤 (여, 56세)
+                                                    </p>
+                                                    <div class="carer-detail">
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">경력</dt>
+                                                            <dd class="carer-detail__text">8년 5개월</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">시작일</dt>
+                                                            <dd class="carer-detail__text">2022.10.13<span
+                                                                    class="badge">조정가능</span></dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">자격증</dt>
+                                                            <dd class="carer-detail__text">간호조무사, 요양보호사,
+                                                                간병사, 사회복지사</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                    </div>
-                                </a>
+                                            <div class="ui-buttons ui-buttons__column carer-item__buttons">
+                                                <button type="button" class="ui-button ui-button__height-s ui-button__bg-gray">보미쌤에게 연락하기</button>
+                                                <button type="button" class="ui-button ui-button__height-s ui-button__bg-gray">고객센터 문의하기</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- //프리미엄 등급일때 리스트 -->
+
+                                    <!-- 기본 리스트 -->
+                                    <li class="carer-list">
+                                        <div class="carer-item">
+                                            <div class="carer-content">
+                                                <div class="carer-image">
+                                                    <!-- 전달사항 :: 이미지 없을때 이 이미지로 넣어주세요 -->
+                                                    <img src="../resource/image/main/img-noimg.png" alt="">
+                                                </div>
+                                                <div class="carer-info">
+                                                    <p class="carer-nsy"><em class="carer-name">김보미</em> 보미쌤 (여, 56세)
+                                                    </p>
+                                                    <div class="carer-detail">
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">경력</dt>
+                                                            <dd class="carer-detail__text">8년 5개월</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">시작일</dt>
+                                                            <dd class="carer-detail__text">2022.10.13<span
+                                                                    class="badge">조정가능</span></dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">자격증</dt>
+                                                            <dd class="carer-detail__text">간호조무사, 요양보호사,
+                                                                간병사, 사회복지사</dd>
+                                                        </dl>
+                                                        <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
+                                                        <dl class="carer-detail__list carer-detail__list--more">
+                                                            <dt class="carer-detail__title">자격증</dt>
+                                                            <dd class="carer-detail__text">간호조무사, 요양보호사,
+                                                                간병사, 사회복지사</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list carer-detail__list--more">
+                                                            <dt class="carer-detail__title">자격증</dt>
+                                                            <dd class="carer-detail__text">간호조무사, 요양보호사,
+                                                                간병사, 사회복지사</dd>
+                                                        </dl>
+                                                        <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="ui-buttons ui-buttons__column carer-item__buttons">
+                                                <button type="button" class="ui-button ui-button__height-s ui-button__bg-gray">보미쌤에게 연락하기</button>
+                                                <button type="button" class="ui-button ui-button__height-s ui-button__bg-gray">고객센터 문의하기</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- //기본 리스트 -->
+
+                                </ul>
                             </div>
+
+                            
+
+                            
+                            
                         </section>
+
+                        <!-- 2022.12.06 : del : 나의 문의 삭제 -->
 
                         <section class="index-case-box look-service">
                             <div class="look-service__inner">
