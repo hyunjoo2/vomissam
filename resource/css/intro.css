@@ -140,10 +140,11 @@
   position: absolute;
   width: 300%;
   height: 100%;
-  background: url(../image/common/loading-v.png) repeat-x;
-  background-size: 95%;
+  background: url(../image/common/loading-v__long.png) repeat-x;
+  background-size: 225%;
   background-position: right -179% top 130%;
   opacity: 0.04;
+  animation: wave 3s infinite linear;
 }
 .loading-logo .img-wrap {
   width: 28.1rem;

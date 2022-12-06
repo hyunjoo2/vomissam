@@ -20,12 +20,12 @@
         position: absolute;
         width: 300%;
         height: 100%;
-        background: url(../image/common/loading-v.png) repeat-x;
+        background: url(../image/common/loading-v__long.png) repeat-x;
         // background-size: 294rem 267rem;
-        background-size: 95%;
+        background-size: 225%;
         background-position: right -179% top 130%;
         opacity: 0.04;
-        //animation: wave 3s infinite linear;
+        animation: wave 3s infinite linear;
     }
     &-logo{
         .img-wrap{
@@ -116,6 +116,20 @@
                 background-size: cover;
             }
         }
+        // &__image{
+        //     position: relative;
+        //     width:100%;
+        //     height: 0;
+        //     padding-top: 177.5%;
+        //     z-index: -1;
+        //     img{
+        //         position: absolute;
+        //         top: 0;
+        //         left: 0;
+        //         width: 100%;
+        //         z-index: -1;
+        //     }
+        // }
         .swiper-pagination{
             bottom: 57.5rem;
             height: 3rem;
