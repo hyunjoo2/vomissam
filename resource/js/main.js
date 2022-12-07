@@ -15,7 +15,11 @@ function introSlide() {
 }
 
 function videoArea() {
-  var mainswiper = new Swiper(".video-area__inner.swiper-container", {});
+  var mainswiper = new Swiper(".video-area__inner.swiper-container", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 }
 
 function lookServiceSwiper() {

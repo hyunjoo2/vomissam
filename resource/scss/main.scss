@@ -83,16 +83,47 @@
     &-area{
         &__inner{
             // height: 80rem;
-            height: 0;
+            //height: 0;
             margin: 13rem 5rem 0 5rem;
-            padding-bottom: 53.48%;
-            background: #4b62c3;
+            //padding-bottom: 53.48%;
+            background: #000000;
             border-radius: 3rem;
+            .swiper-pagination{
+                bottom: 3rem;
+                height: 3rem;
+                &-bullet{
+                    width: 3rem;
+                    height: 3rem;
+                    margin: 0 1.75rem !important;
+                    background: #ffffff;
+                    opacity: .6;
+                    vertical-align: top;
+                    &-active{
+                        width:7rem;
+                        opacity: 1;
+                        border-radius: 1.5rem;
+                    }
+                }
+            }
         }
     }
     &-item{
+        &__inner{
+            position: relative;
+            height:0;
+            padding-top:59.702%;
+        }
         img{
-            width: 100%;
+            display: block;
+            max-width: 100%;
+            height: 100%;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            height: 100%;
         }
     }
 }
