@@ -9,6 +9,15 @@
             size: 6rem;
             weight:600;
         }
+        &__wrap{
+            &--flex{
+                display: flex;
+                margin-bottom: 7rem;
+                .enroll-title{
+                    margin-bottom: 0;
+                }
+            }    
+        }
         &__sub{
             margin-bottom: 5rem;
             font : {
@@ -27,6 +36,7 @@
             color:#DD5458;
             margin-left: 1rem;
         }
+        
     }
     &-box{
         &:nth-child(1){
@@ -73,7 +83,7 @@
         }
         &__text{
             flex:1;
-            line-height: normal;
+            line-height: 8rem;
         }
     }
 }
@@ -170,6 +180,9 @@
                 flex: 1;
                 text-align: right;
                 font-weight: 500;
+                .ui-form__flex--row{
+                    justify-content: flex-end;
+                }
             }
         }
     }

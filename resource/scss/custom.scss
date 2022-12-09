@@ -8,11 +8,9 @@
                 width:100%;
             }
         }
-        &--custom{
-            
-        }
         &__links{
             display:flex;
+            justify-content: center;
             padding:0 10.5rem;
             height:34.5rem;
             margin-left:-5rem;
@@ -21,7 +19,8 @@
 }
 .visual{
     &-link{
-        flex:1;
+        // flex:1;
+        width: 37.6rem;
         margin-left:5rem;
         margin-top:-13rem;
         &__img{
@@ -42,6 +41,13 @@
         }
         img{
             height:11rem;
+        }
+    }
+}
+.notice{
+    &-box{
+        &+&{
+            border-top:1rem solid #f2f3f7;
         }
     }
 }
@@ -110,6 +116,7 @@
 }
 .terms{
     &-box{
+        border-bottom:2px solid #f2f3f7;
         &__tit{
             font-size:6rem;
         }

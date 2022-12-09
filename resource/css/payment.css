@@ -205,16 +205,6 @@
   position: relative;
   width: 18rem;
   height: 18rem;
-}
-.payment-process__step .payment-process__img::before {
-  width: 5rem;
-  height: 5rem;
-  background-color: #c3c8d5;
-  background-size: 5rem;
-  border-radius: 100%;
-  content: "";
-}
-.payment-process__step.is-active .payment-process__img {
   background-size: 18rem;
   background-position: center;
 }
@@ -243,8 +233,14 @@
 .payment-process__step01 .payment-process__img {
   background-image: url(../image/sub/payment-process__icon01.png);
 }
+.payment-process__step02 .payment-process__img {
+  background-image: url(../image/sub/payment-process__icon02--off.png);
+}
 .payment-process__step02.is-active .payment-process__img {
   background-image: url(../image/sub/payment-process__icon02.png);
+}
+.payment-process__step03 .payment-process__img {
+  background-image: url(../image/sub/payment-process__icon03--off.png);
 }
 .payment-process__step03.is-active .payment-process__img {
   background-image: url(../image/sub/payment-process__icon03.png);

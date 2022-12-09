@@ -395,51 +395,60 @@
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
                                 <div class="modal-content modal-content__modifyDate">
-                                    <div class="modal-header">
+                                    <!-- 2022.12.09 : mod : 레이아웃 수정 -->
+                                    <div class="modal-header modal-header__flex">
                                         <div class="modal-title modal-title__font-l text-left mb-0">간병 기간 변경하기</div>
+                                        <a href="javascript:void(0)" class="ui-button-modify ml-auto" data-toggle="modal" data-target="#modifyDateCalendar">수정하기</a>
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-core2">
                                             <div class="modal-core2__title">변경 전 간병 기간</div>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">총 간병 기간</dt>
-                                                <dd class="care-date__text">15일 6시간</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">간병 시작일</dt>
-                                                <dd class="care-date__text">2022.09.05 12시</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify" data-toggle="modal" data-target="#modifyDateCalendar">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">간병 종료일</dt>
-                                                <dd class="care-date__text">2022.09.19 16시</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify" data-toggle="modal" data-target="#modifyDateCalendar">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">간병 비용</dt>
-                                                <dd class="care-date__text">￦ 1,312,000</dd>
-                                            </dl>
+                                            
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">총 간병 기간</dt>
+                                                    <dd class="care-date__text">15일 6시간</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 시작일</dt>
+                                                    <dd class="care-date__text">2022.09.05 12시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 종료일</dt>
+                                                    <dd class="care-date__text">2022.09.19 16시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 비용</dt>
+                                                    <dd class="care-date__text">￦ 1,312,000</dd>
+                                                </dl>
+                                            </div>
+                                            
+                                            
                                         </div>
                                         <div class="line-gray"></div>
                                         <div class="modal-core2">
                                             <div class="modal-core2__title">변경 후 간병 기간</div>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">총 간병 기간</dt>
-                                                <dd class="care-date__text">15일 6시간</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">간병 시작일</dt>
-                                                <dd class="care-date__text">2022.09.05 12시</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">간병 종료일</dt>
-                                                <dd class="care-date__text">2022.09.19 16시</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title">간병 비용</dt>
-                                                <dd class="care-date__text">￦ 1,312,000</dd>
-                                            </dl>
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">총 간병 기간</dt>
+                                                    <dd class="care-date__text">15일 6시간</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 시작일</dt>
+                                                    <dd class="care-date__text">2022.09.05 12시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 종료일</dt>
+                                                    <dd class="care-date__text">2022.09.19 16시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 비용</dt>
+                                                    <dd class="care-date__text">￦ 1,312,000</dd>
+                                                </dl>
+                                            </div>
+                                            
                                         </div>
+                                        <!-- //2022.12.09 : mod : 레이아웃 수정 -->
 
                                         <div class="modal-buttons modal-buttons__sticky">
                                             <button type="button" class="ui-button ui-button__border-blue"

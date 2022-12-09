@@ -118,6 +118,13 @@
   font-size: 6rem;
   font-weight: 600;
 }
+.enroll-title__wrap--flex {
+  display: flex;
+  margin-bottom: 7rem;
+}
+.enroll-title__wrap--flex .enroll-title {
+  margin-bottom: 0;
+}
 .enroll-title__sub {
   margin-bottom: 5rem;
   font-size: 5.5rem;
@@ -172,7 +179,7 @@
 }
 .hospital-list__text {
   flex: 1;
-  line-height: normal;
+  line-height: 8rem;
 }
 
 .care-period__text {
@@ -256,6 +263,9 @@
   flex: 1;
   text-align: right;
   font-weight: 500;
+}
+.care-enroll-info__text .ui-form__flex--row {
+  justify-content: flex-end;
 }
 .careEnrollEnd-top .img-wrap {
   margin-top: 6.6rem;

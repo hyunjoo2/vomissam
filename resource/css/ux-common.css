@@ -461,6 +461,9 @@
 .mt-95 {
   margin-top: 9.5rem;
 }
+.mt-100 {
+  margin-top: 10rem;
+}
 .mt-110 {
   margin-top: 11rem;
 }
@@ -849,18 +852,8 @@
 }
 .ui-button-modify {
   position: relative;
-  font-size: 5.4rem;
-  color: #228ff8;
-}
-.ui-button-modify::before {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.6rem;
-  background: #228ff8;
-  content: "";
+  font-size: 4.8rem;
+  color: #9196a5;
 }
 .ui-button__icon::before {
   display: inline-block;
@@ -939,6 +932,9 @@
   padding: 0 4rem;
   text-align: left;
 }
+.ui-button__check {
+  border-radius: 1.5rem;
+}
 .ui-button__check.is-active {
   font-weight: 500;
   color: #3c50a2;
@@ -961,9 +957,12 @@
   border-color: #4b62c3;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
+.ui-button__clickFull {
+  border-radius: 3rem;
+}
 .ui-button__clickFull.is-active {
   color: #fff;
-  background-color: #3c50a2;
+  background-color: #4b62c3;
 }
 .ui-button__badge {
   padding: 1.7rem 2.8rem;
@@ -1042,8 +1041,8 @@
   width: 100%;
   height: 15rem;
   font-size: 4.8rem;
-  color: #9196a5;
-  background: #eff0f5;
+  color: #8a90a0;
+  background: #e9ebf1;
   border-radius: 1rem;
   line-height: 15.1rem;
 }
@@ -1060,6 +1059,10 @@
   font-size: 5rem;
   color: #9196a5;
   background: #eff0f5;
+  border-radius: 2rem;
+}
+
+.page-bottom button {
   border-radius: 2rem;
 }
 
@@ -1459,6 +1462,9 @@
   font-size: 5.5rem;
   margin-right: 6.5rem;
 }
+.ui-form__text-cancel {
+  margin-right: 16.5rem;
+}
 .ui-input {
   width: 100%;
   padding-left: 5.5rem;
@@ -1510,6 +1516,9 @@
   background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
   background-size: 3.9rem 2.6rem;
   border-radius: 1.5rem;
+}
+.ui-select__width-200 {
+  width: 20rem;
 }
 .ui-textarea {
   width: 100%;
@@ -1745,6 +1754,11 @@
   line-height: 10.2rem;
   text-align: center;
 }
+.sub-title65 {
+  font-size: 6.5rem;
+  line-height: 9rem;
+  text-align: center;
+}
 .sub-title3 {
   margin-bottom: 9rem;
   font-size: 5.5rem;
@@ -1792,6 +1806,10 @@
   justify-content: space-between;
   font-size: 5.4rem;
   font-weight: 600;
+}
+.sub-item__title--flex {
+  display: flex;
+  align-items: center;
 }
 .sub-item__gray {
   padding: 10rem 5rem;
@@ -1961,10 +1979,11 @@
 .care-date__list {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
 }
-.care-date__list + .care-date__list {
-  margin-top: 8rem;
+.care-date__list:nth-child(n+3) {
+  margin-top: 9rem;
 }
 .care-date__title, .care-date__text {
   font-size: 5.4rem;
@@ -2077,6 +2096,71 @@
   letter-spacing: -1.5px;
 }
 
+/* 보미쌤 평가하기 */
+.hidden {
+  position: absolute;
+  left: -99999999px;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+.vomi-range {
+  width: 100%;
+  height: 4rem;
+  background: #f3f5fb;
+  border: 0;
+  border-radius: 2rem;
+}
+.vomi-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+  appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+  width: 7.5rem; /* 슬라이더 핸들 길이 */
+  height: 7.5rem; /* 슬라이더 핸들 높이 */
+  border-radius: 50%; /* 핸들 모양을 원모양으로 만들기 위함 */
+  background: #4b62c3; /* 슬라이더 핸들 색상 */
+}
+.vomi-range__img {
+  width: 100%;
+  margin-top: 3.8rem;
+}
+
+/* 간병 기간 변경하기&간병 신청 정보 확인 팝업 */
+.care-date__list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.care-date__list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.care-date__list--width-100 {
+  width: 100%;
+}
+.care-date__list--width-100 .care-date__text {
+  line-height: 8.4rem;
+}
+.care-date__title {
+  font-size: 4.6rem;
+}
+.care-date__text {
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+.care-date__title {
+  width: 40rem;
+  color: #575c62;
+  flex: none;
+}
+.care-date__button {
+  margin-left: auto;
+  flex: none;
+}
+
 .modal {
   background: rgba(0, 0, 0, 0.5);
   padding: 10rem 0;
@@ -2085,6 +2169,10 @@
 }
 .modal-header {
   padding: 10rem 6rem 0 6rem;
+}
+.modal-header__flex {
+  display: flex;
+  align-items: flex-end;
 }
 .modal-body {
   padding: 0;
@@ -2149,7 +2237,7 @@
 .modal-core2 .modal-core2__title {
   position: relative;
   padding-bottom: 6rem;
-  margin-bottom: 7rem;
+  margin-bottom: 9rem;
   font-size: 6rem;
   font-weight: 600;
 }
@@ -2161,6 +2249,10 @@
   height: 0.4rem;
   background: #000000;
   content: "";
+}
+.modal-core2 .modal-core2__title--flex {
+  display: flex;
+  align-items: flex-end;
 }
 .modal-core2 .modal-core2__title-s {
   margin-bottom: 8rem;
@@ -2193,8 +2285,30 @@
   font-size: 6rem;
   font-weight: 500;
 }
+.modal-title__font-m {
+  font-size: 6rem;
+  font-weight: 500;
+}
 .modal-title__font-l {
   font-size: 7.5rem;
+}
+.modal-title__flex {
+  display: flex;
+  align-items: flex-end;
+}
+.modal-title__underline {
+  position: relative;
+  margin-bottom: 8rem;
+  padding-bottom: 6rem;
+}
+.modal-title__underline::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.4rem;
+  background: #000000;
+  content: "";
 }
 .modal-text {
   font-size: 6rem;

@@ -9,6 +9,10 @@
     padding-right: 0 !important;
     &-header {
         padding: 10rem 6rem 0 6rem;
+        &__flex{
+            display: flex;
+            align-items: flex-end;
+        }
     }
 
     &-body {
@@ -100,7 +104,7 @@
             .modal-core2__title {
                 position: relative;
                 padding-bottom: 6rem;
-                margin-bottom: 7rem;
+                margin-bottom: 9rem;
                 font : {
                     size: 6rem;
                     weight:600;
@@ -113,6 +117,10 @@
                     height: .4rem;
                     background: #000000;
                     content: "";
+                }
+                &--flex{
+                    display: flex;
+                    align-items: flex-end;
                 }
                 &-s{
                     margin-bottom: 8rem;
@@ -166,8 +174,33 @@
             }
         }
         &__font{
+            &-m{
+                font : {
+                    size: 6rem;
+                    weight:500;
+                }
+                
+            }
             &-l{
                 font-size: 7.5rem;
+            }
+        }
+        &__flex{
+            display: flex;
+            align-items: flex-end;
+        }
+        &__underline{
+            position: relative;
+            margin-bottom: 8rem;
+            padding-bottom: 6rem;
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 0.4rem;
+                background: #000000;
+                content: "";
             }
         }
     }

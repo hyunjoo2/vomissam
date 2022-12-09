@@ -101,20 +101,20 @@
                 position: relative;
                 width: 18rem;
                 height: 18rem;
-                &::before{
-                    width: 5rem;
-                    height:5rem;
-                    background-color: #c3c8d5;
-                    background-size: 5rem;    
-                    border-radius: 100%;
-                    content:"";
-                }
-                
+                background-size: 18rem;
+                background-position: center;
+                // &::before{
+                //     width: 5rem;
+                //     height:5rem;
+                //     background-color: #c3c8d5;
+                //     background-size: 5rem;    
+                //     border-radius: 100%;
+                //     content:"";
+                // }
             }
             &.is-active{
                 .payment-process__img{
-                    background-size: 18rem;
-                    background-position: center;
+                    
                     &::before{
                         display: none;
                     }
@@ -126,7 +126,6 @@
             }
             &.is-past{
                 .payment-process__img{
-                    
                     background-position: center;
                     background: url(../image/sub/payment-process__past.png) no-repeat center;
                     background-size: 15.4rem;
@@ -149,6 +148,9 @@
                 }
             }
             &02{
+                .payment-process__img{
+                    background-image: url(../image/sub/payment-process__icon02--off.png);
+                }
                 &.is-active{
                     .payment-process__img{
                         background-image: url(../image/sub/payment-process__icon02.png);
@@ -157,6 +159,9 @@
                 
             }
             &03{
+                .payment-process__img{
+                    background-image: url(../image/sub/payment-process__icon03--off.png);
+                }
                 &.is-active{
                     .payment-process__img{
                         background-image: url(../image/sub/payment-process__icon03.png);

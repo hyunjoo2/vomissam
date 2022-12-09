@@ -19,6 +19,19 @@ function videoArea() {
     pagination: {
       el: ".swiper-pagination",
     },
+    on: {
+      // slideChangeTransitionEnd: function() {
+      //   //이벤트
+      //   console.log("a")
+      //   var video = jQuery(".swiper-slide-active video");
+      //   video.get(0).play();
+      // },
+      transitionStart: function(){
+        var video = jQuery(".swiper-slide-active video");
+        video.get(0).play();
+        video.get(0).currentTime = 0;
+      }
+    }
   });
 }
 
@@ -39,3 +52,12 @@ function carerList() {
     $(this).closest(".carer-list").toggleClass("is-show");
   })
 }
+
+
+$("#mapSlider").slider({
+  orientation: "vertical",
+    range: "max",
+    min: 0,
+    max: 11,
+    value: 7        
+  });

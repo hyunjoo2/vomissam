@@ -73,6 +73,9 @@
         &__text{
             font-size: 5.5rem;
             margin-right: 6.5rem;
+            &-cancel{
+                margin-right: 16.5rem;
+            }
         }
         
     }
@@ -139,7 +142,11 @@
         background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
         background-size: 3.9rem 2.6rem;
         border-radius: 1.5rem;
-        
+        &__width{
+            &-200{
+                width:20rem;
+            }
+        }
     }
     &-textarea{
         width:100%;

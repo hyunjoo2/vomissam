@@ -148,90 +148,84 @@
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
                                 <div class="modal-content modal-content__modifyDate">
-                                    <div class="modal-header">
+                                    <!-- 2022.12.09 : 레이아웃 수정 (하단 수정 버튼 삭제, 타이틀 우측 수정 버튼 추가) -->
+                                    <div class="modal-header modal-header__flex">
                                         <div class="modal-title modal-title__font-l text-left mb-0">간병 신청 정보 확인</div>
+                                        <a href="javascript:void(0)" class="ui-button-modify ml-auto">수정하기</a>
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-core2 modal-core__py-0 pt-0">
                                             <div class="modal-core2__title modal-core2__title-s mt-65">보호자님께서 입력하신 정보를 다시 한번 확인 합니다. <br>정보를 잘못 입력한 경우 수정이 가능합니다. 
                                             </div>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">간병 비용</dt>
-                                                <dd class="care-date__text">₩ 1,550,000 (식사 포함)</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">간병 형태</dt>
-                                                <dd class="care-date__text">시간제/병원</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">간병 장소</dt>
-                                                <dd class="care-date__text">삼성서울병원</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">작업 시작일</dt>
-                                                <dd class="care-date__text">2022/11/01</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">작업 종료일</dt>
-                                                <dd class="care-date__text">2022/11/10</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">간병 요일</dt>
-                                                <dd class="care-date__text">매주 월/수</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">일간병시간</dt>
-                                                <dd class="care-date__text">10:00 ~ 18:00 (8시간)</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">환자 정보</dt>
-                                                <dd class="care-date__text">홍길동 (남, 83세)</dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">진료과(진단명)</dt>
-                                                <dd class="care-date__text">심혈관내과</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">입원 병실</dt>
-                                                <dd class="care-date__text">일반실  815호</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">신장/몸무게</dt>
-                                                <dd class="care-date__text">171 Cm / 75 Kg</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">격리감염질한</dt>
-                                                <dd class="care-date__text">해당 없음</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">거동가능여부</dt>
-                                                <dd class="care-date__text">거동 불능</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">거동가능여부</dt>
-                                                <dd class="care-date__text">스스로 가능</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">화장실 이용</dt>
-                                                <dd class="care-date__text">기저귀</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">환자특이상태</dt>
-                                                <dd class="care-date__text">수면장애, 섬망</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
-                                            <dl class="care-date__list">
-                                                <dt class="care-date__title care-date__title--width-418">보호자 요청</dt>
-                                                <dd class="care-date__text">요청 사항</dd>
-                                                <dd class="care-date__button"><button type="button" class="ui-button-modify">수정</button></dd>
-                                            </dl>
+                                            
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">간병 비용</dt>
+                                                    <dd class="care-date__text">₩ 1,550,000 (식사 포함)</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">간병 형태</dt>
+                                                    <dd class="care-date__text">시간제/병원</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">간병 장소</dt>
+                                                    <dd class="care-date__text">삼성서울병원</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">간병 시작일</dt>
+                                                    <dd class="care-date__text">2022.11.01. 오전10시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">간병 종료일</dt>
+                                                    <dd class="care-date__text">2022.11.10. 오후22시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">환자 정보</dt>
+                                                    <dd class="care-date__text">홍길동 (남, 83세)</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">진료과(진단명)</dt>
+                                                    <dd class="care-date__text">심혈관내과</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">입원 병실</dt>
+                                                    <dd class="care-date__text">일반실  815호</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">신장/몸무게</dt>
+                                                    <dd class="care-date__text">171 Cm / 75 Kg</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">격리감염질한</dt>
+                                                    <dd class="care-date__text">해당 없음</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">거동가능여부</dt>
+                                                    <dd class="care-date__text">거동 불능</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">거동가능여부</dt>
+                                                    <dd class="care-date__text">스스로 가능</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">화장실 이용</dt>
+                                                    <dd class="care-date__text">기저귀</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title care-date__title--width-418">환자특이상태</dt>
+                                                    <dd class="care-date__text">수면장애, 섬망</dd>
+                                                </dl>
+
+                                                <!-- 2022.12.09 : add : 요청사항의 경우 클래스에 care-date__list--width-100 붙습니다. -->
+                                                <dl class="care-date__list care-date__list--width-100">
+                                                    <dt class="care-date__title care-date__title--width-418">보호자 요청사항</dt>
+                                                    <dd class="care-date__text">화자분이 밤에 춥다고 합니다.
+                                                        다른 가족, 친구 또는 이웃에게 도움을 요청하여 돌봄을 
+                                                        잠시 쉬면서 시간을 가져야 합니다. 보호자 또한 건강하게 
+                                                        먹고 운동하고 충분한 휴식이 필요합니다.</dd>
+                                                </dl>
+                                                <!--// 2022.12.09 : add : 요청사항의 경우 클래스에 care-date__list--width-100 붙습니다. -->
+                                            </div>
                                         </div>
                                         
 

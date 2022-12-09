@@ -156,6 +156,9 @@
   font-size: 5.5rem;
   margin-right: 6.5rem;
 }
+.ui-form__text-cancel {
+  margin-right: 16.5rem;
+}
 .ui-input {
   width: 100%;
   padding-left: 5.5rem;
@@ -207,6 +210,9 @@
   background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
   background-size: 3.9rem 2.6rem;
   border-radius: 1.5rem;
+}
+.ui-select__width-200 {
+  width: 20rem;
 }
 .ui-textarea {
   width: 100%;

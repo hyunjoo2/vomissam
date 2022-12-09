@@ -118,13 +118,14 @@
 }
 .main-visual__links {
   display: flex;
+  justify-content: center;
   padding: 0 10.5rem;
   height: 34.5rem;
   margin-left: -5rem;
 }
 
 .visual-link {
-  flex: 1;
+  width: 37.6rem;
   margin-left: 5rem;
   margin-top: -13rem;
 }
@@ -146,6 +147,10 @@
 }
 .visual-link img {
   height: 11rem;
+}
+
+.notice-box + .notice-box {
+  border-top: 1rem solid #f2f3f7;
 }
 
 .notice-box, .terms-box {
@@ -198,6 +203,9 @@
   color: #555555;
 }
 
+.terms-box {
+  border-bottom: 2px solid #f2f3f7;
+}
 .terms-box__tit {
   font-size: 6rem;
 }
