@@ -96,13 +96,7 @@ $(function(){
     
     uiJSCommon();
 
-    //case2 상세보기 클릭시
-    $(".carer-button__detail").click(function(){
-        $(this).hide();
-        $(this).nextAll().show();
-        $(this).parents().find(".carer-list").addClass("is-show");
-        //$('.carer-button__wish, .carer-button__choice').show();
-    })
+    
 
 
 });

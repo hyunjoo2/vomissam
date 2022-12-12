@@ -49,6 +49,36 @@
 
             <div class="container__inner">
 
+                <div class="loading">
+                    <div class="loading__inner">
+                        <div class="loading__bg"></div>
+                        <div class="loading-logo">
+                            <div class="img-wrap">
+                                <img src="../resource/image/common/logo-gradient.png" alt="">
+                            </div>
+                            <div class="loading-logo__text">
+                                VIP 간병 서비스 <span>보미쌤</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loading-footer__logo">
+
+                    </div>
+                </div>
+
+                <div class="intro-slide swiper-container">
+                    <div class="intro-fixed">
+                        <h1 class="intro-title">간병문화<span>를 바꾸는</span> <br> <span>사람들</span> 보미쌤</h1>
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="intro-slide01"></div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="login-first">
                     <h1 class="login-first__title"><strong>VIP 간병전문가</strong> <br>
                         <span class="color-blue">보미쌤</span>을 찾으세요?</h1>
@@ -88,7 +118,27 @@
 
 </body>
 <script type="text/javascript">
-   
+    window.onbeforeunload = function () {
+        //현재 페이지에서 다른 페이지로 넘어갈 때 표시해주는 기능
+        $('.loading').show(); 
+        setTimeout(function(){
+            $('.intro-slide').show();
+        },2000)
+    } 
+    $(window).load(function () { 
+        //페이지가 로드 되면 로딩 화면을 없애주는 것
+        
+        setTimeout(function(){
+            $('.loading').fadeOut(300);
+        },2000)
+        setTimeout(function(){
+            $('.intro-slide').fadeOut(300);
+        },4000)
+        
+
+
+        
+    });
 </script>
 
 </html>
