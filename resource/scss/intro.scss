@@ -25,7 +25,7 @@
         background-size: 225%;
         background-position: right -179% top 130%;
         opacity: 0.04;
-        animation: wave 3s infinite linear;
+        animation: wave 4s infinite linear;
     }
     &-logo{
         .img-wrap{
@@ -112,7 +112,7 @@
                 height:100%;
                 background-image: url(../image/main/intro-slide0#{$i}.jpg);
                 background-repeat: no-repeat;
-                background-position: center top -25rem;
+                background-position: center top -28rem;
                 background-size: cover;
             }
         }
