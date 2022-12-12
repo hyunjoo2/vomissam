@@ -91,9 +91,9 @@
         }
     }
     &-title{
-        padding-top:30.5rem;
-        font-size: 12rem;
-        line-height: 19rem;
+        padding-top:20rem;
+        font-size: 12.5rem;
+        line-height: 15rem;
         text-align: center;
         span{
             font : {
@@ -112,7 +112,7 @@
                 height:100%;
                 background-image: url(../image/main/intro-slide0#{$i}.jpg);
                 background-repeat: no-repeat;
-                background-position: center top -5rem;
+                background-position: center top -25rem;
                 background-size: cover;
             }
         }

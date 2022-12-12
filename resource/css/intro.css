@@ -198,9 +198,9 @@
   color: #a0a0a0;
 }
 .intro-title {
-  padding-top: 30.5rem;
-  font-size: 12rem;
-  line-height: 19rem;
+  padding-top: 20rem;
+  font-size: 12.5rem;
+  line-height: 15rem;
   text-align: center;
 }
 .intro-title span {
@@ -217,7 +217,7 @@
   height: 100%;
   background-image: url(../image/main/intro-slide01.jpg);
   background-repeat: no-repeat;
-  background-position: center top -5rem;
+  background-position: center top -25rem;
   background-size: cover;
 }
 .intro-slide02 {
@@ -225,7 +225,7 @@
   height: 100%;
   background-image: url(../image/main/intro-slide02.jpg);
   background-repeat: no-repeat;
-  background-position: center top -5rem;
+  background-position: center top -25rem;
   background-size: cover;
 }
 .intro-slide03 {
@@ -233,7 +233,7 @@
   height: 100%;
   background-image: url(../image/main/intro-slide03.jpg);
   background-repeat: no-repeat;
-  background-position: center top -5rem;
+  background-position: center top -25rem;
   background-size: cover;
 }
 .intro-slide .swiper-pagination {
