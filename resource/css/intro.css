@@ -139,7 +139,7 @@
 .loading__bg {
   position: absolute;
   width: 300%;
-  height: 100%;
+  height: calc(100% - 37rem);
   background: url(../image/common/loading-v__long.png) repeat-x;
   background-size: 225%;
   background-position: right -179% top 130%;
