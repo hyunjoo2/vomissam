@@ -210,31 +210,10 @@
 .intro-slide {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-.intro-slide01 {
+.intro-slide__image img {
   width: 100%;
-  height: 100%;
-  background-image: url(../image/main/intro-slide01.jpg);
-  background-repeat: no-repeat;
-  background-position: center top -5rem;
-  background-size: cover;
-}
-.intro-slide02 {
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/main/intro-slide02.jpg);
-  background-repeat: no-repeat;
-  background-position: center top -5rem;
-  background-size: cover;
-}
-.intro-slide03 {
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/main/intro-slide03.jpg);
-  background-repeat: no-repeat;
-  background-position: center top -5rem;
-  background-size: cover;
 }
 .intro-slide .swiper-pagination {
   bottom: 57.5rem;
@@ -260,7 +239,7 @@
 .button-wrap__intro button {
   width: 100%;
   height: 20rem;
-  background: #4b62c3;
+  background: #0d233b;
   border-radius: 2rem;
   font-size: 7rem;
   font-weight: 500;
