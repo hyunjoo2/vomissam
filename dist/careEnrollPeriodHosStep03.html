@@ -111,14 +111,7 @@
                                 <div class="enroll-box__inner">
                                     <div class="enroll-title">입원 병실</div>
 
-                                    <div class="enroll-box__sub">
-                                        <div class="enroll-title__sub">특수 병동인 경우 반드시 선택해 주세요</div>
-                                        <div class="ui-buttons ui-buttons__thirds">
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">응급실</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">무균실</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">폐쇄병동</button>
-                                        </div>
-                                    </div>
+                                    <!-- 2022.12.12 : mod : 일반실을 위로 위치변경 -->
 
                                     <div class="enroll-box__sub">
                                         <div class="enroll-title__sub">일반실인 경우 ( 아시는 경우 입력하세요)</div>
@@ -127,6 +120,24 @@
                                         </div>
                                         <p class="text-ex">* 입력 예:  000호실, 00병동</p>
                                     </div>
+
+
+                                    <div class="enroll-box__sub">
+                                        <div class="enroll-title__sub">특수 병동인 경우 반드시 선택해 주세요</div>
+
+                                        <!-- 2022.12.12 : ui-buttons__thirds -> ui-buttons__half , 버튼 추가&텍스트수정  -->
+                                        <div class="ui-buttons ui-buttons__half">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">응급실</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">무균실</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">격리병실</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">정신과 폐쇄병동</button>
+                                        </div>
+                                        <!--// 2022.12.12 : ui-buttons__thirds -> ui-buttons__half , 버튼 추가&텍스트수정  -->
+                                    </div>
+
+                                    <!--// 2022.12.12 : mod : 일반실을 위로 위치변경 -->
+
+                                    
 
 
                                 </div>

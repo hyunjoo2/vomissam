@@ -189,10 +189,6 @@
   background: #f3f5fb;
   border-radius: 2rem;
 }
-.modal-box__gray * {
-  font-size: 5rem;
-  line-height: 7rem;
-}
 .modal-user {
   margin-bottom: 9rem;
   font-size: 5rem;

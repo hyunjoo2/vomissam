@@ -563,7 +563,7 @@
   background: url(../image/main/badge-premium.png);
   background-size: cover;
   content: "";
-  z-index: 2;
+  z-index: -1;
 }
 .carer-list.is-show .carer-detail__list--more {
   display: flex;
@@ -718,4 +718,12 @@
   width: 100%;
   font-size: 4.8rem;
   text-align: center;
+}
+
+.terms-box {
+  display: flex;
+  align-items: center;
+}
+.terms-box .ui-button-modify {
+  flex: none;
 }

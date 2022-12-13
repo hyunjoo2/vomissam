@@ -105,6 +105,7 @@
             }
         }
         &__gray{
+            margin-bottom: 34.8rem;
             padding: 10rem 5rem;
             background: #f6f8fb;
         }
@@ -273,6 +274,24 @@
     &2{
         font-size: 4.4rem;
         color:#575c62;
+    }
+}
+.exp{
+    &-box{
+        &+&{
+            margin-top: 5rem;
+        }
+    }
+    &-title{
+        font: {
+            size:5rem;
+            weight:500;
+        };
+    }
+    &-text{
+        font-size: 5rem;
+        line-height: 8rem;
+        word-break: keep-all;
     }
 }
 
@@ -529,3 +548,5 @@
         }
     }
 }
+
+

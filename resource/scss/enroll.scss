@@ -36,6 +36,9 @@
             color:#DD5458;
             margin-left: 1rem;
         }
+        &+.enroll-box__sub{
+            margin-top: 10rem;
+        }
         
     }
     &-box{
@@ -172,7 +175,7 @@
                 }
                 &--width{
                     &-505{
-                        width: 50.5rem;
+                        width: 40.5rem;
                     }
                 }
             }

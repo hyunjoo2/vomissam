@@ -141,6 +141,9 @@
   color: #DD5458;
   margin-left: 1rem;
 }
+.enroll-title + .enroll-box__sub {
+  margin-top: 10rem;
+}
 .enroll-box:nth-child(1) {
   margin-top: 9rem;
 }
@@ -257,7 +260,7 @@
   font-size: 4.4rem;
 }
 .care-enroll-info__title--width-505 {
-  width: 50.5rem;
+  width: 40.5rem;
 }
 .care-enroll-info__text {
   flex: 1;

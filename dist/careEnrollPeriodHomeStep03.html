@@ -82,50 +82,39 @@
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
                         <section class="sub-content">
-
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
-                                    <div class="enroll-title">환자의 특이 상태<span class="enroll-title__des">(중복 선택 가능)</span></div>
-                                    <!-- 2022.12.12 : ui-buttons__thirds -> ui-buttons__half , 버튼 텍스트 수정  -->
-                                    <div class="ui-buttons ui-buttons__half">
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi">야간수면장애</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi">섬망</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi">욕창</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi">치매</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi">석션</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi">투석</button>
+                                    <div class="enroll-title">질환 정보</div>
+                                    <div class="enroll-box__sub">
+                                        <div class="enroll-title__sub">진료과 (선택)</div>
+                                        <div class="ui-buttons ui-buttons__thirds">
+                                            <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">소화기내과</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">심혈관내과</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">호흡기내과</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">내분비내과</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">신장내과</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">혈액종양내과</button>
+                                        </div>
                                     </div>
-                                    <!--// 2022.12.12 : ui-buttons__thirds -> ui-buttons__half , 버튼 텍스트 수정  -->
+
+                                    <div class="enroll-box__sub">
+                                        <div class="enroll-title__sub">진단명</div>
+                                        <div class="ui-form">
+                                            <input type="text" class="ui-input" placeholder="직접입력">
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
-
-                            <!-- 2022.12.12 : del : 주보호자 정보 항목 페이지 이동 -->
-                            
-
-                            <div class="enroll-box">
-                                <div class="enroll-box__inner">
-                                    <div class="enroll-title">특별히 더 알아야 할 것이 있다면 작성해 주세요<span class="enroll-title__des">(선택)</span></div>
-                                    <div class="ui-form">
-                                        <textarea name="" class="ui-textarea ui-textarea__height-265" placeholder="내용을 입력해 주세요"></textarea>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-
-                            
+                           
                         </section>
                         
                         <section class="page-bottom">
                             <div class="page-bottom__inner ui-buttons">
                                 <button type="button" class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
 
-                                <button type="button" class="ui-button ui-button__border-blue font-weight__m">완료</button>
+                                <button type="button" class="ui-button ui-button__border-blue font-weight__m" onclick="location.href='./careEnrollPeriodStep04.html'">다음</button>
                             </div>
                         </section>
                     </div>

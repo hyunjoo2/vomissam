@@ -20,6 +20,17 @@
     }
     &s{
         display: flex;
+        &__half{
+            flex-wrap: wrap;
+            margin: -1rem;
+            .ui-button{
+                max-width: calc(100% / 2 - 2rem);
+                margin: 1rem;
+                // &+&{
+                //     margin: 1rem;
+                // }
+            }
+        }
         &__thirds{
             flex-wrap: wrap;
             margin: -1rem;
@@ -307,6 +318,11 @@
         border-radius: 3.5rem;
         line-height: 100%;
     }    
+    &__line-height{
+        &--n{
+            line-height: normal;
+        }
+    }
 }
 .button{
     &-joinSocial{

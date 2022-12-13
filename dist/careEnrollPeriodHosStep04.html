@@ -85,44 +85,75 @@
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
                                     <div class="enroll-title">안전한 간병을 위한 추가 입력<span class="ui-required">(필수)</span></div>
+
+                                    <!-- 2022.12.12. : add : 항목 추가, 항목 수정 -->
+                                    <div class="enroll-box__sub">
+                                        <div class="enroll-title__sub">입원 목적<span class="ui-required">(필수)</span></div>
+                                        <div class="ui-buttons ui-buttons__thirds">
+                                            <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">수술</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">검사</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">치료/처치</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">요양</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">재활</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">기타</button>
+                                        </div>
+                                    </div>
+                 
                                     <div class="enroll-box__sub">
                                         <div class="enroll-title__sub">격리감염 질환 여부<span class="ui-required">(필수)</span></div>
                                         <div class="ui-buttons">
                                             <button type="button"
                                             class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">해당없음</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">격리 감염 질환</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">COVID-19</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">격리감염</button>
+                                        </div>
+                                    </div>
+                               
+                                    <div class="enroll-box__sub">
+                                        <div class="enroll-title__sub">의식 및 의사소통 상태<span class="ui-required">(필수)</span></div>
+                                        <div class="ui-buttons ui-buttons__thirds">
+                                            <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">의식 있음</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs  ui-button__line-height--n ui-button__check">의식 있으나<br>소통 어려움</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">의식 없음</button>
                                         </div>
                                     </div>
 
                                     <div class="enroll-box__sub">
-                                        <div class="enroll-title__sub">거동 가능 여부<span class="ui-required">(필수)</span></div>
+                                        <div class="enroll-title__sub">거동 상태</div>
                                         <div class="ui-buttons">
                                             <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">스스로가능</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">부분적도움</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">스스로 가능</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">부분적 도움</button>
                                             <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">거동불능</button>
                                         </div>
                                     </div>
 
                                     <div class="enroll-box__sub">
-                                        <div class="enroll-title__sub">식사 가능 여부<span class="ui-required">(필수)</span></div>
-                                        <div class="ui-buttons">
+                                        <div class="enroll-title__sub">식사 상태<span class="ui-required">(필수)</span></div>
+                                        <div class="ui-buttons ui-buttons__thirds">
                                             <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">스스로가능</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">부분적도움</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">스스로 가능</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">식사보조</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">콧줄</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">뱃줄</button>
                                             <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">식사불가</button>
                                         </div>
                                     </div>
 
                                     <div class="enroll-box__sub">
-                                        <div class="enroll-title__sub">화장실 이용 여부<span class="ui-required">(필수)</span></div>
-                                        <div class="ui-buttons">
+                                        <div class="enroll-title__sub">대소변 처리 상태<span class="ui-required">(필수)</span></div>
+                                        <div class="ui-buttons ui-buttons__thirds">
                                             <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">스스로가능</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">소변백관리</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">기저귀관리</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check is-active">스스로 가능</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">화장실 동행</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">기저귀 관리</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">소변백 관리</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">장루</button>
                                         </div>
                                     </div>
+                                    <!--//  2022.12.12. : add : 항목 추가, 항목 수정 -->
                                     
                                 </div>
                             </div>

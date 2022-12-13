@@ -18,6 +18,14 @@
 .ui-buttons {
   display: flex;
 }
+.ui-buttons__half {
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+.ui-buttons__half .ui-button {
+  max-width: calc(50% - 2rem);
+  margin: 1rem;
+}
 .ui-buttons__thirds {
   flex-wrap: wrap;
   margin: -1rem;
@@ -243,6 +251,9 @@
   color: #ffffff;
   border-radius: 3.5rem;
   line-height: 100%;
+}
+.ui-button__line-height--n {
+  line-height: normal;
 }
 
 .button-joinSocial {

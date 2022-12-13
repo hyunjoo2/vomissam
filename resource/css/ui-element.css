@@ -87,6 +87,7 @@
   align-items: center;
 }
 .sub-item__gray {
+  margin-bottom: 34.8rem;
   padding: 10rem 5rem;
   background: #f6f8fb;
 }
@@ -231,6 +232,19 @@
 .des-text2 {
   font-size: 4.4rem;
   color: #575c62;
+}
+
+.exp-box + .exp-box {
+  margin-top: 5rem;
+}
+.exp-title {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.exp-text {
+  font-size: 5rem;
+  line-height: 8rem;
+  word-break: keep-all;
 }
 
 .line-gray__xsmall {
