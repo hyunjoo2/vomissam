@@ -104,20 +104,20 @@
             .modal-core2__title {
                 position: relative;
                 padding-bottom: 6rem;
-                margin-bottom: 9rem;
+                // margin-bottom: 9rem;
                 font : {
                     size: 6rem;
                     weight:600;
                 }
-                &::before{
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: .4rem;
-                    background: #000000;
-                    content: "";
-                }
+                // &::before{
+                //     position: absolute;
+                //     left: 0;
+                //     bottom: 0;
+                //     width: 100%;
+                //     height: .4rem;
+                //     background: #000000;
+                //     content: "";
+                // }
                 &--flex{
                     display: flex;
                     align-items: flex-end;

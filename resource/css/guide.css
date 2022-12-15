@@ -422,6 +422,9 @@
 .ml-40 {
   margin-left: 4rem;
 }
+.ml-60 {
+  margin-left: 6rem;
+}
 .mt-10 {
   margin-top: 1rem;
 }
@@ -763,6 +766,14 @@
   max-width: calc(33.3333333333% - 2rem);
   margin: 1rem;
 }
+.ui-buttons__fourth {
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+.ui-buttons__fourth .ui-button {
+  max-width: calc(25% - 2rem);
+  margin: 1rem;
+}
 .ui-buttons__column {
   flex-direction: column;
 }
@@ -773,6 +784,18 @@
 .ui-buttons--faq .ui-button.is-active {
   background-color: #4b62c3;
   color: #fff;
+}
+.ui-buttons .ui-form__direct {
+  flex: 1;
+  margin: 1rem;
+}
+.ui-buttons .ui-form__direct .ui-input {
+  width: 100%;
+  padding-left: 4rem;
+  border: 0.4rem solid #d8dce2;
+}
+.ui-buttons .ui-form__cell__text {
+  margin-right: 7rem;
 }
 .ui-button__page--back {
   width: 12.9rem;
@@ -798,7 +821,7 @@
   color: #8a90a0;
 }
 .ui-button__border-gray {
-  border: 0.4rem solid #e9eaec;
+  border: 0.4rem solid #d8dce2;
 }
 .ui-button__border-blue {
   border: 0.4rem solid #4b62c3;
@@ -942,20 +965,24 @@
 }
 .ui-button__check {
   border-radius: 1.5rem;
+  font-weight: 400;
 }
 .ui-button__check.is-active {
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.9rem center;
   background-size: 4.5rem 3.1rem;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.ui-button__check--multi {
+  font-weight: 400;
 }
 .ui-button__check--multi.is-active {
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.9rem center;
   background-size: 4.5rem 3.1rem;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
@@ -982,7 +1009,12 @@
   line-height: 100%;
 }
 .ui-button__line-height--n {
-  line-height: normal;
+  line-height: 6.5rem;
+}
+.ui-button__day {
+  height: 17.6rem;
+  line-height: 17.7rem;
+  font-size: 5.5rem;
 }
 
 .button-joinSocial {
@@ -1471,10 +1503,13 @@
 }
 .ui-form__text {
   font-size: 5.5rem;
-  margin-right: 6.5rem;
 }
 .ui-form__text-cancel {
   margin-right: 16.5rem;
+}
+.ui-form__text--right {
+  margin-right: 0;
+  margin-left: 2rem;
 }
 .ui-input {
   width: 100%;

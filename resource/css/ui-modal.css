@@ -75,18 +75,8 @@
 .modal-core2 .modal-core2__title {
   position: relative;
   padding-bottom: 6rem;
-  margin-bottom: 9rem;
   font-size: 6rem;
   font-weight: 600;
-}
-.modal-core2 .modal-core2__title::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.4rem;
-  background: #000000;
-  content: "";
 }
 .modal-core2 .modal-core2__title--flex {
   display: flex;
