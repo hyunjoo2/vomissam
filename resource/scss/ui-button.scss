@@ -42,6 +42,17 @@
                 // }
             }
         }
+        &__fourth{
+            flex-wrap: wrap;
+            margin: -1rem;
+            .ui-button{
+                max-width: calc(100% / 4 - 2rem);
+                margin: 1rem;
+                // &+&{
+                //     margin: 1rem;
+                // }
+            }
+        }
         &__column{
             flex-direction: column;
             .ui-button{
@@ -56,6 +67,22 @@
                 &.is-active{
                     background-color:#4b62c3;
                     color:#fff;
+                }
+            }
+        }
+        .ui-form{
+            &__direct{
+                flex:1;
+                margin: 1rem;
+                .ui-input{
+                    width:100%;
+                    padding-left: 4rem;
+                    border:0.4rem solid #d8dce2;
+                }
+            }
+            &__cell{
+                &__text{
+                    margin-right: 7rem;
                 }
             }
         }
@@ -90,7 +117,7 @@
     }
     &__border{
         &-gray{
-            border: .4rem solid #e9eaec; 
+            border: .4rem solid #d8dce2; 
         }
         &-blue{
             border: .4rem solid #4b62c3; 
@@ -273,20 +300,22 @@
     }
     &__check{
         border-radius: 1.5rem;
+        font-weight: 400;
         &.is-active{
             font-weight: 500;
             color:#3c50a2;
             border-color: #4b62c3;
-            background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+            background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.9rem center;
             background-size: 4.5rem 3.1rem;
             box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
         }
         &--multi{
+            font-weight: 400;
             &.is-active{
                 font-weight: 500;
                 color:#3c50a2;
                 border-color: #4b62c3;
-                background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+                background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.9rem center;
                 background-size: 4.5rem 3.1rem;
                 box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
             }
@@ -320,8 +349,13 @@
     }    
     &__line-height{
         &--n{
-            line-height: normal;
+            line-height: 6.5rem;
         }
+    }
+    &__day{
+        height: 17.6rem;
+        line-height: 17.7rem;
+        font-size: 5.5rem;
     }
 }
 .button{

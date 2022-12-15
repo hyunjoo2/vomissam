@@ -747,6 +747,14 @@
 .ui-buttons {
   display: flex;
 }
+.ui-buttons__half {
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+.ui-buttons__half .ui-button {
+  max-width: calc(50% - 2rem);
+  margin: 1rem;
+}
 .ui-buttons__thirds {
   flex-wrap: wrap;
   margin: -1rem;
@@ -972,6 +980,9 @@
   color: #ffffff;
   border-radius: 3.5rem;
   line-height: 100%;
+}
+.ui-button__line-height--n {
+  line-height: normal;
 }
 
 .button-joinSocial {
@@ -1426,7 +1437,7 @@
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 1.5rem;
-  line-height: 1.5;
+  line-height: 1.4rem;
   font-size: 5.5rem;
 }
 .ui-form__button {
@@ -1812,6 +1823,7 @@
   align-items: center;
 }
 .sub-item__gray {
+  margin-bottom: 34.8rem;
   padding: 10rem 5rem;
   background: #f6f8fb;
 }
@@ -1956,6 +1968,19 @@
 .des-text2 {
   font-size: 4.4rem;
   color: #575c62;
+}
+
+.exp-box + .exp-box {
+  margin-top: 5rem;
+}
+.exp-title {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.exp-text {
+  font-size: 5rem;
+  line-height: 8rem;
+  word-break: keep-all;
 }
 
 .line-gray__xsmall {
@@ -2350,10 +2375,6 @@
   padding: 5rem 6rem;
   background: #f3f5fb;
   border-radius: 2rem;
-}
-.modal-box__gray * {
-  font-size: 5rem;
-  line-height: 7rem;
 }
 .modal-user {
   margin-bottom: 9rem;

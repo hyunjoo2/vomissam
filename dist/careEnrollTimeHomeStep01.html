@@ -121,11 +121,13 @@
                                     <div class="enroll-title">간병 기간</div>
                                     <div class="care-period">
                                         <div class="care-period__inner">
-                                            <div  class="care-period__text">
-                                                <div class="care-period__text--inner">
+                                            <!-- 2022.12.14 : mod : 태그 변경 -->
+                                            <button type="button" class="care-period__text" data-toggle="modal" data-target="#careDate">
+                                                <span class="care-period__text--inner">
                                                     간병 기간을 입력하시려면 클릭하세요
-                                                </div>
-                                            </div>
+                                                </span>
+                                            </button>
+                                            <!--// 2022.12.14 : mod : 태그 변경 -->
 
                                             <div class="care-period__text is-inputed mt-50">
                                                 <div class="care-period__text--inner">
@@ -144,6 +146,80 @@
                                                 </div>
                                                 
                                             </div>
+
+                                            <!-- 2022.12.14 : add : 모달 추가 -->
+                                            <!-- 간병 기간 선택 모달 -->
+                                            <div class="modal fade" id="careDate" tabindex="-1" aria-labelledby="careDateLabel"
+                                            aria-hidden="true" style="z-index: 1060;">
+                                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                                    <div class="modal-content modal-content__modifyDateCalendar">
+                                                        <div class="modal-header">
+                                                            <div class="modal-title2 text-left mb-0">간병 요일을 선택하세요.</div>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="modal-core3">
+
+                                                                <div class="ui-buttons">
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day is-active">월</button>
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day">화</button>
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day">수</button>
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day">목</button>
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day">금</button>
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day">토</button>
+                                                                    <button type="button" class="ui-button ui-button__border-gray ui-button__font-xs ui-button__click ui-button__day">일</button>
+                                                                  </div>
+
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-header">
+                                                            <div class="modal-title2 text-left mb-0">간병 종료일을 선택하세요.</div>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="modal-core3">
+                                                                <div class="ui-calendar">
+                                                                    <div class="ui-calendar__inner">
+                                                                        <div style="display:flex; align-items:center; justify-content:center; width: 100%; height:117rem; background:#4b62c3; color:#ffffff; font-size:6rem;">달력 영역</div>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-header">
+                                                            <div class="modal-title2 text-left mt-30 mb-0">일 간병 시간을 선택하세요.</div>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="modal-core3">
+                                                                <div class="mt-0 ui-form__cell">
+                                                                    
+                                                                    <div class="ui-form">
+                                                                        <select name="" id="" class="ui-select">
+                                                                            <option value=""></option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <p class="ui-form__text ui-form__text--right">부터</p>
+                                                                    <div class="ui-form ml-60">
+                                                                        <select name="" id="" class="ui-select">
+                                                                            <option value=""></option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <p class="ui-form__text ui-form__text--right">까지</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-buttons modal-buttons__sticky mt-150">
+                                                            <button type="button" class="ui-button ui-button__border-blue"
+                                                                data-dismiss="modal">취소</button>
+                                                            <button type="button" class="ui-button ui-button__bg-blue">선택완료</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //간병 기간 선택 모달 -->
+
                                         </div>
                                     </div>
                                 </div>

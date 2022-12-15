@@ -72,9 +72,13 @@
         }
         &__text{
             font-size: 5.5rem;
-            margin-right: 6.5rem;
+            
             &-cancel{
                 margin-right: 16.5rem;
+            }
+            &--right{
+                margin-right: 0;
+                margin-left: 2rem;
             }
         }
         
