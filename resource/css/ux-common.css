@@ -500,6 +500,9 @@
 .mt-200 {
   margin-top: 20rem;
 }
+.mb-20 {
+  margin-bottom: 2rem;
+}
 .mb-60 {
   margin-bottom: 6rem;
 }
@@ -1469,7 +1472,7 @@
   font-weight: 400;
 }
 
-.ui-form input, .ui-form textarea {
+.ui-form input {
   border: 1px solid #d8dce2;
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -1593,16 +1596,23 @@
   width: 100%;
   height: 15rem;
   padding: 1.5rem 2rem;
-  font-size: 1.6rem;
   resize: none;
   appearance: none;
-  padding: 4.5rem;
+  line-height: normal;
+  border: 1px solid #d8dce2;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 1.5rem;
+  line-height: normal;
+  font-size: 5.5rem;
 }
 .ui-textarea__height-230 {
   height: 23rem;
 }
 .ui-textarea__height-265 {
   height: 26.5rem;
+  padding: 6rem;
 }
 .ui-textarea__height-650 {
   height: 65rem;
@@ -1804,6 +1814,9 @@
 }
 .container__sub--pb-0 {
   padding-bottom: 0;
+}
+.container-core {
+  /* 이전 다음 버튼 겹침?? */
 }
 .container-core__flex {
   display: flex;
@@ -2266,18 +2279,75 @@
   flex: none;
 }
 
+/* tab */
+.tab-content {
+  display: none;
+}
+.tab-content.is-active {
+  display: block;
+}
+.tab-menu {
+  display: flex;
+}
+.tab-menu__ul {
+  border: 0.3rem solid #d5d9df;
+  box-sizing: border-box;
+}
+.tab-menu__li {
+  flex: 1;
+  height: 15.4rem;
+  overflow: hidden;
+}
+.tab-menu__li:first-child {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.tab-menu__li:last-child {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.tab-menu__li.is-active .tab-menu__link {
+  color: #3c50a2;
+  background: #ffffff;
+}
+.tab-menu__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  color: #8a90a0;
+  text-align: center;
+  background: #e9ebf1;
+  line-height: 15.5rem;
+}
+
 .modal {
   background: rgba(0, 0, 0, 0.5);
   padding: 10rem 0;
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
+  /* indexCase3 보미노트 모달 */
+}
+.modal-isOpen {
+  overflow: hidden;
+}
+.modal-isOpen .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .modal-header {
-  padding: 10rem 6rem 0 6rem;
+  padding: 10rem 8rem 0 8rem;
 }
 .modal-header__flex {
   display: flex;
   align-items: flex-end;
+}
+.modal-header__padding-s {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+.modal-header__align--center {
+  align-items: center;
 }
 .modal-body {
   padding: 0;
@@ -2325,7 +2395,7 @@
   border-radius: 2rem;
 }
 .modal-content__matchingCancel .ui-list-dashed li + li {
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 .modal-content__modifyDate .modal-header {
   padding-left: 8rem;
@@ -2333,6 +2403,10 @@
 }
 .modal-content__s {
   width: calc(100% - 32rem);
+}
+.modal-content__vomiNote .bg-darkgray {
+  padding: 6rem;
+  border-radius: 2rem;
 }
 .modal-core {
   padding: 12.5rem 5rem;
@@ -2376,7 +2450,7 @@
 .modal-title {
   margin-bottom: 7.5rem;
   font-size: 6.5rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   line-height: 9rem;
 }
@@ -2458,6 +2532,21 @@
 .modal-user__name {
   font-size: 6.5rem;
   font-weight: 500;
+}
+.modal-today {
+  margin-left: auto;
+  font-size: 5.6rem;
+  font-weight: 500;
+  color: #3c50a2;
+}
+
+.vomiNote-text {
+  font-size: 5rem;
+  line-height: 9rem;
+}
+.vomiNote-text__keyword {
+  font-weight: 600;
+  color: #3c50a2;
 }
 
 /* ========== reponsive =========== */

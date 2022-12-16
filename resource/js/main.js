@@ -54,12 +54,28 @@ function carerList() {
 }
 
 
-
-
-//case2 상세보기 클릭시
-$(".carer-button__detail").click(function(){
+$(function () {
+  //case2 상세보기 클릭시
+  $(".carer-button__detail").click(function () {
     $(this).hide();
     $(this).nextAll().show();
     $(this).parents().find(".carer-list").addClass("is-show");
     //$('.carer-button__wish, .carer-button__choice').show();
+  });
+
+
+  //tab
+  $(".tab-menu__link").click(function () {
+    if ($(this).parent().hasClass("is-active") == false) {
+      $(this).parent().siblings().removeClass("is-active");
+      $(this).parent().addClass("is-active");
+      $(".tab-content").removeClass("is-active");
+      var activeContent = $(this).attr("href");
+      $(activeContent).addClass("is-active");
+    }
+    event.preventDefault();
+  });
+
 })
+
+

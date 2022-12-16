@@ -4,13 +4,28 @@
   padding: 10rem 0;
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
+  /* indexCase3 보미노트 모달 */
+}
+.modal-isOpen {
+  overflow: hidden;
+}
+.modal-isOpen .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .modal-header {
-  padding: 10rem 6rem 0 6rem;
+  padding: 10rem 8rem 0 8rem;
 }
 .modal-header__flex {
   display: flex;
   align-items: flex-end;
+}
+.modal-header__padding-s {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+.modal-header__align--center {
+  align-items: center;
 }
 .modal-body {
   padding: 0;
@@ -58,7 +73,7 @@
   border-radius: 2rem;
 }
 .modal-content__matchingCancel .ui-list-dashed li + li {
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 .modal-content__modifyDate .modal-header {
   padding-left: 8rem;
@@ -66,6 +81,10 @@
 }
 .modal-content__s {
   width: calc(100% - 32rem);
+}
+.modal-content__vomiNote .bg-darkgray {
+  padding: 6rem;
+  border-radius: 2rem;
 }
 .modal-core {
   padding: 12.5rem 5rem;
@@ -109,7 +128,7 @@
 .modal-title {
   margin-bottom: 7.5rem;
   font-size: 6.5rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   line-height: 9rem;
 }
@@ -191,4 +210,19 @@
 .modal-user__name {
   font-size: 6.5rem;
   font-weight: 500;
+}
+.modal-today {
+  margin-left: auto;
+  font-size: 5.6rem;
+  font-weight: 500;
+  color: #3c50a2;
+}
+
+.vomiNote-text {
+  font-size: 5rem;
+  line-height: 9rem;
+}
+.vomiNote-text__keyword {
+  font-weight: 600;
+  color: #3c50a2;
 }

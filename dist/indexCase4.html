@@ -30,6 +30,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -101,8 +102,8 @@
 
                         <section class="section-button">
                             <div class="ui-buttons">
-                                <button type="button" class="ui-button ui-button__height-l ui-button__border-blue font-weight__r" data-toggle="modal" data-target="#matchingCancel">보미노트 보기</button>
-                                <button type="button" class="ui-button ui-button__height-l ui-button__border-blue font-weight__r" data-toggle="modal" data-target="#modifyDate">기간 연장/중단 신청</button>
+                                <button type="button" class="ui-button ui-button__height-l ui-button__border-blue font-weight__r" data-toggle="modal" data-target="#vomiNote">보미노트 보기</button>
+                                <button type="button" class="ui-button ui-button__height-l ui-button__border-blue font-weight__r" data-toggle="modal" data-target="#dateExtStop">기간 연장/중단 신청</button>
                             </div>
                         </section>
 
@@ -273,22 +274,99 @@
 
                         <!-- 모달 -->
 
-                        <!-- 보미쌤 정보보기 모달 -->
-                        <div class="modal fade" id="vomiInfo" tabindex="-1" style="z-index: 1050;"
-                            aria-labelledby="vomiInfoLabel" aria-hidden="true">
+                        <!-- 보미노트 모달 -->
+                        <div class="modal fade" id="vomiNote" tabindex="-1" style="z-index: 1050;"
+                            aria-labelledby="vomiNoteLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                <div class="modal-content modal-content__vomiInfo">
-                                    <div class="modal-header">
-                                        <div class="modal-title modal-title__font-l text-left mb-0">보미쌤 정보보기</div>
+                                <div class="modal-content modal-content__vomiNote">
+                                    <div class="modal-header modal-header__flex modal-header__align--center">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">보미노트</div>
+                                        <div class="modal-today">2022. 12. 08</div>
                                     </div>
                                     <div class="modal-body">
-                                        보미쌤 정보보기
+                                        <div class="modal-core3">
+                                            <div class="modal-title2 text-left mb-0 font-weight-bold mt-90">유재석 환자님은 오늘</div>
+                                            <div class="bg-darkgray mt-60">
+                                                <ul class="vomiNote-ul">
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">기분은 <em class="vomiNote-text__keyword">(좋음)</em> 이셨어요.</span>
+                                                    </li>
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">식사는 <em class="vomiNote-text__keyword">(밥)</em> 으로 <em class="vomiNote-text__keyword">(전부)</em> 드셨구요.</span>
+                                                    </li>
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">대변은 <em class="vomiNote-text__keyword">(1)</em> 회, 소변은 <em class="vomiNote-text__keyword">(2)</em> 회 보셨습니다.</span>
+                                                    </li>
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">배변 시 특별한 상황은</span>
+                                                        <div class="ui-form mt-20 mb-20">
+                                                            <textarea class="ui-textarea ui-textarea__height-265">특별한 상황은 없으셨으니 염려 놓으세요.</textarea>
+                                                        </div>
+                                                    </li>
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">수면은 <em class="vomiNote-text__keyword">(잘 주무심)</em> 이셨구요.</span>
+                                                    </li>
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">위생 관리로  <em class="vomiNote-text__keyword">(세면, 목욕, 환복)</em>  을 해</span>드렸어요.</li>
+                                                    <li class="vomiNote-li">
+                                                        <span class="vomiNote-text">대변은 <em class="vomiNote-text__keyword">(1)</em> 회, 소변은 <em class="vomiNote-text__keyword">(2)</em> 회 보셨습니다.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                           
+                                        </div>
+
+
+                                        <div class="modal-buttons modal-buttons__sticky mt-150">
+                                            <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">수정하기</button>
+                                            <button type="button" class="ui-button ui-button__bg-blue">확인 완료</button>
+                                        </div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <!-- //보미쌤 정보보기 모달 -->
+                        <!-- //보미노트 모달 -->
+
+                        <!-- 기간 연장/중단 신청 모달 -->
+                        <div class="modal fade" id="dateExtStop" tabindex="-1" style="z-index: 1050;"
+                            aria-labelledby="dateExtStopLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                <div class="modal-content modal-content__dateExtStop">
+                                    <div class="modal-header modal-header__flex modal-header__align--center">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">기간 연장/중단 신청</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-core3">
+                                            
+                                            <div class="tab-wrap mt-90">
+                                                <div class="tab-wrap__inner">
+                                                    <ul class="tab-menu">
+                                                        <li class="tab-menu__li is-active"><a href="#tab-link1" class="tab-menu__link">기간 연장하기</a></li>
+                                                        <li class="tab-menu__li"><a href="#tab-link2" class="tab-menu__link">간병 중단하기</a></li>
+                                                    </ul>
+                                                    <div class="tab-content is-active"  id="tab-link1">
+                                                        111
+                                                    </div>
+                                                    <div class="tab-content"  id="tab-link2">
+                                                        222
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+
+
+                                        <div class="modal-buttons modal-buttons__sticky mt-150">
+                                            <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">수정하기</button>
+                                            <button type="button" class="ui-button ui-button__bg-blue">확인 완료</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //기간 연장/중단 신청 모달 -->
 
 
 

@@ -310,7 +310,7 @@
                                         <div class="modal-buttons modal-buttons__sticky mt-150">
                                             <button type="button" class="ui-button ui-button__border-blue"
                                                 data-dismiss="modal">취소</button>
-                                            <button type="button" class="ui-button ui-button__bg-blue">변경 완료</button>
+                                            <button type="button" class="ui-button ui-button__bg-blue" data-target="#modifyClear" data-toggle="modal">변경 완료</button>
                                         </div>
                                     </div>
 
@@ -358,7 +358,30 @@
                         </div>
                         <!-- //간병 시작 종료일 수정 모달 -->
 
-                        <!-- // 모달 -->
+                        <!-- 간병신청 완료 모달 -->
+                        <div class="modal fade" id="modifyClear" tabindex="-1" aria-labelledby="modifyClearLabel"
+                            aria-hidden="true" style="z-index: 1070;">
+                            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                <div class="modal-content modal-content__s modal-content__email">
+                                    <div class="modal-body">
+                                        
+                                        <div class="modal-core">
+                                            <div class="modal-text text-center">
+                                                변경하신 정보에 대한 <br>
+                                                간병 신청이 완료되었습니다.
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-buttons">
+                                            <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">확인</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- //간병신청 완료 모달 -->
 
                     </div>
                 </div>

@@ -274,69 +274,185 @@
 
                         <!-- 모달 -->
 
-                        <!-- 보미쌤 정보보기 모달 -->
-                        <div class="modal fade" id="vomiInfo" tabindex="-1" style="z-index: 1050;" aria-labelledby="vomiInfoLabel"
+                        <!-- 2022.12.16 : add : 신청 취소 모달 -->
+                        <div class="modal fade" id="matchingCancel" tabindex="-1" style="z-index: 1050;" aria-labelledby="matchingCancelLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                <div class="modal-content modal-content__vomiInfo">
-                                    <div class="modal-header">
-                                        <div class="modal-title modal-title__font-l text-left mb-0">보미쌤 정보보기</div>
+                                <div class="modal-content modal-content__matchingCancel">
+                                    <div class="modal-header modal-header__flex modal-header3">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">간병 신청 정보 확인</div>
                                     </div>
                                     <div class="modal-body">
-                                        보미쌤 정보보기
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //보미쌤 정보보기 모달 -->
-
-                        <!-- 간병 시작하기 모달 -->
-                        <div class="modal fade" id="startCare" tabindex="-1" aria-labelledby="startCareLabel"
-                            aria-hidden="true" style="z-index: 1060;">
-                            <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                <div class="modal-content modal-content__s modal-content__startCare">
-                                    <div class="modal-body modal-body__main">
-                                        <div class="modal-core">
-                                            <div class="modal-user"><em class="modal-user__name">이일화</em>님</div>
-                                            <div class="modal-text__small">
-                                                보미쌤과 앞으로 진행할 간병 업무에 대해서 <br>
-                                                협의가 잘 진행되었나요?
+                                        
+                                        <div class="modal-core3">
+                                            <div class="modal-title2 text-left mb-0 font-weight-bold mt-90">간병 신청에 대한 취소 규정 안내
                                             </div>
-                                            <div class="modal-text__small mt-80">
-                                                최상의 간병 서비스 제공으로 보답드리겠습니다.
+                                            <div class="bg-darkgray mt-70">
+                                                <ul class="ui-list-dashed">
+                                                    <li>간병 3일 전 : 없음</li>
+                                                    <li>간병 2일 전 : ￦ 10,000</li>
+                                                    <li>간병 1일전 : ￦ 20,000</li>
+                                                    <li>간병 당일 : ￦ 30,000</li>
+                                                </ul>
                                             </div>
-                                            <div class="modal-text__small mt-80">
-                                                간병 중 필요하신 부분이나 문의 사항이 있으시면 <br>
-                                                언제든지 고객센터로 연락 부탁드립니다.
+                                            <div class="normal-text mt-60">ㅇㅇㅇ님께서는 <br>
+                                                간병 시작일로부터 <span class="color-blue font-weight__m">0</span>일 전에 취소하시어 별도의 수수료가
+                                                부과될 수 있습니다.</div>
+                                            <div class="normal-text mt-60">
+                                                다만, 간병 취소의 사유가 환자의 상태 변화 <br>
+                                                (입원취소, 퇴원, 위독)로 인하여 보호자 회원님의 귀책
+                                                사유가 없다고 판단되는 경우에는 취소 수수료가 부과되지
+                                                않습니다.
                                             </div>
 
-                                            <div class="ui-checkbox__list mt-70">
-                                                <div class="ui-checkbox__inner">
-                                                    <div class="ui-checkbox-block">
-                                                        <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
-                                                        <label for="checkbox1" class="ui-label">
-                                                          <span class="ui-checkbox-object"></span>
-                                                          <span class="ui-label__text">간병서비스 시작에 동의합니다.</span>
-                                                        </label>
-                                                      </div>
+                                            <div class="mt-70 ui-form__cell">
+                                                <p class="ui-form__text">취소 사유</p>
+                                                <div class="ui-form">
+                                                    <select name="" id="" class="ui-select">
+                                                        <option value=""></option>
+                                                    </select>
                                                 </div>
                                             </div>
-
                                         </div>
-                                       
 
-                                        <div class="modal-buttons modal-buttons__sticky">
-                                            <button type="button" class="ui-button ui-button__border-blue"
-                                                data-dismiss="modal">돌아 가기</button>
-                                            <button type="button" class="ui-button ui-button__bg-blue">간병 시작</button>
+
+                                        <div class="modal-buttons modal-buttons__sticky mt-150">
+                                            <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">닫기</button>
+                                            <button type="button" class="ui-button ui-button__bg-blue">취소 요청</button>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                        <!-- //간변 시작하기 모달 -->
+                        <!--// 2022.12.16 : add : 신청 취소 모달 -->
+
+                        
+
+                        <!-- 간병 기간 변경하기 모달 -->
+                        <div class="modal fade" id="modifyDate" tabindex="-1" style="z-index: 1050;" aria-labelledby="modifyDateLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                <div class="modal-content modal-content__modifyDate">
+                                    <!-- 2022.12.09 : mod : 레이아웃 수정 -->
+                                    <!-- 2022.12.16 : mod : 모달 내용 전체 수정 -->
+                                    <div class="modal-header modal-header__flex modal-header__padding-s">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">간병 신청 정보 확인</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-core2">
+                                            <div class="modal-core2__title">간병 기본정보</div>
+                                            
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 형태</dt>
+                                                    <dd class="care-date__text">기간제/병원</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 장소</dt>
+                                                    <dd class="care-date__text">삼성서울병원</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 시작일</dt>
+                                                    <dd class="care-date__text">2022.11.01. 오전 10시</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">간병 종료일</dt>
+                                                    <dd class="care-date__text">2022.11.10. 오전 10시</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="modal-core2">
+                                            <div class="modal-core2__title">환자 정보</div>
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">환자 정보</dt>
+                                                    <dd class="care-date__text">홍길동 (남, 83세)</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">신장/몸무게</dt>
+                                                    <dd class="care-date__text">171 cm / 75kg</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">주보호자 정보</dt>
+                                                    <dd class="care-date__text">부모 / 010-1234-5678</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="modal-core2">
+                                            <div class="modal-core2__title">입원/진단 정보</div>
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">진료과(진단명)</dt>
+                                                    <dd class="care-date__text">심혈관내과</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">입원 병실</dt>
+                                                    <dd class="care-date__text">일반실 815호</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="modal-core2">
+                                            <div class="modal-core2__title">환자 일반 상태 정보</div>
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">입원 목적</dt>
+                                                    <dd class="care-date__text">치료/처치</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">의식 및 의사소통</dt>
+                                                    <dd class="care-date__text">해당 없음</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">격리감염질환</dt>
+                                                    <dd class="care-date__text">해당 없음</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">거동 상태</dt>
+                                                    <dd class="care-date__text">거동 불능</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">식사 상태</dt>
+                                                    <dd class="care-date__text">스스로 가능</dd>
+                                                </dl>
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">대소변 처리상태</dt>
+                                                    <dd class="care-date__text">기저귀</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="modal-core2">
+                                            <div class="modal-core2__title">환자 일반 상태 정보</div>
+                                            <div class="care-date__list-wrap">
+                                                <dl class="care-date__list">
+                                                    <dt class="care-date__title">환자 특이상태</dt>
+                                                    <dd class="care-date__text">야간 수면장애, 욕창</dd>
+                                                </dl>
+                                                <dl class="care-date__list care-date__list--col">
+                                                    <dt class="care-date__title">보호자 요청사항</dt>
+                                                    <dd class="care-date__text">
+                                                        <div class="ui-form">
+                                                            <textarea name="" id="" class="ui-textarea ui-textarea__height-230"></textarea>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                
+                                            </div>
+                                        </div>
+                                        <!--//2022.12.09 : mod : 레이아웃 수정 -->
+                                        <!--// 2022.12.16 : mod : 모달 내용 전체 수정 -->
+
+                                        <!-- 2022.12.16 : add : 클래스 mt-110 추가, 버튼 변경 -->
+                                        <div class="modal-buttons modal-buttons__sticky mt-110">
+                                            <button type="button" class="ui-button ui-button__border-blue" data-toggle="modal" data-target="#modifyDateCalendar">수정하기</button>
+                                            <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">확인 완료</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //간병 기간 변경하기 모달 -->
 
                         
 
