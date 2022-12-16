@@ -499,6 +499,16 @@
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
+.tab-menu__li.is-active {
+  position: relative;
+}
+.tab-menu__li.is-active::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .tab-menu__li.is-active .tab-menu__link {
   color: #3c50a2;
   background: #ffffff;
