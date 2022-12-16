@@ -285,6 +285,9 @@
 .care-date__title--width-418 {
   width: 41.8rem;
 }
+.care-date__text {
+  width: 50%;
+}
 .care-date__button {
   margin-left: auto;
   flex: none;
@@ -433,10 +436,33 @@
 .care-date__list--width-100 .care-date__text {
   line-height: 8.4rem;
 }
+.care-date__list--col {
+  flex-direction: column;
+}
+.care-date__list--col .care-date__title, .care-date__list--col .care-date__text {
+  width: 100%;
+}
+.care-date__list--col .care-date__text {
+  margin-top: 4rem;
+  padding-left: 4rem;
+}
 .care-date__title {
-  width: 40rem;
+  position: relative;
+  width: 50%;
+  padding-left: 4rem;
   color: #575c62;
   flex: none;
+}
+.care-date__title::before {
+  display: inline-block;
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 100%;
+  background: #575c62;
+  content: "";
 }
 .care-date__button {
   margin-left: auto;

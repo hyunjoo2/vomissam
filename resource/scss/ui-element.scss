@@ -333,7 +333,6 @@
         &__title, &__text{
             font-size: 5.4rem;
         }
-        
         &__title{
             width:50%;
             color:#575c62;
@@ -343,6 +342,9 @@
                     width: 41.8rem;
                 }
             }
+        }
+        &__text{
+            width:50%;
         }
         &__button{
             margin-left: auto;
@@ -528,11 +530,35 @@
                     }
                 }
             }
+            &--col{
+                flex-direction: column;
+                .care-date__title, .care-date__text{
+                    width:100%;
+                }
+                .care-date__text{
+                    margin-top: 4rem;
+                    padding-left:4rem;
+                }
+            }
         }
         &__title{
-            width: 40rem;
+            position:relative;
+            // width: 40rem;
+            width: 50%;
+            padding-left:4rem;
             color:#575c62;
             flex:none;
+            &::before{
+                display: inline-block;
+                position: absolute;
+                top: 2rem;
+                left: 1rem;
+                width:.8rem;
+                height:.8rem;
+                border-radius: 100%;
+                background: #575c62;
+                content:""
+            }
         }
         &__button{
             margin-left: auto;

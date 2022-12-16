@@ -60,6 +60,10 @@
 .modal-content__matchingCancel .ui-list-dashed li + li {
   margin-top: 7rem;
 }
+.modal-content__modifyDate .modal-header {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
 .modal-content__s {
   width: calc(100% - 32rem);
 }
@@ -67,10 +71,10 @@
   padding: 12.5rem 5rem;
 }
 .modal-core2 {
-  padding: 12rem 6rem;
+  padding: 4rem 6rem;
 }
 .modal-core2:first-child {
-  margin-top: -2rem;
+  margin-top: 5rem;
 }
 .modal-core2 .modal-core2__title {
   position: relative;
@@ -168,6 +172,7 @@
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
+  font-weight: 400;
 }
 .modal-buttons__sticky .ui-button + .ui-button {
   margin-left: 0;

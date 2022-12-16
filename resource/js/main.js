@@ -54,14 +54,6 @@ function carerList() {
 }
 
 
-$("#mapSlider").slider({
-  orientation: "vertical",
-    range: "max",
-    min: 0,
-    max: 11,
-    value: 7        
-  });
-
 
 
 //case2 상세보기 클릭시

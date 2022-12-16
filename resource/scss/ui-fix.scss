@@ -367,6 +367,9 @@ $color-blue : #3c50a2;
     &-4{
         flex:1 1 40%;
     }
+    &-none{
+        flex: none;
+    }
 }
 
 .border{

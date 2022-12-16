@@ -82,6 +82,12 @@
                 }
             }
         }
+        &__modifyDate{
+            .modal-header{
+                padding-left:8rem;
+                padding-right:8rem;
+            }
+        }
         // &-startCare{
         //     .modal-core{
         //         padding-top: 11rem;
@@ -97,9 +103,9 @@
     &-core {
         padding: 12.5rem 5rem;
         &2 {
-            padding: 12rem 6rem;
+            padding: 4rem 6rem;
             &:first-child{
-                margin-top: -2rem;
+                margin-top: 5rem;
             }
             .modal-core2__title {
                 position: relative;
@@ -245,6 +251,7 @@
                     left: 0;
                     right: 0;
                 }
+                font-weight: 400;
                 &+.ui-button{
                     margin-left: 0;
                     border-bottom-left-radius: 0rem;

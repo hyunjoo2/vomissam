@@ -319,6 +319,9 @@
 .flex-4 {
   flex: 1 1 40%;
 }
+.flex-none {
+  flex: none;
+}
 
 .border-top--gray {
   border-top: 1px solid #dfe0e2;

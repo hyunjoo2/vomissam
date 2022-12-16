@@ -134,7 +134,7 @@ function datepicker($root) {
     });
     $root.find('.js-datepicker').datetimepicker({
         locale: 'ko',
-        format: 'YYYY-MM-DD',
+        format: 'YYYY.MM.DD.',
         dayViewHeaderFormat: 'YYYY년 MMMM'
     });
     $root.find('.js-monthpicker').datetimepicker({

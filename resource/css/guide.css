@@ -2042,14 +2042,14 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-.care-date__list:nth-child(n+3) {
-  margin-top: 9rem;
+.care-date__list + .care-date__list {
+  margin-top: 5rem;
 }
 .care-date__title, .care-date__text {
   font-size: 5.4rem;
 }
 .care-date__title {
-  width: 40rem;
+  width: 50%;
   color: #575c62;
   flex: none;
 }
@@ -2190,9 +2190,9 @@
 .care-date__list {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 }
 .care-date__list-wrap {
   display: flex;
@@ -2203,13 +2203,6 @@
 }
 .care-date__list--width-100 .care-date__text {
   line-height: 8.4rem;
-}
-.care-date__title {
-  font-size: 4.6rem;
-}
-.care-date__text {
-  margin-top: 5rem;
-  font-size: 5rem;
 }
 .care-date__title {
   width: 40rem;
@@ -2297,18 +2290,8 @@
 .modal-core2 .modal-core2__title {
   position: relative;
   padding-bottom: 6rem;
-  margin-bottom: 9rem;
   font-size: 6rem;
   font-weight: 600;
-}
-.modal-core2 .modal-core2__title::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.4rem;
-  background: #000000;
-  content: "";
 }
 .modal-core2 .modal-core2__title--flex {
   display: flex;

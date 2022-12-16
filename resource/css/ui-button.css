@@ -65,6 +65,9 @@
 .ui-buttons .ui-form__cell__text {
   margin-right: 7rem;
 }
+.ui-buttons__center {
+  justify-content: center;
+}
 .ui-button__page--back {
   width: 12.9rem;
   height: 100%;

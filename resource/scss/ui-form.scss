@@ -47,6 +47,18 @@
             .ui-form{
                 flex: 1;
             }
+            &--col{
+                flex-direction: column;
+                align-items: flex-start;
+                .ui-form__text{
+                    margin-bottom: 5rem;
+                    margin-right: 0;
+                    font-size: 5rem;
+                }
+                .ui-form__cell{
+                    font-size: 5rem;
+                }
+            }
         }
         &__flex{
             &--row{
@@ -57,6 +69,11 @@
                 .ui-form__cell{
                     &+.ui-form__cell{
                         margin-left: 4rem;
+                    }
+                    &--margin{
+                        &-l{
+                            margin-left: 7rem !important;
+                        }
                     }
                 }
                 .ui-form__cell--s{
@@ -71,8 +88,8 @@
             }
         }
         &__text{
+            margin-right: 10rem;
             font-size: 5.5rem;
-            
             &-cancel{
                 margin-right: 16.5rem;
             }
@@ -146,6 +163,7 @@
         background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
         background-size: 3.9rem 2.6rem;
         border-radius: 1.5rem;
+        text-indent: 0;
         &__width{
             &-200{
                 width:20rem;
@@ -160,6 +178,9 @@
         resize: none;
         appearance: none;
         padding:4.5rem;
+        &__height-230{
+            height: 23rem;
+        }
         &__height-265{
             height: 26.5rem;
         }

@@ -7,18 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>보미쌤</title>
 
+    <!-- 공통 css -->
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/common.css">
-
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <!-- //공통 css -->
 
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/css/main.css">
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
@@ -171,37 +177,28 @@
 
                         <!-- 모달 -->
 
-                        <!-- 매칭 취소하기 모달 -->
+                        <!-- 신청 취소 모달 -->
                         <div class="modal fade" id="matchingCancel" tabindex="-1" aria-labelledby="matchingCancelLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
                                 <div class="modal-content modal-content__matchingCancel">
+                                    <!-- 2022.12.16 : mod : 내용 전체 수정 -->
                                     <div class="modal-header">
-                                        <div class="modal-title2 text-left mb-0 font-weight-bold">간병 신청에 대한 취소 규정 안내
-                                        </div>
+                                        <div class="modal-title2  modal-title__font-l text-left mb-0 font-weight-bold">간병 신청 취소하기</div>
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-core3">
-                                            <div class="bg-darkgray mt-70">
-                                                <ul class="ui-list-dashed">
-                                                    <li>간병 3일 전 : 없음</li>
-                                                    <li>간병 2일 전 : </li>
-                                                    <li>간병 1일전 : </li>
-                                                    <li>간병 당일 :</li>
-                                                </ul>
-                                            </div>
-                                            <div class="normal-text mt-60">간병 취소의 사유가 환자의 상태 변화(위독, 퇴원, 기타)로 
-                                                인하여 보호자 회원님의 귀책 사유가 없다고 판단되는
-                                                경우에는 취소 수수료가 보과되지 않습니다.
-                                                </div>
+                                            <div class="normal-text mt-80">김보미 님께서 신청하신 간병업무에 적합한 보미쌤을
+                                                추천드리지 못하여 죄송합니다.</div>
+                                            <div class="normal-text mt-80">
+                                                간병 기간이나 간병 금액을수정하시어 다시 신청하실 수
+                                                있습니다.</div>
 
-                                            <div class="mt-70 ui-form__cell">
-                                                <p class="ui-form__text ui-form__text-cancel">취소 사유</p>
-                                                <div class="ui-form">
-                                                    <select name="" id="" class="ui-select">
-                                                        <option value=""></option>
-                                                    </select>
-                                                </div>
+                                            <div class="ui-buttons ui-buttons__center mt-60">
+                                                <button type="button" class="ui-button ui-button__width-m ui-button__height-l ui-button__border-blue">다시 신청하기</button>
+                                            </div>
+                                            <div class="normal-text mt-80">
+                                                간병 신청을 취소하시겠습니까?
                                             </div>
                                         </div>
 
@@ -209,76 +206,108 @@
                                         <div class="modal-buttons modal-buttons__sticky mt-150">
                                             <button type="button" class="ui-button ui-button__border-blue"
                                                 data-dismiss="modal">닫기</button>
-                                            <button type="button" class="ui-button ui-button__bg-blue">취소 요청</button>
+                                            <button type="button" class="ui-button ui-button__bg-blue">취소 하기</button>
                                         </div>
                                     </div>
-
+                                    <!--// 2022.12.16 : mod : 내용 전체 수정 -->
                                 </div>
                             </div>
                         </div>
-                        <!-- //매칭 취소하기 모달 -->
+                        <!-- //신청 취소 모달 -->
 
-                        <!-- 간병 기간 변경하기 모달 -->
+                        <!-- 다시 신청하기 모달 -->
                         <div class="modal fade" id="modifyDate" tabindex="-1" style="z-index: 1050;" aria-labelledby="modifyDateLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
                                 <div class="modal-content modal-content__modifyDate">
                                     <!-- 2022.12.09 : mod : 레이아웃 수정 -->
-                                    <div class="modal-header modal-header__flex">
-                                        <div class="modal-title modal-title__font-l text-left mb-0">간병 기간 변경하기</div>
-                                        <a href="javascript:void(0)" class="ui-button-modify ml-auto" data-toggle="modal" data-target="#modifyDateCalendar">수정하기</a>
+                                    <!-- 2022.12.16 : mod : 내용 전체 수정 -->
+                                    <div class="modal-header modal-header__flex modal-header3">
+                                        <div class="modal-title modal-title__font-l text-left mb-0">다시 신청하기</div>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="modal-core2">
-                                            <div class="modal-core2__title">변경 전 간병 기간</div>
-                                            
-                                            <div class="care-date__list-wrap">
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">총 간병 기간</dt>
-                                                    <dd class="care-date__text">15일 6시간</dd>
-                                                </dl>
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">간병 시작일</dt>
-                                                    <dd class="care-date__text">2022.09.05 12시</dd>
-                                                </dl>
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">간병 종료일</dt>
-                                                    <dd class="care-date__text">2022.09.19 16시</dd>
-                                                </dl>
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">간병 비용</dt>
-                                                    <dd class="care-date__text">￦ 1,312,000</dd>
-                                                </dl>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <div class="line-gray"></div>
-                                        <div class="modal-core2">
-                                            <div class="modal-core2__title">변경 후 간병 기간</div>
-                                            <div class="care-date__list-wrap">
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">총 간병 기간</dt>
-                                                    <dd class="care-date__text">15일 6시간</dd>
-                                                </dl>
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">간병 시작일</dt>
-                                                    <dd class="care-date__text">2022.09.05 12시</dd>
-                                                </dl>
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">간병 종료일</dt>
-                                                    <dd class="care-date__text">2022.09.19 16시</dd>
-                                                </dl>
-                                                <dl class="care-date__list">
-                                                    <dt class="care-date__title">간병 비용</dt>
-                                                    <dd class="care-date__text">￦ 1,312,000</dd>
-                                                </dl>
-                                            </div>
-                                            
-                                        </div>
-                                        <!-- //2022.12.09 : mod : 레이아웃 수정 -->
+                                        <div class="modal-core3">
 
-                                        <div class="modal-buttons modal-buttons__sticky">
+                                            <div class="normal-text mt-60">변경하시고자 항목을 선택하신 후 정보를 입력하세요. <br>
+                                            (간병 기간과 금액을 동시에 변경하실 경우 모두 선택하여
+                                            입력하세요.)</div>
+
+                                            <div class="normal-text mt-80">
+                                                <div class="ui-checkbox__list">
+                                                    <div class="ui-checkbox__inner">
+                                                        <div class="ui-checkbox-block">
+                                                            <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
+                                                            <label for="checkbox1" class="ui-label">
+                                                              <span class="ui-checkbox-object"></span>
+                                                              <span class="ui-label__text">간병기간을 변경하여 신청하기</span>
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-70 ui-form__cell ui-form__cell--col">
+                                                <p class="ui-form__text">변경 전</p>
+                                                <div class="ui-form w-100">
+                                                    <input type="text" class="ui-input ui-input__full" value="2022.12.10. 오후12시 ~ 2022.12.10. 오후12시">
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-60 ui-form__cell ui-form__cell--col">
+                                                <p class="ui-form__text">변경 후</p>
+
+                                                <div class="ui-form d-flex align-center js-datepicker-range w-100">
+                                                    <div class="form-flex-cell w-100">
+                                                        <div class="ui-input-block ui-input-block--date input-width-date">
+                                                        <input type="text" class="ui-input js-datepicker" title="시작 날짜" placeholder="날짜를 입력하세요." value="" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+
+                                            </div>
+
+                                            <div class="normal-text mt-100">
+                                                <div class="ui-checkbox__list">
+                                                    <div class="ui-checkbox__inner">
+                                                        <div class="ui-checkbox-block">
+                                                            <input type="checkbox" class="ui-checkbox" id="checkbox1">
+                                                            <label for="checkbox1" class="ui-label">
+                                                              <span class="ui-checkbox-object"></span>
+                                                              <span class="ui-label__text">간병기간을 변경하여 신청하기</span>
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="normal-text mt-70">
+                                                <p>변경 전 : 1일 150,000원 (총액 1,500,000원)</p>
+                                                <div class="mt-70 ui-form__cell ui-form__cell--col">
+                                                    <p class="ui-form__text">변경 후</p>
+                                                    <div class="ui-form w-100 ui-form__flex--row">
+                                                        <div class="ui-form__cell">
+                                                            1일
+                                                        </div>
+                                                        <div class="ui-form__cell ui-form__cell--margin-l">
+                                                            <input type="text" class="ui-input ui-input__full" value="" placeholder="금액입력">
+                                                            <span class="ml-20">원</span>
+                                                        </div>
+                                                        <div class="ui-form__cell flex-none ui-form__cell--margin-l">
+                                                            (총액 1,500,000원)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                       
+                                        
+                                        <!--//2022.12.09 : mod : 레이아웃 수정 -->
+                                        <!--// 2022.12.16 : mod : 내용 전체 수정 -->
+
+                                        <div class="modal-buttons modal-buttons__sticky mt-150">
                                             <button type="button" class="ui-button ui-button__border-blue"
                                                 data-dismiss="modal">취소</button>
                                             <button type="button" class="ui-button ui-button__bg-blue">변경 완료</button>
@@ -288,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- //간병 기간 변경하기 모달 -->
+                        <!-- //다시 신청하기 모달 -->
 
                         <!-- 간병 시작 종료일 수정 모달 -->
                         <div class="modal fade" id="modifyDateCalendar" tabindex="-1" aria-labelledby="modifyDateCalendarLabel"
