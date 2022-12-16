@@ -53,6 +53,9 @@
         &-auto{
             margin-right:auto;
         }
+        &-100{
+            margin-right: 10rem;
+        }
         &-120{
             margin-right: 12rem;
         }
@@ -268,6 +271,13 @@
             padding-bottom:12rem;
         }
     }
+    &x{
+        &-80{
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+        
+    }
 }
 
 //font
@@ -318,6 +328,12 @@
         }
     }
     &-weight{
+        &__200{
+            font-weight: 200 !important;
+        }
+        &__l{
+            font-weight: 400 !important;
+        }
         &__r{
             font-weight: 500;
         }

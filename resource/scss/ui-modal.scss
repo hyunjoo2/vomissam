@@ -121,6 +121,13 @@
                 border-radius: 2rem;
             }
         }
+        &__dateExtStop{
+            .img-wrap{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
     &-core {

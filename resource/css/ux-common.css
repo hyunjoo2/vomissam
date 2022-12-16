@@ -404,6 +404,9 @@
 .mr-auto {
   margin-right: auto;
 }
+.mr-100 {
+  margin-right: 10rem;
+}
 .mr-120 {
   margin-right: 12rem;
 }
@@ -600,6 +603,10 @@
 .pb-120 {
   padding-bottom: 12rem;
 }
+.px-80 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
 
 .txt-depth--01 {
   font-size: 24px;
@@ -640,6 +647,12 @@
 }
 .font-size__l {
   font-size: 6.5rem;
+}
+.font-weight__200 {
+  font-weight: 200 !important;
+}
+.font-weight__l {
+  font-weight: 400 !important;
 }
 .font-weight__r {
   font-weight: 500;
@@ -2285,18 +2298,17 @@
 }
 .tab-content.is-active {
   display: block;
+  margin-top: 6rem;
 }
 .tab-menu {
   display: flex;
-}
-.tab-menu__ul {
-  border: 0.3rem solid #d5d9df;
-  box-sizing: border-box;
 }
 .tab-menu__li {
   flex: 1;
   height: 15.4rem;
   overflow: hidden;
+  border: 0.3rem solid #d5d9df;
+  box-sizing: border-box;
 }
 .tab-menu__li:first-child {
   border-top-left-radius: 1.5rem;
@@ -2306,9 +2318,16 @@
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
+.tab-menu__li.is-active {
+  position: relative;
+  border: 0.3rem solid #4b62c3;
+}
 .tab-menu__li.is-active .tab-menu__link {
   color: #3c50a2;
   background: #ffffff;
+}
+.tab-menu__li + .tab-menu__li {
+  margin-left: -0.3rem;
 }
 .tab-menu__link {
   display: inline-block;
@@ -2407,6 +2426,9 @@
 .modal-content__vomiNote .bg-darkgray {
   padding: 6rem;
   border-radius: 2rem;
+}
+.modal-content__dateExtStop .img-wrap img {
+  max-width: 100%;
 }
 .modal-core {
   padding: 12.5rem 5rem;

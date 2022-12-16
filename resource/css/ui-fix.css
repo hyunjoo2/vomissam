@@ -42,6 +42,9 @@
 .mr-auto {
   margin-right: auto;
 }
+.mr-100 {
+  margin-right: 10rem;
+}
 .mr-120 {
   margin-right: 12rem;
 }
@@ -238,6 +241,10 @@
 .pb-120 {
   padding-bottom: 12rem;
 }
+.px-80 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
 
 .txt-depth--01 {
   font-size: 24px;
@@ -278,6 +285,12 @@
 }
 .font-size__l {
   font-size: 6.5rem;
+}
+.font-weight__200 {
+  font-weight: 200 !important;
+}
+.font-weight__l {
+  font-weight: 400 !important;
 }
 .font-weight__r {
   font-weight: 500;

@@ -337,19 +337,93 @@
                                         <div class="modal-title modal-title__font-l text-left mb-0">기간 연장/중단 신청</div>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="modal-core3">
+                                        <div class="">
                                             
                                             <div class="tab-wrap mt-90">
                                                 <div class="tab-wrap__inner">
-                                                    <ul class="tab-menu">
+                                                    <ul class="tab-menu px-80">
                                                         <li class="tab-menu__li is-active"><a href="#tab-link1" class="tab-menu__link">기간 연장하기</a></li>
                                                         <li class="tab-menu__li"><a href="#tab-link2" class="tab-menu__link">간병 중단하기</a></li>
                                                     </ul>
                                                     <div class="tab-content is-active"  id="tab-link1">
-                                                        111
+                                                        <div class="normal-text px-80">
+                                                            간병 기간을 연장 시 담당 보미쌤을 변경하실 수 없으며,  <br> 
+                                                            반드시 연장 관련 사전 협의를 완료하셔야  합니다.
+                                                        </div>
+                                                        
+                                                        <div class="normal-text mt-90 px-80">
+                                                            사전에 협의를 완료하셨나요?
+                                                        </div>
+                                                        <div class="mt-100 px-80">
+                                                            <div class="ui-checkbox__list">
+                                                                <div class="ui-checkbox__inner">
+                                                                    <div class="ui-checkbox-block">
+                                                                        <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
+                                                                        <label for="checkbox1" class="ui-label">
+                                                                          <span class="ui-checkbox-object"></span>
+                                                                          <span class="ui-label__text">예.  완료 했습니다. </span>
+                                                                        </label>
+                                                                      </div>
+                                                                </div>
+                                                              </div>
+                                                        </div>
+                                                        <div class="mt-70 px-80">
+                                                            <div class="ui-form ui-form__button">
+                                                                <input type="text" class="ui-input" value="" placeholder="연장 후 종료일 입력해 주세요.">
+                                                                <button type="submit" class="ui-button ui-button__certi ui-button__font-s font-weight__200" data-toggle="modal" data-target="#modalCerti">연장신청하기</button>
+                                                              </div>
+                                                        </div>
+
+                                                        <div class="mt-100 px-80">
+                                                            <div class="ui-checkbox__list">
+                                                                <div class="ui-checkbox__inner">
+                                                                    <div class="ui-checkbox-block">
+                                                                        <input type="checkbox" class="ui-checkbox" id="checkbox2">
+                                                                        <label for="checkbox2" class="ui-label">
+                                                                          <span class="ui-checkbox-object"></span>
+                                                                          <span class="ui-label__text">아니요.  협의 전입니다. </span>
+                                                                        </label>
+                                                                      </div>
+                                                                </div>
+                                                              </div>
+                                                        </div>
+
+                                                        <div class="modal-buttons modal-buttons__sticky mt-150">
+                                                            <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">나중에 하기</button>
+                                                            <button type="button" class="ui-button ui-button__bg-blue">보미쌤 전화하기</button>
+                                                        </div>
+
                                                     </div>
                                                     <div class="tab-content"  id="tab-link2">
-                                                        222
+                                                        <div class="ui-form__cell ui-form__cell--col px-80 mt-100">
+                                                            <p class="ui-form__text">처리 절차 안내</p>
+                                                            <div class="img-wrap">
+                                                                <img src="../resource/image/sub/img-dateProcess.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                        <div class="normal-text mt-90 px-80">
+                                                            간병을 중단하시려면, 중단 사유를 선택하세요. 
+                                                        </div>
+                                                       
+                                                        <div class="mt-70 px-80">
+                                                            <div class="ui-form ui-form__flex--row">
+                                                                <div class="ui-form__cell mr-100">중단 사유</div>
+                                                                <div class="ui-form__cell flex ml-0">
+                                                                    <div class="ui-form">
+                                                                        <select name="" id="" class="ui-select">
+                                                                            <option value=""></option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-buttons modal-buttons__sticky mt-150">
+                                                            <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">닫기</button>
+                                                            <button type="button" class="ui-button ui-button__bg-blue">중단 신청하기</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -357,10 +431,7 @@
                                         </div>
 
 
-                                        <div class="modal-buttons modal-buttons__sticky mt-150">
-                                            <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">수정하기</button>
-                                            <button type="button" class="ui-button ui-button__bg-blue">확인 완료</button>
-                                        </div>
+                                       
                                     </div>
 
                                 </div>

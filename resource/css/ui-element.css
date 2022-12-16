@@ -478,18 +478,17 @@
 }
 .tab-content.is-active {
   display: block;
+  margin-top: 6rem;
 }
 .tab-menu {
   display: flex;
-}
-.tab-menu__ul {
-  border: 0.3rem solid #d5d9df;
-  box-sizing: border-box;
 }
 .tab-menu__li {
   flex: 1;
   height: 15.4rem;
   overflow: hidden;
+  border: 0.3rem solid #d5d9df;
+  box-sizing: border-box;
 }
 .tab-menu__li:first-child {
   border-top-left-radius: 1.5rem;
@@ -501,17 +500,14 @@
 }
 .tab-menu__li.is-active {
   position: relative;
-}
-.tab-menu__li.is-active::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  border: 0.3rem solid #4b62c3;
 }
 .tab-menu__li.is-active .tab-menu__link {
   color: #3c50a2;
   background: #ffffff;
+}
+.tab-menu__li + .tab-menu__li {
+  margin-left: -0.3rem;
 }
 .tab-menu__link {
   display: inline-block;
