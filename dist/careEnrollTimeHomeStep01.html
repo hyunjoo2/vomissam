@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/common.css">
-
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
-
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <!-- //공통 css -->
 
@@ -26,7 +25,10 @@
     
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
@@ -179,7 +181,11 @@
                                                             <div class="modal-core3">
                                                                 <div class="ui-calendar">
                                                                     <div class="ui-calendar__inner">
-                                                                        <div style="display:flex; align-items:center; justify-content:center; width: 100%; height:117rem; background:#4b62c3; color:#ffffff; font-size:6rem;">달력 영역</div>
+                                                                        <!-- <div style="display:flex; align-items:center; justify-content:center; width: 100%; height:117rem; background:#4b62c3; color:#ffffff; font-size:6rem;">달력 영역</div> -->
+
+                                                                        <!-- 2022.12.19 : add : 달력 추가 -->
+                                                                        <input type='text' class="form-control hide ui-input__datepicker" id="" name=""  />
+
                                                                     </div>
                                                                 </div>
     
@@ -285,6 +291,13 @@
 
 </body>
 <script>
-   
+   /* 2022.12.19 : 달력 스크립트 추가 */ 
+   $('.ui-input__datepicker').datetimepicker({
+        locale: 'ko',
+        inline: true,
+        sideBySide: true,
+        keepOpen: true,
+        format: 'YYYY.MM.DD.'
+    });
 </script>
 </html>

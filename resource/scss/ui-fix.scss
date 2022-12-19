@@ -404,6 +404,10 @@ $color-blue : #3c50a2;
     }
 }
 
+.hide{
+    display: none;
+}
+
 // responsive
 @include media-breakpoint-down(n-ml){ //1400
     //margin

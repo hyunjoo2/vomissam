@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,9 @@
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/common.css">
-
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
-
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <!-- //공통 css -->
 
@@ -22,19 +22,23 @@
     <!-- //개별 페이지 css -->
 
 
-    
-    
+
+
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
     <script type="text/javascript" src="../resource/js/sub.js"></script>
-    
-    
-    
+
+
+
 </head>
+
 <body>
     <div class="wrap">
         <!-- skipNavigation -->
@@ -70,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </header>
         <!-- //[include] header -->
         <!-- //header -->
@@ -86,8 +90,10 @@
                                 <div class="enroll-box__inner">
                                     <div class="enroll-title">간병 형태</div>
                                     <div class="ui-buttons">
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-calendar ui-button__font-xs ui-button__check is-active">기간제</button>
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-clock ui-button__font-xs ui-button__check">시간제</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-calendar ui-button__font-xs ui-button__check is-active">기간제</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-clock ui-button__font-xs ui-button__check">시간제</button>
                                     </div>
                                 </div>
                             </div>
@@ -95,8 +101,10 @@
                                 <div class="enroll-box__inner">
                                     <div class="enroll-title">간병 장소</div>
                                     <div class="ui-buttons">
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-hospital ui-button__font-xs ui-button__check is-active">병원</button>
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-home ui-button__font-xs ui-button__check">자택</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-hospital ui-button__font-xs ui-button__check is-active">병원</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-home ui-button__font-xs ui-button__check">자택</button>
                                     </div>
                                 </div>
                             </div>
@@ -106,14 +114,17 @@
                                     <!-- 2022.12.09 : mod : 서비스 안내보기 추가로 인한 레이아웃 수정 -->
                                     <div class="enroll-title__wrap enroll-title__wrap--flex">
                                         <div class="enroll-title">보미쌤 서비스 선택</div>
-                                        <a href="javascript:void(0)" class="ui-button-modify ml-auto" >서비스 안내보기</a>
+                                        <a href="javascript:void(0)" class="ui-button-modify ml-auto">서비스 안내보기</a>
                                     </div>
                                     <!--// 2022.12.09 : mod : 서비스 안내보기 추가로 인한 레이아웃 수정 -->
-                                    
+
                                     <div class="ui-buttons">
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">프리미엄</button>
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">일반</button>
-                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">익스프레스</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">프리미엄</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">일반</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check">익스프레스</button>
                                     </div>
                                 </div>
                             </div>
@@ -126,73 +137,83 @@
                                     <div class="enroll-box__sub">
                                         <div class="enroll-title__sub">진료과 (선택)</div>
                                         <div class="ui-buttons ui-buttons__thirds">
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check" data-toggle="modal" data-target="#hosDep">선호지역1</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check" data-toggle="modal" data-target="#hosDep">선호지역2</button>
-                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check" data-toggle="modal" data-target="#hosDep">선호지역3</button>
+                                            <button type="button"
+                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check"
+                                                data-toggle="modal" data-target="#hosDep">선호지역1</button>
+                                            <button type="button"
+                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check"
+                                                data-toggle="modal" data-target="#hosDep">선호지역2</button>
+                                            <button type="button"
+                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check"
+                                                data-toggle="modal" data-target="#hosDep">선호지역3</button>
                                         </div>
                                     </div>
 
 
                                     <!-- 모달 -->
-                                    <div class="modal fade" id="hosDep" tabindex="-1" aria-labelledby="modalCertiLabel" aria-hidden="true">
+                                    <div class="modal fade" id="hosDep" tabindex="-1" aria-labelledby="modalCertiLabel"
+                                        aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                          <div class="modal-content modal-content__s modal-content__email">
+                                            <div class="modal-content modal-content__s modal-content__email">
 
-                                            <div class="modal-header modal-header__flex">
-                                                <div class="modal-title modal-title__font-l text-left mb-0">지역 선택하기 <span>(최대 3개까지 선택 가능)</span></div>
-                                            </div>
+                                                <div class="modal-header modal-header__flex">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">지역 선택하기
+                                                        <span>(최대 3개까지 선택 가능)</span></div>
+                                                </div>
 
-                                            <div class="modal-body">
-                                                <div class="modal-core2">
-                                                    <div class="ui-buttons ui-buttons__fourth">
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">서울</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">인천</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">수원</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">대전</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">광주</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">대구</button>
-                                                        <button type="button"
-                                                        class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">부산</button>
-                                                        <button type="button"
-                                                        class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">경기</button>
+                                                <div class="modal-body">
+                                                    <div class="modal-core2">
+                                                        <div class="ui-buttons ui-buttons__fourth">
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">서울</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">인천</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">수원</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">대전</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">광주</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">대구</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">부산</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">경기</button>
 
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">강원</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">충북</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">충남</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">경북</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">경남</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">전북</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">전남</button>
+                                                            <button type="button"
+                                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">제주</button>
+
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="modal-buttons modal-buttons__sticky">
+                                                        <button type="button" class="ui-button ui-button__border-blue"
+                                                            data-dismiss="modal">닫기</button>
                                                         <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">강원</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">충북</button>
-                                                        <button type="button"
-                                                        class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">충남</button>
-                                                        <button type="button"
-                                                        class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">경북</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">경남</button>
-                                                        <button type="button"
-                                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">전북</button>
-                                                        <button type="button"
-                                                        class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">전남</button>
-                                                        <button type="button"
-                                                        class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi text-center">제주</button>
-                                                            
+                                                            class="ui-button ui-button__bg-blue">확인</button>
                                                     </div>
                                                 </div>
-                                
-                                                
-                                
-                                              <div class="modal-buttons modal-buttons__sticky">
-                                                <button type="button" class="ui-button ui-button__border-blue" data-dismiss="modal">닫기</button>
-                                                <button type="button" class="ui-button ui-button__bg-blue">확인</button>
-                                              </div>
+
                                             </div>
-                                
-                                          </div>
                                         </div>
-                                      </div>
+                                    </div>
                                     <!-- //모달 -->
 
                                     <!--// 2022.12.14 : add : 진료과 추가 -->
@@ -209,18 +230,25 @@
 
                                     <div class="ui-form ui-form__button ui-form__flex--row mt-80">
                                         <input type="text" class="ui-input" value="" placeholder="병원이름을 입력하세요">
-                                        <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs">검색하기</button>
+                                        <button type="submit"
+                                            class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs">검색하기</button>
                                     </div>
-    
+
                                     <div class="hospital-list mt-60">
                                         <div class="hospital-list__inner">
                                             <ul class="hospital-list__list">
-                                                <li class="hospital-list__item"><span class="hospital-list__text">신촌세브란스병원(서울 마포구)</span> <button type="button" class="ui-button__badge">위치보기</button></li>
-                                                <li class="hospital-list__item"><span class="hospital-list__text">삼성서울병원(서울 강남구)</span><button type="button" class="ui-button__badge">위치보기</button></li>
-                                                <li class="hospital-list__item"><span class="hospital-list__text">서울성모병원(서울 서초구)</span><button type="button" class="ui-button__badge">위치보기</button></li>
+                                                <li class="hospital-list__item"><span
+                                                        class="hospital-list__text">신촌세브란스병원(서울 마포구)</span> <button
+                                                        type="button" class="ui-button__badge">위치보기</button></li>
+                                                <li class="hospital-list__item"><span
+                                                        class="hospital-list__text">삼성서울병원(서울 강남구)</span><button
+                                                        type="button" class="ui-button__badge">위치보기</button></li>
+                                                <li class="hospital-list__item"><span
+                                                        class="hospital-list__text">서울성모병원(서울 서초구)</span><button
+                                                        type="button" class="ui-button__badge">위치보기</button></li>
                                             </ul>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="enroll-box">
@@ -229,7 +257,8 @@
                                     <div class="care-period">
                                         <div class="care-period__inner">
                                             <!-- 2022.12.14 : mod : 태그 변경 -->
-                                            <button type="button" class="care-period__text" data-toggle="modal" data-target="#careDate">
+                                            <button type="button" class="care-period__text" data-toggle="modal"
+                                                data-target="#careDate">
                                                 <span class="care-period__text--inner">
                                                     간병 기간을 입력하시려면 클릭하세요
                                                 </span>
@@ -239,7 +268,8 @@
                                             <div class="care-period__text is-inputed mt-50">
                                                 <div class="care-period__text--inner">
                                                     <dl class="care-period__dl">
-                                                        <dd class="care-period__dd">2022/10/05/ 12:00 ~ 2022/10/14일 12:00</dd>
+                                                        <dd class="care-period__dd">2022/10/05/ 12:00 ~ 2022/10/14일
+                                                            12:00</dd>
                                                     </dl>
                                                     <dl class="care-period__dl">
                                                         <dd class="care-period__dd w-100 text-center">( 총 10일 0시간 )</dd>
@@ -249,43 +279,53 @@
 
                                             <!-- 2022.12.14 : add : 모달 추가 -->
                                             <!-- 간병 기간 선택 모달 -->
-                                            <div class="modal fade" id="careDate" tabindex="-1" aria-labelledby="careDateLabel"
-                                            aria-hidden="true" style="z-index: 1060;">
-                                            <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                                <div class="modal-content modal-content__modifyDateCalendar">
-                                                    <div class="modal-header">
-                                                        <div class="modal-title text-left mb-0">시작일과 시작 시간을 선택하세요.</div>
-                                                        <!-- 종료일 선택시 텍스트 -->
-                                                        <!-- <div class="modal-title2 text-left mb-0">종료일과 종료 시간을 선택하세요.</div> -->
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="modal-core3">
-                                                            <div class="ui-calendar">
-                                                                <div class="ui-calendar__inner">
-                                                                    <div style="display:flex; align-items:center; justify-content:center; width: 100%; height:117rem; background:#4b62c3; color:#ffffff; font-size:6rem;">달력 영역</div>
+                                            <div class="modal fade" id="careDate" tabindex="-1"
+                                                aria-labelledby="careDateLabel" aria-hidden="true"
+                                                style="z-index: 1060;">
+                                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                                    <div class="modal-content modal-content__modifyDateCalendar">
+                                                        <div class="modal-header">
+                                                            <div class="modal-title text-left mb-0">시작일과 시작 시간을 선택하세요.
+                                                            </div>
+                                                            <!-- 종료일 선택시 텍스트 -->
+                                                            <!-- <div class="modal-title2 text-left mb-0">종료일과 종료 시간을 선택하세요.</div> -->
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="modal-core3">
+                                                                <div class="ui-calendar">
+                                                                    <div class="ui-calendar__inner">
+                                                                        <!-- <div
+                                                                            style="display:flex; align-items:center; justify-content:center; width: 100%; height:117rem; background:#4b62c3; color:#ffffff; font-size:6rem;">
+                                                                            달력 영역</div> -->
+
+                                                                            <!-- 2022.12.19 : add : 달력 추가 -->
+
+                                                                            <input type='text' class="form-control hide ui-input__datepicker" id="" name=""  />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="mt-70 ui-form__cell">
+                                                                    <p class="ui-form__text">간병 시작시간</p>
+                                                                    <div class="ui-form">
+                                                                        <select name="" id="" class="ui-select">
+                                                                            <option value=""></option>
+                                                                        </select>
+                                                                    </div>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="mt-70 ui-form__cell">
-                                                                <p class="ui-form__text">간병 시작시간</p>
-                                                                <div class="ui-form">
-                                                                    <select name="" id="" class="ui-select">
-                                                                        <option value=""></option>
-                                                                    </select>
-                                                                </div>
+
+                                                            <div class="modal-buttons modal-buttons__sticky mt-150">
+                                                                <button type="button"
+                                                                    class="ui-button ui-button__border-blue"
+                                                                    data-dismiss="modal">취소</button>
+                                                                <button type="button"
+                                                                    class="ui-button ui-button__bg-blue">적용</button>
                                                             </div>
                                                         </div>
-                                                    
 
-                                                        <div class="modal-buttons modal-buttons__sticky mt-150">
-                                                            <button type="button" class="ui-button ui-button__border-blue"
-                                                                data-dismiss="modal">취소</button>
-                                                            <button type="button" class="ui-button ui-button__bg-blue">적용</button>
-                                                        </div>
                                                     </div>
-
                                                 </div>
-                                            </div>
                                             </div>
                                             <!-- //간병 기간 선택 모달 -->
 
@@ -293,16 +333,22 @@
 
                                         </div>
                                     </div>
+
+
+
+
                                 </div>
                             </div>
                         </section>
-                        
+
 
 
                         <section class="page-bottom">
                             <div class="page-bottom__inner ui-buttons">
-                                <button type="button" class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
-                                <button type="button" class="ui-button ui-button__border-blue font-weight__m" onclick="location.href='./careEnrollPeriodhosStep02.html'">다음</button>
+                                <button type="button"
+                                    class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
+                                <button type="button" class="ui-button ui-button__border-blue font-weight__m"
+                                    onclick="location.href='./careEnrollPeriodhosStep02.html'">다음</button>
                             </div>
                         </section>
 
@@ -346,13 +392,21 @@
         <!-- //[include] footer -->
         <!-- //footer -->
 
-       
-        
+
+
 
     </div>
 
 </body>
 <script>
-   
+    /* 2022.12.19 : 달력 스크립트 추가 */ 
+    $('.ui-input__datepicker').datetimepicker({
+        locale: 'ko',
+        inline: true,
+        sideBySide: true,
+        keepOpen: true,
+        format: 'YYYY.MM.DD.'
+    });
 </script>
+
 </html>

@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/common.css">
-
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
-
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <!-- //공통 css -->
 
@@ -27,12 +26,14 @@
 
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
     <script type="text/javascript" src="../resource/js/sub.js"></script>
-
 
 
 </head>
@@ -126,11 +127,72 @@
                                     <div class="enroll-title">간병 기간</div>
                                     <div class="care-period">
                                         <div class="care-period__inner">
-                                            <div  class="care-period__text">간병 기간을 입력하시려면 클릭하세요
-                                            </div>
+                                            <!-- 2022.12.14 : mod : 태그 변경 -->
+                                            <button type="button" class="care-period__text" data-toggle="modal"
+                                                data-target="#careDate">
+                                                <span class="care-period__text--inner">
+                                                    간병 기간을 입력하시려면 클릭하세요
+                                                </span>
+                                            </button>
+                                            <!--// 2022.12.14 : mod : 태그 변경 -->
 
                                             <div class="care-period__text is-inputed mt-50">2022/10/05/ 12:00 ~ 2022/10/14일 12:00 <br>( 총 10일 0시간 )
                                             </div>
+
+                                            <!-- 2022.12.14 : add : 모달 추가 -->
+                                            <!-- 간병 기간 선택 모달 -->
+                                            <div class="modal fade" id="careDate" tabindex="-1"
+                                                aria-labelledby="careDateLabel" aria-hidden="true"
+                                                style="z-index: 1060;">
+                                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                                    <div class="modal-content modal-content__modifyDateCalendar">
+                                                        <div class="modal-header">
+                                                            <div class="modal-title text-left mb-0">시작일과 시작 시간을 선택하세요.
+                                                            </div>
+                                                            <!-- 종료일 선택시 텍스트 -->
+                                                            <!-- <div class="modal-title2 text-left mb-0">종료일과 종료 시간을 선택하세요.</div> -->
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="modal-core3">
+                                                                <div class="ui-calendar">
+                                                                    <div class="ui-calendar__inner">
+                                                                        <!-- <div
+                                                                            style="display:flex; align-items:center; justify-content:center; width: 100%; height:117rem; background:#4b62c3; color:#ffffff; font-size:6rem;">
+                                                                            달력 영역</div> -->
+
+                                                                            <!-- 2022.12.19 : add : 달력 추가 -->
+
+                                                                            <input type='text' class="form-control hide ui-input__datepicker" id="" name=""  />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="mt-70 ui-form__cell">
+                                                                    <p class="ui-form__text">간병 시작시간</p>
+                                                                    <div class="ui-form">
+                                                                        <select name="" id="" class="ui-select">
+                                                                            <option value=""></option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="modal-buttons modal-buttons__sticky mt-150">
+                                                                <button type="button"
+                                                                    class="ui-button ui-button__border-blue"
+                                                                    data-dismiss="modal">취소</button>
+                                                                <button type="button"
+                                                                    class="ui-button ui-button__bg-blue">적용</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //간병 기간 선택 모달 -->
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +258,14 @@
 
 </body>
 <script>
-
+    /* 2022.12.19 : 달력 스크립트 추가 */ 
+    $('.ui-input__datepicker').datetimepicker({
+        locale: 'ko',
+        inline: true,
+        sideBySide: true,
+        keepOpen: true,
+        format: 'YYYY.MM.DD.'
+    });
 </script>
 
 </html>

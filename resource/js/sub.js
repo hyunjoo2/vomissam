@@ -70,13 +70,19 @@ function datepicker($root) {
     $root.find('.js-datepicker').datetimepicker({
         locale: 'ko',
         format: 'YYYY.MM.DD.',
-        dayViewHeaderFormat: 'YYYY년 MMMM'
+        dayViewHeaderFormat: 'YYYY년 MMMM',
+        keepOpen: true,
+        
     });
     $root.find('.js-monthpicker').datetimepicker({
         locale: 'ko',
         viewMode: 'years',
         format: 'YYYY년 M월'
     });
+    
+    $root.find('.js-datepicker').datetimepicker('show');
+    
+    
 }
 function setTimeSelectRange($min, $max, min, max) {
     $min

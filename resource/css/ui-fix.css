@@ -346,6 +346,10 @@
   border-radius: 3rem;
 }
 
+.hide {
+  display: none;
+}
+
 @media (max-width: 1400px) {
   .mt-20 {
     margin-top: 2rem;
