@@ -80,7 +80,7 @@ function datepicker($root) {
         format: 'YYYY년 M월'
     });
     
-    $root.find('.js-datepicker').datetimepicker('show');
+    //$root.find('.js-datepicker').datetimepicker('show');
     
     
 }
