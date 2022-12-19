@@ -51,12 +51,12 @@ function datepicker($root) {
         var $max = $this.find('.js-datepicker-range__max');
         $min.datetimepicker({
             locale: 'ko',
-            format: 'YYYY-MM-DD',
+            format: 'YYYY.MM.DD.',
             dayViewHeaderFormat: 'YYYY년 MMMM',
         });
         $max.datetimepicker({
             locale: 'ko',
-            format: 'YYYY-MM-DD',
+            format: 'YYYY.MM.DD.',
             dayViewHeaderFormat: 'YYYY년 MMMM',
             useCurrent: false,
         });
