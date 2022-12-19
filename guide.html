@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./resource/css/reset.css">
   <link rel="stylesheet" href="./resource/css/font.css">
   <link rel="stylesheet" href="./resource/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./resource/css/lib/bootstrap-datetimepicker.min.css">
 
   <link rel="stylesheet" href="./resource/css/common.css">
 
@@ -101,6 +102,18 @@
     }
   </style>
   <!-- //style -->
+
+  <script type="text/javascript" src="./resource/js/lib/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./resource/js/lib/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./resource/js/lib/moment.min.js"></script>
+  <script type="text/javascript" src="./resource/js/lib/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./resource/js/lib/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="./resource/js/lib/swiper.min.js"></script>
+  <script type="text/javascript" src="./resource/js/include.js"></script>
+  <script type="text/javascript" src="./resource/js/common.js"></script>
+  <script type="text/javascript" src="./resource/js/sub.js"></script>
+
+
 </head>
 
 <body>
@@ -357,19 +370,22 @@
       </div>
     </div>
 
-    <div class="guide-section-sub">
-      <h3 class="test-title">radio</h3>
-      <div class="ui-radio__list">
-        <div class="ui-radio__inner">
-            <div class="ui-radio-block">
-                <input type="radio" class="ui-radio" id="radio1" checked="">
-                <label for="radio1" class="ui-label">
-                  <span class="ui-radio-object"></span>
-                  <span class="ui-label__text">약관 전체동의</span>
-                </label>
-              </div>
+    <div class="guide-section-sub ">
+      <h3 class="test-title">datepicker</h3>
+      <div class="ui-form d-flex align-center js-datepicker-range mt-40">
+        <div class="form-flex-cell flex-4">
+            <div class="ui-input-block ui-input-block--date input-width-date">
+            <input type="text" class="ui-input js-datepicker-range__min ui-input__height-s" title="시작 날짜" value="2022-11-02">
+            </div>
         </div>
-      </div>
+        <div class="form-flex-cell form-flex-cell--date-hyphen mx-4">~</div>
+        <div class="form-flex-cell flex-4">
+            <div class="ui-input-block ui-input-block--date input-width-date">
+            <input type="text" class="ui-input js-datepicker-range__max ui-input__height-s" title="마지막 날짜" value="2022-11-12">
+            </div>
+        </div>
+        <button type="button" class="ui-button ui-button__bg-blue flex-2 ml-4 ui-button__height-135 font-size__xxs">검색</button>
+    </div>
     </div>
 
 
@@ -487,6 +503,32 @@
   </div>
   <!-- //modal -->
 
+  <!-- calendar -->
+  <div class="guide-section guide-section--calendar">
+    
+    <h2 class="test-title">calendar</h2>
+
+    <div class="guide-section-sub">
+      <h3 class="test-title">Default</h3>
+      <input type='text' class="form-control hide ui-input__datepicker" id="" name=""  />
+    </div>
+    <script>
+      /* 2022.12.19 : 달력 스크립트 추가 */ 
+      $('.ui-input__datepicker').datetimepicker({
+           locale: 'ko',
+           inline: true,
+           sideBySide: true,
+           keepOpen: true,
+           format: 'YYYY.MM.DD.'
+       });
+   </script>
+
+  
+
+
+  </div>
+  <!--// calendar -->
+
 
 
   <div class="guide-section guide-section--date">
@@ -521,8 +563,6 @@
 
 </body>
 
-<script src="./resource/js/lib/jquery-1.12.4.min.js"></script>
-<script src="./resource/js/lib/bootstrap.bundle.min.js"></script>
-<script src="./resource/js/sub.js"></script>
+
 
 </html>
