@@ -2364,6 +2364,9 @@
   height: 100%;
   margin: 0;
 }
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day:hover::before {
+  display: none;
+}
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active {
   position: relative;
 }
@@ -2380,6 +2383,9 @@
   width: 100%;
   height: 100%;
   margin: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table thead tr:first-child th.picker-switch:hover {
+  background: transparent;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table .glyphicon-chevron-left, .ui-input__datepicker + .bootstrap-datetimepicker-widget table .glyphicon-chevron-right {
   display: inline-block;
