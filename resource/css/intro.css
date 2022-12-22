@@ -217,7 +217,7 @@
   height: 100%;
   background-image: url(../image/main/intro-slide01.jpg);
   background-repeat: no-repeat;
-  background-position: center top -35rem;
+  background-position: center top;
   background-size: cover;
 }
 .intro-slide02 {
@@ -225,7 +225,7 @@
   height: 100%;
   background-image: url(../image/main/intro-slide02.jpg);
   background-repeat: no-repeat;
-  background-position: center top -35rem;
+  background-position: center top;
   background-size: cover;
 }
 .intro-slide03 {
@@ -233,7 +233,7 @@
   height: 100%;
   background-image: url(../image/main/intro-slide03.jpg);
   background-repeat: no-repeat;
-  background-position: center top -35rem;
+  background-position: center top;
   background-size: cover;
 }
 .intro-slide .swiper-pagination {

@@ -2347,10 +2347,11 @@
 /* 부트스트랩 datepicker */
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table th.picker-switch {
   font-size: 7rem;
+  font-weight: 500;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table th.dow {
   padding: 0;
-  padding-top: 4rem;
+  padding-top: 2rem;
   font-size: 5.5rem;
   line-height: 18.4rem;
   text-align: center;
@@ -2361,10 +2362,16 @@
   text-align: center;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day {
+  position: relative;
   padding: 0;
   font-size: 5.5rem;
   line-height: 18.4rem;
   text-align: center;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day:hover::before {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.today::before {
   width: 100%;
@@ -2382,6 +2389,9 @@
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active:hover::before {
   background-color: #30b59c;
 }
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month {
+  position: relative;
+}
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month.active {
   position: relative;
 }
@@ -2392,7 +2402,10 @@
   margin: 0;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month:hover::before {
-  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table thead tr:first-child th.picker-switch:hover {
   background: transparent;
