@@ -21,7 +21,7 @@ html{
         font-size:calc(62.5% / 2);
     }
     @include tablet{ //768px
-        font-size:calc(62.5% / 4);
+        font-size:calc(62.5% / 6);
     }
     @include labtop{
         font-size:62.5%;
