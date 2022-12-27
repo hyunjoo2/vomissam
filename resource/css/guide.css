@@ -2678,12 +2678,7 @@
 }
 @media (min-width: 768px) {
   html {
-    font-size: 31.25%;
-  }
-}
-@media (min-width: 1024px) {
-  html {
-    font-size: 62.5%;
+    font-size: 10.4166666667%;
   }
 }
 

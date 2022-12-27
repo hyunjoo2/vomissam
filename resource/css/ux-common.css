@@ -2678,6 +2678,11 @@
 }
 @media (min-width: 768px) {
   html {
-    font-size: 10.4166666667%;
+    font-size: 13%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 13%;
   }
 }
