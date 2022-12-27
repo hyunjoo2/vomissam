@@ -52,7 +52,7 @@
             text-align: center;
         }
         &3{
-            margin-bottom: 9rem;
+            margin-bottom: 4rem;
             font-size: 5.5rem;
         }
         &4{
@@ -85,7 +85,7 @@
     &-item{
         padding: 0 5rem;
         &+&{
-            margin-top: 13rem;
+            margin-top: 7rem;
         }
         &__title{
             margin-bottom: 6rem;
@@ -180,7 +180,7 @@
 .page-bottom{
     margin-top: auto;
     &__inner{
-        margin-top: 25rem;
+        margin-top: 10rem;
     }
     &__padding{
         padding: 0 5rem 10rem 5rem;
@@ -244,8 +244,8 @@
 //입력 예
 .text{
     &-ex{
-        margin-top: 4rem;
-        font-size: 5.5rem;
+        margin-top: 7rem;
+        font-size: 4.6rem;
         color:#9196a5;
         &--small{
             font-size:4.8rem;
@@ -268,8 +268,8 @@
 //설명글
 .des-text{
     &__inner{
-        padding: 5rem 6rem;
-        font-size: 4.8rem;
+        padding: 3rem 3rem;
+        font-size: 4.2rem;
         line-height: 8rem;
         color:#9196a5;
         background: #f3f5fb;
@@ -372,7 +372,7 @@
             flex:1;
             text-align: right;
             font: {
-                size: 7.8rem;
+                size: 7rem;
                 weight:600;
             };
         }

@@ -38,7 +38,7 @@
   text-align: center;
 }
 .sub-title3 {
-  margin-bottom: 9rem;
+  margin-bottom: 4rem;
   font-size: 5.5rem;
 }
 .sub-title4 {
@@ -68,7 +68,7 @@
   padding: 0 5rem;
 }
 .sub-item + .sub-item {
-  margin-top: 13rem;
+  margin-top: 7rem;
 }
 .sub-item__title {
   margin-bottom: 6rem;
@@ -153,7 +153,7 @@
   margin-top: auto;
 }
 .page-bottom__inner {
-  margin-top: 25rem;
+  margin-top: 10rem;
 }
 .page-bottom__padding {
   padding: 0 5rem 10rem 5rem;
@@ -205,8 +205,8 @@
 }
 
 .text-ex {
-  margin-top: 4rem;
-  font-size: 5.5rem;
+  margin-top: 7rem;
+  font-size: 4.6rem;
   color: #9196a5;
 }
 .text-ex--small {
@@ -225,8 +225,8 @@
 }
 
 .des-text__inner {
-  padding: 5rem 6rem;
-  font-size: 4.8rem;
+  padding: 3rem 3rem;
+  font-size: 4.2rem;
   line-height: 8rem;
   color: #9196a5;
   background: #f3f5fb;
@@ -306,7 +306,7 @@
 .total-cost__text {
   flex: 1;
   text-align: right;
-  font-size: 7.8rem;
+  font-size: 7rem;
   font-weight: 600;
 }
 .total-cost__box--inner {

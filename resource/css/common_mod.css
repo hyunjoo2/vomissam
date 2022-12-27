@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .icon {
   display: block;
   width: 1.5rem;
@@ -113,168 +114,216 @@
     transform: rotateY(0deg);
   }
 }
-.enroll-title {
-  margin-bottom: 4.5rem;
-  font-size: 6rem;
-  font-weight: 600;
+#skipNavigation {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
 }
-.enroll-title__wrap--flex {
-  display: flex;
-  margin-bottom: 4.5rem;
+#skipNavigation a {
+  display: block;
+  left: -9000px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  background-color: #fff;
 }
-.enroll-title__wrap--flex .enroll-title {
-  margin-bottom: 0;
-}
-.enroll-title__sub {
-  margin-bottom: 5rem;
-  font-size: 5.5rem;
-  font-weight: 500;
-}
-.enroll-title__sub .ui-required {
-  font-size: 5.5rem;
-}
-.enroll-title__des {
-  font-size: 6rem;
-  margin-left: 1rem;
-}
-.enroll-title .ui-required {
-  color: #DD5458;
-  margin-left: 1rem;
-}
-.enroll-title + .enroll-box__sub {
-  margin-top: 7rem;
-}
-.enroll-box:nth-child(1) {
-  margin-top: 0rem;
-}
-.enroll-box + .enroll-box {
-  margin-top: 7rem;
-}
-.enroll-box__sub + .enroll-box__sub {
-  margin-top: 8rem;
+#skipNavigation a:hover, #skipNavigation a:focus, #skipNavigation a:active {
+  position: Absolute;
+  padding: 0.2rem 0;
+  left: 0;
+  color: #000;
+  font-size: 2rem;
+  z-index: 500;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.hospital-list__inner {
-  padding: 5rem 5rem;
-  background: #f6f8fb;
-  border: 0.2rem solid #e9eaec;
-}
-.hospital-list__item {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 8.5rem;
-  font-size: 5.6rem;
-}
-.hospital-list__item + .hospital-list__item {
-  margin-top: 3rem;
-}
-.hospital-list__item .ui-button__badge {
-  flex: none;
-  margin-top: 0.7rem;
-}
-.hospital-list__item.is-active {
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat left center;
-  background-size: 4.5rem 3.1rem;
-}
-.hospital-list__item.is-active .hospital-list__text {
-  color: #3c50a2;
-  font-weight: 500;
-}
-.hospital-list__text {
-  flex: 1;
-  line-height: 8rem;
+/* 공통 */
+html, body, .wrap {
+  height: 100%;
 }
 
-.care-period__text {
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+/** header */
+.header__inner {
   display: flex;
   -ms-display: flexbox;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  height: 24rem;
+  padding: 0 5rem;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo__inner {
+  margin-right: 5rem;
+}
+.header-logo__link {
+  display: block;
+  width: 14.1rem;
+  height: 11.2rem;
+  background: url(../image/common/logo.png) no-repeat center;
+  background-size: cover;
+}
+.header-user__inner {
+  font-size: 5.2rem;
+}
+.header-user .user-name {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right {
+  margin-left: auto;
+}
+.header-alarm__button {
+  width: 6.9rem;
+  height: 8.2rem;
+  background: url(../image/common/icon-alarm.png) no-repeat center;
+  background-size: 6.9rem 8.2rem;
+}
+.header-hamberger {
+  margin-left: 9rem;
+}
+.header-hamberger__button {
+  width: 7.8rem;
+  height: 6.8rem;
+  background: url(../image/common/icon-hamberger.png);
+  background-size: 7.8rem 6.8rem;
+}
+.header-title__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.page-back__inner {
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+}
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container-core {
+  height: 100%;
+}
+
+/** quick-menu */
+.quick-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  transition: all 0.1s;
+  z-index: 2;
+}
+.quick-menu.is-show {
+  bottom: 0;
+  transition: all 0.1s;
+}
+.quick-menu.is-fix {
+  bottom: 0;
+  transition: all 0.1s;
+}
+.quick-menu__inner {
+  display: flex;
+  height: 20rem;
+  background: #ffffff;
+  border-radius: 6rem 6rem 0 0;
+  box-shadow: 1.2rem 1.2rem 5.4rem rgba(0, 0, 0, 0.08);
+}
+.quick-menu__button {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 18rem;
-  padding: 2rem 0;
-  border: 0.3rem dashed #d8dce2;
-  border-radius: 1rem;
-  font-size: 5.5rem;
-  color: #9196a5;
-  text-align: center;
-  line-height: 10rem;
-}
-.care-period__text.is-inputed {
-  flex-direction: column;
-  color: #3c50a2;
-  border: 0.3rem solid #4b62c3;
-  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-}
-.care-period__text--inner {
-  padding: 2.5rem 0;
-}
-.care-period__dl {
-  display: flex;
-}
-.care-period__dl + .care-period__dl {
-  margin-top: 2rem;
-}
-.care-period__dt {
-  width: 26.5rem;
-  flex: none;
-}
-.care-cost__box {
-  padding: 8rem 0;
-}
-.care-cost__box.top-image .img-wrap {
-  margin-top: -4.2rem;
-  margin-bottom: 4rem;
-}
-.care-cost__text {
-  font-size: 5rem;
-  line-height: 7rem;
-}
-.care-cost__name {
-  font-size: 6.5rem;
-  font-weight: 500;
-  line-height: 7rem;
-}
-.care-enroll-info__margin-l {
-  margin: 8rem 0;
-}
-.care-enroll-info__list {
-  display: flex;
-  align-items: center;
-}
-.care-enroll-info__list + .care-enroll-info__list {
-  margin-top: 4rem;
-}
-.care-enroll-info__title, .care-enroll-info__text {
-  font-size: 5.5rem;
-}
-.care-enroll-info__title {
-  color: #575c62;
-  flex: none;
-  line-height: 7rem;
-}
-.care-enroll-info__title--des {
-  font-size: 4.4rem;
-}
-.care-enroll-info__title--width-505 {
-  width: 40.5rem;
-}
-.care-enroll-info__text {
   flex: 1;
-  text-align: right;
+  font-size: 4.8rem;
   font-weight: 500;
+  color: #76798e;
+  background: no-repeat;
 }
-.care-enroll-info__text .ui-form__flex--row {
-  justify-content: flex-end;
-}
-.careEnrollEnd-top .img-wrap {
-  margin-top: 6.6rem;
-  margin-bottom: 10rem;
-}
-.careEnrollEnd-top .img-wrap img {
+.quick-menu__button i {
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 11.5rem;
+  background: no-repeat center;
+  transition: all 0.2s;
+}
+.quick-menu__button--enroll i {
+  background-image: url(../image/common/icon-quickmenu01.png);
+  background-size: 9.6rem 8.1rem;
+}
+.quick-menu__button--pay i {
+  background-image: url(../image/common/icon-quickmenu02.png);
+  background-size: 9.7rem 6.1rem;
+}
+.quick-menu__button--customer i {
+  background-image: url(../image/common/icon-quickmenu03.png);
+  background-size: 9.1rem 7.3rem;
+}
+.quick-menu__button--my i {
+  background-image: url(../image/common/icon-quickmenu04.png);
+  background-size: 8.6rem 8.9rem;
+}
+.quick-menu__button-text {
+  margin-top: .2rem;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+.quick-menu__button.is-active .quick-menu__button-text {
+  color: #3c50a2;
+  font-weight: 600;
+}
+.quick-menu__button.is-active.quick-menu__button-text {
+  color: #3c50a2;
+  font-weight: 600;
+}
+.quick-menu__button.is-active.quick-menu__button--enroll i {
+  background-image: url(../image/common/icon-quickmenu01__on.png);
+  background-size: 9.6rem 8.1rem;
+}
+.quick-menu__button.is-active.quick-menu__button--pay i {
+  background-image: url(../image/common/icon-quickmenu02__on.png);
+  background-size: 9.7rem 6.1rem;
+}
+.quick-menu__button.is-active.quick-menu__button--customer i {
+  background-image: url(../image/common/icon-quickmenu03__on.png);
+  background-size: 9.1rem 7.3rem;
+}
+.quick-menu__button.is-active.quick-menu__button--my i {
+  background-image: url(../image/common/icon-quickmenu04__on.png);
+  background-size: 8.6rem 8.9rem;
+}
+
+.line-gray {
+  width: 100%;
+  height: 3rem;
+  background: #f2f3f7;
+}
+
+/* footer */
+.footer__inner {
+  margin-top: 45.5rem;
 }
