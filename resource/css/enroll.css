@@ -113,6 +113,10 @@
     transform: rotateY(0deg);
   }
 }
+.container__sub--enroll {
+  margin-bottom: 12rem;
+}
+
 .enroll-title {
   margin-bottom: 4.5rem;
   font-size: 6rem;

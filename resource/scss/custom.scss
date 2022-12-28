@@ -1,6 +1,9 @@
 @charset 'utf-8';
 @import './helper/index';
 
+.container__sub--custom{
+    margin-bottom: 12rem;
+}
 .main{
     &-visual{
         &__img{

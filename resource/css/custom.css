@@ -113,6 +113,10 @@
     transform: rotateY(0deg);
   }
 }
+.container__sub--custom {
+  margin-bottom: 12rem;
+}
+
 .main-visual__img img {
   width: 100%;
 }

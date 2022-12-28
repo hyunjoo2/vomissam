@@ -301,6 +301,9 @@
 .card-admit-box__col .card-admit-box + .card-admit-box {
   margin-left: 6rem;
 }
+.card-admit-box__col .ui-form__cell {
+  width: 100%;
+}
 
 .expireTit span {
   flex: 0 1 calc(50% - 4rem);
