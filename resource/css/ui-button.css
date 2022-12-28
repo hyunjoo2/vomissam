@@ -288,6 +288,11 @@
   line-height: 17.7rem;
   font-size: 5.5rem;
 }
+.ui-button__text--line-s {
+  display: inline-block;
+  margin-top: 1.6rem;
+  line-height: 5.2rem;
+}
 
 .button-joinSocial {
   width: 100%;
