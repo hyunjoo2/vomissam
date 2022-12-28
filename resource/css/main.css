@@ -552,7 +552,7 @@
 }
 .carer-list__premium {
   position: relative;
-  border: 2px solid #4b62c3;
+  border: 1px solid #4b62c3;
 }
 .carer-list__premium::before {
   position: absolute;

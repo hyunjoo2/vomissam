@@ -2,6 +2,8 @@
 
 .container{
     &-login{
+        margin-bottom: 0;
+        padding-bottom:0;
         background: url(../image/common/bg-login.jpg);
         background-size: cover;
         background-position: center top -25rem;
