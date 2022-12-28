@@ -352,3 +352,13 @@
 .login-first__bottom--bottom button + button {
   margin-left: 4rem;
 }
+
+@media (max-width: 360px) {
+  .container-login {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: url(../image/common/bg-login.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+}
