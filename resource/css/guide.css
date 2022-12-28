@@ -756,12 +756,12 @@
 /* button */
 .ui-button {
   width: 100%;
-  height: 20rem;
-  font-size: 7rem;
+  height: 13rem;
+  font-size: 6rem;
   font-weight: 500;
   color: #000000;
   border-radius: 1rem;
-  line-height: 20.1rem;
+  line-height: 13.1rem;
 }
 .ui-button:disabled {
   background-color: #f2f2f2 !important;
@@ -896,10 +896,10 @@
   font-size: 4.6rem;
 }
 .ui-button__font-xs {
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 .ui-button__font-s {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .ui-button__color-gray {
   color: #777777;
@@ -1026,13 +1026,14 @@
   background-color: #4b62c3;
 }
 .ui-button__badge {
-  padding: 1.7rem 2.8rem;
+  height: 7rem;
+  padding: 0rem 2.8rem;
   font-size: 4rem;
   font-weight: 500;
   background: #4b62c3;
   color: #ffffff;
   border-radius: 3.5rem;
-  line-height: 100%;
+  line-height: 7.1rem;
 }
 .ui-button__line-height--n {
   line-height: 6.5rem;
@@ -1041,6 +1042,11 @@
   height: 17.6rem;
   line-height: 17.7rem;
   font-size: 5.5rem;
+}
+.ui-button__text--line-s {
+  display: inline-block;
+  margin-top: 1.6rem;
+  line-height: 5.2rem;
 }
 
 .button-joinSocial {
@@ -1132,6 +1138,8 @@
 }
 
 .page-bottom button {
+  height: 15rem;
+  line-height: 15.1rem;
   border-radius: 2rem;
 }
 
@@ -1458,7 +1466,7 @@
   width: 7rem;
   height: 7rem;
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_12_53)'%3E%3Cpath d='M12.7855 12H1.21446C0.545157 12 0 11.4863 0 10.8557V2.01907C0 1.38715 0.545157 0.874756 1.21446 0.874756H12.7855C13.4548 0.874756 14 1.38842 14 2.01907V10.8557C14 11.4863 13.4548 12 12.7855 12ZM1.21446 1.63763C0.991807 1.63763 0.809639 1.80928 0.809639 2.01907V10.8557C0.809639 11.0655 0.991807 11.2371 1.21446 11.2371H12.7855C13.0082 11.2371 13.1904 11.0655 13.1904 10.8557V2.01907C13.1904 1.80928 13.0082 1.63763 12.7855 1.63763H1.21446Z' fill='%23424242'/%3E%3Cpath d='M13.4602 4.30769H0.555942C0.331942 4.30769 0.151123 4.13731 0.151123 3.92625C0.151123 3.71519 0.331942 3.54482 0.555942 3.54482H13.4602C13.6842 3.54482 13.865 3.71519 13.865 3.92625C13.865 4.13731 13.6842 4.30769 13.4602 4.30769Z' fill='%23424242'/%3E%3Cpath d='M3.89573 2.51113C3.67173 2.51113 3.49091 2.34075 3.49091 2.12969V0.381437C3.49091 0.170375 3.67173 0 3.89573 0C4.11972 0 4.30054 0.170375 4.30054 0.381437V2.12969C4.30054 2.34075 4.11972 2.51113 3.89573 2.51113Z' fill='%23424242'/%3E%3Cpath d='M6.99936 2.51113C6.77536 2.51113 6.59454 2.34075 6.59454 2.12969V0.381437C6.59454 0.170375 6.77536 0 6.99936 0C7.22336 0 7.40418 0.170375 7.40418 0.381437V2.12969C7.40418 2.34075 7.22336 2.51113 6.99936 2.51113Z' fill='%23424242'/%3E%3Cpath d='M10.1029 2.51113C9.87894 2.51113 9.69812 2.34075 9.69812 2.12969V0.381437C9.69812 0.170375 9.87894 0 10.1029 0C10.3269 0 10.5078 0.170375 10.5078 0.381437V2.12969C10.5078 2.34075 10.3269 2.51113 10.1029 2.51113Z' fill='%23424242'/%3E%3Cpath d='M3.18458 5.57915H2.16309V6.45391H3.18458V5.57915Z' fill='%23424242'/%3E%3Cpath d='M5.38142 5.57915H4.35992V6.45391H5.38142V5.57915Z' fill='%23424242'/%3E%3Cpath d='M7.5782 5.57915H6.5567V6.45391H7.5782V5.57915Z' fill='%23424242'/%3E%3Cpath d='M9.77503 5.57915H8.75354V6.45391H9.77503V5.57915Z' fill='%23424242'/%3E%3Cpath d='M11.9719 5.57915H10.9504V6.45391H11.9719V5.57915Z' fill='%23424242'/%3E%3Cpath d='M3.18458 7.39098H2.16309V8.26574H3.18458V7.39098Z' fill='%23424242'/%3E%3Cpath d='M5.38142 7.39098H4.35992V8.26574H5.38142V7.39098Z' fill='%23424242'/%3E%3Cpath d='M7.5782 7.39098H6.5567V8.26574H7.5782V7.39098Z' fill='%23424242'/%3E%3Cpath d='M9.77503 7.39098H8.75354V8.26574H9.77503V7.39098Z' fill='%23424242'/%3E%3Cpath d='M11.9719 7.39098H10.9504V8.26574H11.9719V7.39098Z' fill='%23424242'/%3E%3Cpath d='M3.18458 9.20279H2.16309V10.0776H3.18458V9.20279Z' fill='%23424242'/%3E%3Cpath d='M5.38142 9.20279H4.35992V10.0776H5.38142V9.20279Z' fill='%23424242'/%3E%3Cpath d='M7.5782 9.20279H6.5567V10.0776H7.5782V9.20279Z' fill='%23424242'/%3E%3Cpath d='M9.77503 9.20279H8.75354V10.0776H9.77503V9.20279Z' fill='%23424242'/%3E%3Cpath d='M11.9719 9.20279H10.9504V10.0776H11.9719V9.20279Z' fill='%23424242'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_12_53'%3E%3Crect width='14' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-  background-size: 7rem 7rem;
+  background-size: 14px 12px;
 }
 
 .sitemap-close {
@@ -1496,7 +1504,7 @@
   -webkit-border-radius: 0;
   border-radius: 1.5rem;
   line-height: 1.4rem;
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 .ui-form__button {
   display: flex;
@@ -1504,7 +1512,7 @@
 .ui-form__cell {
   display: flex;
   align-items: center;
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 .ui-form__cell .ui-form {
   flex: 1;
@@ -1544,7 +1552,7 @@
 }
 .ui-form__text {
   margin-right: 10rem;
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 .ui-form__text-cancel {
   margin-right: 16.5rem;
@@ -1555,10 +1563,11 @@
 }
 .ui-input {
   width: 100%;
-  padding-left: 5.5rem;
-  height: 20rem;
-  font-size: 5.5rem;
+  padding-left: 5rem;
+  height: 13rem;
+  font-size: 5rem;
   text-indent: 0;
+  line-height: 13.1rem;
 }
 .ui-input__full {
   width: 100%;
@@ -1585,7 +1594,7 @@
   background: #f8f8f8;
 }
 .ui-input::placeholder {
-  font-size: 5.5rem;
+  font-size: 5rem;
   color: #9196a5;
 }
 .ui-input.js-datepicker-range__min, .ui-input.js-datepicker-range__max {
@@ -1597,14 +1606,15 @@
 .ui-select {
   width: 100%;
   height: 20rem;
-  padding-left: 5.5rem;
-  font-size: 5.5rem;
-  border: 0.3rem solid #d8dce2;
+  padding-left: 5rem;
+  font-size: 5rem;
+  border: 1px solid #d8dce2;
   box-sizing: border-box;
-  background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
+  background: url(../image/common/icon/icon-select.png) no-repeat right 5rem center;
   background-size: 3.9rem 2.6rem;
   border-radius: 1.5rem;
   text-indent: 0;
+  line-height: 20.1rem;
 }
 .ui-select__width-200 {
   width: 20rem;
@@ -1622,7 +1632,7 @@
   -webkit-border-radius: 0;
   border-radius: 1.5rem;
   line-height: normal;
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 .ui-textarea__height-230 {
   height: 23rem;
@@ -1711,12 +1721,14 @@
 }
 .ui-checkbox-block .ui-label {
   margin: 0;
+  flex: none;
 }
 .ui-checkbox:checked + .ui-checkbox-object, .ui-checkbox:checked + .ui-label .ui-checkbox-object {
   border-color: #4b62c3;
   background-color: #4b62c3;
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
+  background-position: center center;
 }
 .ui-label {
   display: flex;
@@ -1862,7 +1874,7 @@
   text-align: center;
 }
 .sub-title3 {
-  margin-bottom: 9rem;
+  margin-bottom: 4rem;
   font-size: 5.5rem;
 }
 .sub-title4 {
@@ -1892,7 +1904,7 @@
   padding: 0 5rem;
 }
 .sub-item + .sub-item {
-  margin-top: 13rem;
+  margin-top: 7rem;
 }
 .sub-item__title {
   margin-bottom: 6rem;
@@ -1977,7 +1989,7 @@
   margin-top: auto;
 }
 .page-bottom__inner {
-  margin-top: 25rem;
+  margin-top: 10rem;
 }
 .page-bottom__padding {
   padding: 0 5rem 10rem 5rem;
@@ -2029,8 +2041,8 @@
 }
 
 .text-ex {
-  margin-top: 4rem;
-  font-size: 5.5rem;
+  margin-top: 7rem;
+  font-size: 4.6rem;
   color: #9196a5;
 }
 .text-ex--small {
@@ -2049,8 +2061,8 @@
 }
 
 .des-text__inner {
-  padding: 5rem 6rem;
-  font-size: 4.8rem;
+  padding: 3rem 3rem;
+  font-size: 4.2rem;
   line-height: 8rem;
   color: #9196a5;
   background: #f3f5fb;
@@ -2130,7 +2142,7 @@
 .total-cost__text {
   flex: 1;
   text-align: right;
-  font-size: 7.8rem;
+  font-size: 7rem;
   font-weight: 600;
 }
 .total-cost__box--inner {
@@ -2211,7 +2223,7 @@
 
 .normal-text {
   word-break: keep-all;
-  line-height: 7rem;
+  line-height: 7.5rem;
   letter-spacing: -1.5px;
 }
 
@@ -2377,6 +2389,12 @@
   width: 100%;
   height: 100%;
   margin: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.new {
+  display: none;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.old {
+  color: #a5a5a5;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active {
   position: relative;
@@ -2607,6 +2625,7 @@
   background: transparent;
 }
 .modal-buttons .ui-button {
+  height: 20rem;
   font-size: 6rem;
   font-weight: 500;
   border-radius: 0 0 2rem 2rem;
@@ -2656,6 +2675,10 @@
   color: #3c50a2;
 }
 
+#hosDep .ui-buttons__fourth .ui-button {
+  padding: 0;
+}
+
 /* ========== reponsive =========== */
 /*
 * xs: 576px,// Small screen / phone
@@ -2666,6 +2689,32 @@
 * xl: 1600px,
 * up:min-width / down:max-width / only:(min-width,max-width)
 */
+html {
+  /*
+  ##Device = Tablets, Ipads (landscape),
+  ##Screen = B/w 768px to 1024px
+  ##Device = 태블릿, 아이패드(세로),
+  ##Screen = 768px에서 1024px 사이
+  */
+  /*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+  ##Device = 태블릿, 아이패드(가로)
+  ##Screen = 768px에서 1024px 사이
+  */
+  /*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+  ##Device = 저해상도 태블릿, 모바일(가로)
+  ##Screen = 481px에서 767px 사이
+  */
+  /*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  ##Device = 대부분의 스마트폰 모바일 기기(세로)
+  ##Screen = 320px에서 479px 사이
+  */
+}
 @media (min-width: 320px) {
   html {
     font-size: 15.625%;
@@ -2678,7 +2727,32 @@
 }
 @media (min-width: 768px) {
   html {
-    font-size: 10.4166666667%;
+    font-size: 13%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 13%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 31.25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 20.8333333333%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 15.625%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 15.625%;
   }
 }
 

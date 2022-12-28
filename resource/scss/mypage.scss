@@ -162,27 +162,27 @@
         .ui{
             &-form{
                 margin-bottom:13rem;
-                &.expireDate{
-                    input{
-                        &:first-child{
-                            flex:0 1 calc(25% - 4rem);
-                        }
-                        &:nth-child(3){
-                            flex:0 1 calc(25% - 4rem);
-                        }
-                        &:last-child{
-                            flex:0 1 calc(50% - 4rem);
-                        }
-                    }
-                }
+                // &.expireDate{
+                //     input{
+                //         &:first-child{
+                //             flex:0 1 calc(25% - 4rem);
+                //         }
+                //         &:nth-child(3){
+                //             flex:0 1 calc(25% - 4rem);
+                //         }
+                //         &:last-child{
+                //             flex:0 1 calc(50% - 4rem);
+                //         }
+                //     }
+                // }
                 &.birthDate, &.cardPw{
                     width:100%;
                     .ui-form__cell{
                         width:100%;
                     }
-                    input{
-                        flex:0 1 calc(50% - 4rem);
-                    }
+                    // input{
+                    //     flex:0 1 calc(50% - 4rem);
+                    // }
                 } 
                 span{
                     display:flex;
@@ -205,6 +205,24 @@
                     border-bottom:.4rem solid #000;
                     &::placeholder{
                         color:#fff;
+                    }
+                }
+            }
+        }
+        &-box{
+            &__col{
+                display: flex;
+                .card{
+                    &-admit{
+                        &-box{
+                            width:50%;
+                            .ui-input{
+                                width:100%;
+                            }
+                            &+.card-admit-box{
+                                margin-left: 6rem;
+                            }
+                        }
                     }
                 }
             }

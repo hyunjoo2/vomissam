@@ -291,6 +291,7 @@
                 
                 &-label{
                     margin: 0;
+                    flex:none;
                 }
             }
         }
@@ -300,6 +301,7 @@
             background-color: #4b62c3;
             background-image: url('../image/common/icon/icon-check.png');
             background-size: 4.5rem 3.1rem;
+            background-position: center center;
         }
     }
     &-label {
