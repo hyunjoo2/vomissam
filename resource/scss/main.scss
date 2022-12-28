@@ -623,7 +623,7 @@
         }
         &__premium{
             position: relative;
-            border:.2rem solid #4b62c3;
+            border:2px solid #4b62c3;
             &::before{
                 position: absolute;
                 top: -3rem;
@@ -675,7 +675,7 @@
         margin-left: 9rem;
     }
     &-detail{
-        margin-top: 5.5rem;        
+        margin-top: 5rem;        
         &__list{
             display: flex;
             // &+&{
