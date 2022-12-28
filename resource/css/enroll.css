@@ -153,6 +153,10 @@
 .enroll-box__sub + .enroll-box__sub {
   margin-top: 8rem;
 }
+.enroll-box .ui-select {
+  height: 13rem;
+  line-height: 13.1rem;
+}
 
 .hospital-list__inner {
   padding: 5rem 5rem;

@@ -340,7 +340,8 @@
         }
     }
     &__badge{
-        padding: 1.7rem 2.8rem;
+        height:7rem;
+        padding: 0rem 2.8rem;
         font : {
             size: 4rem;
             weight:500;
@@ -348,7 +349,7 @@
         background: #4b62c3;
         color:#ffffff;
         border-radius: 3.5rem;
-        line-height: 100%;
+        line-height: 7.1rem;
     }    
     &__line-height{
         &--n{

@@ -265,6 +265,7 @@
 
     &-buttons {
         .ui-button {
+            height:20rem;
             font : {
                 size: 6rem;
                 weight:500;
@@ -337,5 +338,11 @@
                 color:#3c50a2;
             }
         }
+    }
+}
+
+#hosDep{
+    .ui-buttons__fourth .ui-button{
+        padding: 0;
     }
 }

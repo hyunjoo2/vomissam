@@ -218,6 +218,7 @@ html, body, .wrap {
 
 .container {
   flex: 1;
+  margin-bottom: 12rem;
 }
 .container__inner {
   display: flex;
@@ -325,5 +326,5 @@ html, body, .wrap {
 
 /* footer */
 .footer__inner {
-  margin-top: 45.5rem;
+  margin-top: 20rem;
 }

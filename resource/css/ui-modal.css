@@ -181,6 +181,7 @@
   background: transparent;
 }
 .modal-buttons .ui-button {
+  height: 20rem;
   font-size: 6rem;
   font-weight: 500;
   border-radius: 0 0 2rem 2rem;
@@ -228,4 +229,8 @@
 .vomiNote-text__keyword {
   font-weight: 600;
   color: #3c50a2;
+}
+
+#hosDep .ui-buttons__fourth .ui-button {
+  padding: 0;
 }

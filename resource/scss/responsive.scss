@@ -26,5 +26,7 @@ html{
     @include media-breakpoint-down(n-xxs){ 
         font-size:13%;
     }
-    
+    // @media (min-height:660px) {
+    //     font-size:calc(62.5% / 2);
+    // }
 }
