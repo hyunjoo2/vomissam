@@ -281,33 +281,33 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 25rem 5rem 15rem;
+  padding: 18rem 5rem 10rem;
 }
 .login-first__title {
-  font-size: 13rem;
+  font-size: 11rem;
   font-weight: 100;
   text-align: center;
-  line-height: 18.6rem;
+  line-height: 15rem;
 }
 .login-first__title strong {
-  font-size: 13rem;
+  font-size: 11rem;
   font-weight: 600;
 }
 .login-first__title span {
-  font-size: 13rem;
+  font-size: 11rem;
   font-weight: 500;
 }
 .login-first__text {
-  margin-top: 9rem;
-  font-size: 5.8rem;
-  line-height: 9.4rem;
+  margin-top: 4rem;
+  font-size: 5.4rem;
+  line-height: 8rem;
   text-align: center;
 }
 .login-first__bottom {
   margin-top: auto;
 }
 .login-first__bottom--bottom {
-  margin-top: 16rem;
+  margin-top: 10rem;
 }
 .login-first__bottom--bottom-text {
   display: flex;
@@ -353,12 +353,12 @@
   margin-left: 4rem;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .container-login {
     margin-bottom: 0;
     padding-bottom: 0;
     background: url(../image/common/bg-login.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center top -30rem;
   }
 }
