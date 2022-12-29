@@ -343,6 +343,9 @@
 
 #hosDep{
     .ui-buttons__fourth .ui-button{
+        @include d-flex;
+        justify-content:flex-start;
         padding: 0;
+        padding-left:3.9rem;
     }
 }

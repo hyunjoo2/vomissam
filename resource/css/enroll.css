@@ -199,12 +199,14 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
   min-height: 18rem;
   padding: 2rem 0;
-  border: 0.3rem dashed #d8dce2;
+  border: 1px dashed #d8dce2;
   border-radius: 1rem;
   font-size: 5.5rem;
   color: #9196a5;
@@ -214,7 +216,7 @@
 .care-period__text.is-inputed {
   flex-direction: column;
   color: #3c50a2;
-  border: 0.3rem solid #4b62c3;
+  border: 1px solid #4b62c3;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .care-period__text--inner {

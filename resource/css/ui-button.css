@@ -271,6 +271,14 @@
   background-color: #4b62c3;
 }
 .ui-button__badge {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 7rem;
   padding: 0rem 2.8rem;
   font-size: 4rem;
@@ -356,6 +364,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;

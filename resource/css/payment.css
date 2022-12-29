@@ -200,6 +200,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -281,7 +283,6 @@
 .sub-item--totalPayment .sub-item__box--border {
   border: none;
 }
-
 .sub-item__box--totalPay {
   color: #fff;
   border-radius: 3rem;
@@ -302,4 +303,10 @@
 .sub-item__box--totalPay .totalPay__txt span em {
   font-size: 8rem;
   font-weight: 500;
+}
+.sub-item__card {
+  margin-bottom: 13rem;
+}
+.sub-item__card + .sub-item__card {
+  margin-top: 13rem;
 }

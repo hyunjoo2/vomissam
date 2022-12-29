@@ -106,7 +106,7 @@
             width:100%;
             min-height: 18rem;
             padding:2rem 0;
-            border: .3rem dashed #d8dce2;
+            border: 1px dashed #d8dce2;
             border-radius: 1rem;
             font-size: 5.5rem;
             color:#9196a5;
@@ -115,7 +115,7 @@
             &.is-inputed{
                 flex-direction: column;
                 color:#3c50a2;
-                border: .3rem solid #4b62c3;
+                border: 1px solid #4b62c3;
                 box-shadow: 1rem 1rem 3.3rem rgba($color: #000000, $alpha: 0.13);
             }
             &--inner{

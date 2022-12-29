@@ -142,7 +142,7 @@
   align-items: center;
   width: 100%;
   padding: 6rem 7rem;
-  border-bottom: 1px solid #5165c2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .myInfo-box__bottom {
   width: 100%;
@@ -152,7 +152,7 @@
   padding: 7rem 11.7rem;
 }
 .myInfo-box__left {
-  border-right: 1px solid #5165c2;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 .myInfo-box__tit {
   font-size: 7.2rem;

@@ -153,6 +153,9 @@
 .mb-120 {
   margin-bottom: 12rem;
 }
+.mb-130 {
+  margin-bottom: 13rem !important;
+}
 
 .pd-5 {
   padding: 5rem;

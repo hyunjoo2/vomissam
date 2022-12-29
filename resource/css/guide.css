@@ -1026,6 +1026,14 @@
   background-color: #4b62c3;
 }
 .ui-button__badge {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 7rem;
   padding: 0rem 2.8rem;
   font-size: 4rem;
@@ -1111,6 +1119,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -1224,6 +1234,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .board-table__list .td-titlelink {
@@ -1503,7 +1515,7 @@
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 1.5rem;
-  line-height: 1.4rem;
+  line-height: 13.1rem;
   font-size: 5rem;
 }
 .ui-form__button {
@@ -1736,6 +1748,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 1.6rem;
   line-height: normal;
@@ -1803,6 +1817,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .attach-file__bottom {
@@ -1854,7 +1870,7 @@
 }
 
 .sub {
-  /* sub-title */
+  /** sub-title */
   /* sub-item */
   /* sub-list */
 }
@@ -2394,7 +2410,7 @@
   display: none;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.old {
-  color: #a5a5a5;
+  color: #959595;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active {
   position: relative;
@@ -2730,11 +2746,6 @@ html {
     font-size: 13%;
   }
 }
-@media (max-width: 320px) {
-  html {
-    font-size: 13%;
-  }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
   html {
     font-size: 31.25%;
@@ -2753,6 +2764,11 @@ html {
 @media (min-width: 320px) and (max-width: 480px) {
   html {
     font-size: 15.625%;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 13%;
   }
 }
 
