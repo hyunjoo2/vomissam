@@ -340,6 +340,8 @@
         }
     }
     &__badge{
+        @include d-flex;
+        @include align-center;
         height:7rem;
         padding: 0rem 2.8rem;
         font : {
