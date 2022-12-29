@@ -316,7 +316,7 @@
 .bootstrap-datetimepicker-widget table td span.year.active:hover:before,
 .bootstrap-datetimepicker-widget table td span.decade.active:before,
 .bootstrap-datetimepicker-widget table td span.decade.active:hover:before {
-  background-color: #30b59c;
+  background-color: #4b62c3;
 }
 
 .bootstrap-datetimepicker-widget table td span.month.disabled,
@@ -514,6 +514,9 @@
 }
 .mb-120 {
   margin-bottom: 12rem;
+}
+.mb-130 {
+  margin-bottom: 13rem !important;
 }
 
 .pd-5 {
