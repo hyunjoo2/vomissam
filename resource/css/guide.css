@@ -180,7 +180,7 @@
 }
 
 .bootstrap-datetimepicker-widget table td.day.weekend:first-child {
-  color: #30b59c;
+  color: #c52727;
 }
 
 .bootstrap-datetimepicker-widget table td.day.weekend:last-child {
@@ -226,7 +226,7 @@
 
 .bootstrap-datetimepicker-widget table td.active:before,
 .bootstrap-datetimepicker-widget table td.active:hover:before {
-  background-color: #30b59c;
+  background-color: #4b62c3;
 }
 
 .bootstrap-datetimepicker-widget table td.old,
@@ -245,7 +245,7 @@
 }
 
 .bootstrap-datetimepicker-widget table td.day.today:before {
-  border: 1px solid #30b59c;
+  border: 1px solid #4b62c3;
   bottom: auto;
   right: auto;
   background-color: transparent;
@@ -256,7 +256,7 @@
 }
 
 .bootstrap-datetimepicker-widget table td.day.today.active:before {
-  background-color: #30b59c;
+  background-color: #4b62c3;
 }
 
 .bootstrap-datetimepicker-widget table tbody td[colspan="7"]:after {
@@ -316,7 +316,7 @@
 .bootstrap-datetimepicker-widget table td span.year.active:hover:before,
 .bootstrap-datetimepicker-widget table td span.decade.active:before,
 .bootstrap-datetimepicker-widget table td span.decade.active:hover:before {
-  background-color: #30b59c;
+  background-color: #4b62c3;
 }
 
 .bootstrap-datetimepicker-widget table td span.month.disabled,
@@ -514,6 +514,9 @@
 }
 .mb-120 {
   margin-bottom: 12rem;
+}
+.mb-130 {
+  margin-bottom: 13rem !important;
 }
 
 .pd-5 {
@@ -1515,7 +1518,7 @@
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 1.5rem;
-  line-height: 13.1rem;
+  line-height: 1.4rem;
   font-size: 5rem;
 }
 .ui-form__button {
@@ -1956,6 +1959,7 @@
 .sub-item__box--gray {
   padding: 8rem;
   background: #f3f5fb;
+  border-radius: 3rem;
 }
 .sub-item__box--border {
   padding: 8rem;
@@ -1981,7 +1985,7 @@
 }
 .sub-dt, .sub-dd {
   font-size: 5.6rem;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 .sub-dt *:not(button):not(.des-text2), .sub-dd *:not(button):not(.des-text2) {
   font-size: 5.6rem;
@@ -1990,6 +1994,7 @@
 .sub-dt {
   flex: none;
   color: #575c62;
+  letter-spacing: -1px;
 }
 .sub-dt__width {
   flex: none;
@@ -2182,7 +2187,7 @@
   padding: 8.5rem 6rem;
   padding-right: 16rem;
   font-size: 5.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #222;
   background: url("../image/sub/icon/icon-down.png") no-repeat 95% center;
   background-size: 5.3rem 2.9rem;
@@ -2238,9 +2243,10 @@
 }
 
 .normal-text {
+  font-size: 5.5rem;
   word-break: keep-all;
-  line-height: 7.5rem;
-  letter-spacing: -1.5px;
+  line-height: 8rem;
+  letter-spacing: -0.5px;
 }
 
 /* 보미쌤 평가하기 */
@@ -2339,7 +2345,7 @@
   flex: 1;
   height: 15.4rem;
   overflow: hidden;
-  border: 0.3rem solid #d5d9df;
+  border: 1px solid #d5d9df;
   box-sizing: border-box;
 }
 .tab-menu__li:first-child {
@@ -2352,7 +2358,7 @@
 }
 .tab-menu__li.is-active {
   position: relative;
-  border: 0.3rem solid #4b62c3;
+  border: 1px solid #4b62c3;
 }
 .tab-menu__li.is-active .tab-menu__link {
   color: #3c50a2;
@@ -2421,7 +2427,7 @@
   margin: 0;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active:hover::before {
-  background-color: #30b59c;
+  background-color: #4b62c3;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month {
   position: relative;
@@ -2692,7 +2698,14 @@
 }
 
 #hosDep .ui-buttons__fourth .ui-button {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: flex-start;
   padding: 0;
+  padding-left: 3.9rem;
 }
 
 /* ========== reponsive =========== */
