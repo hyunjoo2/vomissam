@@ -203,6 +203,7 @@
   margin: -1.5rem;
 }
 .with-vomi__review--card {
+  width: 50%;
   padding: 1.5rem;
 }
 .with-vomi__review--card__inner {
