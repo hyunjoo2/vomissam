@@ -114,6 +114,11 @@
     transform: rotateY(0deg);
   }
 }
+.container-join {
+  height: 100%;
+  padding-bottom: 12rem;
+}
+
 .join-top {
   margin-top: 14rem;
   margin-bottom: 13rem;
