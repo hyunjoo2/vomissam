@@ -115,7 +115,7 @@
   }
 }
 .container-join {
-  height: 100%;
+  height: auto;
   padding-bottom: 12rem;
 }
 
