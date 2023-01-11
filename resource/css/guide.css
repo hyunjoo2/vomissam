@@ -1074,6 +1074,7 @@
   border-color: #06be34;
   background-image: url(../image/common/icon-naver__colored.png);
   background-size: 5.6rem 5.1rem;
+  flex: none;
 }
 .button-joinSocial__google {
   border-color: #dc4e41;
@@ -1086,9 +1087,12 @@
   background-size: 8.5rem 7.7rem;
 }
 .button-joinSocial__apple {
-  border-color: #fae100;
+  border-color: #000000;
   background-image: url(../image/common/icon-apple.png);
-  background-size: 8.5rem 7.7rem;
+  background-size: 5.4rem 6.6rem;
+}
+.button-joinSocial + .button-joinSocial {
+  margin-top: 1.7rem;
 }
 .button-kakao {
   width: 100%;
@@ -1097,6 +1101,7 @@
   font-weight: 500;
   background: #fae100 url(../image/common/icon-kakao.png) no-repeat left 7rem center;
   background-size: 9.9rem 9.1rem;
+  border: 0;
   border-radius: 2rem;
   color: #000000;
 }
@@ -1124,11 +1129,11 @@
 .button-apple::before {
   display: inline-block;
   flex: none;
-  width: 5.3rem;
-  height: 5.5rem;
+  width: 5.4rem;
+  height: 6.6rem;
   margin-right: 2rem;
   background: url(../image/common/icon-apple.png);
-  background-size: 5.3rem 5.5rem;
+  background-size: 5.4rem 6.6rem;
   vertical-align: middle;
   content: "";
 }
